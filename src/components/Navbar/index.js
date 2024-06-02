@@ -1,19 +1,33 @@
-import React from 'react'
-import { Nav, NavbarContainer, NavLogo } from './NavbarElements'
+import React from "react";
+import { FaBars } from "react-icons/fa";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "./NavbarElements";
 
 function Navbar() {
   return (
     <>
-    <Nav>
+      <Nav>
         <NavbarContainer>
-            <NavLogo to="/">
-                Frost
-            </NavLogo>
-            <h1>hello</h1>
+          <NavLogo to="/">Frost</NavLogo>
+          <MobileIcon>
+          <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+          </NavMenu>
         </NavbarContainer>
-    </Nav>
+      </Nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
