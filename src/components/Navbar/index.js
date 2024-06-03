@@ -9,10 +9,10 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarElements";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <>
       <Nav>
@@ -42,6 +42,6 @@ function Navbar() {
       </Nav>
     </>
   );
-}
+};
 
 export default Navbar;

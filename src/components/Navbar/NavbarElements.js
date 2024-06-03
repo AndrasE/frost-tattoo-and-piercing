@@ -86,13 +86,13 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 export const NavBtn = styled.nav`
-display:flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-@media screen and (max-width: 768px){
-  display: none;
-}
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
   background-color: #01bf71;
@@ -111,4 +111,4 @@ export const NavBtnLink = styled(LinkRouter)`
     background-color: #fff;
     color: #010606;
   }
-`
+`;
