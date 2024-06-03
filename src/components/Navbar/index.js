@@ -18,9 +18,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Frost</NavLogo>
-          <MobileIcon>
-            <FaBars />
-          </MobileIcon>
+        
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>
@@ -38,6 +36,9 @@ const Navbar = () => {
           <NavBtn>
             <NavBtnLink to="signin">Sign-in</NavBtnLink>
           </NavBtn>
+          <MobileIcon>
+            <FaBars />
+          </MobileIcon>
         </NavbarContainer>
       </Nav>
     </>
