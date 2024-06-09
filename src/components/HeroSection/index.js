@@ -1,14 +1,14 @@
 import React from "react";
 import Video from "../../videos/video.mp4";
-import { HeroVideoContainer, HeroVideoBg, VideoBg } from "./HeroVideoElements";
+import { HeroContainer, HeroBg, VideoBg } from "./HeroElements";
 
 const HeroVideo = () => {
   return (
-    <HeroVideoContainer>
-      <HeroVideoBg>
+    <HeroContainer>
+      <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroVideoBg>
-    </HeroVideoContainer>
+      </HeroBg>
+    </HeroContainer>
   );
 };
 
