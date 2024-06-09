@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeVideoContainer = styled.div`
+export const HeroVideoContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@ export const HomeVideoContainer = styled.div`
   z-index: 1;
 `;
 
-export const HomeVideoBg = styled.div`
+export const HeroVideoBg = styled.div`
   position: absolute;
   top: 0;
   right: 0;
