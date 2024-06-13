@@ -10,22 +10,6 @@ export const HeroContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
-
-  /* :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
-    z-index: 2;
-  } */
 `;
 
 export const HeroBg = styled.div`
@@ -68,6 +52,20 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+  }
+`;
+
+export const HeroH2 = styled.h2`
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+
+  @media screen and (max-width: 768) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 

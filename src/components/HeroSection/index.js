@@ -7,6 +7,7 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
@@ -26,14 +27,9 @@ const HeroVideo = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </HeroH1>
-        <HeroP>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore.
-        </HeroP>
+        <HeroH1>Frost </HeroH1>
+        <HeroH2>tattoo and piercing</HeroH2>
+        <HeroP>Welcome to our offical website</HeroP>
         <HeroBtnWrapper>
           <Button
             to="contact"
