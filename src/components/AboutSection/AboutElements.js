@@ -11,7 +11,7 @@ export const AboutrWrapper = styled.div`
   width: 100%;
   justify-content: center;
   @media screen and (max-width: 440px) {
-    height: 720px;
+    padding-top: 80px;
   }
 `;
 

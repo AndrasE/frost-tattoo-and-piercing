@@ -21,9 +21,8 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <Heading>Services</Heading>
-
         <ServicesrWrapper>
+          <Heading>Services</Heading>
           <ServicesRow>
             <Column1>
               <CardWrap>

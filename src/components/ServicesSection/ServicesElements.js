@@ -5,9 +5,13 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesrWrapper = styled.div`
+  height: 820px;
   width: 100%;
-  justify-content: center;
+  display: flex;
+
   @media screen and (max-width: 440px) {
+    padding-top: 80px;
+    height: 760px;
   }
 `;
 
