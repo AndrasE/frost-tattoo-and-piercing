@@ -29,7 +29,7 @@ const HeroVideo = () => {
       <HeroContent>
         <HeroH1>Frost </HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
-        <HeroP>Welcome to our offical website</HeroP>
+        <HeroP>Welcome to our offical website!</HeroP>
         <HeroBtnWrapper>
           <Button
             to="contact"

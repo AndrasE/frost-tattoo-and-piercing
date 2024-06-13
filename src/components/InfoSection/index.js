@@ -22,7 +22,7 @@ const InfoSection = ({
   lightText,
   darkText,
   topLine,
-  heading,
+  headLine,
   description,
   buttonLabel,
   img,
@@ -39,7 +39,7 @@ const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{heading}</Heading>
+                <Heading>{headLine}</Heading>
                 <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
                   <Button
