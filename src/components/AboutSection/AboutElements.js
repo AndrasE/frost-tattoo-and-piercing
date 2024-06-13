@@ -5,35 +5,28 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutrWrapper = styled.div`
-  display: grid;
-  height: 860px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 70px;
-  justify-content: center;
+  display: flex;
+  height: 920px;
 
-  @media screen and (max-width: 768px) {
-    padding: 25px 25px;
+  width: 100%;
+  justify-content: center;
+  @media screen and (max-width: 440px) {
+    height: 720px;
   }
 `;
 
 export const AboutRow = styled.div`
-  display: grid;
-  grid-gap: 50px;
+  display: flex;
   align-items: center;
-  grid-auto-columns: minmax(auto, 1fr);
-  grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-gap: 0;
-    grid-template-areas: "col1" "col2";
+    flex-direction: column;
   }
 `;
 
 export const Column1 = styled.div`
   align-items: center;
-  grid-area: col1;
+  margin: 15px;
 `;
 
 export const TextWrap = styled.div`
@@ -64,7 +57,7 @@ export const Content = styled.p`
 
 export const Column2 = styled.div`
   align-items: center;
-  grid-area: col2;
+  padding: 15px;
 `;
 
 export const ImgWrap = styled.div`

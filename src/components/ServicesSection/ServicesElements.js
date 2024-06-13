@@ -5,35 +5,33 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesrWrapper = styled.div`
-  display: grid;
-  height: 860px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 70px;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    padding: 25px 25px;
+  @media screen and (max-width: 440px) {
   }
+`;
+
+export const CardTitle = styled.p`
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
 `;
 
 export const ServicesRow = styled.div`
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-auto-columns: minmax(auto, 1fr);
-  grid-template-areas: "col1 col2";
-  @media screen and (max-width: 768px) {
-    grid-template-areas: "col1" "col2";
-  }
 `;
 
 export const Column1 = styled.div`
-  grid-area: col1;
+  align-items: center;
+`;
+
+export const Card = styled.div`
+  align-items: center;
 `;
 
 export const Heading = styled.h1`
-  margin: auto;
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 25px;
   color: #fff;
@@ -46,8 +44,8 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
-export const ImgWrap = styled.div`
-  max-width: 380px;
+export const CardWrap = styled.div`
+  max-width: 330px;
 `;
 
 export const Img = styled.img`
