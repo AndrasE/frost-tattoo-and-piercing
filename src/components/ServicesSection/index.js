@@ -1,39 +1,44 @@
 import React from "react";
 import {
   ServicesContainer,
-  ServicesH1,
-  ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
-  ServicesH2,
-  ServicesP,
+  ServicesrWrapper,
+  ServicesRow,
+  Column1,
+  TextWrap,
+  Heading,
+  Content,
+  Column2,
+  ImgWrap,
+  Img,
 } from "./ServicesElements";
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
+import designImg from "../../images/designImg.jpg";
+import tatooingImg from "../../images/tatooingImg.jpg";
+import exampleImg1 from "../../images/aboutImg.jpg";
+import piercingImg from "../../images/piercingImg.jpg";
 
 const Services = () => {
   return (
-    <ServicesContainer id="services">
-      <ServicesH1>Our services</ServicesH1>
-      <ServicesWrapper>
-        <ServicesCard>
-          <ServicesIcon src={Icon1} />
-          <ServicesH2>Ouis nostrud</ServicesH2>
-          <ServicesP>Aute irure dolor in reprehenderit in voluptate.</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Icon2} />
-          <ServicesH2>Ouis nostrud</ServicesH2>
-          <ServicesP>Aute irure dolor in reprehenderit in voluptate.</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Icon3} />
-          <ServicesH2>Ouis nostrud</ServicesH2>
-          <ServicesP>Aute irure dolor in reprehenderit in voluptate.</ServicesP>
-        </ServicesCard>
-      </ServicesWrapper>
-    </ServicesContainer>
+    <>
+      <ServicesContainer id="services">
+        <ServicesrWrapper>
+          <Heading>Services</Heading>
+          <ServicesRow>
+            <ImgWrap>
+              <Column1>
+                <Img src={designImg} alt="designImg" />
+                <Img src={tatooingImg} alt="tatooingImg" />
+              </Column1>
+            </ImgWrap>
+            <Column2>
+              <ImgWrap>
+                <Img src={piercingImg} alt="piercingImg" />
+                <Img src={exampleImg1} alt="ServicesImage" />
+              </ImgWrap>
+            </Column2>
+          </ServicesRow>
+        </ServicesrWrapper>
+      </ServicesContainer>
+    </>
   );
 };
 
