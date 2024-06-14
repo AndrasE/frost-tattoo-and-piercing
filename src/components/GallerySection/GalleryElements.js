@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const GalleryContainer = styled.div`
   background: #010606;
 `;
 
-export const ServicesrWrapper = styled.div`
+export const GalleryrWrapper = styled.div`
   height: 860px;
   margin: auto;
-  max-width: 520px;
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
 `;
 
-export const ServicesTitleRow = styled.div`
+export const GalleryTitleRow = styled.div`
   grid-column-start: 1;
   grid-column-end: 3;
   align-content: end;
@@ -27,10 +27,9 @@ export const Heading = styled.h1`
   padding-bottom: 35px;
 `;
 
-export const ServicesImgRow = styled.div`
+export const GalleryImgRow = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 150px;
 `;
 
 export const ImgTitle = styled.p`
