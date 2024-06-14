@@ -21,9 +21,13 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
+      
         <ServicesrWrapper>
-          <Heading>Services</Heading>
+      
           <ServicesRow>
+          <Column1>
+          <Heading>Services</Heading>
+          </ Column1 >
             <Column1>
               <CardWrap>
                 <Card>
