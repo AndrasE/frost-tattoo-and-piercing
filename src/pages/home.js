@@ -6,19 +6,18 @@ import Services from "../components/ServicesSection";
 import About from "../components/AboutSection";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [$isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!$isOpen);
   };
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar $isOpen={$isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <About />
-
       <Services />
     </>
   );
