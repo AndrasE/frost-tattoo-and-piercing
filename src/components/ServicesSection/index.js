@@ -10,8 +10,8 @@ import {
 } from "./ServicesElements";
 import designImg from "../../images/designImg.jpg";
 import tatooingImg from "../../images/tatooingImg.jpg";
-import exampleImg1 from "../../images/aboutImg.jpg";
 import piercingImg from "../../images/piercingImg.jpg";
+import microdermalImg from "../../images/microdermalImg.jpg";
 
 const Services = () => {
   return (
@@ -31,7 +31,7 @@ const Services = () => {
             <ImgTitle>Piercing</ImgTitle>
             <Img src={piercingImg} alt="piercingImg" />
             <ImgTitle>Microdermal</ImgTitle>
-            <Img src={exampleImg1} alt="microdermalImage" />
+            <Img src={microdermalImg} alt="microdermalImage" />
           </ServicesImgRow>
         </ServicesrWrapper>
       </ServicesContainer>
