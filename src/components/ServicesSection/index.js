@@ -2,10 +2,13 @@ import React from "react";
 import {
   ServicesContainer,
   ServicesrWrapper,
-  ServicesTitleRow,
-  ServicesImgRow,
+  ServicesRow,
+  Column1,
+  TextWrap,
   Heading,
-  ImgTitle,
+  Content,
+  Column2,
+  ImgWrap,
   Img,
 } from "./ServicesElements";
 import designImg from "../../images/designImg.jpg";
@@ -18,21 +21,31 @@ const Services = () => {
     <>
       <ServicesContainer id="services">
         <ServicesrWrapper>
-          <ServicesTitleRow>
-            <Heading>Services</Heading>
-          </ServicesTitleRow>
-          <ServicesImgRow>
-            <ImgTitle>Design</ImgTitle>
-            <Img src={designImg} alt="designImg" />
-            <ImgTitle>Tattoo</ImgTitle>
-            <Img src={tatooingImg} alt="tatooingImg" />
-          </ServicesImgRow>
-          <ServicesImgRow>
-            <ImgTitle>Piercing</ImgTitle>
-            <Img src={piercingImg} alt="piercingImg" />
-            <ImgTitle>Microdermal</ImgTitle>
-            <Img src={microdermalImg} alt="microdermalImage" />
-          </ServicesImgRow>
+          <ServicesRow>
+            <Column1>
+              <TextWrap>
+                <Heading>Services</Heading>
+                <Content>
+                  Our store has opened 8 years ago, myself have 12 years of
+                  experiance. Our store has opened 8 years ago, myself have 12
+                  years of experiance. Our store has opened 8 years ago, myself
+                  have 12 years of experiance. Our store has opened 8 years ago,
+                  myself.
+                </Content>
+              </TextWrap>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img src={designImg} alt="designImg" />
+
+                <Img src={tatooingImg} alt="tatooingImg" />
+
+                <Img src={piercingImg} alt="piercingImg" />
+
+                <Img src={microdermalImg} alt="microdermalImage" />
+              </ImgWrap>
+            </Column2>
+          </ServicesRow>
         </ServicesrWrapper>
       </ServicesContainer>
     </>
