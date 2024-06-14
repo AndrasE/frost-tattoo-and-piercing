@@ -24,8 +24,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
           <SidebarLink to="services" onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
-            Sign Up
+          <SidebarLink to="gallery" onClick={toggle}>
+            Gellery
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrapper>
