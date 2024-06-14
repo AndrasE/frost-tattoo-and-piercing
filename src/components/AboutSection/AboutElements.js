@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
@@ -15,7 +14,7 @@ export const AboutrWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 50px 25px;
+    padding: 50px 20px;
   }
 `;
 

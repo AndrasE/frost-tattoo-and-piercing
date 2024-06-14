@@ -5,56 +5,50 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesrWrapper = styled.div`
-  height: 820px;
-  width: 100%;
-  display: flex;
-
-  @media screen and (max-width: 440px) {
-    padding-top: 80px;
-    height: 760px;
-  }
+  height: 860px;
+  margin: auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
 `;
 
-export const CardTitle = styled.p`
-  font-size: 1rem;
-  color: #fff;
-  text-align: center;
-`;
-
-export const ServicesRow = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const Column1 = styled.div`
-  align-items: center;
-`;
-
-export const Card = styled.div`
-  align-items: center;
+export const ServicesTitleRow = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-content: end;
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 25px;
   color: #fff;
+  padding-bottom: 35px;
+`;
+
+export const ServicesImgRow = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ImgTitle = styled.p`
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 0.9rem;
   }
 `;
 
-export const Column2 = styled.div`
-  grid-area: col2;
-`;
-
-export const CardWrap = styled.div`
-  max-width: 330px;
-`;
-
 export const Img = styled.img`
-  object-fit: cover;
-  padding: 10px;
   width: 100%;
   border-radius: 20px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    scale: 1.02;
+  }
 `;

@@ -2,14 +2,10 @@ import React from "react";
 import {
   ServicesContainer,
   ServicesrWrapper,
-  TitleRow,
-  ServicesRow,
-  CardWrap,
+  ServicesTitleRow,
+  ServicesImgRow,
   Heading,
-  Column1,
-  Card,
-  CardTitle,
-  Column2,
+  ImgTitle,
   Img,
 } from "./ServicesElements";
 import designImg from "../../images/designImg.jpg";
@@ -21,39 +17,22 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-      
         <ServicesrWrapper>
-      
-          <ServicesRow>
-          <Column1>
-          <Heading>Services</Heading>
-          </ Column1 >
-            <Column1>
-              <CardWrap>
-                <Card>
-                  <CardTitle>Design</CardTitle>
-                  <Img src={designImg} alt="designImg" />
-                </Card>
-                <Card>
-                  <CardTitle>Tattoo</CardTitle>
-                  <Img src={tatooingImg} alt="tatooingImg" />
-                </Card>
-              </CardWrap>
-            </Column1>
-
-            <Column2>
-              <CardWrap>
-                <Card>
-                  <CardTitle>Piercing</CardTitle>
-                  <Img src={piercingImg} alt="piercingImg" />
-                </Card>
-                <Card>
-                  <CardTitle>Microdermal</CardTitle>
-                  <Img src={exampleImg1} alt="microdermalImage" />
-                </Card>
-              </CardWrap>
-            </Column2>
-          </ServicesRow>
+          <ServicesTitleRow>
+            <Heading>Services</Heading>
+          </ServicesTitleRow>
+          <ServicesImgRow>
+            <ImgTitle>Design</ImgTitle>
+            <Img src={designImg} alt="designImg" />
+            <ImgTitle>Tattoo</ImgTitle>
+            <Img src={tatooingImg} alt="tatooingImg" />
+          </ServicesImgRow>
+          <ServicesImgRow>
+            <ImgTitle>Piercing</ImgTitle>
+            <Img src={piercingImg} alt="piercingImg" />
+            <ImgTitle>Microdermal</ImgTitle>
+            <Img src={exampleImg1} alt="microdermalImage" />
+          </ServicesImgRow>
         </ServicesrWrapper>
       </ServicesContainer>
     </>
