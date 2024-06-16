@@ -29,8 +29,7 @@ const Services = () => {
                   Our store has opened 8 years ago, myself have 12 years of
                   experiance. Our store has opened 8 years ago, myself have 12
                   years of experiance. Our store has opened 8 years ago, myself
-                  have 12 years of experiance. Our store has opened 8 years ago,
-                  myself.
+                  nce. Our store has opened 8 years ago, myself.
                 </Content>
               </TextWrap>
             </Column1>
