@@ -17,22 +17,18 @@ const Gallery = () => {
       <GalleryContainer id="gallery">
         <GalleryrWrapper>
           <GalleryRow>
-            <ImageCarousel />
-            {/* <Column1>
+            <Column1>
               <TextWrap>
                 <Heading>Gallery</Heading>
                 <Content>
-                  Our store has opened 8 years ago, myself have 12 years of
-                  experiance. Our store has opened 8 years ago, myself have 12
-                  years of experiance. Our store has opened 8 years ago, myself
-                  have 12 years of experiance. Our store has opened 8 years ago,
-                  myself.
+                  Feel free to check out some of my work. If you would like to
+                  see more head over to Gallery.
                 </Content>
               </TextWrap>
             </Column1>
             <Column2>
               <ImageCarousel />
-            </Column2> */}
+            </Column2>
           </GalleryRow>
         </GalleryrWrapper>
       </GalleryContainer>
