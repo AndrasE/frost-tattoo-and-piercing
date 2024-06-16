@@ -6,3 +6,7 @@ export const Img = styled.img`
   width: 200px;
   border: 3px solid rebeccapurple;
 `;
+
+export const ButtonIndicator = styled.button`
+  border: 1px solid red;
+`;
