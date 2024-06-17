@@ -5,23 +5,24 @@ import {
   Img,
   LeftArrow,
   RightArrow,
-  ButtonIndicator,
+  IndicatorBtnsWrapper,
+  IndicatorBtns,
 } from "./CarouselElements";
 
 const Carousel = () => {
   return (
-    <div>
+    <CarouselWrapper>
       <LeftArrow />
-      <CarouselWrapper>
-        {carouselData.slides.map((item, index) => {
-          return <Img src={item.src} alt={item.alt} key={item.index} />;
-        })}
-      </CarouselWrapper>
-      <RightArrow />
-      {carouselData.slides.map((_, index) => {
-        return <ButtonIndicator key={index} onClick={null} />;
+      {carouselData.slides.map((item, index) => {
+        return <Img src={item.src} alt={item.alt} key={item.index} />;
       })}
-    </div>
+      <RightArrow />
+      <IndicatorBtnsWrapper>
+        {carouselData.slides.map((_, index) => {
+          return <IndicatorBtns key={index} onClick={null} />;
+        })}
+      </IndicatorBtnsWrapper>
+    </CarouselWrapper>
   );
 };
 

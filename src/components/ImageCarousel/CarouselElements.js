@@ -17,13 +17,35 @@ export const Img = styled.img`
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
   color: #fff;
+  left: 1rem;
+  cursor: pointer;
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
   color: #fff;
+  right: 1rem;
+  cursor: pointer;
 `;
 
-export const ButtonIndicator = styled.button`
-  border: 1px solid red;
+export const IndicatorBtnsWrapper = styled.span`
+  bottom: 1rem;
+  display: flex;
+`;
+
+export const IndicatorBtns = styled.button`
+  color: #fff;
+  border-radius: 100%;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: none;
+  outline: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
 `;
