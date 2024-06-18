@@ -10,19 +10,14 @@ import {
 } from "./CarouselElements";
 
 const Carousel = () => {
-  const [$isVisable, setIsVisiable] = useState(false);
+  const [$slide, setSlide] = useState(0);
 
   return (
     <CarouselWrapper>
       <LeftArrow />
       {carouselData.slides.map((item, index) => {
         return (
-          <Img
-            $isVisable={$isVisable}
-            src={item.src}
-            alt={item.alt}
-            key={index}
-          />
+          <Img $slide={$slide} src={item.src} alt={item.alt} key={index} />
         );
       })}
       <RightArrow />

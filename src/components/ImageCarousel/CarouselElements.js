@@ -14,39 +14,42 @@ export const Img = styled.img`
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  display: ${({ $isVisable }) => ($isVisable ? "flex" : "none")};
+  display: ${({ $slide }) => ($slide === 0 ? "flex" : "none")};
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #fff;
   left: 1rem;
   cursor: pointer;
+  filter: drop-shadow(0pc 0px 3px #555);
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #fff;
   right: 1rem;
   cursor: pointer;
+  filter: drop-shadow(0pc 0px 3px #555);
 `;
 
 export const IndicatorBtnsWrapper = styled.span`
   bottom: 1rem;
   display: flex;
+  filter: drop-shadow(0pc 0px 2px #555);
 `;
 
 export const IndicatorBtns = styled.button`
   color: #fff;
   border-radius: 100%;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border: none;
   outline: none;
-  margin: 0 0.2rem;
+  margin: 0 0.25rem;
   cursor: pointer;
 `;
