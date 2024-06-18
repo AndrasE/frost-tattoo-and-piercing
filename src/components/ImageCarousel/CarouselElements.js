@@ -14,6 +14,7 @@ export const Img = styled.img`
   border-radius: 20px;
   width: 100%;
   height: 100%;
+  display: ${({ $isVisable }) => ($isVisable ? "none" : "block")};
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`

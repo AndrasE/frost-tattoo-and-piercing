@@ -14,7 +14,7 @@ const Carousel = () => {
     <CarouselWrapper>
       <LeftArrow />
       {carouselData.slides.map((item, index) => {
-        return <Img src={item.src} alt={item.alt} key={item.index} />;
+        return <Img src={item.src} alt={item.alt} key={index} />;
       })}
       <RightArrow />
       <IndicatorBtnsWrapper>
