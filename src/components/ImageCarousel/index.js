@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import carouselData from "./carouselData.json";
 import {
   CarouselWrapper,
@@ -10,11 +10,20 @@ import {
 } from "./CarouselElements";
 
 const Carousel = () => {
+  const [$isVisable, setIsVisiable] = useState(false);
+
   return (
     <CarouselWrapper>
       <LeftArrow />
       {carouselData.slides.map((item, index) => {
-        return <Img src={item.src} alt={item.alt} key={index} />;
+        return (
+          <Img
+            $isVisable={$isVisable}
+            src={item.src}
+            alt={item.alt}
+            key={index}
+          />
+        );
       })}
       <RightArrow />
       <IndicatorBtnsWrapper>
