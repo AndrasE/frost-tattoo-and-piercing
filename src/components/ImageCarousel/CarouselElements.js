@@ -19,11 +19,10 @@ export const Img = styled.img`
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
   position: absolute;
   width: 1rem;
-  height: 5rem;
+  height: 1rem;
   color: #fff;
   left: 1rem;
   cursor: pointer;
-  z-index: auto;
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
@@ -41,7 +40,6 @@ export const IndicatorBtnsWrapper = styled.span`
 `;
 
 export const IndicatorBtns = styled.button`
-  position: absolute;
   color: #fff;
   border-radius: 100%;
   width: 0.4rem;
