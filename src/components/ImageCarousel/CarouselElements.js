@@ -59,7 +59,7 @@ export const IndicatorBtns = styled.button`
   height: 10px;
   border: none;
   outline: none;
-  margin: 0 0.25rem;
+  margin: 0 3px;
   cursor: pointer;
   opacity: 50%;
 `;
