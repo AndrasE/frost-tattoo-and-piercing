@@ -8,6 +8,7 @@ import {
   Heading,
   Content,
   Column2,
+  CarouselWrapper,
 } from "./GalleryElements";
 import ImageCarousel from "../ImageCarousel";
 
@@ -27,7 +28,9 @@ const Gallery = () => {
               </TextWrap>
             </Column1>
             <Column2>
-              <ImageCarousel />
+              <CarouselWrapper>
+                <ImageCarousel />
+              </CarouselWrapper>
             </Column2>
           </GalleryRow>
         </GalleryrWrapper>

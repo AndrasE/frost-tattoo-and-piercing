@@ -66,3 +66,8 @@ export const Column2 = styled.div`
   align-items: center;
   grid-area: col2;
 `;
+
+export const CarouselWrapper = styled.div`
+  max-width: 400px;
+  max-height: 400px;
+`;

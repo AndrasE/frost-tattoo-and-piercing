@@ -2,22 +2,20 @@ import styled from "styled-components";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  position: relative;
 `;
 
-export const ImgWrapper = styled.div`
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-`;
+// export const ImgWrapper = styled.div`
+//   justify-content: center;
+//   align-items: center;
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+// `;
 
 export const Img = styled.img`
   border-radius: 20px;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   display: ${({ $slide }) => ($slide === "slide" ? "flex" : "none")};
@@ -26,41 +24,42 @@ export const Img = styled.img`
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
   position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
+  inset: 0;
+  margin: auto auto auto 5px;
+  width: 25px;
+  height: 25px;
   color: #fff;
-  bottom: 45%;
+  opacity: 50%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
-  z-index: 9555;
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
   position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
+  inset: 0;
+  margin: auto 5px auto auto;
+  width: 25px;
+  height: 25px;
   color: #fff;
-  bottom: 45%;
+  opacity: 50%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
-  z-index: 55;
 `;
 
 export const IndicatorBtnsWrapper = styled.span`
   position: absolute;
-  bottom: 1rem;
-  display: flex;
   filter: drop-shadow(0pc 0px 2px #555);
 `;
 
 export const IndicatorBtns = styled.button`
-  position: absolute;
+  inset: 0;
   color: #fff;
   border-radius: 100%;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 10px;
+  height: 10px;
   border: none;
   outline: none;
   margin: 0 0.25rem;
   cursor: pointer;
+  opacity: 50%;
 `;

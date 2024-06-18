@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import carouselData from "./carouselData.json";
 import {
   CarouselWrapper,
-  ImgWrapper,
   Img,
   LeftArrow,
   RightArrow,
@@ -15,18 +14,18 @@ const Carousel = () => {
 
   return (
     <CarouselWrapper>
-      <ImgWrapper>
-        {carouselData.slides.map((item, index) => {
-          return (
-            <Img
-              $slide={slide === index ? "slide" : "hidden"}
-              src={item.src}
-              alt={item.alt}
-              key={index}
-            />
-          );
-        })}
-      </ImgWrapper>
+      {carouselData.slides.map((item, index) => {
+        return (
+          <Img
+            $slide={slide === index ? "slide" : "hidden"}
+            src={item.src}
+            alt={item.alt}
+            key={index}
+          />
+        );
+      })}
+      <LeftArrow />
+      <RightArrow />
       <IndicatorBtnsWrapper>
         {carouselData.slides.map((_, index) => {
           return (
@@ -39,8 +38,6 @@ const Carousel = () => {
           );
         })}
       </IndicatorBtnsWrapper>
-      <LeftArrow />
-      <RightArrow />
     </CarouselWrapper>
   );
 };
