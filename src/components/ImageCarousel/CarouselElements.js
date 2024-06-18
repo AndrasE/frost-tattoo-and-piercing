@@ -2,7 +2,15 @@ import styled from "styled-components";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
-  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 450px;
+  height: 450px;
+`;
+
+export const ImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   object-fit: cover;
@@ -14,27 +22,30 @@ export const Img = styled.img`
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  display: ${({ $slide }) => ($slide === 0 ? "flex" : "none")};
+  display: ${({ $slide }) => ($slide === "slide" ? "flex" : "none")};
+  z-index: 9;
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
-  position: absolute;
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
   color: #fff;
-  left: 1rem;
+  bottom: 45%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
+  z-index: 9555;
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
-  position: absolute;
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
   color: #fff;
-  right: 1rem;
+  bottom: 45%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
+  z-index: 55;
 `;
 
 export const IndicatorBtnsWrapper = styled.span`
@@ -44,6 +55,7 @@ export const IndicatorBtnsWrapper = styled.span`
 `;
 
 export const IndicatorBtns = styled.button`
+  position: absolute;
   color: #fff;
   border-radius: 100%;
   width: 0.5rem;
