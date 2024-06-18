@@ -2,20 +2,18 @@ import styled from "styled-components";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 450px;
-  height: 450px;
 `;
 
 export const ImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Img = styled.img`
@@ -27,7 +25,7 @@ export const Img = styled.img`
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
-  position: relative;
+  position: absolute;
   width: 1.5rem;
   height: 1.5rem;
   color: #fff;
@@ -38,7 +36,7 @@ export const LeftArrow = styled(BsArrowLeftCircleFill)`
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
-  position: relative;
+  position: absolute;
   width: 1.5rem;
   height: 1.5rem;
   color: #fff;
@@ -49,6 +47,7 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
 `;
 
 export const IndicatorBtnsWrapper = styled.span`
+  position: absolute;
   bottom: 1rem;
   display: flex;
   filter: drop-shadow(0pc 0px 2px #555);
