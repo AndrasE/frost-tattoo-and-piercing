@@ -5,14 +5,6 @@ export const CarouselWrapper = styled.div`
   position: relative;
 `;
 
-// export const ImgWrapper = styled.div`
-//   justify-content: center;
-//   align-items: center;
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-// `;
-
 export const Img = styled.img`
   border-radius: 20px;
   object-fit: cover;
@@ -29,9 +21,12 @@ export const LeftArrow = styled(BsArrowLeftCircleFill)`
   width: 25px;
   height: 25px;
   color: #fff;
-  opacity: 50%;
+  opacity: 40%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
+transition: all 0.2s ease-in-out;
+  &:hover{
+  opacity: 80%}
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
@@ -41,9 +36,12 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
   width: 25px;
   height: 25px;
   color: #fff;
-  opacity: 50%;
+  opacity: 40%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
+  transition: all 0.2s ease-in-out;
+  &:hover{
+  opacity: 80%}
 `;
 
 export const IndicatorBtnsWrapper = styled.div`
@@ -66,4 +64,7 @@ export const IndicatorBtns = styled.button`
   cursor: pointer;
   opacity: 50%;
   filter: drop-shadow(0pc 0px 2px #555);
+  transition: all 0.2s ease-in-out;
+  &:hover{
+  opacity: 80%}
 `;
