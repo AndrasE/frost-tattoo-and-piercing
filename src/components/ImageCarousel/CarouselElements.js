@@ -46,13 +46,16 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
   filter: drop-shadow(0pc 0px 3px #555);
 `;
 
-export const IndicatorBtnsWrapper = styled.span`
+export const IndicatorBtnsWrapper = styled.div`
   position: absolute;
-  filter: drop-shadow(0pc 0px 2px #555);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 5px;
+  margin: auto;
 `;
 
 export const IndicatorBtns = styled.button`
-  inset: 0;
   color: #fff;
   border-radius: 100%;
   width: 10px;
@@ -62,4 +65,5 @@ export const IndicatorBtns = styled.button`
   margin: 0 3px;
   cursor: pointer;
   opacity: 50%;
+  filter: drop-shadow(0pc 0px 2px #555);
 `;
