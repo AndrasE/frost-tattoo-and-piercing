@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import carouselData from "./carouselData.json";
+import  {slides}  from "./carouselData";
 import {
   CarouselWrapper,
   Img,
@@ -9,12 +9,13 @@ import {
   IndicatorBtns,
 } from "./CarouselElements";
 
+
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
   return (
     <CarouselWrapper>
-      {carouselData.slides.map((item, index) => {
+      {slides.map((item, index) => {
         return (
           <Img
             $slide={slide === index ? "slide" : "hidden"}
@@ -27,7 +28,7 @@ const Carousel = () => {
       <LeftArrow />
       <RightArrow />
       <IndicatorBtnsWrapper>
-        {carouselData.slides.map((_, index) => {
+        {slides.map((_, index) => {
           return (
             <IndicatorBtns
               key={index}
