@@ -18,7 +18,7 @@ const Carousel = () => {
       {slides.map((item, index) => {
         return (
           <Img
-            $slide={slide === index ? "slide" : "hidden"}
+          aria-hidden={slide !== index}
             src={item.src}
             alt={item.alt}
             key={index}

@@ -10,8 +10,12 @@ export const Img = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  display: ${({ $slide }) => ($slide === "slide" ? "flex" : "none")};
   z-index: 9;
+  display: flex;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
 `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
