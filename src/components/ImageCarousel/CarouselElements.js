@@ -28,9 +28,10 @@ export const LeftArrow = styled(BsArrowLeftCircleFill)`
   opacity: 40%;
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
-transition: all 0.2s ease-in-out;
-  &:hover{
-  opacity: 80%}
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 80%;
+  }
 `;
 
 export const RightArrow = styled(BsArrowRightCircleFill)`
@@ -44,8 +45,9 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
   cursor: pointer;
   filter: drop-shadow(0pc 0px 3px #555);
   transition: all 0.2s ease-in-out;
-  &:hover{
-  opacity: 80%}
+  &:hover {
+    opacity: 80%;
+  }
 `;
 
 export const IndicatorBtnsWrapper = styled.div`
@@ -69,6 +71,12 @@ export const IndicatorBtns = styled.button`
   opacity: 50%;
   filter: drop-shadow(0pc 0px 2px #555);
   transition: all 0.2s ease-in-out;
-  &:hover{
-  opacity: 80%}
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &[aria-label="true"] {
+    opacity: 80%;
+  }
 `;
