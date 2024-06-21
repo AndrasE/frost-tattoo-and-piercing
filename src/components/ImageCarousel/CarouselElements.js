@@ -3,20 +3,25 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
   position: relative;
+  border-radius: 10px;
+  height: 400px;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
 `;
 
-export const Img = styled.img`
-  border-radius: 20px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  display: flex;
+// export const Img = styled.img`
+//   border-radius: 20px;
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 9;
+//   display: flex;
 
-  &[aria-hidden="true"] {
-    display: none;
-  }
-`;
+//   &[aria-hidden="true"] {
+//     display: none;
+//   }
+// `;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
   position: absolute;
