@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { slides } from "./carouselData";
-import { motion } from "framer-motion";
+import { slidesImages } from "./carouselData";
 
 import {
   CarouselWrapper,
@@ -44,13 +43,13 @@ const Carousel = () => {
   const handleNextSlide = () => {
     setDirection("right");
     setSlideIndex((prevIndex) =>
-      prevIndex + 1 === slides.length ? 0 : prevIndex + 1
+      prevIndex + 1 === slidesImages.length ? 0 : prevIndex + 1
     );
   };
   const handlePrevSlide = () => {
     setDirection("left");
     setSlideIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? slides.length - 1 : prevIndex - 1
+      prevIndex - 1 < 0 ? slidesImages.length - 1 : prevIndex - 1
     );
   };
   const handleDotClick = (index) => {
@@ -63,8 +62,8 @@ const Carousel = () => {
       <AnimateFramerMotion>
         <Motion
           key={slideIndex}
-          src={slides[slideIndex].src}
-          alt={slides[slideIndex].alt}
+          src={slidesImages[slideIndex].src}
+          alt={slidesImages[slideIndex].alt}
           initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
           animate="visible"
           exit="exit"
@@ -75,7 +74,7 @@ const Carousel = () => {
       <RightArrow onClick={handleNextSlide} />
 
       <IndicatorBtnsWrapper>
-        {slides.map((_, index) => {
+        {slidesImages.map((_, index) => {
           return (
             <IndicatorBtns
               key={index}
