@@ -14,7 +14,6 @@ import {
   CarouselWrapper,
   GalleryBtnLink,
 } from "./GalleryElements";
-import { Button } from "../ButtonElement";
 import ImageCarousel from "../GalleryImgCarousel";
 
 const Gallery = () => {
@@ -38,7 +37,7 @@ const Gallery = () => {
                 </Content>
                 <BtnWrapper>
                   <GalleryBtnLink
-                    to="signin"
+                    to="gallery"
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
