@@ -6,7 +6,9 @@ export const CarouselWrapper = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-  display: flex;
+  min-height: min-content;
+  max-height: 400px;
+  max-width: 400px;
 `;
 
 export const AnimateFramerMotion = styled(AnimatePresence)`
@@ -15,7 +17,7 @@ export const AnimateFramerMotion = styled(AnimatePresence)`
 
 export const Motion = styled(motion.img)`
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 25px;
 `;
 

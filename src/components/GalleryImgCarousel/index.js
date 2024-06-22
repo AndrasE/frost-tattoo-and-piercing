@@ -59,7 +59,7 @@ const Carousel = () => {
 
   return (
     <CarouselWrapper>
-      <AnimateFramerMotion>
+      <AnimateFramerMotion mode="wait">
         <Motion
           key={slideIndex}
           src={slidesImages[slideIndex].src}
