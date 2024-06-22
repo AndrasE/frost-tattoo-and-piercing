@@ -94,20 +94,27 @@ export const NavBtn = styled.nav`
   }
 `;
 export const NavBtnLink = styled(LinkRoute)`
+  background-image: linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  );
+  background-size: 200% auto;
   border-radius: 50px;
   background-color: #1ebbd7;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 10px 20px;
   color: #000;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2 ease-in-out;
-    background-color: #71c7ec;
+    transition: all 0.3s ease-in-out;
+    background-position: right center;
   }
 `;

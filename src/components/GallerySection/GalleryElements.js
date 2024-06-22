@@ -69,23 +69,39 @@ export const GalleryBtnLink = styled(LinkRoute)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1ebbd7;
+  background-image: linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  );
+  background-size: 200% auto;
+  border-radius: 50px;
   text-decoration: none;
-  padding: 12px 20px;
   font-size: 1rem;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 10px 20px;
   color: #000;
   outline: none;
   border: none;
-  border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-position: right center;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
+  position: relative;
+  left: 3px;
   padding-top: 3px;
-  margin-left: 10px;
+  margin-left: 8px;
   font-size: 24px;
   @media screen and (max-width: 480px) {
     font-size: 18px;
@@ -93,8 +109,10 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
+  position: relative;
+  left: 3px;
   padding-top: 2px;
-  margin-left: 10px;
+  margin-left: 8px;
   font-size: 24px;
 
   @media screen and (max-width: 480px) {
