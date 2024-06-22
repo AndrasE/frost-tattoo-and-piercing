@@ -58,13 +58,21 @@ const Carousel = () => {
       transition: { duration: 0.2 },
     },
   };
-  const nextSlide = () => {
+  const handleNextSlide = () => {
     setDirection("right");
-    setSlideIndex(slideIndex === slideIndex.length - 1 ? 0 : slideIndex + 1);
+    setSlideIndex((prevIndex) =>
+      prevIndex + 1 === slides.length ? 0 : prevIndex + 1
+    );
   };
-  const prevSlide = () => {
+  const handlePrevSlide = () => {
     setDirection("left");
-    setSlideIndex(slideIndex === 0 ? slideIndex.length - 1 : slideIndex - 1);
+    setSlideIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
+  const handleDotClick = (index) => {
+    setDirection(index > slideIndex ? "right" : "left");
+    setSlideIndex(index);
   };
 
   return (
@@ -73,41 +81,16 @@ const Carousel = () => {
         <motion.img
           key={slideIndex}
           src={slides[slideIndex].src}
+          alt={slides[slideIndex].alt}
           initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
           animate="visible"
           exit="exit"
           variants={slideVariants}
-          alt={slides[slideIndex].alt}
         />
-        {/* <div className="slide_direction">
-          <motion.div
-            variants={slidersVariants}
-            whileHover="hover"
-            className="left"
-            onClick={prevSlide}>
-          
-          <LeftArrow onClick={prevSlide} />
-          </motion.div>
-          <motion.div
-            variants={slidersVariants}
-            whileHover="hover"
-            className="right"
-            onClick={nextSlide}></motion.div>
-        </div> */}
-        {/* 
-        {slides.map((item, index) => {
-          return (
-            <Img
-              aria-hidden={slideIndex !== index}
-              src={item.src}
-              alt={item.alt}
-              key={index}
-            />
-          );
-        })} */}
       </AnimatePresence>
-      <LeftArrow onClick={prevSlide} />
-      <RightArrow onClick={nextSlide} />
+      <LeftArrow onClick={handlePrevSlide} />
+      <RightArrow onClick={handleNextSlide} />
+
       {/* <IndicatorBtnsWrapper>
         {slides.map((_, index) => {
           return (
