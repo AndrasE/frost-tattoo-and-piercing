@@ -70,9 +70,9 @@ const Carousel = () => {
           variants={slideVariants}
         />
       </AnimateFramerMotion>
+
       <LeftArrow onClick={handlePrevSlide} />
       <RightArrow onClick={handleNextSlide} />
-
       <IndicatorBtnsWrapper>
         {slidesImages.map((_, index) => {
           return (

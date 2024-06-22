@@ -3,12 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
-  align-items: center;
   position: relative;
-  border-radius: 10px;
-
   margin: auto;
   overflow: hidden;
+  display: flex;
 `;
 
 export const AnimateFramerMotion = styled(AnimatePresence)`
