@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Column2,
   CarouselWrapper,
+  GalleryBtnLink,
 } from "./GalleryElements";
 import { Button } from "../ButtonElement";
 import ImageCarousel from "../GalleryImgCarousel";
@@ -36,14 +37,14 @@ const Gallery = () => {
                   see more head over to Gallery.
                 </Content>
                 <BtnWrapper>
-                  <Button
-                    to="contact"
+                  <GalleryBtnLink
+                    to="signin"
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
                     dark="true">
                     More {hover ? <ArrowForward /> : <ArrowRight />}
-                  </Button>
+                  </GalleryBtnLink>
                 </BtnWrapper>
               </TextWrap>
             </Column1>
