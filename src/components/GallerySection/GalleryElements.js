@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const GalleryContainer = styled.div`
   background: #010606;
@@ -59,6 +60,31 @@ export const Content = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
+  }
+`;
+export const BtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  padding-top: 3px;
+  margin-left: 10px;
+  font-size: 24px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  padding-top: 2px;
+  margin-left: 10px;
+  font-size: 24px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
 `;
 
