@@ -10,7 +10,7 @@ import {
   Column2,
   CarouselWrapper,
 } from "./GalleryElements";
-import ImageCarousel from "../ImageCarousel";
+import ImageCarousel from "../GalleryImgCarousel";
 
 const Gallery = () => {
   return (
