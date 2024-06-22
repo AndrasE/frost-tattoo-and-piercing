@@ -3,10 +3,6 @@ import { Link as LinkRoute } from "react-router-dom";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const GalleryContainer = styled.div`
-  background: #010606;
-`;
-
-export const GalleryrWrapper = styled.div`
   display: grid;
   height: 860px;
   width: 100%;
@@ -73,13 +69,13 @@ export const GalleryBtnLink = styled(LinkRoute)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #01bf71;
+  background-color: #1ebbd7;
   text-decoration: none;
   padding: 12px 20px;
   font-size: 1rem;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #000;
   outline: none;
   border: none;
   border-radius: 50px;

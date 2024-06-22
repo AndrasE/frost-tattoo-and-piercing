@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { slidesImages } from "./carouselData";
 
 import {
-  CarouselWrapper,
+  CarouselContainer,
   AnimateFramerMotion,
   LeftArrow,
   RightArrow,
@@ -58,7 +58,7 @@ const Carousel = () => {
   };
 
   return (
-    <CarouselWrapper>
+    <CarouselContainer>
       <AnimateFramerMotion mode="wait">
         <Motion
           key={slideIndex}
@@ -86,7 +86,7 @@ const Carousel = () => {
           );
         })}
       </IndicatorBtnsWrapper>
-    </CarouselWrapper>
+    </CarouselContainer>
   );
 };
 

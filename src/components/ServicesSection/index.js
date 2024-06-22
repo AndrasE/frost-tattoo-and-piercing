@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ServicesContainer,
-  ServicesrWrapper,
   ServicesRow,
   Column1,
   TextWrap,
@@ -20,32 +19,30 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <ServicesrWrapper>
-          <ServicesRow>
-            <Column1>
-              <TextWrap>
-                <Heading>Services</Heading>
-                <Content>
-                  Our store has opened 8 years ago, myself have 12 years of
-                  experiance. Our store has opened 8 years ago, myself have 12
-                  years of experiance. Our store has opened 8 years ago, myself
-                  nce. Our store has opened 8 years ago, myself.
-                </Content>
-              </TextWrap>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={designImg} alt="designImg" />
+        <ServicesRow>
+          <Column1>
+            <TextWrap>
+              <Heading>Services</Heading>
+              <Content>
+                Our store has opened 8 years ago, myself have 12 years of
+                experiance. Our store has opened 8 years ago, myself have 12
+                years of experiance. Our store has opened 8 years ago, myself
+                nce. Our store has opened 8 years ago, myself.
+              </Content>
+            </TextWrap>
+          </Column1>
+          <Column2>
+            <ImgWrap>
+              <Img src={designImg} alt="designImg" />
 
-                <Img src={tatooingImg} alt="tatooingImg" />
+              <Img src={tatooingImg} alt="tatooingImg" />
 
-                <Img src={piercingImg} alt="piercingImg" />
+              <Img src={piercingImg} alt="piercingImg" />
 
-                <Img src={microdermalImg} alt="microdermalImage" />
-              </ImgWrap>
-            </Column2>
-          </ServicesRow>
-        </ServicesrWrapper>
+              <Img src={microdermalImg} alt="microdermalImage" />
+            </ImgWrap>
+          </Column2>
+        </ServicesRow>
       </ServicesContainer>
     </>
   );

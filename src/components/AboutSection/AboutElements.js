@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: #010606;
-`;
-
-export const AboutrWrapper = styled.div`
   display: grid;
   height: 860px;
   width: 100%;

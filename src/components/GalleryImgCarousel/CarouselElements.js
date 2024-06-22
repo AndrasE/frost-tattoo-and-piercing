@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export const CarouselWrapper = styled.div`
+export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
