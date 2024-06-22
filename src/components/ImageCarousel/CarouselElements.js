@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion, AnimatePresence } from "framer-motion";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const CarouselWrapper = styled.div`
@@ -10,18 +11,15 @@ export const CarouselWrapper = styled.div`
   overflow: hidden;
 `;
 
-// export const Img = styled.img`
-//   border-radius: 20px;
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 9;
-//   display: flex;
+export const AnimateFramerMotion = styled(AnimatePresence)`
+  //just to have all styling including FramerMotion in the CSS file instead of the main component (not necessary)
+`;
 
-//   &[aria-hidden="true"] {
-//     display: none;
-//   }
-// `;
+export const Motion = styled(motion.img)`
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+`;
 
 export const LeftArrow = styled(BsArrowLeftCircleFill)`
   position: absolute;
@@ -36,6 +34,7 @@ export const LeftArrow = styled(BsArrowLeftCircleFill)`
   transition: all 0.2s ease-in-out;
   &:hover {
     opacity: 80%;
+    scale: 1.1;
   }
 `;
 
@@ -52,6 +51,7 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
   transition: all 0.2s ease-in-out;
   &:hover {
     opacity: 80%;
+    scale: 1.1;
   }
 `;
 
@@ -79,8 +79,8 @@ export const IndicatorBtns = styled.button`
 
   &:hover {
     opacity: 80%;
+    scale: 1.1;
   }
-
   &[aria-label="true"] {
     opacity: 80%;
   }

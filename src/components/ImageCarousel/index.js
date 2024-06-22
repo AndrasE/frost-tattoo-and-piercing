@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { slides } from "./carouselData";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+
 import {
   CarouselWrapper,
-  Img,
+  AnimateFramerMotion,
   LeftArrow,
   RightArrow,
   IndicatorBtnsWrapper,
   IndicatorBtns,
+  Motion,
 } from "./CarouselElements";
 
 const Carousel = () => {
@@ -27,37 +29,18 @@ const Carousel = () => {
       x: "0",
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.6,
       },
     },
     exit: {
       opacity: 0,
-      scale: 0.8,
+      scale: 0.9,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
       },
     },
   };
-  const slidersVariants = {
-    hover: {
-      scale: 1.2,
-      backgroundColor: "#ff00008e",
-    },
-  };
-  const dotsVariants = {
-    initial: {
-      y: 0,
-    },
-    animate: {
-      y: -10,
-      scale: 1.2,
-      transition: { type: "spring", stiffness: 1000, damping: "10" },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.2 },
-    },
-  };
+
   const handleNextSlide = () => {
     setDirection("right");
     setSlideIndex((prevIndex) =>
@@ -77,8 +60,8 @@ const Carousel = () => {
 
   return (
     <CarouselWrapper>
-      <AnimatePresence>
-        <motion.img
+      <AnimateFramerMotion>
+        <Motion
           key={slideIndex}
           src={slides[slideIndex].src}
           alt={slides[slideIndex].alt}
@@ -87,23 +70,23 @@ const Carousel = () => {
           exit="exit"
           variants={slideVariants}
         />
-      </AnimatePresence>
+      </AnimateFramerMotion>
       <LeftArrow onClick={handlePrevSlide} />
       <RightArrow onClick={handleNextSlide} />
 
-      {/* <IndicatorBtnsWrapper>
+      <IndicatorBtnsWrapper>
         {slides.map((_, index) => {
           return (
             <IndicatorBtns
               key={index}
               aria-label={slideIndex === index}
               onClick={() => {
-                setSlideIndex(index);
+                handleDotClick(index);
               }}
             />
           );
         })}
-      </IndicatorBtnsWrapper> */}
+      </IndicatorBtnsWrapper>
     </CarouselWrapper>
   );
 };
