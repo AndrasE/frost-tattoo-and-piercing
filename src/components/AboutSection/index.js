@@ -10,7 +10,7 @@ import {
   ImgWrap,
   Img,
 } from "./AboutElements";
-import AboutImage from "../../images/aboutImg.jpg";
+import AboutImage from "../../images/aboutImg/aboutImg.jpg";
 
 const About = () => {
   return (

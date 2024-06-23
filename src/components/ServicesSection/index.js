@@ -10,10 +10,10 @@ import {
   ImgWrap,
   Img,
 } from "./ServicesElements";
-import designImg from "../../images/designImg.jpg";
-import tatooingImg from "../../images/tatooingImg.jpg";
-import piercingImg from "../../images/piercingImg.jpg";
-import microdermalImg from "../../images/microdermalImg.jpg";
+import designImg from "../../images/servicesImgs/design.jpg";
+import tatooingImg from "../../images/servicesImgs/tattoo.jpg";
+import piercingImg from "../../images/servicesImgs/piercing.jpg";
+import microdermalImg from "../../images/servicesImgs/microdermal.jpg";
 
 const Services = () => {
   return (
