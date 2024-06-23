@@ -34,11 +34,8 @@ const Services = () => {
           <Column2>
             <ImgWrap>
               <Img src={designImg} alt="designImg" />
-
               <Img src={tatooingImg} alt="tatooingImg" />
-
               <Img src={piercingImg} alt="piercingImg" />
-
               <Img src={microdermalImg} alt="microdermalImage" />
             </ImgWrap>
           </Column2>
