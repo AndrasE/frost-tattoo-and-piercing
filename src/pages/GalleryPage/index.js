@@ -11,6 +11,7 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-autoplay.css";
+import "../GalleryPage/lightGallery.css";
 
 const Gallery = () => {
   return (
