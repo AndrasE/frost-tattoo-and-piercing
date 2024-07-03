@@ -34,7 +34,12 @@ export const Column1 = styled.div`
 
 export const TextWrap = styled.div`
   margin: auto;
+  padding: 20px;
+  align-content: center;
   max-width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
 
 export const Heading = styled.h1`
@@ -68,11 +73,14 @@ export const ImgWrap = styled.div`
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   max-width: 400px;
+
+  border-radius: 20px;
 `;
 
 export const Img = styled.img`
   max-width: 100%;
   border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
   &:hover {
     transition: all 0.2s ease-in-out;

@@ -6,14 +6,14 @@
 }
 
 body {
-  background-color: #010606;
+  background-color: #16191d;
 }
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #000;
+  background: #101010;
 }
 
 body::-webkit-scrollbar-thumb {

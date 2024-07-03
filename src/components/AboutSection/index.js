@@ -3,7 +3,8 @@ import {
   AboutContainer,
   AboutRow,
   Column1,
-  TextWrap,
+  TextContainer,
+  TextWrapper,
   Heading,
   Content,
   Column2,
@@ -18,16 +19,18 @@ const About = () => {
       <AboutContainer id="about">
         <AboutRow>
           <Column1>
-            <TextWrap>
-              <Heading>About</Heading>
-              <Content>
-                Our store has opened 8 years ago, myself have 12 years of
-                experiance. Our store has opened 8 years ago, myself have 12
-                years of experiance. Our store has opened 8 years ago, myself
-                have 12 years of experiance. Our store has opened 8 years ago,
-                myself.
-              </Content>
-            </TextWrap>
+            <TextContainer>
+              <TextWrapper>
+                <Heading>About</Heading>
+                <Content>
+                  Our store has opened 8 years ago, myself have 12 years of
+                  experiance. Our store has opened 8 years ago, myself have 12
+                  years of experiance. Our store has opened 8 years ago, myself
+                  have 12 years of experiance. Our store has opened 8 years ago,
+                  myself.
+                </Content>
+              </TextWrapper>
+            </TextContainer>
           </Column1>
           <Column2>
             <ImgWrap>

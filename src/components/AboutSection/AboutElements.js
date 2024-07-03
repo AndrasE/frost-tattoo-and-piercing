@@ -32,10 +32,23 @@ export const Column1 = styled.div`
   grid-area: col1;
 `;
 
-export const TextWrap = styled.div`
+export const TextContainer = styled.div`
   margin: auto;
   max-width: 400px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  align-content: center;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #1b1f24;
+  }
 `;
+
+export const TextWrapper = styled.div``;
 
 export const Heading = styled.h1`
   font-size: 2.5rem;
@@ -70,4 +83,5 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   width: 100%;
   border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
