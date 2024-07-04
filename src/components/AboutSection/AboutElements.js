@@ -22,8 +22,9 @@ export const AboutRow = styled.div`
   grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-gap: 0;
+    grid-gap: 30px;
     grid-template-areas: "col1" "col2";
+    align-content: start;
   }
 `;
 
@@ -35,7 +36,7 @@ export const Column1 = styled.div`
 export const TextContainer = styled.div`
   margin: auto;
   max-width: 400px;
-
+  aspect-ratio: 1/1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 20px;

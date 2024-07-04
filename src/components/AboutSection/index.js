@@ -25,8 +25,7 @@ const About = () => {
                 <Content>
                   Our store has opened 8 years ago, myself have 12 years of
                   experiance. Our store has opened 8 years ago, myself have 12
-                  years of experiance. Our store has opened 8 years ago, myself
-                  have 12 years of experiance. Our store has opened 8 years ago,
+               re has opened 8 years ago,
                   myself.
                 </Content>
               </TextWrapper>
