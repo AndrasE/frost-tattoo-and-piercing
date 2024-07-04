@@ -9,6 +9,7 @@ export const CarouselContainer = styled.div`
   min-height: min-content;
   max-height: 400px;
   max-width: 400px;
+  aspect-ratio: 1/1;
 `;
 
 export const AnimateFramerMotion = styled(AnimatePresence)`
