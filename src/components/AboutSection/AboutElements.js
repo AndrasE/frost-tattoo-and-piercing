@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 50px 20px;
+    padding: 80px 20px;
   }
 `;
 
@@ -24,7 +24,7 @@ export const AboutRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-gap: 30px;
     grid-template-areas: "col1" "col2";
-    align-content: start;
+    align-content: center;
   }
 `;
 
