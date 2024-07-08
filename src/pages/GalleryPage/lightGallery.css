@@ -1,5 +1,4 @@
 /* overwriting lightgallery`s original styling without SASS */
-
 .lg-show-in .lg-toolbar,
 .lg-show-in .lg-prev,
 .lg-show-in .lg-next,
@@ -7,10 +6,10 @@
 .lg-thumb-outer,
 .lg-thumb-align-middle,
 .lg-grab {
-  background-color: #010606 !important;
+  background-color: #16191d !important;
 }
 .lg-outer.lg-components-open:not(.lg-zoomed) .lg-sub-html {
-  opacity: 0% !important;
+  display: none !important;
 }
 .lg-outer .lg-thumb-item.active {
   border-color: #1ebbd7;
@@ -23,13 +22,29 @@
 }
 
 .lg-thumb-item {
-  -color: 2px solid #1ebbd7 !important;
+  color: 2px solid #1ebbd7 !important;
 }
 
 .lg-progress-bar {
-  background-color: #010606;
+  background-color: #16191d;
 }
 
 .lg-progress-bar .lg-progress {
   background-color: #1ebbd7;
+}
+
+.lg-react-element {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lg-prev,
+.lg-next {
+  opacity: 50% !important;
+  border-radius: 50px !important;
+}
+.lg-prev:hover,
+.lg-next:hover {
+  opacity: 80% !important;
 }
