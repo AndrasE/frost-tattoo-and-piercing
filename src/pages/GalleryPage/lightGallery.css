@@ -41,10 +41,10 @@
 
 .lg-prev,
 .lg-next {
-  opacity: 50% !important;
   border-radius: 50px !important;
 }
-.lg-prev:hover,
-.lg-next:hover {
-  opacity: 80% !important;
+.img-responsive:hover {
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  scale: 1.007;
 }

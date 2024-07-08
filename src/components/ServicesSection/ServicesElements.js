@@ -81,9 +81,4 @@ export const Img = styled.img`
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    scale: 1.02;
-  }
 `;

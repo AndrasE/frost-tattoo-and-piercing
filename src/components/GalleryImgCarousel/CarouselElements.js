@@ -35,7 +35,7 @@ export const LeftArrow = styled(BsArrowLeftCircleFill)`
   transition: all 0.2s ease-in-out;
   &:hover {
     opacity: 80%;
-    scale: 1.1;
+    scale: 1.05;
   }
 `;
 
@@ -52,7 +52,7 @@ export const RightArrow = styled(BsArrowRightCircleFill)`
   transition: all 0.2s ease-in-out;
   &:hover {
     opacity: 80%;
-    scale: 1.1;
+    scale: 1.05;
   }
 `;
 
@@ -80,7 +80,7 @@ export const IndicatorBtns = styled.button`
 
   &:hover {
     opacity: 80%;
-    scale: 1.1;
+    scale: 1.05;
   }
   &[aria-label="true"] {
     opacity: 80%;
