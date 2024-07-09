@@ -1,24 +1,40 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  margin: 80px auto;
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 80px;
-  justify-content: center;
+  max-width: 1200px;
 
   @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const ImgItemWrapper = styled.div`
+  position: relative;
+  width: 25%;
+  padding: 20px;
+  @media screen and (max-width: 1000px) {
+    width: 33.33%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 460px) {
     width: 100%;
   }
 `;
 
 export const Img = styled.img`
-  margin: 30px 20px;
+  width: 100%;
+  display: block;
+  transition: all 0.8s;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  @media screen and (max-width: 768px) {
-    margin: 15px 15px;
-  }
 `;
