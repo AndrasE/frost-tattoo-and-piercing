@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import GalleryContainer from "./GalleryPageElements";
+import { GalleryContainer } from "./GalleryPageElements";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -18,10 +18,12 @@ const Gallery = () => {
 
   return (
     <>
+      {/* <GalleryContainer> */}
       <PhotoAlbum
+        breakpoints={[300, 600, 1200]}
         layout="masonry"
         photos={slides}
-        targetHeight={180}
+        targetRowHeight={150}
         onClick={({ index: current }) => setIndex(current)}
       />
 
@@ -32,6 +34,7 @@ const Gallery = () => {
         open={index >= 0}
         close={() => setIndex(-1)}
       />
+      {/* </GalleryContainer> */}
     </>
   );
 };

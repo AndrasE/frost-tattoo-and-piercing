@@ -13,23 +13,8 @@ export const GalleryContainer = styled.div`
   }
 `;
 
-// export const ImgItemWrapper = styled.div`
-//   position: relative;
-//   width: 25%;
-//   padding: 20px;
-//   @media screen and (max-width: 1000px) {
-//     width: 33.33%;
-//   }
-//   @media screen and (max-width: 768px) {
-//     width: 50%;
-//   }
-//   @media screen and (max-width: 460px) {
-//     width: 100%;
-//   }
-// `;
-
-// export const Img = styled.img`
-//   transition: all 0.8s;
-//   border-radius: 10px;
-//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-// `;
+export const penis = styled.div`
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+`;
