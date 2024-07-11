@@ -1,8 +1,10 @@
 import React from "react";
 import { GalleryContainer, ImgItemWrapper, Img } from "./GalleryPageElements";
 import LightGallery from "lightgallery/react";
-// import asd2 from "../../images/galleryPageImgs/images/1.jpg";
-import asd from "../../images/galleryPageImgs/thumbnails/1.jpg";
+import asd1 from "../../images/galleryPageImgs/images/1.jpg";
+import asd2 from "../../images/galleryPageImgs/images/2.jpg";
+import asd3 from "../../images/galleryPageImgs/images/3.jpg";
+import asd4 from "../../images/galleryPageImgs/images/4.jpg";
 
 // lightGallery styles
 import "lightgallery/css/lightgallery.css";
@@ -23,70 +25,26 @@ const Gallery = () => {
           plugins={[lgZoom, lgAutoplay, lgThumbnail]}
           mode="lg-fade"
           lgAuto>
-          <ImgItemWrapper>
-            <a className="gallery-item" data-src={asd}>
-              <Img
-                alt="layers of blue."
-                className="img-responsive"
-                src="https://unsplash.it/680/420?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          <ImgItemWrapper>
-            <a
-              className="gallery-item"
-              data-src="https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
-              <Img
-                className="img-responsive"
-                src="https://unsplash.it/740/480?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          <ImgItemWrapper>
-            <a
-              className="gallery-item"
-              data-src="https://images.unsplash.com/photo-1526281216101-e55f00f0db7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
-              <Img
-                className="img-responsive"
-                src="https://unsplash.it/500/680?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          <ImgItemWrapper>
-            <a
-              className="gallery-item"
-              data-src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
-              <Img
-                alt="layers of blue."
-                className="img-responsive"
-                src="https://unsplash.it/680/420?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          <ImgItemWrapper>
-            <a
-              className="gallery-item"
-              data-src="https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
-              <Img
-                className="img-responsive"
-                src="https://unsplash.it/740/480?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          <ImgItemWrapper>
-            <a
-              className="gallery-item"
-              data-src="https://images.unsplash.com/photo-1526281216101-e55f00f0db7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
-              <Img
-                className="img-responsive"
-                src="https://unsplash.it/500/680?random"
-              />
-            </a>
-          </ImgItemWrapper>
-          {/* <a href="img/img2.jpg">
-          <img alt="img2" src="img/thumb2.jpg" />
-        </a>
-        ... */}
+          <a className="gallery-item" href={asd1}>
+            <div>
+              <Img className="img-responsive" alt="img2" src={asd1} />
+            </div>
+          </a>
+          <a className="gallery-item" href={asd2}>
+            <div>
+              <Img className="img-responsive" alt="img2" src={asd2} />
+            </div>
+          </a>
+          <a className="gallery-item" href={asd3}>
+            <div>
+              <Img className="img-responsive" alt="img3" src={asd3} />
+            </div>
+          </a>
+          <a className="gallery-item" href={asd4}>
+            <div>
+              <img className="img-responsive" alt="img2" src={asd4} />
+            </div>
+          </a>
         </LightGallery>
       </GalleryContainer>
     </>

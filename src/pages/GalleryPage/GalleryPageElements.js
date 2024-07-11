@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   height: 100vw;
   margin: 80px auto;
   width: 80%;
@@ -32,8 +29,6 @@ export const ImgItemWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  display: block;
   transition: all 0.8s;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);

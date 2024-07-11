@@ -43,6 +43,9 @@
 .lg-next {
   border-radius: 50px !important;
 }
+.img-responsive {
+}
+
 .img-responsive:hover {
   transition: 0.1s ease-in-out;
   cursor: pointer;
