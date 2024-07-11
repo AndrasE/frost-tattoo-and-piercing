@@ -1,33 +1,36 @@
 import React, { useState } from "react";
+
+import GalleryContainer from "./GalleryPageElements";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { GalleryContainer, Img } from "./GalleryPageElements";
-import asd1 from "../../images/galleryPageImgs/images/1.jpg";
-import asd2 from "../../images/galleryPageImgs/images/2.jpg";
-import asd3 from "../../images/galleryPageImgs/images/3.jpg";
-import asd4 from "../../images/galleryPageImgs/images/4.jpg";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import {
+  Download,
+  Fullscreen,
+  Thumbnails,
+} from "yet-another-react-lightbox/plugins";
+import { slides } from "./slidesdata";
+
+import PhotoAlbum from "react-photo-album";
 
 const Gallery = () => {
-  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
 
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)}>
-        Open Lightbox
-      </button>
+      <PhotoAlbum
+        layout="masonry"
+        photos={slides}
+        targetHeight={180}
+        onClick={({ index: current }) => setIndex(current)}
+      />
 
       <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        slides={[
-          {
-            src: { src: asd1 },
-            alt: "image 1",
-
-            srcSet: [{ src: asd1 }],
-          },
-          // ...
-        ]}
+        plugins={[Download, Fullscreen, Thumbnails]}
+        index={index}
+        slides={slides}
+        open={index >= 0}
+        close={() => setIndex(-1)}
       />
     </>
   );
