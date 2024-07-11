@@ -1,52 +1,34 @@
-import React from "react";
-import { GalleryContainer, ImgItemWrapper, Img } from "./GalleryPageElements";
-import LightGallery from "lightgallery/react";
+import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { GalleryContainer, Img } from "./GalleryPageElements";
 import asd1 from "../../images/galleryPageImgs/images/1.jpg";
 import asd2 from "../../images/galleryPageImgs/images/2.jpg";
 import asd3 from "../../images/galleryPageImgs/images/3.jpg";
 import asd4 from "../../images/galleryPageImgs/images/4.jpg";
 
-// lightGallery styles
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/css/lg-autoplay.css";
-import "../GalleryPage/lightGallery.css";
-// lightGallery plugins
-import lgZoom from "lightgallery/plugins/zoom";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgAutoplay from "lightgallery/plugins/autoplay";
-
 const Gallery = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
-      <GalleryContainer>
-        <LightGallery
-          plugins={[lgZoom, lgAutoplay, lgThumbnail]}
-          mode="lg-fade"
-          lgAuto>
-          <a className="gallery-item" href={asd1}>
-            <div>
-              <Img className="img-responsive" alt="img2" src={asd1} />
-            </div>
-          </a>
-          <a className="gallery-item" href={asd2}>
-            <div>
-              <Img className="img-responsive" alt="img2" src={asd2} />
-            </div>
-          </a>
-          <a className="gallery-item" href={asd3}>
-            <div>
-              <Img className="img-responsive" alt="img3" src={asd3} />
-            </div>
-          </a>
-          <a className="gallery-item" href={asd4}>
-            <div>
-              <img className="img-responsive" alt="img2" src={asd4} />
-            </div>
-          </a>
-        </LightGallery>
-      </GalleryContainer>
+      <button type="button" onClick={() => setOpen(true)}>
+        Open Lightbox
+      </button>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[
+          {
+            src: { src: asd1 },
+            alt: "image 1",
+
+            srcSet: [{ src: asd1 }],
+          },
+          // ...
+        ]}
+      />
     </>
   );
 };
