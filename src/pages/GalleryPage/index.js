@@ -14,13 +14,21 @@ import { PhotoAlbum } from "react-photo-album";
 const Gallery = () => {
   const [index, setIndex] = useState(-1);
 
+  const renderPhoto = ({ imageProps: { alt, style, ...restImageProps } }) => (
+    <img
+      alt={alt}
+      style={{ ...style, width: "100%", borderRadius: 3 }}
+      {...restImageProps}
+    />
+  );
+
   return (
     <>
       <PhotoAlbum
         layout="columns"
         columns={(containerWidth) => {
-          if (containerWidth < 400) return 2;
-          if (containerWidth < 800) return 3;
+          if (containerWidth < 500) return 2;
+          if (containerWidth < 900) return 3;
           return 4;
         }}
         componentsProps={{
@@ -34,6 +42,7 @@ const Gallery = () => {
             },
           },
         }}
+        renderPhoto={renderPhoto}
         photos={photos}
         onClick={({ index: current }) => setIndex(current)}
       />
