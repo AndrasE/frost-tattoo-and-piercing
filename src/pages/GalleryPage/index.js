@@ -17,16 +17,24 @@ const Gallery = () => {
   return (
     <>
       <PhotoAlbum
-        layout="rows"
-        photos={photos}
+        layout="columns"
+        columns={(containerWidth) => {
+          if (containerWidth < 400) return 2;
+          if (containerWidth < 800) return 3;
+          return 4;
+        }}
         componentsProps={{
           containerProps: {
-            style: { marginTop: "80px", maxWidth: 1200, marginInline: "auto" },
+            style: {
+              marginTop: 80,
+              maxWidth: 1200,
+              marginInline: "auto",
+              paddingLeft: 20,
+              paddingRight: 20,
+            },
           },
         }}
-        rowConstraints={(containerWidth) => ({
-          maxPhotos: containerWidth > 600 ? 4 : 2,
-        })}
+        photos={photos}
         onClick={({ index: current }) => setIndex(current)}
       />
 
