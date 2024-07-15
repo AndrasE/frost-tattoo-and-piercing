@@ -5,6 +5,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import {
   Download,
   Fullscreen,
+  Slideshow,
   Thumbnails,
 } from "yet-another-react-lightbox/plugins";
 import { photos } from "./photosdata";
@@ -13,6 +14,7 @@ import { PhotoAlbum } from "react-photo-album";
 
 const Gallery = () => {
   const [index, setIndex] = useState(-1);
+  const [autoplay, setAutoplay] = useState(false);
 
   const renderPhoto = ({ imageProps: { alt, style, ...restImageProps } }) => (
     <img
@@ -48,10 +50,11 @@ const Gallery = () => {
       />
 
       <Lightbox
-        plugins={[Download, Fullscreen, Thumbnails]}
+        plugins={[Download, Fullscreen, Thumbnails, Slideshow]}
         index={index}
         slides={photos}
         open={index >= 0}
+        slideshow={{ autoplay, delay: 2000 }}
         close={() => setIndex(-1)}
       />
     </>
