@@ -1,6 +1,6 @@
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
-export const slides = [
+export const photos = [
   {
     asset: require("../../images/galleryPageImgs/1.jpg"),
     width: 500,
@@ -32,4 +32,4 @@ export const slides = [
   })),
 }));
 
-export default slides;
+export default photos;
