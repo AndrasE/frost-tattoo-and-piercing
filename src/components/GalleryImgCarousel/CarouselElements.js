@@ -10,6 +10,7 @@ export const CarouselContainer = styled.div`
   max-height: 400px;
   max-width: 400px;
   aspect-ratio: 1/1;
+  border-radius: 15px;
 `;
 
 // export const AnimateFramerMotion = styled(AnimatePresence)`
@@ -69,19 +70,14 @@ export const IndicatorBtns = styled.button`
   color: #fff;
   border-radius: 5px;
   width: 20px;
-  height: 5px;
+  height: 4px;
   border: none;
   outline: none;
   margin: 0 3px;
-  cursor: pointer;
+
   opacity: 50%;
   filter: drop-shadow(0pc 0px 2px #555);
   transition: all 0.2s ease-in-out;
-
-  /* &:hover {
-    opacity: 80%;
-    scale: 1.05;
-  } */
   &[aria-label="true"] {
     opacity: 75%;
   }
