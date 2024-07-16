@@ -8,7 +8,7 @@ import {
   Slideshow,
   Thumbnails,
 } from "yet-another-react-lightbox/plugins";
-import { photos } from "./photosdata";
+import { photos } from "./photosData";
 
 import { PhotoAlbum } from "react-photo-album";
 
@@ -37,7 +37,7 @@ const Gallery = () => {
           containerProps: {
             style: {
               marginTop: 80,
-              maxWidth: 1200,
+              maxWidth: 1000,
               marginInline: "auto",
               paddingLeft: 20,
               paddingRight: 20,
