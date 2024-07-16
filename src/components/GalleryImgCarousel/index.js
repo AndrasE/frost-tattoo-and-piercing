@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Inline from "yet-another-react-lightbox/plugins/inline";
-import styles from "./lightbox.css";
+import "yet-another-react-lightbox/styles.css";
+
 import { slidesImages } from "./carouselData";
 
 import {
@@ -21,7 +22,7 @@ const Carousel = () => {
   return (
     <CarouselContainer>
       <Lightbox
-        className={styles.lightbox}
+        styles={{ button: { padding: "0" } }}
         onClick={() => {
           console.log(currentIndex);
         }}

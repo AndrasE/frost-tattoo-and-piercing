@@ -1,0 +1,13 @@
+.yarl__carousel_with_slides,
+.yarl__thumbnails_container,
+.yarl__thumbnails_thumbnail {
+  background-color: #16191d;
+}
+
+.yarl__thumbnails_vignette {
+  display: none;
+}
+
+/* button {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9)) !important;
+} */

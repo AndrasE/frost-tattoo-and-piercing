@@ -35,6 +35,7 @@ export const Icon = styled.div`
 export const SidebarWrapper = styled.div`
   color: #fff;
 `;
+
 export const SidebarMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
