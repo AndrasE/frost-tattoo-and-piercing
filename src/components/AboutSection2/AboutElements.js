@@ -1,7 +1,16 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  /* empty div id attached to it for scroll */
+  display: grid;
+  height: 860px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
 `;
 
 export const TextWrap = styled.div`
