@@ -7,7 +7,8 @@ import About from "../components/AboutSection";
 import Gallery from "../components/GallerySection";
 import Carousel from "../components/GalleryImgCarousel";
 import Section from "../components/SectionComponent";
-import About2 from "../components/AboutSection2";
+import AboutText from "../components/AboutElements/aboutText";
+import AboutImg from "../components/AboutElements/aboutImg";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,12 @@ const Home = () => {
     <>
       <Sidebar $isOpen={$isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-
       <HeroSection />
+      <Section col1={<AboutText />} col2={<AboutImg />} />
+
       <About />
-      <Services />
-      <Gallery />
-      <Section col1={<About2 />} col2={<Carousel />} />
+      {/* <Services />
+      <Gallery /> */}
     </>
   );
 };

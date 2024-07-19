@@ -3,9 +3,10 @@ import {
   Container,
   Row,
   Column1,
-  TextWrap,
+  TextWrapper,
   Column2,
-  ImgWrap,
+  ImgWrapper,
+  Img,
 } from "./SectionElements";
 
 const Section = ({ col1, col2 }) => {
@@ -14,10 +15,10 @@ const Section = ({ col1, col2 }) => {
       <Container id="about">
         <Row>
           <Column1>
-            <TextWrap>{col1}</TextWrap>
+            <TextWrapper>{col1}</TextWrapper>
           </Column1>
           <Column2>
-            <ImgWrap>{col2}</ImgWrap>
+            <ImgWrapper>{col2}</ImgWrapper>
           </Column2>
         </Row>
       </Container>
