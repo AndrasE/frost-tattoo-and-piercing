@@ -1,14 +1,13 @@
 import React from "react";
 import {
-  AboutContainer,
-  AboutRow,
+  Container,
+  Row,
   Column1,
-  TextContainer,
   TextWrapper,
   Heading,
   Content,
   Column2,
-  ImgWrap,
+  ImgWrapper,
   Img,
 } from "./AboutElements";
 import AboutImage from "../../images/aboutImg/aboutImg.jpg";
@@ -16,28 +15,26 @@ import AboutImage from "../../images/aboutImg/aboutImg.jpg";
 const About = () => {
   return (
     <>
-      <AboutContainer id="about">
-        <AboutRow>
+      <Container id="about">
+        <Row>
           <Column1>
-            <TextContainer>
-              <TextWrapper>
-                <Heading>About</Heading>
-                <Content>
-                  Our store has opened 8 years ago, myself have 12 years of
-                  experiance. Our store has opened 8 years ago, myself have 12
-               re has opened 8 years ago,
-                  myself.
-                </Content>
-              </TextWrapper>
-            </TextContainer>
+            <TextWrapper>
+              <Heading>About</Heading>
+              <Content>
+                Our store has opened 8 years ago, myself have 12 years of
+                experiance. Our sasdasdasdasda adasdac adada tore has opened 8
+                years ago, myself hdasdas adasdasdave 12 re has opened 8 years
+                ago, myself.
+              </Content>
+            </TextWrapper>
           </Column1>
           <Column2>
-            <ImgWrap>
+            <ImgWrapper>
               <Img src={AboutImage} alt="aboutImage" />
-            </ImgWrap>
+            </ImgWrapper>
           </Column2>
-        </AboutRow>
-      </AboutContainer>
+        </Row>
+      </Container>
     </>
   );
 };

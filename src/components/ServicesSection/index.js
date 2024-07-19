@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  ServicesContainer,
-  ServicesRow,
+  Container,
+  Row,
   Column1,
-  TextWrap,
+  TextWrapper,
   Heading,
   Content,
   Column2,
-  ImgWrap,
+  ImgWrapper,
   Img,
 } from "./ServicesElements";
 import designImg from "../../images/servicesImgs/design.jpg";
@@ -18,29 +18,28 @@ import microdermalImg from "../../images/servicesImgs/microdermal.jpg";
 const Services = () => {
   return (
     <>
-      <ServicesContainer id="services">
-        <ServicesRow>
+      <Container id="services">
+        <Row>
           <Column1>
-            <TextWrap>
+            <TextWrapper>
               <Heading>Services</Heading>
               <Content>
                 Our store has opened 8 years ago, myself have 12 years of
-                experiance. Our store has opened 8 years ago, myself have 12
-                years of experiance. Our store has opened 8 years ago, myself
-                nce. Our store has opened 8 years ago, myself.
+                experiance. Our store has opened 8 years ago,ned 8 years ago,
+                myself.
               </Content>
-            </TextWrap>
+            </TextWrapper>
           </Column1>
           <Column2>
-            <ImgWrap>
+            <ImgWrapper>
               <Img src={designImg} alt="designImg" />
               <Img src={tatooingImg} alt="tatooingImg" />
               <Img src={piercingImg} alt="piercingImg" />
               <Img src={microdermalImg} alt="microdermalImage" />
-            </ImgWrap>
+            </ImgWrapper>
           </Column2>
-        </ServicesRow>
-      </ServicesContainer>
+        </Row>
+      </Container>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const Container = styled.div`
   display: grid;
   height: 860px;
   width: 100%;
@@ -10,11 +10,12 @@ export const AboutContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 80px 20px;
+    padding: 0 20px;
+    margin-top: 80px;
   }
 `;
 
-export const AboutRow = styled.div`
+export const Row = styled.div`
   display: grid;
   grid-gap: 50px;
   align-items: center;
@@ -33,7 +34,7 @@ export const Column1 = styled.div`
   grid-area: col1;
 `;
 
-export const TextContainer = styled.div`
+export const TextWrapper = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
@@ -48,8 +49,6 @@ export const TextContainer = styled.div`
     background-color: #1b1f24;
   }
 `;
-
-export const TextWrapper = styled.div``;
 
 export const Heading = styled.h1`
   font-size: 2.5rem;
@@ -77,7 +76,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
-export const ImgWrap = styled.div`
+export const ImgWrapper = styled.div`
   max-width: 400px;
 `;
 

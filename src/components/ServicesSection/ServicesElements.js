@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const Container = styled.div`
   display: grid;
   height: 860px;
   width: 100%;
@@ -10,11 +10,12 @@ export const ServicesContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 50px 20px;
+    padding: 0 20px;
+    margin-top: 80px;
   }
 `;
 
-export const ServicesRow = styled.div`
+export const Row = styled.div`
   display: grid;
   grid-gap: 50px;
   align-items: center;
@@ -22,8 +23,9 @@ export const ServicesRow = styled.div`
   grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-gap: 0;
+    grid-gap: 30px;
     grid-template-areas: "col2" "col1";
+    align-content: center;
   }
 `;
 
@@ -32,14 +34,20 @@ export const Column1 = styled.div`
   grid-area: col2;
 `;
 
-export const TextWrap = styled.div`
+export const TextWrapper = styled.div`
   margin: auto;
-  padding: 20px;
-  align-content: center;
   max-width: 400px;
-  height: 400px;
-  border-radius: 20px;
+  aspect-ratio: 1/1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  align-content: center;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #1b1f24;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -68,12 +76,11 @@ export const Column2 = styled.div`
   grid-area: col1;
 `;
 
-export const ImgWrap = styled.div`
+export const ImgWrapper = styled.div`
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   max-width: 400px;
-
   border-radius: 20px;
 `;
 
