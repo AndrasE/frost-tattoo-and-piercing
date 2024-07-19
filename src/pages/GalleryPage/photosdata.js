@@ -3,8 +3,8 @@ const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 export const photos = [
   {
     asset: require("../../images/galleryPageImgs/1.jpg"),
-    width: 500,
-    height: 800,
+    width: 400,
+    height: 400,
   },
   {
     asset: require("../../images/galleryPageImgs/2.jpg"),
