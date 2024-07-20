@@ -87,6 +87,7 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 export const NavBtn = styled.nav`
+  margin: 18px;
   display: flex;
   align-items: center;
 

@@ -4,15 +4,14 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
+  NavName,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const PagesNavbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -20,25 +19,16 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/">Frost</NavLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="services">Services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="gallery">Gallery</NavLinks>
+              <NavName to="gallery">Gallery</NavName>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="signin">Contact</NavBtnLink>
+            <NavBtnLink to="/">Home</NavBtnLink>
           </NavBtn>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
         </NavbarContainer>
       </Nav>
     </>
   );
 };
 
-export default Navbar;
+export default PagesNavbar;

@@ -4,13 +4,17 @@
   background-color: #16191d;
 }
 
+.react-photo-album {
+  padding-top: 55px;
+}
+
 .yarl__thumbnails_vignette {
   display: none;
 }
 
 img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 95%;
+  opacity: 97%;
 
   &:hover {
     transition: all 0.12s ease-in-out;

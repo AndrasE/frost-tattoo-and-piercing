@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import PagesNavbar from "../../components/PagesNavbar";
+import { PhotoAlbum } from "react-photo-album";
+import { photos } from "./photosData";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -9,9 +12,6 @@ import {
   Slideshow,
   Thumbnails,
 } from "yet-another-react-lightbox/plugins";
-import { photos } from "./photosData";
-
-import { PhotoAlbum } from "react-photo-album";
 
 const GalleryPage = () => {
   const [index, setIndex] = useState(-1);
@@ -27,6 +27,7 @@ const GalleryPage = () => {
 
   return (
     <>
+      <PagesNavbar />
       <PhotoAlbum
         layout="columns"
         columns={(containerWidth) => {
