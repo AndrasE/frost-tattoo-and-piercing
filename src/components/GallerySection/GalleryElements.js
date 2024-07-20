@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
-export const GalleryContainer = styled.div`
+export const Container = styled.div`
   display: grid;
   height: 860px;
   width: 100%;
@@ -12,11 +12,12 @@ export const GalleryContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 50px 20px;
+    padding: 0 20px;
+    margin-top: 80px;
   }
 `;
 
-export const GalleryRow = styled.div`
+export const Row = styled.div`
   display: grid;
   grid-gap: 50px;
   align-items: center;
@@ -24,8 +25,9 @@ export const GalleryRow = styled.div`
   grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-gap: 0;
+    grid-gap: 30px;
     grid-template-areas: "col1" "col2";
+    align-content: center;
   }
 `;
 
@@ -34,9 +36,20 @@ export const Column1 = styled.div`
   grid-area: col1;
 `;
 
-export const TextWrap = styled.div`
+export const TextWrapper = styled.div`
   margin: auto;
   max-width: 400px;
+  aspect-ratio: 1/1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  align-content: center;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #1b1f24;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -59,13 +72,15 @@ export const Content = styled.p`
     font-size: 0.9rem;
   }
 `;
+
 export const BtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
-  justify-content: flex-start;
+  padding-right: 25px;
+  justify-content: flex-end;
 `;
 
-export const GalleryBtnLink = styled(LinkRoute)`
+export const BtnLink = styled(LinkRoute)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,4 +143,7 @@ export const Column2 = styled.div`
 export const CarouselWrapper = styled.div`
   max-width: 400px;
   max-height: 400px;
+
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;

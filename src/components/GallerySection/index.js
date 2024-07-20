@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {
-  GalleryContainer,
-  GalleryRow,
+  Container,
+  Row,
   Column1,
-  TextWrap,
+  TextWrapper,
   Heading,
   Content,
   BtnWrapper,
@@ -11,7 +11,7 @@ import {
   ArrowRight,
   Column2,
   CarouselWrapper,
-  GalleryBtnLink,
+  BtnLink,
 } from "./GalleryElements";
 import Carousel from "./Carousel";
 
@@ -24,34 +24,34 @@ const Gallery = () => {
 
   return (
     <>
-      <GalleryContainer id="gallery">
-        <GalleryRow>
+      <Container id="gallery">
+        <Row>
           <Column1>
-            <TextWrap>
+            <TextWrapper>
               <Heading>Gallery</Heading>
               <Content>
                 Feel free to check out some of my work. If you would like to see
                 more head over to Gallery.
               </Content>
               <BtnWrapper>
-                <GalleryBtnLink
+                <BtnLink
                   to="gallery"
                   onMouseEnter={onHover}
                   onMouseLeave={onHover}
                   primary="true"
                   dark="true">
                   More {hover ? <ArrowForward /> : <ArrowRight />}
-                </GalleryBtnLink>
+                </BtnLink>
               </BtnWrapper>
-            </TextWrap>
+            </TextWrapper>
           </Column1>
           <Column2>
             <CarouselWrapper>
               <Carousel />
             </CarouselWrapper>
           </Column2>
-        </GalleryRow>
-      </GalleryContainer>
+        </Row>
+      </Container>
     </>
   );
 };
