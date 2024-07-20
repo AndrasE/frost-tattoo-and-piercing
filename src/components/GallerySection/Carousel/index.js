@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Inline from "yet-another-react-lightbox/plugins/inline";
-import "yet-another-react-lightbox/styles.css";
-
 import { slidesImages } from "./carouselData";
+import "yet-another-react-lightbox/styles.css";
 
 import {
   CarouselContainer,

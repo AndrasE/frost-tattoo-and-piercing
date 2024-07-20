@@ -13,7 +13,7 @@ import {
   CarouselWrapper,
   GalleryBtnLink,
 } from "./GalleryElements";
-import ImageCarousel from "../GalleryImgCarousel";
+import Carousel from "./Carousel";
 
 const Gallery = () => {
   const [hover, setHover] = useState(false);
@@ -47,7 +47,7 @@ const Gallery = () => {
           </Column1>
           <Column2>
             <CarouselWrapper>
-              <ImageCarousel />
+              <Carousel />
             </CarouselWrapper>
           </Column2>
         </GalleryRow>
