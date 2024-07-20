@@ -6,8 +6,8 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrapper,
-  SidebarRoute,
+  SideBtn,
+  SidebarBtnLink,
 } from "./SidebarElements";
 
 const Sidebar = ({ $isOpen, toggle }) => {
@@ -25,14 +25,14 @@ const Sidebar = ({ $isOpen, toggle }) => {
             Services
           </SidebarLink>
           <SidebarLink to="gallery" onClick={toggle}>
-            Gellery
+            Gallery
           </SidebarLink>
+          <SideBtn>
+            <SidebarBtnLink to="/signin" onClick={toggle}>
+              Contact
+            </SidebarBtnLink>
+          </SideBtn>
         </SidebarMenu>
-        <SideBtnWrapper>
-          <SidebarRoute to="/signin" onClick={toggle}>
-            Sign In
-          </SidebarRoute>
-        </SideBtnWrapper>
       </SidebarWrapper>
     </SidebarContainer>
   );

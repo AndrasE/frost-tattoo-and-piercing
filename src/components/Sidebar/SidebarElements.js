@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 
@@ -7,8 +6,9 @@ export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100%;
-  background-color: #0d0d0d;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #16191d;
   display: grid;
   align-items: center;
   top: 0;
@@ -20,6 +20,13 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+  opacity: 90%;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 100%;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const Icon = styled.div`
@@ -50,37 +57,50 @@ export const SidebarLink = styled(LinkScroll)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
+  opacity: 90%;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: #1ebbd7;
+    opacity: 100%;
     transition: 0.2s ease-in-out;
   }
 `;
-export const SideBtnWrapper = styled.div`
+export const SideBtn = styled.div`
+  margin-top: 80px;
   display: flex;
+  align-items: center;
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkRoute)`
+export const SidebarBtnLink = styled(LinkScroll)`
+  background-image: linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  );
+  background-size: 200% auto;
   border-radius: 50px;
-  border-start-end-radius: 50px;
-  background-color: #01bf71;
+  background-color: #1ebbd7;
   white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
+  padding: 10px 20px;
+  color: #000;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
+    transition: all 0.3s ease-in-out;
+    background-position: right center;
   }
 `;

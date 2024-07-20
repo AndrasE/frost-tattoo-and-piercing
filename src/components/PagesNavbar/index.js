@@ -30,7 +30,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="signin">Sign-in</NavBtnLink>
+            <NavBtnLink to="signin">Contact</NavBtnLink>
           </NavBtn>
           <MobileIcon onClick={toggle}>
             <FaBars />

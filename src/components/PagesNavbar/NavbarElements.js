@@ -94,7 +94,7 @@ export const NavBtn = styled.nav`
     display: none;
   }
 `;
-export const NavBtnLink = styled(LinkRoute)`
+export const NavBtnLink = styled(LinkScroll)`
   background-image: linear-gradient(
     to right,
     #1ebbd7 0%,
@@ -107,7 +107,7 @@ export const NavBtnLink = styled(LinkRoute)`
   white-space: nowrap;
   padding: 10px 20px;
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
   outline: none;
   border: none;
   cursor: pointer;

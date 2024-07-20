@@ -13,7 +13,7 @@ import { photos } from "./photosData";
 
 import { PhotoAlbum } from "react-photo-album";
 
-const Gallery = () => {
+const GalleryPage = () => {
   const [index, setIndex] = useState(-1);
   const [autoplay, setAutoplay] = useState(false);
 
@@ -63,4 +63,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryPage;
