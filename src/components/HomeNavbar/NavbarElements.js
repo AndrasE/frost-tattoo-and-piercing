@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkRoute)`
+export const NavLogoWrapper = styled(LinkRoute)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -39,6 +39,11 @@ export const NavLogo = styled(LinkRoute)`
   align-items: center;
   margin: 24px;
   text-decoration: none;
+`;
+
+export const NavLogo = styled.img`
+  width: 35px;
+  margin-right: 5px;
 `;
 
 export const MobileIcon = styled.div`

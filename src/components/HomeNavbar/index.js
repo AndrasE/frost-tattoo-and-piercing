@@ -1,8 +1,10 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import Logo from "../../images/logo.png";
 import {
   Nav,
   NavbarContainer,
+  NavLogoWrapper,
   NavLogo,
   MobileIcon,
   NavMenu,
@@ -17,7 +19,10 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Frost</NavLogo>
+          <NavLogoWrapper to="/">
+            <NavLogo src={Logo}></NavLogo>
+            Frost
+          </NavLogoWrapper>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>

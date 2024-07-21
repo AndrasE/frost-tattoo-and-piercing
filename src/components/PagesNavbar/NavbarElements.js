@@ -25,18 +25,20 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogoWrapper = styled(LinkRoute)`
   color: #fff;
   justify-self: flex-start;
+  cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin: 24px;
   text-decoration: none;
+`;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+export const NavLogo = styled.img`
+  width: 35px;
+  margin-right: 5px;
 `;
 
 export const NavMenu = styled.ul`
