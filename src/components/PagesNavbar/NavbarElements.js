@@ -12,7 +12,6 @@ export const Nav = styled.nav`
   position: sticky;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
   top: 0;
-
   z-index: 10;
 `;
 
@@ -23,7 +22,6 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-
   max-width: 1100px;
 `;
 
@@ -35,6 +33,10 @@ export const NavLogo = styled.div`
   align-items: center;
   margin: 24px;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavMenu = styled.ul`
