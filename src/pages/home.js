@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import Services from "../components/ServicesSection";
 import About from "../components/AboutSection";
 import Gallery from "../components/GallerySection";
+import Testimonials from "../components/TestimonialSection";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
       <About />
       <Services />
       <Gallery />
+      <Testimonials />
     </>
   );
 };

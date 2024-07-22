@@ -32,8 +32,12 @@ export const NavLogoWrapper = styled(LinkRoute)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin: 24px 24px 24px 23px;
+  margin: 24px;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavLogo = styled.img`
