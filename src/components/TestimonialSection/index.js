@@ -8,9 +8,8 @@ import {
   Content,
   Column2,
   ImgWrapper,
-  Img,
 } from "./TestimonialsElements";
-import AboutImage from "../../images/aboutImg/aboutImg.jpg";
+import TestimonialCarousel from "./Carousel";
 
 const Testimonials = () => {
   return (
@@ -21,16 +20,13 @@ const Testimonials = () => {
             <TextWrapper>
               <Heading>Testimonials</Heading>
               <Content>
-                Our store has opened 8 years ago, myself have 12 years of
-                experiance. Our sasdasdasdasda adasdac adada tore has opened 8
-                years ago, myself hdasdas adasdasdave 12 re has opened 8 years
-                ago, myself.
+                Swipe through some on the reviews left on Google and Facebook.
               </Content>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrapper>
-              <Img src={AboutImage} alt="aboutImage" />
+              <TestimonialCarousel />
             </ImgWrapper>
           </Column2>
         </Row>
