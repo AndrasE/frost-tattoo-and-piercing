@@ -76,12 +76,9 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
-export const ImgWrapper = styled.div`
+export const CarouselWrapper = styled.div`
   max-width: 400px;
-`;
-
-export const Img = styled.img`
-  width: 100%;
+  max-height: 400px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;

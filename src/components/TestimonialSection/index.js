@@ -7,7 +7,7 @@ import {
   Heading,
   Content,
   Column2,
-  ImgWrapper,
+  CarouselWrapper,
 } from "./TestimonialsElements";
 import TestimonialCarousel from "./Carousel";
 
@@ -25,9 +25,9 @@ const Testimonials = () => {
             </TextWrapper>
           </Column1>
           <Column2>
-            <ImgWrapper>
+            <CarouselWrapper>
               <TestimonialCarousel />
-            </ImgWrapper>
+            </CarouselWrapper>
           </Column2>
         </Row>
       </Container>

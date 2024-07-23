@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { testimonialsData } from "./carouselData";
 
 import {
-  CarouselWrapper,
+  CarouselContainer,
   Card,
   CardHeader,
+  ImgWrapper,
   Img,
   HeaderText,
   CardRating,
   CardContent,
+  Hr,
+  QuoteTop,
+  QuoteButtom,
 } from "./CarouselElements";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -18,24 +22,27 @@ const TestimonialCarousel = () => {
   const [direction, setDirection] = useState(null);
 
   return (
-    <CarouselWrapper>
+    <CarouselContainer>
       <Carousel
         showArrows={true}
         infiniteLoop={true}
         showThumbs={false}
-        showStatus={false}
-        autoPlay={false}
-        interval={6100}>
+        showStatus={false}>
         {testimonialsData.map((item, index) => {
           return (
-            <Card>
+            <Card key={item.index}>
+              <QuoteTop />
               <CardHeader>
-                <Img src={item.src} alt={item.alt} key={item.index} />
+                <ImgWrapper>
+                  <Img src={item.src} alt={item.alt} />
+                </ImgWrapper>
                 <HeaderText>{item.name}</HeaderText>
               </CardHeader>
-
+              <Hr />
               <CardContent>{item.review}</CardContent>
+              <Hr />
               <CardRating>{item.rating}</CardRating>
+              <QuoteButtom />
             </Card>
           );
         })}
@@ -50,7 +57,7 @@ const TestimonialCarousel = () => {
           );
         })}
       </IndicatorBtnsWrapper> */}
-    </CarouselWrapper>
+    </CarouselContainer>
   );
 };
 
