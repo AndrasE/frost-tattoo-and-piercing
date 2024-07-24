@@ -60,7 +60,6 @@ export const Heading = styled.h1`
 `;
 
 export const Content = styled.p`
-  max-width: 440px;
   font-size: 1rem;
   text-align: justify;
   line-height: 26px;

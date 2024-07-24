@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { testimonialsData } from "./carouselData";
 
 import {
@@ -24,7 +24,7 @@ const TestimonialCarousel = () => {
       <Splide>
         {testimonialsData.map((item, index) => {
           return (
-            <SplideSlide>
+            <SplideSlide key={index}>
               <Card>
                 <QuoteTop />
                 <CardHeader>
@@ -34,9 +34,7 @@ const TestimonialCarousel = () => {
                   <HeaderText>{item.name}</HeaderText>
                 </CardHeader>
                 <Hr />
-
                 <CardContent>{item.review}</CardContent>
-
                 <Hr />
                 <CardRating>{item.rating}</CardRating>
                 <QuoteButtom />

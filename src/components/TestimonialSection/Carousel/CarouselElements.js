@@ -4,22 +4,26 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
-  overflow: none;
-  min-height: max-content;
-  max-height: 400px;
-  max-width: 400px;
+  overflow: hidden;
+  min-height: min-content;
+  width: 100%;
   aspect-ratio: 1/1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+
   justify-content: center;
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  margin: auto;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+
+  border-radius: 20px;
+  padding: 24px;
   align-items: center;
   justify-content: center;
 `;
@@ -45,6 +49,7 @@ export const QuoteButtom = styled(RiDoubleQuotesL)`
 
 export const CardHeader = styled.div`
   display: flex;
+  height: auto;
   align-items: center;
   flex-direction: row;
   margin-bottom: 5px;
@@ -81,6 +86,10 @@ export const CardContent = styled.div`
   font-size: 1rem;
   line-height: 26px;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const CardRating = styled.div`
