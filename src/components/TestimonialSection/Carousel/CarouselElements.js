@@ -1,21 +1,25 @@
 import styled from "styled-components";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
-  overflow: hidden;
-  min-height: min-content;
+  overflow: none;
+  min-height: max-content;
   max-height: 400px;
   max-width: 400px;
   aspect-ratio: 1/1;
-  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px;
   align-items: center;
   justify-content: center;
 `;
@@ -47,7 +51,6 @@ export const CardHeader = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  width: 55px;
   border-radius: 100px;
   border: 2px solid #1ebbd7;
 `;
@@ -73,11 +76,10 @@ export const Hr = styled.hr`
 `;
 
 export const CardContent = styled.div`
+  text-align: center;
   color: #fff;
   font-size: 1rem;
   line-height: 26px;
-  padding-left: 15px;
-  padding-right: 15px;
   cursor: pointer;
 `;
 
