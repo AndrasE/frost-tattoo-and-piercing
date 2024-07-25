@@ -22,9 +22,6 @@ const Carousel = () => {
     <CarouselContainer>
       <Lightbox
         styles={{ button: { padding: "0" } }}
-        onClick={() => {
-          console.log(currentIndex);
-        }}
         index={currentIndex}
         slides={slidesImages}
         plugins={[Inline]}
