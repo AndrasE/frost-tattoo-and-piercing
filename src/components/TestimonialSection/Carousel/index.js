@@ -22,7 +22,10 @@ import "@splidejs/splide/css";
 const TestimonialCarousel = () => {
   return (
     <CarouselContainer>
-      <Splide>
+      <Splide
+        options={{
+          rewind: true,
+        }}>
         {testimonialsData.map((item, index) => {
           return (
             <SplideSlide key={index}>
