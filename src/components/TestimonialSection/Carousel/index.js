@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { testimonialsData } from "./carouselData";
-import { Lightbox, useLightboxState } from "yet-another-react-lightbox";
-import Inline from "yet-another-react-lightbox/plugins/inline";
+
 import {
   CarouselContainer,
   Card,
@@ -16,47 +15,16 @@ import {
   QuoteButtom,
 } from "./CarouselElements";
 
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-import Testical from "./test";
 
 const TestimonialCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [indicatorBtnIndex, setIndicatorBtnIndex] = useState(0);
-
-  const updateIndex = ({ index: current }) => {
-    setCurrentIndex(current);
-    setIndicatorBtnIndex(current);
-  };
-
-  //  const slides= [
-  //    {testimonialsData.map((item, index) => {
-  //   return (
-
-  //       <Card>
-  //         <QuoteTop />
-  //         <CardHeader>
-  //           <ImgWrapper>
-  //             <Img src={item.src} alt={item.alt} />
-  //           </ImgWrapper>
-  //           <HeaderText>{item.name}</HeaderText>
-  //         </CardHeader>
-  //         <Hr />
-  //         <CardContent>{item.review}</CardContent>
-  //         <Hr />
-  //         <CardRating>{item.rating}</CardRating>
-  //         <QuoteButtom />
-  //       </Card>
-
-  //   );
-  // })}
-
-  // }
-
   return (
     <CarouselContainer>
-      {/*
+      <Splide>
         {testimonialsData.map((item, index) => {
           return (
+            <SplideSlide key={index}>
               <Card>
                 <QuoteTop />
                 <CardHeader>
@@ -71,22 +39,10 @@ const TestimonialCarousel = () => {
                 <CardRating>{item.rating}</CardRating>
                 <QuoteButtom />
               </Card>
+            </SplideSlide>
           );
         })}
-  */}
-
-      <Lightbox
-        render={{
-          slideFooter: () => <Testical />,
-        }}
-      />
-
-      {/* <button
-        onClick={() => {
-          console.log(testimonialsData);
-        }}>
-        asd
-      </button> */}
+      </Splide>
     </CarouselContainer>
   );
 };
