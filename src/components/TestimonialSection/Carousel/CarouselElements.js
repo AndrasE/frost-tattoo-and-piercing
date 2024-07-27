@@ -11,7 +11,6 @@ export const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   justify-content: center;
 `;
 
@@ -96,30 +95,4 @@ export const CardRating = styled.div`
   color: #fff;
   font-size: 1rem;
   line-height: 26px;
-`;
-
-export const IndicatorBtnsWrapper = styled.div`
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  bottom: 5px;
-  margin: auto;
-`;
-
-export const IndicatorBtns = styled.button`
-  color: #fff;
-  border-radius: 5px;
-  width: 15px;
-  height: 4px;
-  border: none;
-  outline: none;
-  margin: 0 3px;
-
-  opacity: 50%;
-  filter: drop-shadow(0pc 0px 2px #555);
-  transition: all 0.2s ease-in-out;
-  &[aria-label="true"] {
-    opacity: 80%;
-  }
 `;

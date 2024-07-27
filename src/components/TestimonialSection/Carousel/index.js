@@ -1,7 +1,7 @@
 import React from "react";
-import { testimonialsData } from "./carouselData";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/css";
 import styles from "./splideCssOverwrite.css";
-
 import {
   CarouselContainer,
   Card,
@@ -15,14 +15,13 @@ import {
   CardRating,
   QuoteButtom,
 } from "./CarouselElements";
-
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/css";
+import { testimonialsData } from "./carouselData";
 
 const TestimonialCarousel = () => {
   return (
     <CarouselContainer>
       <Splide
+        styles={styles}
         options={{
           rewind: true,
         }}>

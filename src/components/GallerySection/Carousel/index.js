@@ -1,59 +1,26 @@
-import React, { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
-import Inline from "yet-another-react-lightbox/plugins/inline";
+import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/css";
+import styles from "../Carousel/splideCssOverwrite.css";
+import { CarouselContainer, Img } from "./CarouselElements";
 import { slidesImages } from "./carouselData";
-import "yet-another-react-lightbox/styles.css";
-
-import {
-  CarouselContainer,
-  IndicatorBtnsWrapper,
-  IndicatorBtns,
-} from "./CarouselElements";
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [indicatorBtnIndex, setIndicatorBtnIndex] = useState(0);
-  const updateIndex = ({ index: current }) => {
-    setCurrentIndex(current);
-    setIndicatorBtnIndex(current);
-  };
-
   return (
     <CarouselContainer>
-      <Lightbox
-        styles={{ button: { padding: "0" } }}
-        onClick={() => {
-          console.log(currentIndex);
-        }}
-        index={currentIndex}
-        slides={slidesImages}
-        plugins={[Inline]}
-        on={{
-          view: updateIndex,
-        }}
-        carousel={{
-          padding: 0,
-          spacing: 0,
-          imageFit: "cover",
-        }}
-        inline={{
-          style: {
-            maxWidth: "400px",
-            aspectRatio: "1 / 1",
-            margin: "0 auto",
-          },
-        }}
-      />
-      <IndicatorBtnsWrapper>
-        {slidesImages.map((_, index) => {
+      <Splide
+        styles={styles}
+        options={{
+          rewind: true,
+        }}>
+        {slidesImages.map((item, index) => {
           return (
-            <IndicatorBtns
-              key={index}
-              aria-label={index === indicatorBtnIndex}
-            />
+            <SplideSlide key={index}>
+              <Img src={item.src} alt={item.alt} />
+            </SplideSlide>
           );
         })}
-      </IndicatorBtnsWrapper>
+      </Splide>
     </CarouselContainer>
   );
 };
