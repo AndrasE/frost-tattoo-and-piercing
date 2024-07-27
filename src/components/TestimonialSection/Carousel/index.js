@@ -1,5 +1,6 @@
 import React from "react";
 import { testimonialsData } from "./carouselData";
+import styles from "./splideCssOverwrite.css";
 
 import {
   CarouselContainer,

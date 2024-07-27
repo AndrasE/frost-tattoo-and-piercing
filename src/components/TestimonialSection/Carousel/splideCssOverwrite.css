@@ -1,0 +1,12 @@
+.splide__arrow--next {
+  right: 5px !important;
+}
+.splide__arrow--prev {
+  left: 5px !important;
+}
+.splide__arrow {
+  background: none !important;
+}
+.splide__arrow svg {
+  fill: white !important;
+}

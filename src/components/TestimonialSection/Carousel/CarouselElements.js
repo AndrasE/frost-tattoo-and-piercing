@@ -98,40 +98,6 @@ export const CardRating = styled.div`
   line-height: 26px;
 `;
 
-// export const LeftArrow = styled(BsArrowLeftCircleFill)`
-//   position: absolute;
-//   inset: 0;
-//   margin: auto auto auto 5px;
-//   width: 25px;
-//   height: 25px;
-//   color: #fff;
-//   opacity: 40%;
-//   cursor: pointer;
-//   filter: drop-shadow(0pc 0px 3px #555);
-//   transition: all 0.2s ease-in-out;
-//   &:hover {
-//     opacity: 80%;
-//     scale: 1.1;
-//   }
-// `;
-
-// export const RightArrow = styled(BsArrowRightCircleFill)`
-//   position: absolute;
-//   inset: 0;
-//   margin: auto 5px auto auto;
-//   width: 25px;
-//   height: 25px;
-//   color: #fff;
-//   opacity: 40%;
-//   cursor: pointer;
-//   filter: drop-shadow(0pc 0px 3px #555);
-//   transition: all 0.2s ease-in-out;
-//   &:hover {
-//     opacity: 80%;
-//     scale: 1.1;
-//   }
-// `;
-
 export const IndicatorBtnsWrapper = styled.div`
   position: absolute;
   display: flex;
