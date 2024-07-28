@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaFacebookF } from "react-icons/fa6";
-import { FaGoogle } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 export const Container = styled.div`
   display: grid;
@@ -90,15 +90,74 @@ export const TextWrapperCol2 = styled.div`
 `;
 
 export const LinkWrapper = styled.div`
-  display: flex;
-  align-items: center;
+  position: relative;
+  margin: 10px 0;
 `;
 
 export const Link = styled.a`
+  display: flex;
+  align-items: center;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 218px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #1ebbd7;
+    bottom: 4px;
+    left: 35px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      width: 198px;
+    }
+  }
+`;
+
+export const FacebookLink = styled(Link)`
+  &::after {
+    width: 218px;
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      width: 198px;
+    }
+  }
 `;
 
 export const FacebookIcon = styled(FaFacebookF)`
+  height: 30px;
+  width: 30px;
+  color: #1ebbd7;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid white;
+`;
+
+export const EmailLink = styled(Link)`
+  &::after {
+    width: 193px !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      width: 174px;
+    }
+  }
+`;
+
+export const EmailIcon = styled(MdOutlineEmail)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
@@ -112,7 +171,6 @@ export const LinkText = styled.div`
   margin-left: 5px;
   line-height: 26px;
   color: #fff;
-  transition: 0.9s ease-in-out;
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;

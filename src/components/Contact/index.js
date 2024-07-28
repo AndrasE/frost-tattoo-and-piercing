@@ -9,10 +9,14 @@ import {
   Column2,
   TextWrapperCol2,
   FacebookIcon,
-  Link,
+  FacebookLink,
   LinkWrapper,
   LinkText,
+  EmailLink,
+  EmailIcon,
 } from "./ContactElements";
+
+import env from "react-dotenv";
 
 const Contact = () => {
   return (
@@ -30,14 +34,22 @@ const Contact = () => {
           </Column1>
           <Column2>
             <TextWrapperCol2>
-              <Link
-                href="https://www.facebook.com/frosttattoocegled"
-                target="_blank">
-                <LinkWrapper>
+              <LinkWrapper>
+                <FacebookLink
+                  href={process.env.REACT_APP_FACEBOOK_URL}
+                  target="_blank">
                   <FacebookIcon />
                   <LinkText>facebook/frosttattoocegled</LinkText>
-                </LinkWrapper>
-              </Link>
+                </FacebookLink>
+              </LinkWrapper>
+              <LinkWrapper>
+                <EmailLink
+                  href={process.env.REACT_APP_MAILTO_URL}
+                  target="_blank">
+                  <EmailIcon />
+                  <LinkText>{process.env.REACT_APP_EMAIL_URL}</LinkText>
+                </EmailLink>
+              </LinkWrapper>
             </TextWrapperCol2>
           </Column2>
         </Row>
