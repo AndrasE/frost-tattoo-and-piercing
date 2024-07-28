@@ -46,7 +46,12 @@ export const QuoteButtom = styled(RiDoubleQuotesL)`
   opacity: 60%;
 `;
 
+export const ReviewLink = styled.a`
+  text-decoration: none;
+`;
+
 export const CardHeader = styled.div`
+  cursor: pointer;
   display: flex;
   height: auto;
   align-items: center;
@@ -72,7 +77,7 @@ export const HeaderText = styled.h2`
 export const Hr = styled.hr`
   color: #1ebbd7;
   border-top: 2px solid;
-  border-radius: 50px;
+  border-radius: 25px;
   width: 50px;
   border-bottom: none;
   margin: 15px;
@@ -84,7 +89,6 @@ export const CardContent = styled.div`
   color: #fff;
   font-size: 1rem;
   line-height: 26px;
-  cursor: pointer;
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;

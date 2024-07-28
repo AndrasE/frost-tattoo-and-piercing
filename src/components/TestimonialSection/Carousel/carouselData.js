@@ -1,20 +1,20 @@
 export const testimonialsData = [
   {
+    link: "https://g.co/kgs/pVxRGH8",
     src: require("../../../images/testimonialsImgs/1.png"),
-    alt: "testimonialImg1",
+    alt: "testimonialImg",
     name: "Dia",
-    rating: "⭐⭐⭐⭐⭐",
     review:
       "Nagyon szép es precíz munka ,barátságos környezet ,kiváló szakemberrel ... Kell ennél több ???😀",
-    date: "4 years ago",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
+    link: "https://g.co/kgs/pVxRGH8",
     src: require("../../../images/testimonialsImgs/1.png"),
-    alt: "testimonialImg1",
+    alt: "testimonialImg",
     name: "Dia",
-    rating: "⭐⭐⭐⭐⭐",
     review:
       "Nagyon szép es precíz munka ,barátságos környezet ,kiváló szakemberrel ... Kell ennél több ???😀",
-    date: "4 years ago",
+    rating: "⭐⭐⭐⭐⭐",
   },
 ];
