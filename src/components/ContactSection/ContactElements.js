@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { FaFacebookF } from "react-icons/fa6";
 import { FiFacebook } from "react-icons/fi";
-
 import { MdOutlineEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
+import { IoLocationOutline } from "react-icons/io5";
 
 export const Container = styled.div`
   display: grid;
@@ -127,15 +126,14 @@ export const Link = styled.a`
   }
 `;
 
-export const FacebookLink = styled(Link)`
-  &::after {
-    width: 218px;
-  }
+export const LinkText = styled.div`
+  font-size: 1rem;
+  margin-left: 5px;
+  line-height: 26px;
+  color: #fff;
 
   @media screen and (max-width: 480px) {
-    &::after {
-      width: 198px;
-    }
+    font-size: 0.9rem;
   }
 `;
 
@@ -148,14 +146,14 @@ export const FacebookIcon = styled(FiFacebook)`
   border: 1px solid white;
 `;
 
-export const EmailLink = styled(Link)`
+export const FacebookLink = styled(Link)`
   &::after {
-    width: 193px !important;
+    width: 217.7px;
   }
 
   @media screen and (max-width: 480px) {
     &::after {
-      width: 174px;
+      width: 195.9px;
     }
   }
 `;
@@ -169,14 +167,15 @@ export const EmailIcon = styled(MdOutlineEmail)`
   border: 1px solid white;
 `;
 
-export const LinkText = styled.div`
-  font-size: 1rem;
-  margin-left: 5px;
-  line-height: 26px;
-  color: #fff;
+export const EmailLink = styled(Link)`
+  &::after {
+    width: 191.9px;
+  }
 
   @media screen and (max-width: 480px) {
-    font-size: 0.9rem;
+    &::after {
+      width: 172.7px;
+    }
   }
 `;
 
@@ -184,7 +183,40 @@ export const PhoneIcon = styled(BsTelephone)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
-  padding: 4px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid white;
+`;
+
+export const PhoneLink = styled(Link)`
+  &::after {
+    width: 117.1px;
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      width: 105.4px;
+    }
+  }
+`;
+
+export const LocationIcon = styled(IoLocationOutline)`
+  height: 30px;
+  width: 30px;
+  color: #1ebbd7;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid white;
+`;
+
+export const LocationLink = styled(Link)`
+  &::after {
+    width: 187.7px;
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      width: 168.9px;
+    }
+  }
 `;

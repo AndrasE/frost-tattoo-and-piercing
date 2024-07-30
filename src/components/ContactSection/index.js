@@ -15,6 +15,9 @@ import {
   EmailLink,
   EmailIcon,
   PhoneIcon,
+  PhoneLink,
+  LocationLink,
+  LocationIcon,
 } from "./ContactElements";
 
 import env from "react-dotenv";
@@ -44,18 +47,24 @@ const Contact = () => {
                 </FacebookLink>
               </LinkWrapper>
               <LinkWrapper>
-                <EmailLink
-                  href={process.env.REACT_APP_MAILTO_URL}
-                  target="_blank">
+                <EmailLink href={process.env.REACT_APP_MAILTO_URL}>
                   <EmailIcon />
                   <LinkText>{process.env.REACT_APP_EMAIL_URL}</LinkText>
                 </EmailLink>
               </LinkWrapper>
               <LinkWrapper>
-                <EmailLink href={process.env.REACT_APP_TEL_URL} target="_blank">
+                <PhoneLink href={process.env.REACT_APP_TEL_URL} target="_blank">
                   <PhoneIcon />
                   <LinkText>{process.env.REACT_APP_TEL}</LinkText>
-                </EmailLink>
+                </PhoneLink>
+              </LinkWrapper>
+              <LinkWrapper>
+                <LocationLink
+                  href={process.env.REACT_APP_LOCATION_URL}
+                  target="_blank">
+                  <LocationIcon />
+                  <LinkText>{process.env.REACT_APP_LOCATION}</LinkText>
+                </LocationLink>
               </LinkWrapper>
             </TextWrapperCol2>
           </Column2>
