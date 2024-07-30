@@ -16,11 +16,9 @@ import {
   EmailIcon,
   PhoneIcon,
   PhoneLink,
-  LocationLink,
-  LocationIcon,
+  IFrame,
+  IframeWrapper,
 } from "./ContactElements";
-
-import env from "react-dotenv";
 
 const Contact = () => {
   return (
@@ -58,14 +56,17 @@ const Contact = () => {
                   <LinkText>{process.env.REACT_APP_TEL}</LinkText>
                 </PhoneLink>
               </LinkWrapper>
-              <LinkWrapper>
-                <LocationLink
-                  href={process.env.REACT_APP_LOCATION_URL}
-                  target="_blank">
-                  <LocationIcon />
-                  <LinkText>{process.env.REACT_APP_LOCATION}</LinkText>
-                </LocationLink>
-              </LinkWrapper>
+              <IframeWrapper>
+                <IFrame
+                  title="Responsive Google Map"
+                  src={process.env.REACT_APP_GOOGLEMAP}
+                  allowFullScreen
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </IframeWrapper>
             </TextWrapperCol2>
           </Column2>
         </Row>

@@ -93,7 +93,7 @@ export const TextWrapperCol2 = styled.div`
 
 export const LinkWrapper = styled.div`
   position: relative;
-  margin: 10px 0;
+  margin: 8px 0;
 `;
 
 export const Link = styled.a`
@@ -200,23 +200,16 @@ export const PhoneLink = styled(Link)`
   }
 `;
 
-export const LocationIcon = styled(IoLocationOutline)`
-  height: 30px;
-  width: 30px;
-  color: #1ebbd7;
-  padding: 3px;
-  border-radius: 5px;
-  border: 1px solid white;
+export const IframeWrapper = styled.div`
+  margin-top: 35px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 9px;
 `;
 
-export const LocationLink = styled(Link)`
-  &::after {
-    width: 187.7px;
-  }
-
-  @media screen and (max-width: 480px) {
-    &::after {
-      width: 168.9px;
-    }
-  }
+export const IFrame = styled.iframe`
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
 `;

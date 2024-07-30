@@ -5,8 +5,7 @@ export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-  min-height: min-content;
-  width: 100%;
+
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
@@ -20,9 +19,7 @@ export const Card = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
-
-  border-radius: 20px;
-  padding: 24px;
+  padding: 0 24px;
   align-items: center;
   justify-content: center;
 `;
@@ -56,7 +53,7 @@ export const CardHeader = styled.div`
   height: auto;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 5px;
+  padding: 5px;
 `;
 
 export const ImgWrapper = styled.div`
@@ -71,7 +68,6 @@ export const Img = styled.img`
 export const HeaderText = styled.h2`
   color: #fff;
   font-size: 1.5rem;
-  margin-left: 5px;
 `;
 
 export const Hr = styled.hr`
@@ -80,7 +76,6 @@ export const Hr = styled.hr`
   border-radius: 25px;
   width: 50px;
   border-bottom: none;
-  margin: 15px;
   opacity: 80%;
 `;
 
@@ -98,5 +93,4 @@ export const CardContent = styled.div`
 export const CardRating = styled.div`
   color: #fff;
   font-size: 1rem;
-  line-height: 26px;
 `;
