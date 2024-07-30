@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { FaFacebookF } from "react-icons/fa6";
+import { FiFacebook } from "react-icons/fi";
+
 import { MdOutlineEmail } from "react-icons/md";
+import { BsTelephone } from "react-icons/bs";
 
 export const Container = styled.div`
   display: grid;
@@ -106,7 +109,7 @@ export const Link = styled.a`
     height: 2px;
     border-radius: 4px;
     background-color: #1ebbd7;
-    bottom: 4px;
+    bottom: 2px;
     left: 35px;
     transform-origin: right;
     transform: scaleX(0);
@@ -136,11 +139,11 @@ export const FacebookLink = styled(Link)`
   }
 `;
 
-export const FacebookIcon = styled(FaFacebookF)`
+export const FacebookIcon = styled(FiFacebook)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
-  padding: 3px;
+  padding: 0 4px 0 3px;
   border-radius: 5px;
   border: 1px solid white;
 `;
@@ -175,4 +178,13 @@ export const LinkText = styled.div`
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
   }
+`;
+
+export const PhoneIcon = styled(BsTelephone)`
+  height: 30px;
+  width: 30px;
+  color: #1ebbd7;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid white;
 `;
