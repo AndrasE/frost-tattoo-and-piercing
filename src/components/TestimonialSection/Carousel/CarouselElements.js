@@ -5,12 +5,6 @@ export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-
-  aspect-ratio: 1/1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const Card = styled.div`
@@ -62,15 +56,17 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  height: auto;
+  height: 45px;
 `;
 
 export const HeaderText = styled.h2`
   color: #fff;
   font-size: 1.5rem;
+  margin-left: 8px;
 `;
 
 export const Hr = styled.hr`
+  margin: 15px 0;
   color: #1ebbd7;
   border-top: 2px solid;
   border-radius: 25px;

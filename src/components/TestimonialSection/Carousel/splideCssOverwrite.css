@@ -1,8 +1,8 @@
 .splide__arrow--next {
-  /* right: 0 !important; */
+  right: 0 !important;
 }
 .splide__arrow--prev {
-  /* left: 0 !important; */
+  left: 0 !important;
 }
 .splide__arrow {
   background: none !important;
