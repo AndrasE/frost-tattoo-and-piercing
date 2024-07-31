@@ -211,7 +211,7 @@ export const IframeWrapper = styled.div`
   @media screen and (max-width: 870px) {
     aspect-ratio: 16/8;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     aspect-ratio: 16/9;
   }
 `;
