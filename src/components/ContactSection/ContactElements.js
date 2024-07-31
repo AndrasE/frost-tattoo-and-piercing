@@ -64,7 +64,6 @@ export const Heading = styled.h1`
 `;
 
 export const Content = styled.p`
-  max-width: 440px;
   font-size: 1rem;
   text-align: justify;
   line-height: 26px;
@@ -80,7 +79,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
-export const TextWrapperCol2 = styled.div`
+export const ContentContainer = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
@@ -89,6 +88,10 @@ export const TextWrapperCol2 = styled.div`
   padding: 20px;
   transition: 0.3s ease-in-out;
   align-content: center;
+`;
+
+export const LinksContainer = styled.div`
+  margin-bottom: 18px;
 `;
 
 export const LinkWrapper = styled.div`
@@ -201,10 +204,16 @@ export const PhoneLink = styled(Link)`
 `;
 
 export const IframeWrapper = styled.div`
-  margin-top: 35px;
   aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: 9px;
+
+  @media screen and (max-width: 870px) {
+    aspect-ratio: 16/8;
+  }
+  @media screen and (max-width: 480px) {
+    aspect-ratio: 16/9;
+  }
 `;
 
 export const IFrame = styled.iframe`

@@ -7,9 +7,10 @@ import {
   Heading,
   Content,
   Column2,
-  TextWrapperCol2,
+  ContentContainer,
   FacebookIcon,
   FacebookLink,
+  LinksContainer,
   LinkWrapper,
   LinkText,
   EmailLink,
@@ -35,39 +36,41 @@ const Contact = () => {
             </TextWrapperCol1>
           </Column1>
           <Column2>
-            <TextWrapperCol2>
-              <LinkWrapper>
-                <FacebookLink
-                  href={process.env.REACT_APP_FACEBOOK_URL}
-                  target="_blank">
-                  <FacebookIcon />
-                  <LinkText>facebook/frosttattoocegled</LinkText>
-                </FacebookLink>
-              </LinkWrapper>
-              <LinkWrapper>
-                <EmailLink href={process.env.REACT_APP_MAILTO_URL}>
-                  <EmailIcon />
-                  <LinkText>{process.env.REACT_APP_EMAIL_URL}</LinkText>
-                </EmailLink>
-              </LinkWrapper>
-              <LinkWrapper>
-                <PhoneLink href={process.env.REACT_APP_TEL_URL} target="_blank">
-                  <PhoneIcon />
-                  <LinkText>{process.env.REACT_APP_TEL}</LinkText>
-                </PhoneLink>
-              </LinkWrapper>
+            <ContentContainer>
+              <LinksContainer>
+                <LinkWrapper>
+                  <FacebookLink
+                    href={process.env.REACT_APP_FACEBOOK_URL}
+                    target="_blank">
+                    <FacebookIcon />
+                    <LinkText>facebook/frosttattoocegled</LinkText>
+                  </FacebookLink>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <EmailLink href={process.env.REACT_APP_MAILTO_URL}>
+                    <EmailIcon />
+                    <LinkText>{process.env.REACT_APP_EMAIL_URL}</LinkText>
+                  </EmailLink>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <PhoneLink
+                    href={process.env.REACT_APP_TEL_URL}
+                    target="_blank">
+                    <PhoneIcon />
+                    <LinkText>{process.env.REACT_APP_TEL}</LinkText>
+                  </PhoneLink>
+                </LinkWrapper>
+              </LinksContainer>
               <IframeWrapper>
                 <IFrame
                   title="Responsive Google Map"
                   src={process.env.REACT_APP_GOOGLEMAP}
                   allowFullScreen
                   loading="lazy"
-                  width="400"
-                  height="300"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </IframeWrapper>
-            </TextWrapperCol2>
+            </ContentContainer>
           </Column2>
         </Row>
       </Container>
