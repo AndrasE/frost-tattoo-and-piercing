@@ -2,16 +2,14 @@ import styled from "styled-components";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const CarouselContainer = styled.div`
-  position: relative;
-  margin: auto;
-  overflow: hidden;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
-  max-width: 400px;
+
   aspect-ratio: 1/1;
   padding: 0 24px;
   align-items: center;
