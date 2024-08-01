@@ -3,13 +3,8 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const CarouselContainer = styled.div`
   position: relative;
-  margin: auto;
-  overflow: hidden;
-  min-height: min-content;
   max-height: 400px;
   max-width: 400px;
-  aspect-ratio: 1/1;
-  border-radius: 15px;
 `;
 
 export const Card = styled.div`
@@ -45,7 +40,7 @@ export const ReviewLink = styled.a`
   text-decoration: none;
 `;
 
-export const CardHeader = styled.div`
+export const CardHeader = styled.h1`
   cursor: pointer;
   display: flex;
   height: auto;
@@ -60,6 +55,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
+  border-radius: 100px;
   height: 45px;
 `;
 
@@ -79,7 +75,7 @@ export const Hr = styled.hr`
   opacity: 80%;
 `;
 
-export const CardContent = styled.div`
+export const CardContent = styled.p`
   text-align: center;
   color: #fff;
   font-size: 1rem;
@@ -90,7 +86,7 @@ export const CardContent = styled.div`
   }
 `;
 
-export const CardRating = styled.div`
+export const CardRating = styled.p`
   color: #fff;
   font-size: 1rem;
 `;
