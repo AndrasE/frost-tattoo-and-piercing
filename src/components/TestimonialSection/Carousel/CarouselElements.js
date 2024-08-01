@@ -10,7 +10,18 @@ export const CarouselContainer = styled.div`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  aspect-ratio: 1/1;
+  padding: 0 24px;
 
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Asd = styled.div`
+  padding: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   aspect-ratio: 1/1;
   padding: 0 24px;
   align-items: center;
