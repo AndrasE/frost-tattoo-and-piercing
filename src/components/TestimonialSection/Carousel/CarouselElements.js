@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const CarouselContainer = styled.div`
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  min-height: min-content;
+  max-height: 400px;
+  max-width: 400px;
   aspect-ratio: 1/1;
   border-radius: 15px;
 `;
