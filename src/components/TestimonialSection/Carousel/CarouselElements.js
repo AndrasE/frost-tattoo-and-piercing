@@ -5,7 +5,7 @@ export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-  min-height: 321px;
+
   max-height: 400px;
   max-width: 400px;
   aspect-ratio: 1/1;
@@ -80,7 +80,7 @@ export const HeaderText = styled.h2`
 `;
 
 export const Hr = styled.hr`
-  margin: 15px 0;
+  margin: 12px 0;
   color: #1ebbd7;
   border-top: 2px solid;
   border-radius: 25px;

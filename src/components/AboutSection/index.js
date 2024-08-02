@@ -21,10 +21,9 @@ const About = () => {
             <TextWrapper>
               <Heading>About</Heading>
               <Content>
-                Our store has opened 8 years ago, myself have 12 years of
-                experiance. Our sasdasdasdasda adasdac adada tore has opened 8
-                years ago, myself hdasdas adasdasdave 12 re has opened 8 years
-                ago, myself.
+                Our store has opened 8 years ago, myself have 12 years of years
+                ago, myself hdasdas adasdasdave 12 re has opened 8 years ago,
+                myself.
               </Content>
             </TextWrapper>
           </Column1>

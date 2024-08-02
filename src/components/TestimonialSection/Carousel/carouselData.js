@@ -14,7 +14,7 @@ export const testimonialsData = [
     alt: "testimonialImg",
     name: "Helga",
     review:
-      "Thank you very much, professionalism, patience and kindness, these are the experiences. I will definitely come back again.",
+      "Thank you very much, professionalism, patience and kindness. I will definitely come back again.",
     rating: "⭐⭐⭐⭐⭐",
   },
   {

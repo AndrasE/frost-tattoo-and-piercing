@@ -30,11 +30,13 @@ export const Row = styled.div`
 `;
 
 export const Column1 = styled.div`
+  min-width: 253px;
   align-items: center;
   grid-area: col1;
 `;
 
 export const TextWrapper = styled.div`
+  min-height: 253px;
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
