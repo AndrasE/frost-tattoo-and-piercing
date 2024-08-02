@@ -60,6 +60,7 @@ export const Heading = styled.h1`
 `;
 
 export const Content = styled.p`
+  max-width: 440px;
   font-size: 1rem;
   text-align: justify;
   line-height: 26px;
@@ -77,6 +78,8 @@ export const Column2 = styled.div`
 
 export const CarouselWrapper = styled.div`
   max-width: 400px;
+  width: 100%;
+  aspect-ratio: 1/1;
   max-height: 400px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);

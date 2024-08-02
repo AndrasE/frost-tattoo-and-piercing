@@ -3,16 +3,19 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const CarouselContainer = styled.div`
   position: relative;
+  margin: auto;
+  overflow: hidden;
+  min-height: 321px;
   max-height: 400px;
   max-width: 400px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
 `;
 
 export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
   aspect-ratio: 1/1;
-  padding: 0 24px;
-
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
 `;
@@ -89,6 +92,7 @@ export const Hr = styled.hr`
 export const CardContent = styled.p`
   text-align: center;
   color: #fff;
+
   font-size: 1rem;
   line-height: 26px;
 

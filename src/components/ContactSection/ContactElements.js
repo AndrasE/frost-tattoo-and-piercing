@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { FiFacebook } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
-import { IoLocationOutline } from "react-icons/io5";
 
 export const Container = styled.div`
   display: grid;
