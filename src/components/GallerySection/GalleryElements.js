@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
-import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
+import {
+  MdKeyboardArrowRight,
+  MdKeyboardDoubleArrowRight,
+} from "react-icons/md";
 
 export const Container = styled.div`
   display: grid;
@@ -95,7 +98,7 @@ export const BtnLink = styled(LinkRoute)`
   text-decoration: none;
   font-size: 1rem;
   white-space: nowrap;
-  padding: 10px 20px;
+  padding: 10px 17px;
   color: #000;
   outline: none;
   border: none;
@@ -114,7 +117,7 @@ export const BtnLink = styled(LinkRoute)`
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   position: relative;
-  left: 3px;
+  left: 1px;
   padding-top: 3px;
   margin-left: 10px;
   font-size: 24px;
@@ -123,9 +126,9 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   }
 `;
 
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`
   position: relative;
-  left: 1px;
+  left: 3px;
   padding-top: 2px;
   margin-left: 10px;
   font-size: 24px;

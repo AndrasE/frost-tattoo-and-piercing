@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
+import { MdKeyboardArrowLeft, MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 export const Nav = styled.nav`
   background: #16191d;
@@ -65,13 +66,23 @@ export const NavName = styled.div`
   height: 100%;
 `;
 
+export const NavBtnWrapper = styled.div`
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const NavBtn = styled.nav`
   margin: 18px;
-  display: flex;
+
   align-items: center;
+  justify-content: center;
 `;
 
 export const NavBtnLink = styled(LinkRoute)`
+  position: relative;
+  padding-left: 55px;
   background-image: linear-gradient(
     to right,
     #1ebbd7 0%,
@@ -82,7 +93,7 @@ export const NavBtnLink = styled(LinkRoute)`
   border-radius: 50px;
   background-color: #1ebbd7;
   white-space: nowrap;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 38px;
   color: #000;
   font-size: 1rem;
   outline: none;
@@ -94,5 +105,28 @@ export const NavBtnLink = styled(LinkRoute)`
   &:hover {
     transition: all 0.3s ease-in-out;
     background-position: right center;
+  }
+`;
+
+export const ArrowLeft = styled(MdKeyboardArrowLeft)`
+  position: absolute;
+  left: 1px;
+  padding-bottom: 3px;
+  margin-left: 8px;
+  font-size: 24px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+export const ArrowLeftDouble = styled(MdKeyboardDoubleArrowLeft)`
+  position: absolute;
+  left: 0px;
+  padding-bottom: 3px;
+  margin-left: 8px;
+  font-size: 24px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
 `;

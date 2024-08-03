@@ -7,8 +7,8 @@ import {
   Heading,
   Content,
   BtnWrapper,
-  ArrowForward,
   ArrowRight,
+  ArrowRightDouble,
   Column2,
   CarouselWrapper,
   BtnLink,
@@ -37,10 +37,8 @@ const Gallery = () => {
                 <BtnLink
                   to="gallery"
                   onMouseEnter={onHover}
-                  onMouseLeave={onHover}
-                  primary="true"
-                  dark="true">
-                  More {hover ? <ArrowForward /> : <ArrowRight />}
+                  onMouseLeave={onHover}>
+                  More {hover ? <ArrowRightDouble /> : <ArrowRight />}
                 </BtnLink>
               </BtnWrapper>
             </TextWrapper>

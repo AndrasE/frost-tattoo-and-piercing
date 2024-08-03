@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../images/logo.png";
 import {
   Nav,
@@ -10,9 +10,20 @@ import {
   NavName,
   NavBtn,
   NavBtnLink,
+  NavBtnWrapper,
+  ArrowForward,
+  ArrowRight,
+  ArrowLeftDouble,
+  ArrowLeft,
 } from "./NavbarElements";
 
 const PagesNavbar = ({ toggle }) => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
   return (
     <>
       <Nav>
@@ -26,9 +37,11 @@ const PagesNavbar = ({ toggle }) => {
               <NavName to="gallery">Gallery</NavName>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/">Home</NavBtnLink>
-          </NavBtn>
+          <NavBtnWrapper>
+            <NavBtnLink to="/" onMouseEnter={onHover} onMouseLeave={onHover}>
+              {hover ? <ArrowLeftDouble /> : <ArrowLeft />} Home
+            </NavBtnLink>
+          </NavBtnWrapper>
         </NavbarContainer>
       </Nav>
     </>
