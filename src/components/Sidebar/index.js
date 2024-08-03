@@ -9,6 +9,7 @@ import {
   SideBtn,
   SidebarBtnLink,
 } from "./SidebarElements";
+import { animateScroll as scroll } from "react-scroll";
 
 const Sidebar = ({ $isOpen, toggle }) => {
   return (
@@ -18,17 +19,55 @@ const Sidebar = ({ $isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-30}
+            onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
+          <SidebarLink
+            to="services"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-30}
+            onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to="gallery" onClick={toggle}>
+          <SidebarLink
+            to="gallery"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-30}
+            onClick={toggle}>
             Gallery
           </SidebarLink>
+          <SidebarLink
+            to="testimonials"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-30}
+            onClick={toggle}>
+            Testimonials
+          </SidebarLink>
           <SideBtn>
-            <SidebarBtnLink to="/signin" onClick={toggle}>
+            <SidebarBtnLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-30}
+              onClick={toggle}>
               Contact
             </SidebarBtnLink>
           </SideBtn>

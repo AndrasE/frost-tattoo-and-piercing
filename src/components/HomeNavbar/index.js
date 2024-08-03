@@ -44,20 +44,60 @@ const Navbar = ({ toggle }) => {
           </NavLogoWrapper>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={true}
+                offset={-80}>
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={true}
+                offset={-80}>
+                Services
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="gallery">Gallery</NavLinks>
+              <NavLinks
+                to="gallery"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={true}
+                offset={-80}>
+                Gallery
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="testimonials">Testimonials</NavLinks>
+              <NavLinks
+                to="testimonials"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={true}
+                offset={-80}>
+                Testimonials
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="contact">Contact</NavBtnLink>
+            <NavBtnLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-80}>
+              Contact
+            </NavBtnLink>
           </NavBtn>
           <MobileIcon onClick={toggle}>
             <FaBars />
