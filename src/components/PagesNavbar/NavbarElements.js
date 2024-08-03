@@ -55,6 +55,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  cursor: pointer;
 `;
 
 export const NavName = styled.div`

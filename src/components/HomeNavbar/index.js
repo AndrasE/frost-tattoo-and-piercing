@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Logo from "../../images/logo.png";
 import {
@@ -13,13 +13,32 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogoWrapper to="/">
+          <NavLogoWrapper to="/" onClick={toggleHome}>
             <NavLogo src={Logo}></NavLogo>
             Frost
           </NavLogoWrapper>

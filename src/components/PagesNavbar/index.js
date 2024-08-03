@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../images/logo.png";
 import {
   Nav,
@@ -8,33 +8,37 @@ import {
   NavMenu,
   NavItem,
   NavName,
-  NavBtn,
   NavBtnLink,
   NavBtnWrapper,
-  ArrowForward,
-  ArrowRight,
   ArrowLeftDouble,
   ArrowLeft,
 } from "./NavbarElements";
+import { animateScroll as scroll } from "react-scroll";
 
-const PagesNavbar = ({ toggle }) => {
+const PagesNavbar = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
   };
 
+  const toggleToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogoWrapper to="/">
+          <NavLogoWrapper onClick={toggleToTop}>
             <NavLogo src={Logo}></NavLogo>
             Frost
           </NavLogoWrapper>
           <NavMenu>
             <NavItem>
-              <NavName to="gallery">Gallery</NavName>
+              <NavName to="gallery" onClick={toggleToTop}>
+                Gallery
+              </NavName>
             </NavItem>
           </NavMenu>
           <NavBtnWrapper>

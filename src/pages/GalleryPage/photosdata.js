@@ -21,6 +21,66 @@ export const photos = [
     width: 408,
     height: 376,
   },
+  {
+    asset: require("../../images/galleryPageImgs/1.jpg"),
+    width: 400,
+    height: 400,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/2.jpg"),
+    width: 564,
+    height: 471,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/3.jpg"),
+    width: 739,
+    height: 835,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/4.jpg"),
+    width: 408,
+    height: 376,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/1.jpg"),
+    width: 400,
+    height: 400,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/2.jpg"),
+    width: 564,
+    height: 471,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/3.jpg"),
+    width: 739,
+    height: 835,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/4.jpg"),
+    width: 408,
+    height: 376,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/1.jpg"),
+    width: 400,
+    height: 400,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/2.jpg"),
+    width: 564,
+    height: 471,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/3.jpg"),
+    width: 739,
+    height: 835,
+  },
+  {
+    asset: require("../../images/galleryPageImgs/4.jpg"),
+    width: 408,
+    height: 376,
+  },
 ].map(({ asset, width, height }) => ({
   src: asset,
   width,
