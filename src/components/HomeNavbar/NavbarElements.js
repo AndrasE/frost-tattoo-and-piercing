@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   top: 0;
   z-index: 10;
 
@@ -86,12 +86,9 @@ export const NavLinks = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
 
-  &:hover {
+  &.active {
     border-bottom: 2px solid #1ebbd7;
-  }
-
-  &:active {
-    border-bottom: 3px solid #1ebbd7;
+    padding-top: 2px;
   }
 `;
 

@@ -9,7 +9,6 @@ import {
   SideBtn,
   SidebarBtnLink,
 } from "./SidebarElements";
-import { animateScroll as scroll } from "react-scroll";
 
 const Sidebar = ({ $isOpen, toggle }) => {
   return (
@@ -24,8 +23,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
-            offset={-30}
+            offset={-80}
             onClick={toggle}>
             About
           </SidebarLink>
@@ -34,8 +32,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
-            offset={-30}
+            offset={-80}
             onClick={toggle}>
             Services
           </SidebarLink>
@@ -44,8 +41,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
-            offset={-30}
+            offset={-80}
             onClick={toggle}>
             Gallery
           </SidebarLink>
@@ -54,8 +50,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
-            offset={-30}
+            offset={-80}
             onClick={toggle}>
             Testimonials
           </SidebarLink>
@@ -65,8 +60,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
-              offset={-30}
+              offset={-80}
               onClick={toggle}>
               Contact
             </SidebarBtnLink>

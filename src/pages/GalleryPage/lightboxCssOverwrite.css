@@ -13,7 +13,7 @@
 }
 
 .react-photo-album--column img {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   opacity: 97%;
 
   &:hover {

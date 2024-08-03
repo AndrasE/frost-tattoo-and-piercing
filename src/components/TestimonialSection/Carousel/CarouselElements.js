@@ -54,7 +54,7 @@ export const ReviewLink = styled.a`
   text-decoration: none;
 `;
 
-export const CardHeader = styled.h1`
+export const CardHeader = styled.div`
   cursor: pointer;
   display: flex;
   height: auto;

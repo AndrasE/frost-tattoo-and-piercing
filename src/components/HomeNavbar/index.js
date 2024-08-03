@@ -49,7 +49,6 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
                 offset={-80}>
                 About
               </NavLinks>
@@ -60,7 +59,6 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
                 offset={-80}>
                 Services
               </NavLinks>
@@ -71,7 +69,6 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
                 offset={-80}>
                 Gallery
               </NavLinks>
@@ -82,7 +79,6 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
                 offset={-80}>
                 Testimonials
               </NavLinks>
@@ -94,7 +90,6 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
               offset={-80}>
               Contact
             </NavBtnLink>
