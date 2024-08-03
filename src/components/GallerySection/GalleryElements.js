@@ -7,7 +7,7 @@ import {
 
 export const Container = styled.div`
   display: grid;
-  height: 860px;
+  min-height: 100vh;
   width: 100%;
   margin-right: auto;
   margin-left: auto;

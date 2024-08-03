@@ -49,7 +49,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-80}>
+                offset={-60}>
                 About
               </NavLinks>
             </NavItem>
@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-80}>
+                offset={-60}>
                 Services
               </NavLinks>
             </NavItem>
@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-80}>
+                offset={-60}>
                 Gallery
               </NavLinks>
             </NavItem>
@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-80}>
+                offset={-60}>
                 Testimonials
               </NavLinks>
             </NavItem>
@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-80}>
+              offset={-60}>
               Contact
             </NavBtnLink>
           </NavBtn>
