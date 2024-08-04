@@ -12,6 +12,7 @@ import {
   Thumbnails,
 } from "yet-another-react-lightbox/plugins";
 import { photos } from "./photosData";
+import { motion } from "framer-motion";
 
 const GalleryPage = () => {
   const [index, setIndex] = useState(-1);
@@ -28,29 +29,38 @@ const GalleryPage = () => {
   return (
     <>
       <PagesNavbar />
-      <PhotoAlbum
-        layout="columns"
-        columns={(containerWidth) => {
-          if (containerWidth < 500) return 2;
-          if (containerWidth < 900) return 3;
-          return 4;
-        }}
-        componentsProps={{
-          containerProps: {
-            style: {
-              marginTop: 80,
-              maxWidth: 1000,
-              marginInline: "auto",
-              paddingLeft: 20,
-              paddingRight: 20,
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}>
+        <PhotoAlbum
+          layout="columns"
+          columns={(containerWidth) => {
+            if (containerWidth < 500) return 2;
+            if (containerWidth < 900) return 3;
+            return 4;
+          }}
+          componentsProps={{
+            containerProps: {
+              style: {
+                marginTop: 80,
+                maxWidth: 1000,
+                marginInline: "auto",
+                paddingLeft: 20,
+                paddingRight: 20,
+              },
             },
-          },
-        }}
-        styles={styles}
-        renderPhoto={renderPhoto}
-        photos={photos}
-        onClick={({ index: current }) => setIndex(current)}
-      />
+          }}
+          styles={styles}
+          renderPhoto={renderPhoto}
+          photos={photos}
+          onClick={({ index: current }) => setIndex(current)}
+        />
+      </motion.div>
 
       <Lightbox
         plugins={[Download, Fullscreen, Thumbnails, Slideshow]}

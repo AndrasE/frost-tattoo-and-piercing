@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   top: 0;
   z-index: 10;
 `;
