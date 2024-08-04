@@ -34,5 +34,9 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
+<!-- need this script here for two reasons:
+-framermotion when refreshing the page would scoll a bit down not remembering the the correct place it should be at
+-googlemaps embeded, would keep pastering you in console with: [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.  -->
+<script>history.scrollRestoration = "manual"</script>
 
 </html>
