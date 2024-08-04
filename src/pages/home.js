@@ -7,6 +7,7 @@ import Services from "../components/ServicesSection";
 import Gallery from "../components/GallerySection";
 import Testimonials from "../components/TestimonialSection";
 import Contact from "../components/ContactSection";
+import Footer from "../components/Footer";
 import ProgressBar from "../components/ProgressBar";
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       <Gallery />
       <Testimonials />
       <Contact />
+      <Footer />
       <ProgressBar />
     </>
   );
