@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sidebar from "../components/Sidebar";
 import Navbar from "../components/HomeNavbar";
+import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
 import About from "../components/AboutSection";
 import Services from "../components/ServicesSection";
@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
+
   const toggle = () => {
     setIsOpen(!$isOpen);
   };
@@ -30,15 +31,15 @@ const Home = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}>
         <HeroSection />
-
-        <About />
-        <Services />
-        <Gallery />
-        <Testimonials />
-        <Contact />
-        <Footer />
-        <ProgressBar />
       </motion.div>
+
+      <About />
+      <Services />
+      <Gallery />
+      <Testimonials />
+      <Contact />
+      <Footer />
+      <ProgressBar />
     </>
   );
 };
