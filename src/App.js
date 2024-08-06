@@ -7,32 +7,47 @@ import SplashScreen from "./components/SplashScreen";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [isTimout, setIsTimeout] = useState(true);
+  const [ready, setReady] = useState(false);
+  const [startTime] = useState(Date.now());
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsTimeout(false);
-    }, 5000);
-    return () => clearTimeout(timer);
+    const minimumLoadingTime = setTimeout(() => {
+      setReady(true);
+    }, 1500); // Minimum 1.5 seconds
+
+    // Simulate loading of assets/data
+    const simulateLoading = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Simulate 2 seconds loading time for assets/data
+
+    return () => {
+      clearTimeout(minimumLoadingTime);
+      clearTimeout(simulateLoading);
+    };
   }, []);
 
   useEffect(() => {
-    const removeLoader = () => setLoading(false);
-    window.addEventListener("load", removeLoader);
-    return window.removeEventListener("load", removeLoader);
-  }, []);
-
-  if (isTimout || !loading) {
-    return <SplashScreen />;
-  }
+    if (ready && !loading) {
+      const endTime = Date.now();
+      const loadTime = endTime - startTime;
+      console.log(`All assets are ready. Page load time: ${loadTime} ms`);
+      setLoading(false);
+    }
+  }, [ready, loading, startTime]);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      {loading ? (
+        <SplashScreen />
+      ) : (
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+          </Routes>
+        </Router>
+      )}
+    </div>
   );
 }
 
