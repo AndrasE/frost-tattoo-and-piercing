@@ -15,7 +15,13 @@ const HeroVideo = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg
+          autoPlay
+          muted
+          src={Video}
+          onEnded={() => console.log("ended")}
+          type="video/mp4"
+        />
       </HeroBg>
       <HeroContent>
         <HeroH1>Frost </HeroH1>

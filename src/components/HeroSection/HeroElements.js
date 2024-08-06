@@ -12,6 +12,9 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -20,6 +23,7 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: #16191d;
 `;
 
 export const VideoBg = styled.video`
@@ -27,7 +31,6 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
 `;
 
 export const HeroContent = styled.div`

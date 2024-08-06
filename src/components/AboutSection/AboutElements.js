@@ -38,22 +38,18 @@ export const TextWrapper = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 20px;
   transition: 0.3s ease-in-out;
   align-content: center;
-
-  &:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #1b1f24;
-  }
 `;
 
 export const Heading = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 25px;
   color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
@@ -62,6 +58,7 @@ export const Heading = styled.h1`
 export const Content = styled.p`
   max-width: 440px;
   font-size: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   text-align: justify;
   line-height: 26px;
   color: #fff;
