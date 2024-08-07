@@ -58,7 +58,6 @@ export const Heading = styled.h1`
 export const Content = styled.p`
   max-width: 440px;
   font-size: 1rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   text-align: justify;
   line-height: 26px;
   color: #fff;
@@ -80,5 +79,5 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;

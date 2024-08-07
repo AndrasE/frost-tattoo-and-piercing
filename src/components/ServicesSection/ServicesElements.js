@@ -38,7 +38,7 @@ export const TextWrapper = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); */
+
   border-radius: 20px;
   padding: 20px;
   transition: 0.3s ease-in-out;
@@ -49,7 +49,6 @@ export const Heading = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 25px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
@@ -61,7 +60,6 @@ export const Content = styled.p`
   text-align: justify;
   line-height: 26px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
@@ -84,5 +82,5 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
   max-width: 100%;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;

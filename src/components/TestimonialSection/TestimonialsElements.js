@@ -40,16 +40,10 @@ export const TextWrapper = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 20px;
   transition: 0.3s ease-in-out;
   align-content: center;
-
-  &:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #1b1f24;
-  }
 `;
 
 export const Heading = styled.h1`
@@ -84,5 +78,5 @@ export const CarouselWrapper = styled.div`
   aspect-ratio: 1/1;
   max-height: 400px;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
