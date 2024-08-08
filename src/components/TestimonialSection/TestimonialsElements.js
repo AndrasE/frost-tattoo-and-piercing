@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const SectionWrapper = styled.div`
+  /* this is only needed to attach the id for it so the navbar correctly target the section as while using framer-motion to scale in the container and content while the scale not 100% completed it will offset the scroll -->>  import { animateScroll as scroll } from "react-scroll"  */
+`;
 export const Container = styled.div`
   display: grid;
   min-height: 100vh;
@@ -11,7 +14,8 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 20px;
-    margin-top: 80px;
+    margin-bottom: 80px;
+    align-content: flex-start;
   }
 `;
 

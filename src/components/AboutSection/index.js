@@ -24,7 +24,7 @@ const About = () => {
   return (
     <SectionWrapper id="about">
       <motion.div
-        ref={ref} // Ref is used internally
+        ref={ref}
         style={{
           scale: scrollYProgress,
           opacity: scrollYProgress,

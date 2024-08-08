@@ -14,8 +14,9 @@ export const Container = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 80px;
     padding: 20px;
+    margin-bottom: 80px;
+    align-content: flex-start;
   }
 `;
 
