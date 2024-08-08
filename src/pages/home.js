@@ -18,10 +18,9 @@ const Home = () => {
     setIsOpen(!$isOpen);
   };
 
-  return (
-    <>
-      <Sidebar $isOpen={$isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+  // could just whap it HeroSection with <motion.div> but i wanted the keep the Home return clean
+  const HeroAnimation = ({ children }) => {
+    return (
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -30,9 +29,18 @@ const Home = () => {
           delay: 0.3,
           ease: [0, 0.71, 0.2, 1.01],
         }}>
-        <HeroSection />
+        {children}
       </motion.div>
+    );
+  };
 
+  return (
+    <>
+      <Sidebar $isOpen={$isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <HeroAnimation>
+        <HeroSection />
+      </HeroAnimation>
       <About />
       <Services />
       <Gallery />
