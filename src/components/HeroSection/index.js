@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
 import { motion } from "framer-motion";
+import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
 
 import {
   HeroContainer,
@@ -10,6 +11,8 @@ import {
   HeroH1,
   HeroH2,
   HeroP,
+  LottieAnimation,
+  LottieAnimationLink,
 } from "./HeroElements";
 
 const HeroVideo = () => {
@@ -36,6 +39,13 @@ const HeroVideo = () => {
         <HeroH2>tattoo and piercing</HeroH2>
         <HeroP>Welcome to our official website!</HeroP>
       </HeroContent>
+      <LottieAnimationLink
+        to="about"
+        smooth={true}
+        duration={500}
+        offset={-40}
+        animationData={DoubleArrowDown}
+      />
     </HeroContainer>
   );
 };

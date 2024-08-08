@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link as LinkRoute } from "react-router-dom";
+import Lottie from "lottie-react";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -44,6 +46,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
+  font-weight: 400;
   text-align: center;
 
   @media screen and (max-width: 768) {
@@ -58,6 +61,7 @@ export const HeroH1 = styled.h1`
 export const HeroH2 = styled.h2`
   color: #fff;
   font-size: 28px;
+  font-weight: 400;
   text-align: center;
 
   @media screen and (max-width: 768) {
@@ -70,9 +74,10 @@ export const HeroH2 = styled.h2`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 20px;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 400;
   text-align: center;
   max-width: 600px;
 
@@ -84,3 +89,15 @@ export const HeroP = styled.p`
     font-size: 18px;
   }
 `;
+
+export const ArrowWrapper = styled.div`
+  width: 50px;
+`;
+
+export const LottieAnimation = styled(Lottie)`
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+`;
+
+export const LottieAnimationLink = styled(LottieAnimation)``;
