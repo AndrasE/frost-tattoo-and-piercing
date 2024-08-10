@@ -10,14 +10,10 @@ html {
   position: relative;
 }
 
-html {
-  scrollbar-color: #1ebbd7 #16191d;
-  scrollbar-width: 2px;
-}
 body {
   background-color: #16191d;
 }
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 2px !important;
 }
 
@@ -27,4 +23,4 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #1ebbd7 !important;
-} */
+}
