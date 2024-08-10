@@ -10,6 +10,8 @@ function App() {
   const [ready, setReady] = useState(false);
   const [startTime] = useState(Date.now());
 
+  window.scrollTo(0, 1);
+
   useEffect(() => {
     const minimumLoadingTime = setTimeout(() => {
       setReady(true);
