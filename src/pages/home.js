@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     const hideAddressBar = () => {
       setTimeout(() => {
-        window.scrollTo(0, 150);
+        window.scrollTo(0, 1);
       }, 10);
     };
 

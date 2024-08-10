@@ -7,16 +7,10 @@
 
 /* workaround no negatie sideeffect: "Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly."https://github.com/framer/motion/issues/1853 [BUG] useScroll() with container option behave strangely #1853*/
 html {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
   position: relative;
 }
 
 body {
-  margin: 0;
-  overflow: hidden;
-  position: relative;
   background-color: #16191d;
 }
 body::-webkit-scrollbar {
