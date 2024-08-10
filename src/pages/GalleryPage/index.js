@@ -11,7 +11,7 @@ import {
   Slideshow,
   Thumbnails,
 } from "yet-another-react-lightbox/plugins";
-import { photos } from "./photosData";
+import { photos } from "./photoDatas";
 import { motion } from "framer-motion";
 
 const GalleryPage = () => {
