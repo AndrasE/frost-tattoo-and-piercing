@@ -30,6 +30,8 @@ const Contact = () => {
     offset: ["0 1", "0.7 1"],
   });
 
+  const asd = process.env.REACT_APP_TEL_URL;
+
   return (
     <SectionWrapper id="contact">
       <motion.div
@@ -67,9 +69,7 @@ const Contact = () => {
                     </EmailLink>
                   </LinkWrapper>
                   <LinkWrapper>
-                    <PhoneLink
-                      href={process.env.REACT_APP_TEL_URL}
-                      target="_blank">
+                    <PhoneLink href={asd} target="_blank">
                       <PhoneIcon />
                       <LinkText>{process.env.REACT_APP_TEL}</LinkText>
                     </PhoneLink>
@@ -78,7 +78,7 @@ const Contact = () => {
                 <IframeWrapper>
                   <IFrame
                     title="Responsive Google Map"
-                    src="https://shorturl.at/wcqjD"
+                    src={process.env.REACT_APP_GOOGLEMAP}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"

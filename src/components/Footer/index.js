@@ -27,7 +27,7 @@ const Footer = () => {
         </Link>
         {hover ? (
           <ArrowRightDouble
-            style={{ opacity: "100%", transition: "all 0.2s ease-in-out" }}
+            style={{ opacity: "100%", transition: "all 0.1s ease-in-out" }}
           />
         ) : (
           <ArrowRightDouble />
