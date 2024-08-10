@@ -35,6 +35,13 @@ function App() {
     }
   }, [ready, loading, startTime]);
 
+  window.addEventListener("load", function () {
+    // Scroll to 0,1 to hide the address bar
+    setTimeout(function () {
+      window.scrollTo(0, 1);
+    }, 10);
+  });
+
   return (
     <div className="App">
       {loading ? (
