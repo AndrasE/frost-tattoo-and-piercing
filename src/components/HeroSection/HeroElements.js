@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkRoute } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import Lottie from "lottie-react";
 
 export const HeroContainer = styled.div`
@@ -90,14 +90,18 @@ export const HeroP = styled.p`
   }
 `;
 
-export const ArrowWrapper = styled.div`
-  width: 50px;
-`;
-
 export const LottieAnimation = styled(Lottie)`
   position: absolute;
   bottom: 0;
   width: 90px;
+  z-index: 1;
 `;
 
-export const LottieAnimationLink = styled(LottieAnimation)``;
+export const ScrollLink = styled(LinkScroll)`
+  position: absolute;
+  bottom: 28px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+`;

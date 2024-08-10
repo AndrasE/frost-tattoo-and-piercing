@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Video from "../../videos/video.mp4";
 import { motion } from "framer-motion";
 import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
@@ -11,12 +11,25 @@ import {
   HeroH1,
   HeroH2,
   HeroP,
+  ScrollLink,
   LottieAnimation,
-  LottieAnimationLink,
 } from "./HeroElements";
 
 const HeroVideo = () => {
   const [videoEnded, setVideoEnded] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const changeSctroll = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeSctroll);
+  }, []);
 
   return (
     <HeroContainer>
@@ -39,13 +52,13 @@ const HeroVideo = () => {
         <HeroH2>tattoo and piercing</HeroH2>
         <HeroP>Welcome to our official website!</HeroP>
       </HeroContent>
-      <LottieAnimationLink
+      <ScrollLink
         to="about"
         smooth={true}
         duration={500}
         offset={-40}
-        animationData={DoubleArrowDown}
-      />
+        animationData={DoubleArrowDown}></ScrollLink>
+      <LottieAnimation animationData={DoubleArrowDown} />
     </HeroContainer>
   );
 };
