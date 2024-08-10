@@ -78,7 +78,7 @@ const Contact = () => {
                 <IframeWrapper>
                   <IFrame
                     title="Responsive Google Map"
-                    src="https://shorturl.at/wcqjD"
+                    src={process.env.REACT_APP_GOOGLEMAP}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
