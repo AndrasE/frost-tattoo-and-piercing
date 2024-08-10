@@ -16,7 +16,9 @@ import { motion } from "framer-motion";
 
 const GalleryPage = () => {
   const [index, setIndex] = useState(-1);
+  /* eslint-disable no-unused-vars */
   const [autoplay, setAutoplay] = useState(false);
+  /* eslint-enable no-unused-vars */
 
   const renderPhoto = ({ imageProps: { alt, style, ...restImageProps } }) => (
     <img

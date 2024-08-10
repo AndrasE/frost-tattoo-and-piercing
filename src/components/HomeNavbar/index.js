@@ -16,7 +16,9 @@ import {
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
+  /* eslint-disable no-unused-vars */
   const [scrollNav, setScrollNav] = useState(false);
+  /* eslint-enable no-unused-vars */
 
   const changeNav = () => {
     if (window.scrollY >= 80) {

@@ -17,7 +17,9 @@ import {
 
 const HeroVideo = () => {
   const [videoEnded, setVideoEnded] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [scroll, setScroll] = useState(false);
+  /* eslint-enable no-unused-vars */
 
   const changeSctroll = () => {
     if (window.scrollY >= 80) {
