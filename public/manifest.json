@@ -3,7 +3,7 @@
   "short_name": "Frost tattoo & piercing",
   "theme_color": "#fff",
   "background_color": "#fff",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/"
