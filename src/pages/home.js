@@ -34,6 +34,10 @@ const Home = () => {
     );
   };
 
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 1);
+  });
+
   return (
     <>
       <Sidebar $isOpen={$isOpen} toggle={toggle} />
