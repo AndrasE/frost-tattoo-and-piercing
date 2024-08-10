@@ -42,6 +42,20 @@ function App() {
     }, 10);
   });
 
+  useEffect(() => {
+    const hideAddressBar = () => {
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 10);
+    };
+
+    window.addEventListener("load", hideAddressBar);
+
+    return () => {
+      window.removeEventListener("load", hideAddressBar);
+    };
+  }, []);
+
   return (
     <div className="App">
       {loading ? (
