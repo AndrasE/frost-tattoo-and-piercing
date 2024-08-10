@@ -31,7 +31,7 @@ const PagesNavbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogoWrapper onClick={toggleToTop}>
-            <NavLogo src={Logo}></NavLogo>
+            <NavLogo src={Logo} alt="logo"></NavLogo>
             Frost
           </NavLogoWrapper>
           <NavMenu>

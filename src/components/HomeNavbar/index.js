@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogoWrapper to="/" onClick={toggleHome}>
+          <NavLogoWrapper to="/" alt="logo" onClick={toggleHome}>
             <NavLogo src={Logo}></NavLogo>
             Frost
           </NavLogoWrapper>
