@@ -36,23 +36,12 @@ function App() {
   }, [ready, loading, startTime]);
 
   useEffect(() => {
-    const hideAddressBar = () => {
-      setTimeout(() => {
-        window.scrollTo(0, 1);
-      }, 10);
-    };
-
-    // Only run the hideAddressBar function after the page has fully loaded
-    window.addEventListener("load", hideAddressBar);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("load", hideAddressBar);
-    };
+    // Scroll slightly to hide the address bar
+    window.scrollTo(0, 1);
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ height: "200vh" }}>
       {loading ? (
         <SplashScreen />
       ) : (
