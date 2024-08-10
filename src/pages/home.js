@@ -18,28 +18,23 @@ const Home = () => {
     setIsOpen(!$isOpen);
   };
 
-  window.addEventListener("load", function () {
-    // Scroll to 0,1 to hide the address bar
-    setTimeout(function () {
-      window.scrollTo(0, 1);
-    }, 10);
-  });
-
   useEffect(() => {
     const hideAddressBar = () => {
-      setTimeout(function () {
+      setTimeout(() => {
         window.scrollTo(0, 1);
       }, 10);
     };
 
+    // Only run the hideAddressBar function after the page has fully loaded
     window.addEventListener("load", hideAddressBar);
 
+    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("load", hideAddressBar);
     };
-  }, []);
+  }, []); // The empty dependency array ensures this runs only once on mount
 
-  // could just whap it HeroSection with <motion.div> but i wanted the keep the Home return clean
+  // could just wrap HeroSection with <motion.div> but I wanted to keep the Home return clean
   const HeroAnimation = ({ children }) => {
     return (
       <motion.div
