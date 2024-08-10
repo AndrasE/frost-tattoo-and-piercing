@@ -20,13 +20,14 @@ const Footer = () => {
         <Link
           href="https://andrasegyed.netlify.app/"
           target="_blank"
+          onClick={onHover}
           onMouseEnter={onHover}
           onMouseLeave={onHover}>
           <Andras>Created & maintained by Andras</Andras>
         </Link>
         {hover ? (
           <ArrowRightDouble
-            style={{ opacity: "100%", transition: " all 0.4s ease-in-out" }}
+            style={{ opacity: "100%", transition: "all 0.2s ease-in-out" }}
           />
         ) : (
           <ArrowRightDouble />
