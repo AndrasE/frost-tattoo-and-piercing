@@ -56,8 +56,7 @@ const HeroVideo = () => {
         to="about"
         smooth={true}
         duration={500}
-        offset={-40}
-        animationData={DoubleArrowDown}></ScrollLink>
+        offset={-40}></ScrollLink>
       <LottieAnimation animationData={DoubleArrowDown} />
     </HeroContainer>
   );
