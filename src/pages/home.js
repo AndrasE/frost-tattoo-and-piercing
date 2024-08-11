@@ -15,6 +15,7 @@ import AboutImg from "../components/AboutImg";
 import ServicesImgs from "../components/ServicesImgs";
 import GalleryCarousel from "../components/GalleryCarousel";
 import ContactDetails from "../components/ContactDetails";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -55,6 +56,7 @@ const Home = () => {
         btnLabel="more"
         btnTo="gallery"
       />
+      <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
       <Section id="contact" col2={<ContactDetails />} />
       {/* <About />
       <Services />
