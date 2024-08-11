@@ -49,6 +49,7 @@ const Section = ({ id, col2, reversed, btnTo, btnLabel }) => {
                 {btnLabel && (
                   <BtnWrapper>
                     <BtnLink
+                      aria-label="some more descriptive text that explains the link"
                       to={btnTo}
                       onMouseEnter={onHover}
                       onMouseLeave={onHover}>

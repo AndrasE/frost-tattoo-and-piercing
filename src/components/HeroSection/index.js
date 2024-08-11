@@ -55,6 +55,8 @@ const HeroVideo = () => {
         <HeroP>Welcome to our official website!</HeroP>
       </HeroContent>
       <ScrollLink
+        href="about" //only need for SEO
+        aria-label="Scroll to about section" //only need for SEO
         to="about"
         smooth={true}
         duration={500}

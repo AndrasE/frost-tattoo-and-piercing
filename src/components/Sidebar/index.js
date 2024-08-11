@@ -19,6 +19,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink
+            href="about" //only need for SEO
+            aria-label="Scroll to about section" //only need for SEO
             to="about"
             smooth={true}
             duration={500}
@@ -28,6 +30,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
             About
           </SidebarLink>
           <SidebarLink
+            href="services" //only need for SEO
+            aria-label="Scroll to services section" //only need for SEO
             to="services"
             smooth={true}
             duration={500}
@@ -37,6 +41,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
             Services
           </SidebarLink>
           <SidebarLink
+            href="gallery" //only need for SEO
+            aria-label="Scroll to gallery section" //only need for SEO
             to="gallery"
             smooth={true}
             duration={500}
@@ -46,6 +52,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
             Gallery
           </SidebarLink>
           <SidebarLink
+            href="testimonials" //only need for SEO
+            aria-label="Scroll to testimonials section" //only need for SEO
             to="testimonials"
             smooth={true}
             duration={500}
@@ -56,6 +64,8 @@ const Sidebar = ({ $isOpen, toggle }) => {
           </SidebarLink>
           <SideBtn>
             <SidebarBtnLink
+              href="contact" //only need for SEO
+              aria-label="Scroll to contact section" //only need for SEO
               to="contact"
               smooth={true}
               duration={500}

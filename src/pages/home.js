@@ -1,21 +1,16 @@
 import React, { useState } from "react";
-import Navbar from "../components/HomeNavbar";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/HomeNavbar";
 import HeroSection from "../components/HeroSection";
-import About from "../components/AboutSection";
-import Services from "../components/ServicesSection";
-import Gallery from "../components/GallerySection";
-import Testimonials from "../components/TestimonialSection";
-import Contact from "../components/ContactSection";
-import Footer from "../components/Footer";
-import ProgressBar from "../components/ProgressBar";
-import { motion } from "framer-motion";
 import Section from "../components/Sections";
 import AboutImg from "../components/AboutImg";
 import ServicesImgs from "../components/ServicesImgs";
 import GalleryCarousel from "../components/GalleryCarousel";
 import ContactDetails from "../components/ContactDetails";
 import TestimonialCarousel from "../components/TestimonialCarousel";
+import Footer from "../components/Footer";
+import ProgressBar from "../components/ProgressBar";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -53,16 +48,11 @@ const Home = () => {
       <Section
         id="gallery"
         col2={<GalleryCarousel />}
-        btnLabel="more"
+        btnLabel="gallery"
         btnTo="gallery"
       />
       <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
       <Section id="contact" col2={<ContactDetails />} />
-      {/* <About />
-      <Services />
-      <Gallery />
-      <Testimonials />
-      <Contact /> */}
       <Footer />
       <ProgressBar />
     </>

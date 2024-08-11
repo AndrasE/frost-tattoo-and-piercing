@@ -125,7 +125,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   position: relative;
   left: 1px;
   padding-top: 3px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 24px;
   @media screen and (max-width: 480px) {
     font-size: 18px;
@@ -136,7 +136,7 @@ export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`
   position: relative;
   left: 3px;
   padding-top: 2px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 24px;
 
   @media screen and (max-width: 480px) {

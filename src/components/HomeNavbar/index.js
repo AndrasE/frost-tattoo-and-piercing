@@ -40,13 +40,15 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogoWrapper to="/" alt="logo" onClick={toggleHome}>
-            <NavLogo src={Logo}></NavLogo>
+          <NavLogoWrapper to="/" onClick={toggleHome}>
+            <NavLogo src={Logo} alt="logo-image"></NavLogo>
             Frost
           </NavLogoWrapper>
           <NavMenu>
             <NavItem>
               <NavLinks
+                href="about" //only need for SEO
+                aria-label="Scroll to about section" //only need for SEO
                 to="about"
                 smooth={true}
                 duration={500}
@@ -57,6 +59,8 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                href="services" //only need for SEO
+                aria-label="Scroll to services section" //only need for SEO
                 to="services"
                 smooth={true}
                 duration={500}
@@ -67,6 +71,8 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                href="gallery" //only need for SEO
+                aria-label="Scroll to gallery section" //only need for SEO
                 to="gallery"
                 smooth={true}
                 duration={500}
@@ -77,6 +83,8 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                href="testimonials" //only need for SEO
+                aria-label="Scroll to testimonials section" //only need for SEO
                 to="testimonials"
                 smooth={true}
                 duration={500}
@@ -88,6 +96,8 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <NavBtn>
             <NavBtnLink
+              href="contact" //only need for SEO
+              aria-label="Scroll to contact section" //only need for SEO
               to="contact"
               smooth={true}
               duration={500}
