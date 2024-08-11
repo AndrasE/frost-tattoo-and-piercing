@@ -10,6 +10,8 @@ import Contact from "../components/ContactSection";
 import Footer from "../components/Footer";
 import ProgressBar from "../components/ProgressBar";
 import { motion } from "framer-motion";
+import Section from "../components/Sections";
+import AboutImg from "../components/AboutImg";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -38,14 +40,16 @@ const Home = () => {
     <>
       <Sidebar $isOpen={$isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
-      <About />
+      <Section reversed Id="about" Col2={<AboutImg />} />
+      {/* <About />
       <Services />
       <Gallery />
       <Testimonials />
-      <Contact />
+      <Contact /> */}
       <Footer />
       <ProgressBar />
     </>
