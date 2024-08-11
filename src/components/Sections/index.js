@@ -11,7 +11,7 @@ import {
 } from "./SectionElements";
 import { motion, useScroll } from "framer-motion";
 
-const Section = ({ Id, Col2 }) => {
+const Section = ({ Id, reversed, Col2 }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -27,7 +27,7 @@ const Section = ({ Id, Col2 }) => {
           opacity: scrollYProgress,
         }}>
         <Container>
-          <Row>
+          <Row reversed={reversed}>
             <Column1>
               <TextWrapper>
                 <Heading>About</Heading>

@@ -25,11 +25,12 @@ export const Row = styled.div`
   grid-gap: 50px;
   align-items: center;
   grid-auto-columns: minmax(auto, 1fr);
-  grid-template-areas: "col1 col2";
+  grid-template-areas: ${({ reversed }) =>
+    reversed ? `"col2 col1"` : `"col1 col2"`}; /* Adjust grid-template-areas */
 
   @media screen and (max-width: 768px) {
     grid-gap: 30px;
-    grid-template-areas: "col1" "col2";
+    grid-template-areas: "col1" "col2"; /* Always stack columns on mobile */
     align-content: center;
   }
 `;

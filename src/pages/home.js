@@ -12,6 +12,8 @@ import ProgressBar from "../components/ProgressBar";
 import { motion } from "framer-motion";
 import Section from "../components/Sections";
 import AboutImg from "../components/AboutImg";
+import ServicesImgs from "../components/ServicesImgs";
+import GalleryCarousel from "../components/GalleryCarousel";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -44,7 +46,9 @@ const Home = () => {
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
-      <Section reversed Id="about" Col2={<AboutImg />} />
+      <Section Id="about" Col2={<AboutImg />} />
+      <Section Id="services" Col2={<ServicesImgs />} reversed />
+      <Section Id="gallery" Col2={<GalleryCarousel />} />
       {/* <About />
       <Services />
       <Gallery />
