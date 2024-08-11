@@ -14,6 +14,7 @@ import Section from "../components/Sections";
 import AboutImg from "../components/AboutImg";
 import ServicesImgs from "../components/ServicesImgs";
 import GalleryCarousel from "../components/GalleryCarousel";
+import ContactDetails from "../components/ContactDetails";
 
 const Home = () => {
   const [$isOpen, setIsOpen] = useState(false);
@@ -54,6 +55,7 @@ const Home = () => {
         btnLabel="more"
         btnTo="gallery"
       />
+      <Section id="contact" col2={<ContactDetails />} />
       {/* <About />
       <Services />
       <Gallery />
