@@ -9,6 +9,7 @@ export const CarouselContainer = styled.div`
   max-width: 400px;
   aspect-ratio: 1/1;
   border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 `;
 
 export const Img = styled.img`

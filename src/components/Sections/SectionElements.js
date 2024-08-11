@@ -59,7 +59,6 @@ export const Heading = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 25px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
