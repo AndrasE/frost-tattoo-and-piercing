@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   SectionWrapper,
   Container,
@@ -7,11 +7,21 @@ import {
   TextWrapper,
   Heading,
   Content,
+  BtnWrapper,
+  BtnLink,
+  ArrowRight,
+  ArrowRightDouble,
   Column2,
 } from "./SectionElements";
 import { motion, useScroll } from "framer-motion";
 
-const Section = ({ Id, reversed, Col2 }) => {
+const Section = ({ id, col2, reversed, btnTo, btnLabel }) => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -19,7 +29,7 @@ const Section = ({ Id, reversed, Col2 }) => {
   });
 
   return (
-    <SectionWrapper id={Id}>
+    <SectionWrapper id={id}>
       <motion.div
         ref={ref}
         style={{
@@ -36,9 +46,19 @@ const Section = ({ Id, reversed, Col2 }) => {
                   years ago, myself hdasdas adasdasdave 12 re has opened 8 years
                   ago, myself.
                 </Content>
+                {btnLabel && (
+                  <BtnWrapper>
+                    <BtnLink
+                      to={btnTo}
+                      onMouseEnter={onHover}
+                      onMouseLeave={onHover}>
+                      {btnLabel} {hover ? <ArrowRightDouble /> : <ArrowRight />}
+                    </BtnLink>
+                  </BtnWrapper>
+                )}
               </TextWrapper>
             </Column1>
-            <Column2>{Col2}</Column2>
+            <Column2>{col2}</Column2>
           </Row>
         </Container>
       </motion.div>

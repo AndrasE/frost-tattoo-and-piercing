@@ -46,9 +46,14 @@ const Home = () => {
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
-      <Section Id="about" Col2={<AboutImg />} />
-      <Section Id="services" Col2={<ServicesImgs />} reversed />
-      <Section Id="gallery" Col2={<GalleryCarousel />} />
+      <Section id="about" col2={<AboutImg />} />
+      <Section id="services" col2={<ServicesImgs />} reversed />
+      <Section
+        id="gallery"
+        col2={<GalleryCarousel />}
+        btnLabel="more"
+        btnTo="gallery"
+      />
       {/* <About />
       <Services />
       <Gallery />

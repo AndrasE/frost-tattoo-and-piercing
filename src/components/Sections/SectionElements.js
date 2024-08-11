@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { Link as LinkRoute } from "react-router-dom";
+import {
+  MdKeyboardArrowRight,
+  MdKeyboardDoubleArrowRight,
+} from "react-icons/md";
 
 export const SectionWrapper = styled.div`
   /* this is only needed to attach the id for it so the navbar correctly target the section as while using framer-motion to scale in the container and content while the scale not 100% completed it will offset the scroll -->>  import { animateScroll as scroll } from "react-scroll"  */
@@ -78,12 +83,64 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
-export const ImgWrapper = styled.div`
-  max-width: 400px;
+export const BtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  padding-right: 25px;
+  justify-content: flex-end;
 `;
 
-export const Img = styled.img`
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+export const BtnLink = styled(LinkRoute)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  );
+  background-size: 200% auto;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 10px 17px;
+  color: #000;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-position: right center;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  position: relative;
+  left: 1px;
+  padding-top: 3px;
+  margin-left: 10px;
+  font-size: 24px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`
+  position: relative;
+  left: 3px;
+  padding-top: 2px;
+  margin-left: 10px;
+  font-size: 24px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
