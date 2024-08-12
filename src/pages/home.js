@@ -48,7 +48,7 @@ const Home = () => {
       <Section
         id="gallery"
         col2={<GalleryCarousel />}
-        btnLabel="gallery"
+        btnLabel="Gallery"
         btnTo="gallery"
       />
       <Section id="testimonials" col2={<TestimonialCarousel />} reversed />

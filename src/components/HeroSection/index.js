@@ -39,7 +39,7 @@ const HeroVideo = () => {
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: videoEnded ? 0 : 1 }}
-          transition={{ duration: 2 }}>
+          transition={{ duration: 1 }}>
           <VideoBg
             autoPlay
             muted
