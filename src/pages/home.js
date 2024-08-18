@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import ProgressBar from "../components/ProgressBar";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = ({ toggleTheme }) => {
   const [$isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -43,6 +43,7 @@ const Home = () => {
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
+      <button onClick={toggleTheme}>asdasdasd</button>
       <Section id="about" col2={<AboutImg />} />
       <Section id="services" col2={<ServicesImgs />} reversed />
       <Section
