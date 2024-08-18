@@ -1,12 +1,12 @@
 import Home from "./pages/home";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./GlobalStyles";
-import useLocalStorage from "use-local-storage";
 import SplashScreen from "./components/SplashScreen";
 import GalleryPage from "./pages/GalleryPage";
-import "./App.css";
+import useLocalStorage from "use-local-storage";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./themes/GlobalStyles";
+import { lightTheme, darkTheme } from "./themes/themes";
 
 function App() {
   // simulate loading time to assets to load while splashscreen showing
@@ -53,6 +53,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
+
       <div className="App">
         {loading ? (
           <SplashScreen theme={theme} />
