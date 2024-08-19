@@ -1,5 +1,5 @@
 export const lightTheme = {
-  backgroundColor: "#f6f6ff",
+  backgroundColor: "#f2f2f2",
   fontColor: "#111",
   navDropShadow: "rgba(0, 0, 0, 0.2)",
   dropShadow: "rgba(0, 0, 0, 0.2)",
@@ -9,7 +9,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   backgroundColor: "#16191d",
-  fontColor: "#fff",
+  fontColor: "#f2f2f2",
   navDropShadow: "rgba(0, 0, 0, 0.4)",
   dropShadow: "rgba(0, 0, 0, 0.7)",
   svgPrimaryColor: "#707b7c",

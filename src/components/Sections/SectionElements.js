@@ -20,8 +20,14 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     align-content: flex-start;
+  }
+  @media screen and (max-width: 560px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 420px) {
+    margin-bottom: 30px;
   }
 `;
 
