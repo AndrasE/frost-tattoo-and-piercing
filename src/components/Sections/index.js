@@ -25,7 +25,7 @@ const Section = ({ id, col2, reversed, btnTo, btnLabel }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "0.7 1"],
+    offset: ["0 1.2", "0.65 1"],
   });
 
   return (

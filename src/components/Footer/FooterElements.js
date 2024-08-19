@@ -41,7 +41,6 @@ export const Andras = styled.p`
   font-size: 0.9rem;
   text-align: justify;
   line-height: 20px;
-  color: #fff;
 `;
 
 export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`
