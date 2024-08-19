@@ -127,6 +127,7 @@ export const PhoneLink = styled(Link)`
 `;
 
 export const IframeWrapper = styled.div`
+  position: relative;
   aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: 9px;
@@ -140,9 +141,12 @@ export const IframeWrapper = styled.div`
 `;
 
 export const IFrame = styled.iframe`
-  bottom: 0;
-  height: 100%;
-  width: 100%;
+  //bit of a funky workaround styling to hide away focus outline of the iframe
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 102.5%;
+  width: 102%;
   border: none;
   outline: none;
 `;
