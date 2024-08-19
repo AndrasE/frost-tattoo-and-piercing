@@ -5,7 +5,6 @@ export const SplashContainer = styled.div`
   position: fixed;
   display: flex;
   inset: 0;
-  background-color: #16191d;
   z-index: 999;
   align-items: center;
   justify-content: center;
