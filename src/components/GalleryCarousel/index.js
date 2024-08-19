@@ -12,6 +12,7 @@ const GalleryCarousel = () => {
         styles={styles}
         options={{
           rewind: true,
+          rewindByDrag: true,
         }}>
         {slidesImages.map((item, index) => {
           return (

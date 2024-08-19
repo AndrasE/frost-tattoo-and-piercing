@@ -7,7 +7,7 @@ export const ContentContainer = styled.div`
   margin: auto;
   max-width: 400px;
   aspect-ratio: 1/1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 15px ${({ theme }) => theme.dropShadow};
   border-radius: 20px;
   padding: 20px;
   transition: 0.3s ease-in-out;
@@ -143,5 +143,6 @@ export const IFrame = styled.iframe`
   bottom: 0;
   height: 100%;
   width: 100%;
-  border: 0;
+  border: none;
+  outline: none;
 `;

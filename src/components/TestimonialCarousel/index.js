@@ -26,6 +26,7 @@ const TestimonialCarousel = () => {
         styles={styles}
         options={{
           rewind: true,
+          rewindByDrag: true,
         }}>
         {testimonialsData.map((item, index) => {
           return (

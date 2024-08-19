@@ -17,12 +17,11 @@ export const GlobalStyles = createGlobalStyle`
 
   /* Body styles */
   body {
-    background-color: ${({ theme }) =>
-      theme.backgroundColor}; /* Use theme color */
+    background-color: ${({ theme }) => theme.backgroundColor}; 
   }
 
   h1, h2, p, a {
-    color: ${({ theme }) => theme.fontColor}; /* Use theme color */
+    color: ${({ theme }) => theme.fontColor};
   }
 
   /* Custom Scrollbar Styles */
@@ -31,11 +30,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body::-webkit-scrollbar-track {
-    background: "#16191d" ;
+    background: #16191d ;
   }
 
   body::-webkit-scrollbar-thumb {
-    background: "#1ebbd7" ;
+    background: #1ebbd7 ;
   }
 
 `;

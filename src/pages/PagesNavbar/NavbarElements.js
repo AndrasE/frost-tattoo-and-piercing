@@ -3,7 +3,7 @@ import { Link as LinkRoute } from "react-router-dom";
 import { MdKeyboardArrowLeft, MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 export const Nav = styled.nav`
-  background: #16191d;
+  background: ${({ theme }) => theme.backgroundColor};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
   z-index: 10;
 `;
@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogoWrapper = styled(LinkRoute)`
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -59,7 +59,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavName = styled.div`
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor};
   display: flex;
   align-items: center;
   text-decoration: none;

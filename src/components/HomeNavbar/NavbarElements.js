@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
   z-index: 10;
 
@@ -81,7 +81,6 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkScroll)`
   display: flex;
   color: ${({ theme }) => theme.fontColor};
-
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
