@@ -21,17 +21,21 @@ export const GlobalStyles = createGlobalStyle`
       theme.backgroundColor}; /* Use theme color */
   }
 
+  h1, h2, p, a {
+    color: ${({ theme }) => theme.fontColor}; /* Use theme color */
+  }
+
   /* Custom Scrollbar Styles */
   body::-webkit-scrollbar {
     width: 2px ;
   }
 
   body::-webkit-scrollbar-track {
-    background: #16191d ;
+    background: "#16191d" ;
   }
 
   body::-webkit-scrollbar-thumb {
-    background: #1ebbd7 ;
+    background: "#1ebbd7" ;
   }
 
 `;

@@ -57,7 +57,6 @@ export const LinkText = styled.div`
   font-size: 1rem;
   margin-left: 5px;
   line-height: 26px;
-  color: #fff;
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;

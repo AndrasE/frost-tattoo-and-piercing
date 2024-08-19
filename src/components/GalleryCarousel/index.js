@@ -1,9 +1,9 @@
 import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/css";
-import styles from "../GalleryCarousel/splideCssOverwrite.css";
 import { CarouselContainer, Img } from "./GalleryCarouselElements";
 import { slidesImages } from "./carouselData";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/css";
+import styles from "../../themes/splideCssOverwrite.css";
 
 const GalleryCarousel = () => {
   return (

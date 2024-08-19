@@ -20,7 +20,7 @@ export const Card = styled.div`
   justify-content: center;
 `;
 
-export const Asd = styled.div`
+export const ContentWrapper = styled.div`
   padding: 25px;
   position: absolute;
   display: flex;
@@ -74,7 +74,6 @@ export const Img = styled.img`
 `;
 
 export const HeaderText = styled.h2`
-  color: #fff;
   font-size: 1.5rem;
   margin-left: 8px;
 `;
@@ -91,8 +90,6 @@ export const Hr = styled.hr`
 
 export const CardContent = styled.p`
   text-align: center;
-  color: #fff;
-
   font-size: 1rem;
   line-height: 26px;
 
@@ -102,6 +99,5 @@ export const CardContent = styled.p`
 `;
 
 export const CardRating = styled.p`
-  color: #fff;
   font-size: 1rem;
 `;

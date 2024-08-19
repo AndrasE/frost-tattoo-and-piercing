@@ -56,15 +56,12 @@ function App() {
 
       <div className="App">
         {loading ? (
-          <SplashScreen theme={theme} />
+          <SplashScreen />
         ) : (
           <Router>
             <Routes>
-              <Route
-                path="/"
-                element={<Home theme={theme} toggleTheme={toggleTheme} />}
-              />
-              <Route path="/gallery" element={<GalleryPage theme={theme} />} />
+              <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
+              <Route path="/gallery" element={<GalleryPage />} />
             </Routes>
           </Router>
         )}

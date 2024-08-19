@@ -1,7 +1,7 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-import styles from "./splideCssOverwrite.css";
+import styles from "../../themes/splideCssOverwrite.css";
 import {
   CarouselContainer,
   Card,
@@ -15,7 +15,7 @@ import {
   HeaderText,
   CardContent,
   CardRating,
-  Asd,
+  ContentWrapper,
 } from "./TestimonialCarousel";
 import { testimonialsData } from "./carouselData";
 
@@ -32,7 +32,7 @@ const TestimonialCarousel = () => {
             <SplideSlide key={index}>
               <Card>
                 <QuoteTop />
-                <Asd>
+                <ContentWrapper>
                   <ReviewLink href={item.link} target="_blank">
                     <CardHeader>
                       <ImgWrapper>
@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
                   <CardContent>{item.review}</CardContent>
                   <Hr />
                   <CardRating>{item.rating}</CardRating>
-                </Asd>
+                </ContentWrapper>
                 <QuoteButtom />
               </Card>
             </SplideSlide>
