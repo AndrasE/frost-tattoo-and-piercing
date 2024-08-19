@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-39}>
+                offset={-40}>
                 Testimonials
               </NavLinks>
             </NavItem>
@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-38}>
+              offset={-40}>
               Contact
             </NavBtnLink>
           </NavBtn>

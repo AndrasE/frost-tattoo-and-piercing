@@ -43,7 +43,11 @@ const Home = ({ toggleTheme }) => {
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
-      <button onClick={toggleTheme}>asdasdasd</button>
+      <button
+        style={{ position: "absolute", right: 0, top: "20%" }}
+        onClick={toggleTheme}>
+        asdasdasd
+      </button>
       <Section id="about" col2={<AboutImg />} />
       <Section id="services" col2={<ServicesImgs />} reversed />
       <Section
