@@ -39,7 +39,6 @@ const Home = ({ toggleTheme }) => {
     <>
       <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
       <Navbar toggleSidebar={toggleSidebar} />
-
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>

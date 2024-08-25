@@ -11,7 +11,7 @@ export const SectionWrapper = styled.div`
 
 export const Container = styled.div`
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -40,7 +40,7 @@ export const Row = styled.div`
     reversed ? `"col2 col1"` : `"col1 col2"`}; /* Adjust grid-template-areas */
 
   @media screen and (max-width: 768px) {
-    grid-gap: 30px;
+    grid-gap: 20px;
     grid-template-areas: "col1" "col2"; /* Always stack columns on mobile */
     align-content: center;
   }
