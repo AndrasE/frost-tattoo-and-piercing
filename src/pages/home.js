@@ -13,10 +13,10 @@ import ProgressBar from "../components/ProgressBar";
 import { motion } from "framer-motion";
 
 const Home = ({ toggleTheme }) => {
-  const [$isOpen, setIsOpen] = useState(false);
+  const [$sidebarOpen, setSidebarOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!$isOpen);
+  const toggleSidebar = () => {
+    setSidebarOpen(!$sidebarOpen);
   };
 
   // could just wrap HeroSection with <motion.div> but I wanted to keep the Home return clean
@@ -37,8 +37,8 @@ const Home = ({ toggleTheme }) => {
 
   return (
     <>
-      <Sidebar $isOpen={$isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
+      <Navbar toggleSidebar={toggleSidebar} />
 
       <HeroAnimation>
         <HeroSection />

@@ -15,7 +15,7 @@ import {
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggleSidebar }) => {
   /* eslint-disable no-unused-vars */
   const [scrollNav, setScrollNav] = useState(false);
   /* eslint-enable no-unused-vars */
@@ -106,7 +106,7 @@ const Navbar = ({ toggle }) => {
               Contact
             </NavBtnLink>
           </NavBtn>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon onClick={toggleSidebar}>
             <FaBars />
           </MobileIcon>
         </NavbarContainer>

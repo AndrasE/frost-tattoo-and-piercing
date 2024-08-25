@@ -10,10 +10,10 @@ import {
   SidebarBtnLink,
 } from "./SidebarElements";
 
-const Sidebar = ({ $isOpen, toggle }) => {
+const Sidebar = ({ $sidebarOpen, toggleSidebar }) => {
   return (
-    <SidebarContainer $isOpen={$isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
+    <SidebarContainer $sidebarOpen={$sidebarOpen} onClick={toggleSidebar}>
+      <Icon onClick={toggleSidebar}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
@@ -26,7 +26,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             duration={500}
             spy={true}
             offset={-80}
-            onClick={toggle}>
+            onClick={toggleSidebar}>
             About
           </SidebarLink>
           <SidebarLink
@@ -37,7 +37,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             duration={500}
             spy={true}
             offset={-80}
-            onClick={toggle}>
+            onClick={toggleSidebar}>
             Services
           </SidebarLink>
           <SidebarLink
@@ -48,7 +48,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             duration={500}
             spy={true}
             offset={-80}
-            onClick={toggle}>
+            onClick={toggleSidebar}>
             Gallery
           </SidebarLink>
           <SidebarLink
@@ -59,7 +59,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
             duration={500}
             spy={true}
             offset={-80}
-            onClick={toggle}>
+            onClick={toggleSidebar}>
             Testimonials
           </SidebarLink>
           <SideBtn>
@@ -71,7 +71,7 @@ const Sidebar = ({ $isOpen, toggle }) => {
               duration={500}
               spy={true}
               offset={-80}
-              onClick={toggle}>
+              onClick={toggleSidebar}>
               Contact
             </SidebarBtnLink>
           </SideBtn>
