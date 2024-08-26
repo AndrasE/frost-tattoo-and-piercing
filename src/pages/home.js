@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/HomeNavbar";
+import SettingsModal from "../components/SettingsModal";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Sections";
 import AboutImg from "../components/AboutImg";
@@ -42,6 +43,7 @@ const Home = ({ toggleTheme }) => {
       <HeroAnimation>
         <HeroSection />
       </HeroAnimation>
+      <SettingsModal />
       <button
         style={{ position: "absolute", right: 0, top: "20%" }}
         onClick={toggleTheme}>
