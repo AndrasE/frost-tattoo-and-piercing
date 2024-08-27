@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Video from "../../videos/video.mp4";
 import { motion } from "framer-motion";
 import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
+import SettingsModal from "../SettingsModal";
 
 import {
   HeroContainer,
@@ -49,6 +50,7 @@ const HeroVideo = () => {
           />
         </motion.div>
       </HeroBg>
+      <SettingsModal />
       <HeroContent>
         <HeroH1>Frost </HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
@@ -60,7 +62,7 @@ const HeroVideo = () => {
         to="about"
         smooth={true}
         duration={500}
-        offset={-40}></ScrollLink>
+        offset={-80}></ScrollLink>
       <LottieAnimation animationData={DoubleArrowDown} />
     </HeroContainer>
   );
