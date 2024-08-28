@@ -111,7 +111,6 @@ export const NavBtnLink = styled(LinkScroll)`
   );
   background-size: 200% auto;
   border-radius: 50px;
-  background-color: #1ebbd7;
   white-space: nowrap;
   padding: 10px 20px;
   color: #000;

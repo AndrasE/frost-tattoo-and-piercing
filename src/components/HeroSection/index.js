@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import Video from "../../videos/video.mp4";
 import { motion } from "framer-motion";
 import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
-import SettingsModal from "../SettingsModal";
 
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
   HeroContent,
   HeroH1,
   HeroH2,
@@ -16,13 +14,13 @@ import {
   LottieAnimation,
 } from "./HeroElements";
 
-const HeroVideo = () => {
+const HeroVideo = memo(() => {
+  // eslint-disable-next-line
   const [videoEnded, setVideoEnded] = useState(false);
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line
   const [scroll, setScroll] = useState(false);
-  /* eslint-enable no-unused-vars */
 
-  const changeSctroll = () => {
+  const changeScroll = () => {
     if (window.scrollY >= 80) {
       setScroll(true);
     } else {
@@ -31,34 +29,34 @@ const HeroVideo = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeSctroll);
+    window.addEventListener("scroll", changeScroll);
+    return () => window.removeEventListener("scroll", changeScroll);
   }, []);
 
   return (
     <HeroContainer>
       <HeroBg>
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{ opacity: videoEnded ? 0 : 1 }}
-          transition={{ duration: 1 }}>
-          <VideoBg
-            autoPlay
-            muted
-            src={Video}
-            onEnded={() => setVideoEnded(true)}
-            type="video/mp4"
-          />
-        </motion.div>
+        <motion.video
+          initial={{ opacity: 0 }} // Start with 0 opacity
+          animate={{ opacity: 1 }} // Animate to full opacity
+          transition={{ duration: 1 }} // 1 second fade-in
+          autoPlay
+          muted
+          src={Video}
+          onEnded={() => setVideoEnded(true)}
+          type="video/mp4"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure the video covers its container
+        />
       </HeroBg>
-      <SettingsModal />
+
       <HeroContent>
-        <HeroH1>Frost </HeroH1>
+        <HeroH1>Frost</HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
         <HeroP>Welcome to our official website!</HeroP>
       </HeroContent>
       <ScrollLink
-        href="about" //only need for SEO
-        aria-label="Scroll to about section" //only need for SEO
+        href="about"
+        aria-label="Scroll to about section"
         to="about"
         smooth={true}
         duration={500}
@@ -66,6 +64,6 @@ const HeroVideo = () => {
       <LottieAnimation animationData={DoubleArrowDown} />
     </HeroContainer>
   );
-};
+});
 
 export default HeroVideo;

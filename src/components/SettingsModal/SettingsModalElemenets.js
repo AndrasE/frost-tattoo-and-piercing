@@ -2,16 +2,23 @@ import styled from "styled-components";
 import { IoSunnyOutline } from "react-icons/io5";
 import { IoMoonOutline } from "react-icons/io5";
 
-export const ModalContainer = styled.div`
+export const Modal = styled.div`
   position: absolute;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-209px")};
+`;
+
+export const ModalContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  top: 50%;
-  left: 112px;
-  transform: translate(-50%, -50%);
-  height: 271.6px;
-  z-index: 999;
+  margin-top: 80px;
 `;
 
 export const SettingsContainer = styled.div`
@@ -25,6 +32,8 @@ export const SettingsContainer = styled.div`
   border-bottom: 2px solid #1ebbd7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: 0.4s ease-in-out;
+  opacity: ${({ $settingsOpen }) => ($settingsOpen ? "100%" : "0%")};
 `;
 
 export const SettingsWrapper = styled.div`
@@ -77,16 +86,31 @@ export const LabelContainer = styled.div`
 `;
 
 export const LabelWrapper = styled.div`
-  background-color: #1ebbd7;
-  padding: 5px 0;
+  background-image: linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  );
+  background-size: 200% auto;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 3px 0;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-position: right center;
+  }
 `;
-
 export const ModalLabel = styled.p`
-  font-size: 1.1rem;
-
+  position: relative;
+  bottom: 2.5px;
+  font-size: 1rem;
+  letter-spacing: -2px;
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: #16191d;
