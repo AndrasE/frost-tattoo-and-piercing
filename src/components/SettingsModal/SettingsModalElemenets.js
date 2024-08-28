@@ -18,7 +18,7 @@ export const ModalContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 120px;
 `;
 
 export const SettingsContainer = styled.div`
