@@ -27,9 +27,10 @@ export const GlobalStyles = createGlobalStyle`
   /* Body styles */
   body {
     background-color: ${({ theme }) => theme.backgroundColor}; 
+    transition: 0.5s ease-in-out;
   }
 
-  h1, h2, p, a {
+  h1, h2, p, a, span {
     color: ${({ theme }) => theme.fontColor};
   }
 

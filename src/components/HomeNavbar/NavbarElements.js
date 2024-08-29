@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
   z-index: 10;
+  transition: 0.4s ease-in-out;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

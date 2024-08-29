@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import { IoSunnyOutline } from "react-icons/io5";
-import { IoMoonOutline } from "react-icons/io5";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 export const Modal = styled.div`
   position: absolute;
   height: 100vh;
   z-index: 2;
   display: flex;
-
+  margin-top: 60px;
   flex-direction: row;
   align-items: center;
   transition: 0.3s ease-in-out;
-  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-209px")};
+  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-180px")};
 `;
 
 export const ModalContainer = styled.div`
@@ -32,14 +31,8 @@ export const SettingsContainer = styled.div`
   border-bottom: 2px solid #1ebbd7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: 0.4s ease-in-out;
   opacity: ${({ $settingsOpen }) => ($settingsOpen ? "100%" : "0%")};
-`;
-
-export const SettingsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: 0.4s ease-in-out;
 `;
 
 export const SettingsLabel = styled.p`
@@ -48,37 +41,46 @@ export const SettingsLabel = styled.p`
   border-bottom: 2px solid #1ebbd7;
 `;
 
-export const SettingWrapper = styled.div`
-  padding: 5px;
+export const SettingsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 7px;
-  border-radius: 15px;
-  margin-bottom: 15px;
 `;
 
-export const Setting = styled.div`
+export const SettingWrapper = styled.div`
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  padding: 3px;
-  transition: all 0.1s ease-in-out;
+  padding: 5px;
+  border-radius: 15px;
+  background-size: 200% auto;
 
-  &:hover {
-    scale: 1.2;
-  }
+  background-image: ${({ $isSelected }) =>
+    $isSelected
+      ? `linear-gradient(
+    to right,
+    #1ebbd7 0%,
+    #189ad3 51%,
+    #1ebbd7 100%
+  )`
+      : "none"};
+  transition: all 0.3s ease-in-out;
+`;
+export const SettingLabel = styled.span`
+  padding-left: 3px;
 `;
 
-export const Sun = styled(IoSunnyOutline)`
-  padding: 3px;
-  font-size: 2.1rem;
-  color: ${({ theme }) => theme.fontColor};
+export const Sun = styled(FiSun)`
+  color: ${(props) => props.theme.fontColor};
 `;
 
-export const Moon = styled(IoMoonOutline)`
-  padding: 3px;
-  font-size: 1.8rem;
-  color: ${({ theme }) => theme.fontColor};
+export const Moon = styled(FiMoon)`
+  color: ${(props) => props.theme.fontColor};
 `;
 
 export const FlagIcon = styled.img`
-  height: 1.2rem;
+  height: 1rem;
 `;
 
 export const LabelContainer = styled.div`

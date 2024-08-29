@@ -1,58 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ModalContainer,
-  SettingsWrapper,
   SettingsContainer,
-  Setting,
-  Sun,
-  Moon,
+  LabelContainer,
   LabelWrapper,
   SettingsLabel,
-  LabelContainer,
+  SettingsWrapper,
   SettingWrapper,
-  FlagIcon,
+  SettingLabel,
   Modal,
   ModalLabel,
+  Sun,
+  Moon,
+  FlagIcon,
 } from "./SettingsModalElemenets";
 import Hun from "../../images/flagIcons/hu.svg";
 import Eng from "../../images/flagIcons/gb.svg";
 import Ger from "../../images/flagIcons/de.svg";
 
-const SettingsModal = ({ $settingsOpen, toggleSettings }) => {
+const SettingsModal = ({
+  $settingsOpen,
+  toggleSettings,
+  theme,
+  toggleTheme,
+}) => {
+  const [$themeSelected, $setThemeSelected] = useState(theme);
+
+  function handleTeamClick(chosenTheme) {
+    $setThemeSelected(chosenTheme);
+  }
+
   return (
     <Modal $settingsOpen={$settingsOpen} onClick={toggleSettings}>
       <ModalContainer>
         <SettingsContainer $settingsOpen={$settingsOpen}>
           <SettingsLabel>Theme</SettingsLabel>
           <SettingsWrapper>
-            <SettingWrapper>
-              <Setting>
-                <Sun />
-              </Setting>
+            <SettingWrapper
+              onClick={handleTeamClick("light")}
+              $isSelected={$themeSelected === "light"}>
+              <Sun />
+              <SettingLabel>light</SettingLabel>
             </SettingWrapper>
-            <SettingWrapper>
-              <Setting>
-                <Moon />
-              </Setting>
+            <SettingWrapper
+              onClick={handleTeamClick("light")}
+              $isSelected={$themeSelected === "dark"}>
+              <Moon />
+              <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
+
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
-            <SettingWrapper>
-              <Setting>
-                <FlagIcon src={Hun} />
-              </Setting>
-            </SettingWrapper>
-            <SettingWrapper>
-              <Setting>
-                <FlagIcon src={Eng} />
-              </Setting>
-            </SettingWrapper>
-            <SettingWrapper>
-              <Setting>
-                <FlagIcon src={Ger} />
-              </Setting>
-            </SettingWrapper>
+            <FlagIcon src={Hun} />
+            <FlagIcon src={Eng} />
+            <FlagIcon src={Ger} />
           </SettingsWrapper>
         </SettingsContainer>
         <LabelContainer>

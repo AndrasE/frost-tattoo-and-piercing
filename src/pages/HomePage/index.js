@@ -13,7 +13,7 @@ import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
 import { BlurAnimation } from "./HomePageElements";
 
-const Home = ({ toggleTheme }) => {
+const Home = ({ toggleTheme, theme }) => {
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
 
@@ -44,6 +44,8 @@ const Home = ({ toggleTheme }) => {
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
       {/* Blur effect applied when settings modal is open */}
       <BlurAnimation $settingsOpen={$settingsOpen}>

@@ -20,9 +20,10 @@ function App() {
     : "light";
   const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
 
-  const toggleTheme = () => {
+  const toggleTheme = (asd) => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
+    console.log(asd);
   };
 
   useEffect(() => {
@@ -59,7 +60,10 @@ function App() {
         ) : (
           <Router>
             <Routes>
-              <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
+              <Route
+                path="/"
+                element={<Home theme={theme} toggleTheme={toggleTheme} />}
+              />
               <Route path="/gallery" element={<GalleryPage />} />
             </Routes>
           </Router>
