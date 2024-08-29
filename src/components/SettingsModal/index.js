@@ -26,10 +26,6 @@ const SettingsModal = ({
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
 
-  function handleTeamClick(chosenTheme) {
-    $setThemeSelected(chosenTheme);
-  }
-
   return (
     <Modal $settingsOpen={$settingsOpen} onClick={toggleSettings}>
       <ModalContainer>
@@ -37,13 +33,13 @@ const SettingsModal = ({
           <SettingsLabel>Theme</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
-              onClick={handleTeamClick("light")}
+              onClick={() => $setThemeSelected("light")}
               $isSelected={$themeSelected === "light"}>
               <Sun />
               <SettingLabel>light</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
-              onClick={handleTeamClick("light")}
+              onClick={() => $setThemeSelected("dark")}
               $isSelected={$themeSelected === "dark"}>
               <Moon />
               <SettingLabel>dark</SettingLabel>
