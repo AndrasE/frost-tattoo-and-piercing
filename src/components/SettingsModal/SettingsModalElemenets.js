@@ -10,7 +10,6 @@ export const Modal = styled.div`
   flex-direction: row;
   align-items: center;
   left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
-  transition: 0.2s ease-in-out;
 `;
 
 export const ModalContainer = styled.div`
@@ -32,7 +31,6 @@ export const SettingsContainer = styled.div`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: ${({ $settingsOpen }) => ($settingsOpen ? "100%" : "0%")};
-  transition: 0.2s ease-in-out;
 `;
 
 export const SettingsLabel = styled.p`
@@ -55,7 +53,6 @@ export const SettingWrapper = styled.div`
   padding: 5px;
   border-radius: 15px;
   background-size: 200% auto;
-
   background-image: ${({ $isSelected }) =>
     $isSelected
       ? `linear-gradient(
@@ -65,7 +62,6 @@ export const SettingWrapper = styled.div`
     #1ebbd7 100%
   )`
       : "none"};
-  transition: all 0.3s ease-in-out;
 `;
 export const SettingLabel = styled.span`
   padding-left: 3px;
@@ -98,7 +94,6 @@ export const LabelWrapper = styled.div`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   padding: 3px 0;

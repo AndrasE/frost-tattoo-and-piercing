@@ -41,7 +41,7 @@ const SettingsModal = ({
 
   // Map scrollY value to control position
   const xPosition = useTransform(scrollY, [150, 800], [0, -300]); // Move out to the left
-  const smoothXPosition = useSpring(xPosition, { stiffness: 500, damping: 20 });
+  const smoothXPosition = useSpring(xPosition, { stiffness: 150, damping: 20 });
 
   return (
     <MotionModal
