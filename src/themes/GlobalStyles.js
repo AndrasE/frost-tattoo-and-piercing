@@ -11,12 +11,14 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   :root {
+    //main themes
     --background-color: ${(props) => props.theme.backgroundColor};
     --font-color: ${(props) => props.theme.fontColor};
+    --accentColor: ${(props) => props.theme.accentColor};
     --drop-shadow: ${(props) => props.theme.dropShadow};
-    --border-color: ${(props) => props.theme.iconBorder};
-    /* --svg-primary-color: ${(props) => props.theme.svgPrimaryColor};
-    --svg-secondary-color: ${(props) => props.theme.svgSecondaryColor}; */
+   //gallerypage svgs  
+    --svg-primary-color: ${(props) => props.theme.svgPrimaryColor};
+    --svg-secondary-color: ${(props) => props.theme.svgSecondaryColor};
   }
 
 

@@ -89,7 +89,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #1ebbd7;
+    border-bottom: 2px solid ${({ theme }) => theme.accentColor};
     padding-top: 2px;
   }
 `;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Modal,
   ModalContainer,
   SettingsContainer,
   LabelContainer,
@@ -8,7 +9,6 @@ import {
   SettingsWrapper,
   SettingWrapper,
   SettingLabel,
-  Modal,
   ModalLabel,
   Sun,
   Moon,
@@ -17,6 +17,10 @@ import {
 import Hun from "../../images/flagIcons/hu.svg";
 import Eng from "../../images/flagIcons/gb.svg";
 import Ger from "../../images/flagIcons/de.svg";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+
+// Convert Modal into a motion component
+const MotionModal = motion(Modal);
 
 const SettingsModal = ({
   $settingsOpen,
@@ -26,14 +30,26 @@ const SettingsModal = ({
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
 
-  //sending theme back to parent App.js to make the change theme change, setting state in this component to handle the selection on element and pass it to styled components
+  // Function to handle theme selection
   function handleThemeSelect(selected) {
     $setThemeSelected(selected);
     toggleTheme(selected);
   }
 
+  // Track the scroll position of the window
+  const { scrollY } = useScroll();
+
+  // Map scrollY value to control position
+  const xPosition = useTransform(scrollY, [150, 800], [0, -300]); // Move out to the left
+  const smoothXPosition = useSpring(xPosition, { stiffness: 500, damping: 20 });
+
   return (
-    <Modal $settingsOpen={$settingsOpen} onClick={toggleSettings}>
+    <MotionModal
+      $settingsOpen={$settingsOpen}
+      onClick={toggleSettings}
+      style={{
+        x: smoothXPosition, // Animate x position to slide out
+      }}>
       <ModalContainer>
         <SettingsContainer $settingsOpen={$settingsOpen}>
           <SettingsLabel>Theme</SettingsLabel>
@@ -51,6 +67,7 @@ const SettingsModal = ({
               <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
+
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
             <FlagIcon src={Hun} />
@@ -58,13 +75,14 @@ const SettingsModal = ({
             <FlagIcon src={Ger} />
           </SettingsWrapper>
         </SettingsContainer>
+
         <LabelContainer>
           <LabelWrapper>
             <ModalLabel>settings</ModalLabel>
           </LabelWrapper>
         </LabelContainer>
       </ModalContainer>
-    </Modal>
+    </MotionModal>
   );
 };
 

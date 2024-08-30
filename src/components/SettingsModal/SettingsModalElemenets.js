@@ -9,8 +9,8 @@ export const Modal = styled.div`
   margin-top: 60px;
   flex-direction: row;
   align-items: center;
-  transition: 0.3s ease-in-out;
   left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
+  transition: 0.2s ease-in-out;
 `;
 
 export const ModalContainer = styled.div`
@@ -32,7 +32,7 @@ export const SettingsContainer = styled.div`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: ${({ $settingsOpen }) => ($settingsOpen ? "100%" : "0%")};
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
 `;
 
 export const SettingsLabel = styled.p`

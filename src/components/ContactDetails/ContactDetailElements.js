@@ -1,11 +1,7 @@
 import styled from "styled-components";
 import { SlSocialFacebook } from "react-icons/sl";
 import { IoMailUnreadOutline } from "react-icons/io5";
-import { TbMail } from "react-icons/tb";
 import { FiPhone } from "react-icons/fi";
-
-import { MdOutlineEmail } from "react-icons/md";
-import { BsTelephone } from "react-icons/bs";
 
 export const ContentContainer = styled.div`
   margin: auto;
@@ -38,7 +34,7 @@ export const Link = styled.a`
     width: 218px;
     height: 2px;
     border-radius: 4px;
-    background-color: #1ebbd7;
+    background-color: ${({ theme }) => theme.accentColor};
     bottom: 2px;
     left: 35px;
     transform-origin: right;
@@ -70,7 +66,7 @@ export const LinkText = styled.div`
 export const FacebookIcon = styled(SlSocialFacebook)`
   height: 30px;
   width: 30px;
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   padding: 0 4px 0 3px;
   border-radius: 5px;
   border: 1px solid;
@@ -91,7 +87,7 @@ export const FacebookLink = styled(Link)`
 export const EmailIcon = styled(IoMailUnreadOutline)`
   height: 30px;
   width: 30px;
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   padding: 4px;
   border-radius: 5px;
   border: 1px solid;
@@ -112,7 +108,7 @@ export const EmailLink = styled(Link)`
 export const PhoneIcon = styled(FiPhone)`
   height: 30px;
   width: 30px;
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   padding: 5px;
   border-radius: 5px;
   border: 1px solid;

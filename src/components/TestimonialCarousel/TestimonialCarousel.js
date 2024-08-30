@@ -35,7 +35,7 @@ export const QuoteTop = styled(RiDoubleQuotesL)`
   position: absolute;
   top: 0px;
   left: 15px;
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
 `;
@@ -45,7 +45,7 @@ export const QuoteButtom = styled(RiDoubleQuotesL)`
   bottom: 0px;
   right: 15px;
   transform: rotate(180deg);
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
 `;
@@ -81,7 +81,7 @@ export const HeaderText = styled.h2`
 
 export const Hr = styled.hr`
   margin: 12px 0;
-  color: #1ebbd7;
+  color: ${({ theme }) => theme.accentColor};
   border-top: 2px solid;
   border-radius: 25px;
   width: 50px;
