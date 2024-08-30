@@ -26,6 +26,12 @@ const SettingsModal = ({
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
 
+  //sending theme back to parent App.js to make the change theme change, setting state in this component to handle the selection on element and pass it to styled components
+  function handleThemeSelect(selected) {
+    $setThemeSelected(selected);
+    toggleTheme(selected);
+  }
+
   return (
     <Modal $settingsOpen={$settingsOpen} onClick={toggleSettings}>
       <ModalContainer>
@@ -33,19 +39,18 @@ const SettingsModal = ({
           <SettingsLabel>Theme</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
-              onClick={() => $setThemeSelected("light")}
+              onClick={() => handleThemeSelect("light")}
               $isSelected={$themeSelected === "light"}>
               <Sun />
               <SettingLabel>light</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
-              onClick={() => $setThemeSelected("dark")}
+              onClick={() => handleThemeSelect("dark")}
               $isSelected={$themeSelected === "dark"}>
               <Moon />
               <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
-
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
             <FlagIcon src={Hun} />

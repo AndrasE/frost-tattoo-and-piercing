@@ -3,8 +3,10 @@ export const lightTheme = {
   fontColor: "#111",
   navDropShadow: "rgba(0, 0, 0, 0.2)",
   dropShadow: "rgba(0, 0, 0, 0.2)",
-  svgPrimaryColor: "#707b7c",
-  svgSecondaryColor: "#515a5a",
+  iconBorder: "red",
+
+  // svgPrimaryColor: "#707b7c",
+  // svgSecondaryColor: "#515a5a",
 };
 
 export const darkTheme = {
@@ -12,6 +14,8 @@ export const darkTheme = {
   fontColor: "#f2f2f2",
   navDropShadow: "rgba(0, 0, 0, 0.4)",
   dropShadow: "rgba(0, 0, 0, 0.7)",
-  svgPrimaryColor: "#707b7c",
-  svgSecondaryColor: "#b2babb",
+  iconBorder: "yellow",
+
+  // svgPrimaryColor: "#707b7c",
+  // svgSecondaryColor: "#b2babb",
 };

@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { FiFacebook } from "react-icons/fi";
+import { SlSocialFacebook } from "react-icons/sl";
+import { IoMailUnreadOutline } from "react-icons/io5";
+import { TbMail } from "react-icons/tb";
+import { FiPhone } from "react-icons/fi";
+
 import { MdOutlineEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 
@@ -63,13 +67,13 @@ export const LinkText = styled.div`
   }
 `;
 
-export const FacebookIcon = styled(FiFacebook)`
+export const FacebookIcon = styled(SlSocialFacebook)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
   padding: 0 4px 0 3px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid;
 `;
 
 export const FacebookLink = styled(Link)`
@@ -84,13 +88,13 @@ export const FacebookLink = styled(Link)`
   }
 `;
 
-export const EmailIcon = styled(MdOutlineEmail)`
+export const EmailIcon = styled(IoMailUnreadOutline)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
-  padding: 3px;
+  padding: 4px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid;
 `;
 
 export const EmailLink = styled(Link)`
@@ -105,13 +109,13 @@ export const EmailLink = styled(Link)`
   }
 `;
 
-export const PhoneIcon = styled(BsTelephone)`
+export const PhoneIcon = styled(FiPhone)`
   height: 30px;
   width: 30px;
   color: #1ebbd7;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid;
 `;
 
 export const PhoneLink = styled(Link)`

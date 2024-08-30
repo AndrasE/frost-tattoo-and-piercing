@@ -52,11 +52,6 @@ const Home = ({ toggleTheme, theme }) => {
         <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
         <Navbar toggleSidebar={toggleSidebar} />
         <HeroVideo />
-        <button
-          style={{ position: "absolute", right: 0, top: "20%" }}
-          onClick={toggleTheme}>
-          Toggle Theme
-        </button>
         <Section id="about" col2={<AboutImg />} />
         <Section id="services" col2={<ServicesImgs />} reversed />
         <Section

@@ -20,10 +20,10 @@ function App() {
     : "light";
   const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
 
-  const toggleTheme = (asd) => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    console.log(asd);
+  const toggleTheme = (newTheme) => {
+    if (newTheme !== theme) {
+      setTheme(newTheme);
+    }
   };
 
   useEffect(() => {

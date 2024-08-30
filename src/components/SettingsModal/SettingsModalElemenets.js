@@ -10,7 +10,7 @@ export const Modal = styled.div`
   flex-direction: row;
   align-items: center;
   transition: 0.3s ease-in-out;
-  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-180px")};
+  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
 `;
 
 export const ModalContainer = styled.div`

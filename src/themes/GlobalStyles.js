@@ -14,8 +14,9 @@ export const GlobalStyles = createGlobalStyle`
     --background-color: ${(props) => props.theme.backgroundColor};
     --font-color: ${(props) => props.theme.fontColor};
     --drop-shadow: ${(props) => props.theme.dropShadow};
-    --svg-primary-color: ${(props) => props.theme.svgPrimaryColor};
-    --svg-secondary-color: ${(props) => props.theme.svgSecondaryColor};
+    --border-color: ${(props) => props.theme.iconBorder};
+    /* --svg-primary-color: ${(props) => props.theme.svgPrimaryColor};
+    --svg-secondary-color: ${(props) => props.theme.svgSecondaryColor}; */
   }
 
 
