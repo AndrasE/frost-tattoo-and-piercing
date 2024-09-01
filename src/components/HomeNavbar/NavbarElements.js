@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.backgroundColor};
@@ -45,22 +46,6 @@ export const NavLogoWrapper = styled(LinkRoute)`
 export const NavLogo = styled.img`
   width: 35px;
   margin-right: 5px;
-`;
-
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    color: ${({ theme }) => theme.fontColor};
-
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
 `;
 
 export const NavMenu = styled.ul`
@@ -126,4 +111,31 @@ export const NavBtnLink = styled(LinkScroll)`
     transition: all 0.3s ease-in-out;
     background-position: right center;
   }
+`;
+
+export const ToggleBtn = styled.button`
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    cursor: pointer;
+    margin: 20px;
+  }
+`;
+
+export const Svg = styled.svg`
+  margin-top: 6px;
+  width: 32px;
+  height: 32px;
+`;
+
+export const MotionPath = styled(motion.path)`
+  stroke-width: 1.7;
+  stroke: ${({ theme }) => theme.fontColor};
 `;

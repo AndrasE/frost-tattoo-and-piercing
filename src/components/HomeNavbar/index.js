@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
 import Logo from "../../images/logo.png";
 import {
   Nav,
   NavbarContainer,
   NavLogoWrapper,
   NavLogo,
-  MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
   NavBtn,
   NavBtnLink,
+  ToggleBtn,
+  Svg,
+  Motio,
+  MotionPath,
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
   /* eslint-disable no-unused-vars */
   const [scrollNav, setScrollNav] = useState(false);
   /* eslint-enable no-unused-vars */
@@ -105,10 +107,38 @@ const Navbar = ({ toggleSidebar }) => {
               offset={-40}>
               Contact
             </NavBtnLink>
-          </NavBtn>
-          <MobileIcon onClick={toggleSidebar}>
-            <FaBars />
-          </MobileIcon>
+          </NavBtn>{" "}
+          {/* toggle button w animation */}
+          <ToggleBtn onClick={toggleSidebar}>
+            <Svg viewBox="0 0 23 23">
+              <MotionPath
+                variants={{
+                  closed: { d: "M 2 2.5 L 20 2.5" },
+                  open: { d: "M 3 16.5 L 17 2.5" },
+                }}
+                initial="closed"
+                animate={$sidebarOpen ? "open" : "closed"}
+              />
+              <MotionPath
+                d="M 2 9.423 L 20 9.423"
+                variants={{
+                  closed: { opacity: 1 },
+                  open: { opacity: 0 },
+                }}
+                transition={{ duration: 0.1 }}
+                initial="closed"
+                animate={$sidebarOpen ? "open" : "closed"}
+              />
+              <MotionPath
+                variants={{
+                  closed: { d: "M 2 16.346 L 20 16.346" },
+                  open: { d: "M 3 2.5 L 17 16.346" },
+                }}
+                initial="closed"
+                animate={$sidebarOpen ? "open" : "closed"}
+              />
+            </Svg>
+          </ToggleBtn>
         </NavbarContainer>
       </Nav>
     </>

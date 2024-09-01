@@ -12,6 +12,7 @@ import TestimonialCarousel from "../../components/TestimonialCarousel";
 import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
 import { BlurAnimation } from "./HomePageElements";
+import { motion } from "framer-motion";
 
 const Home = ({ toggleTheme, theme }) => {
   const [$sidebarOpen, setSidebarOpen] = useState(false);
@@ -27,7 +28,7 @@ const Home = ({ toggleTheme, theme }) => {
 
   // Disable scrolling when the settings modal is open
   useEffect(() => {
-    if ($settingsOpen) {
+    if ($settingsOpen || $sidebarOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -37,10 +38,11 @@ const Home = ({ toggleTheme, theme }) => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [$settingsOpen]);
+  }, [$settingsOpen, $sidebarOpen]);
 
   return (
     <>
+      {" "}
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
@@ -50,8 +52,18 @@ const Home = ({ toggleTheme, theme }) => {
       {/* Blur effect applied when settings modal is open */}
       <BlurAnimation $settingsOpen={$settingsOpen}>
         <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
-        <Navbar toggleSidebar={toggleSidebar} />
-        <HeroVideo />
+        <Navbar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            delay: 0.1,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}>
+          <HeroVideo />{" "}
+        </motion.div>
+
         <Section id="about" col2={<AboutImg />} />
         <Section id="services" col2={<ServicesImgs />} reversed />
         <Section
