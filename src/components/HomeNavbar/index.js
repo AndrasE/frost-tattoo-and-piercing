@@ -12,7 +12,6 @@ import {
   NavBtnLink,
   ToggleBtn,
   Svg,
-  Motio,
   MotionPath,
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
