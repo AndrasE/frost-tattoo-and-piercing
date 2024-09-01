@@ -63,7 +63,6 @@ const Home = ({ toggleTheme, theme }) => {
           }}>
           <HeroVideo />{" "}
         </motion.div>
-
         <Section id="about" col2={<AboutImg />} />
         <Section id="services" col2={<ServicesImgs />} reversed />
         <Section

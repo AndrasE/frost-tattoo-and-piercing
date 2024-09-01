@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   /* Body styles */
   body {
     background-color: ${({ theme }) => theme.backgroundColor}; 
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
   h1, h2, p, a, span {
@@ -39,15 +39,15 @@ export const GlobalStyles = createGlobalStyle`
 
   /* Custom Scrollbar Styles */
   body::-webkit-scrollbar {
-    width: 2px ;
+    width: 2px;
   }
 
   body::-webkit-scrollbar-track {
-    background: #16191d ;
+    background: transparent ;
   }
 
   body::-webkit-scrollbar-thumb {
-    background: #1ebbd7 ;
+    background: ${({ theme }) => theme.accentColor};  ;
   }
 
 `;

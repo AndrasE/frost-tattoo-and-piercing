@@ -1,8 +1,6 @@
 import React from "react";
 import {
   SidebarContainer,
-  Icon,
-  CloseIcon,
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
@@ -13,9 +11,6 @@ import {
 const Sidebar = ({ $sidebarOpen, toggleSidebar }) => {
   return (
     <SidebarContainer $sidebarOpen={$sidebarOpen} onClick={toggleSidebar}>
-      <Icon onClick={toggleSidebar}>
-        <CloseIcon />
-      </Icon>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink

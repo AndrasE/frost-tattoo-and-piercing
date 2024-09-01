@@ -14,6 +14,7 @@ import {
   Svg,
   MotionPath,
 } from "./NavbarElements";
+import { navLinks } from "./navlinksData";
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
@@ -35,6 +36,9 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
+    if ($sidebarOpen) {
+      toggleSidebar();
+    }
   };
 
   return (
@@ -46,54 +50,20 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
             Frost
           </NavLogoWrapper>
           <NavMenu>
-            <NavItem>
-              <NavLinks
-                href="about" //only need for SEO
-                aria-label="Scroll to about section" //only need for SEO
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-40}>
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                href="services" //only need for SEO
-                aria-label="Scroll to services section" //only need for SEO
-                to="services"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-40}>
-                Services
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                href="gallery" //only need for SEO
-                aria-label="Scroll to gallery section" //only need for SEO
-                to="gallery"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-40}>
-                Gallery
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                href="testimonials" //only need for SEO
-                aria-label="Scroll to testimonials section" //only need for SEO
-                to="testimonials"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-40}>
-                Testimonials
-              </NavLinks>
-            </NavItem>
+            {navLinks.map(({ to, label }, index) => (
+              <NavItem key={index}>
+                <NavLinks
+                  href={to} // only need for SEO
+                  aria-label="Scroll to testimonials section" // only need for SEO
+                  to={to}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-40}>
+                  {label}
+                </NavLinks>
+              </NavItem>
+            ))}
           </NavMenu>
           <NavBtn>
             <NavBtnLink
@@ -109,7 +79,7 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
           </NavBtn>{" "}
           {/* toggle button w animation */}
           <ToggleBtn onClick={toggleSidebar}>
-            <Svg viewBox="0 0 23 23">
+            <Svg $sidebarOpen={$sidebarOpen} viewBox="0 0 23 23">
               <MotionPath
                 variants={{
                   closed: { d: "M 2 2.5 L 20 2.5" },

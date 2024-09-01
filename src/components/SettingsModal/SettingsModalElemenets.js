@@ -30,7 +30,6 @@ export const SettingsContainer = styled.div`
   border-bottom: 2px solid #1ebbd7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  opacity: ${({ $settingsOpen }) => ($settingsOpen ? "100%" : "0%")};
 `;
 
 export const SettingsLabel = styled.p`

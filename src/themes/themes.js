@@ -6,8 +6,8 @@ export const lightTheme = {
   navDropShadow: "rgba(0, 0, 0, 0.2)",
   dropShadow: "rgba(0, 0, 0, 0.2)",
   //gallerypage svgs
-  svgPrimaryColor: "#707b7c",
-  svgSecondaryColor: "#515a5a",
+  svgPrimaryColor: "#575a5b",
+  svgSecondaryColor: "#111",
 };
 
 export const darkTheme = {
@@ -18,6 +18,6 @@ export const darkTheme = {
   navDropShadow: "rgba(0, 0, 0, 0.4)",
   dropShadow: "rgba(0, 0, 0, 0.7)",
   //gallerypage svgs
-  svgPrimaryColor: "#707b7c",
-  svgSecondaryColor: "#b2babb",
+  svgPrimaryColor: "#b2babb",
+  svgSecondaryColor: "#f2f2f2",
 };
