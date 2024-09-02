@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logoImgs/logo.png";
 import {
   Nav,
   NavbarContainer,
