@@ -1,7 +1,7 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-import styles from "../../themes/splideCssOverwrite.css";
+import styles from "../../../themes/splideCssOverwrite.css";
 import {
   CarouselContainer,
   Card,

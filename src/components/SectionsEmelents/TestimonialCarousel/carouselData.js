@@ -1,7 +1,7 @@
 export const testimonialsData = [
   {
     link: "https://g.co/kgs/pVxRGH8",
-    src: require("../../images/testimonialsImgs/dia.png"),
+    src: require("../../../images/testimonialsImgs/dia.png"),
     alt: "testimonialImg",
     name: "Dia",
     review:
@@ -10,7 +10,7 @@ export const testimonialsData = [
   },
   {
     link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-    src: require("../../images/testimonialsImgs/helga.png"),
+    src: require("../../../images/testimonialsImgs/helga.png"),
     alt: "testimonialImg",
     name: "Helga",
     review:
@@ -19,7 +19,7 @@ export const testimonialsData = [
   },
   {
     link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
-    src: require("../../images/testimonialsImgs/zoltan.png"),
+    src: require("../../../images/testimonialsImgs/zoltan.png"),
     alt: "testimonialImg",
     name: "Zoltán",
     review: "He works very well. I can only recommend!",
@@ -27,7 +27,7 @@ export const testimonialsData = [
   },
   {
     link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
-    src: require("../../images/testimonialsImgs/edina.png"),
+    src: require("../../../images/testimonialsImgs/edina.png"),
     alt: "testimonialImg",
     name: "Edina",
     review:
