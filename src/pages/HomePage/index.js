@@ -42,14 +42,13 @@ const Home = ({ toggleTheme, theme }) => {
 
   return (
     <>
-      {" "}
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
         theme={theme}
         toggleTheme={toggleTheme}
       />
-      {/* Blur effect applied when settings modal is open */}
+      {/* Blur effect applied when settings modal is open + diable scrolling*/}
       <BlurAnimation $settingsOpen={$settingsOpen}>
         <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
         <Navbar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
@@ -61,7 +60,7 @@ const Home = ({ toggleTheme, theme }) => {
             delay: 0.1,
             ease: [0, 0.71, 0.2, 1.01],
           }}>
-          <HeroVideo />{" "}
+          <HeroVideo />
         </motion.div>
         <Section id="about" col2={<AboutImg />} />
         <Section id="services" col2={<ServicesImgs />} reversed />

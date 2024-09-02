@@ -11,8 +11,8 @@ import {
   HeroP,
   ScrollLink,
   LottieAnimation,
+  MotionVideo,
 } from "./HeroElements";
-import { motion } from "framer-motion";
 
 const HeroVideo = memo(() => {
   // eslint-disable-next-line
@@ -36,7 +36,7 @@ const HeroVideo = memo(() => {
   return (
     <HeroContainer>
       <HeroBg>
-        <motion.video
+        <MotionVideo
           initial={{ opacity: 0 }} // Start with 0 opacity
           animate={{ opacity: 1 }} // Animate to full opacity
           transition={{ duration: 1 }} // 1 second fade-in
@@ -44,11 +44,9 @@ const HeroVideo = memo(() => {
           muted
           src={Video}
           onEnded={() => setVideoEnded(true)}
-          type="video/mp4"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure the video covers its container
-        >
+          type="video/mp4">
           <track kind="captions" src={Captions} srcLang="en" label="English" />
-        </motion.video>
+        </MotionVideo>
       </HeroBg>
 
       <HeroContent>

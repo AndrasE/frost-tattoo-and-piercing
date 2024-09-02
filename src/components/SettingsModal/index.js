@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  Modal,
+  MotionModal,
   ModalContainer,
   SettingsContainer,
   LabelContainer,
@@ -17,10 +17,7 @@ import {
 import Hun from "../../images/flagIcons/hu.svg";
 import Eng from "../../images/flagIcons/gb.svg";
 import Ger from "../../images/flagIcons/de.svg";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-
-// Convert Modal into a motion component
-const MotionModal = motion(Modal);
+import { useScroll, useSpring, useTransform } from "framer-motion";
 
 const SettingsModal = ({
   $settingsOpen,

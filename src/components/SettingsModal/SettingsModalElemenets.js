@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { motion } from "framer-motion";
 
-export const Modal = styled.div`
+export const MotionModal = styled(motion.div)`
   position: absolute;
   height: 100vh;
   z-index: 2;
