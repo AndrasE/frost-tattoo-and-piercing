@@ -76,9 +76,9 @@ const SettingsModal = ({
 
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
-            <FlagIcon src={Hun} />
-            <FlagIcon src={Eng} />
-            <FlagIcon src={Ger} />
+            <FlagIcon src={Hun} alt="Hungary_flag" />
+            <FlagIcon src={Eng} alt="United_Kingdom_flag" />
+            <FlagIcon src={Ger} alt="Germany_flat" />
           </SettingsWrapper>
         </SettingsContainer>
 

@@ -1,8 +1,7 @@
 import React, { useEffect, useState, memo } from "react";
 import Video from "../../videos/video.mp4";
-import { motion } from "framer-motion";
+import Captions from "../../videos/video_caption.vtt";
 import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
-
 import {
   HeroContainer,
   HeroBg,
@@ -13,6 +12,7 @@ import {
   ScrollLink,
   LottieAnimation,
 } from "./HeroElements";
+import { motion } from "framer-motion";
 
 const HeroVideo = memo(() => {
   // eslint-disable-next-line
@@ -46,7 +46,9 @@ const HeroVideo = memo(() => {
           onEnded={() => setVideoEnded(true)}
           type="video/mp4"
           style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure the video covers its container
-        />
+        >
+          <track kind="captions" src={Captions} srcLang="en" label="English" />
+        </motion.video>
       </HeroBg>
 
       <HeroContent>

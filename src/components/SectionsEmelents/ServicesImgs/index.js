@@ -1,17 +1,13 @@
 import React from "react";
 import { ImgWrapper, Img } from "./ServicesImgElements";
-import designImg from "../../../images/servicesImgs/design.jpg";
-import tatooingImg from "../../../images/servicesImgs/tattoo.jpg";
-import piercingImg from "../../../images/servicesImgs/piercing.jpg";
-import microdermalImg from "../../../images/servicesImgs/microdermal.jpg";
+import { servicesImages } from "./servicesImgsData";
 
 const ServicesImgs = () => {
   return (
     <ImgWrapper>
-      <Img src={designImg} alt="designImg" />
-      <Img src={tatooingImg} alt="tatooingImg" />
-      <Img src={piercingImg} alt="piercingImg" />
-      <Img src={microdermalImg} alt="microdermalImage" />
+      {servicesImages.map((item, index) => {
+        return <Img src={item.src} alt={item.alt} key={index} />;
+      })}
     </ImgWrapper>
   );
 };

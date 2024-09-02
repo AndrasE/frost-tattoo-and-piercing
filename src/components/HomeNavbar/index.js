@@ -79,7 +79,10 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
           </NavBtn>{" "}
           {/* toggle button w animation */}
           <ToggleBtn onClick={toggleSidebar}>
-            <Svg $sidebarOpen={$sidebarOpen} viewBox="0 0 23 23">
+            <Svg
+              $sidebarOpen={$sidebarOpen}
+              viewBox="0 0 23 23"
+              aria-label="svg_toggle_button">
               <MotionPath
                 variants={{
                   closed: { d: "M 2 2.5 L 20 2.5" },
