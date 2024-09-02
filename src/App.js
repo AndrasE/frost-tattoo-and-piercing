@@ -1,7 +1,7 @@
 import Home from "./pages/HomePage";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SplashScreen from "./components/SplashScreen";
+import SplashScreen from "./pages/SplashPage";
 import GalleryPage from "./pages/GalleryPage";
 import useLocalStorage from "use-local-storage";
 import { ThemeProvider } from "styled-components";
