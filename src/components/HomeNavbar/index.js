@@ -73,7 +73,7 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-40}>
+              offset={-80}>
               Contact
             </NavBtnLink>
           </NavBtn>{" "}
