@@ -11,7 +11,7 @@ export const SectionWrapper = styled.div`
 
 export const Container = styled.div`
   display: grid;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -19,7 +19,7 @@ export const Container = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 150px;
     align-content: flex-start;
   }

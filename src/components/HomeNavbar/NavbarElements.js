@@ -16,10 +16,6 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.3s ease-in-out;
-
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
 `;
 
 export const NavbarContainer = styled.div`
