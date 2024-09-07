@@ -19,15 +19,8 @@ export const Container = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
     padding: 10px;
-    margin-bottom: 150px;
-    align-content: flex-start;
-  }
-  @media screen and (max-width: 560px) {
-    margin-bottom: 100px;
-  }
-  @media screen and (max-width: 420px) {
-    margin-bottom: 30px;
   }
 `;
 
@@ -37,17 +30,18 @@ export const Row = styled.div`
   align-items: center;
   grid-auto-columns: minmax(auto, 1fr);
   grid-template-areas: ${({ reversed }) =>
-    reversed ? `"col2 col1"` : `"col1 col2"`}; /* Adjust grid-template-areas */
+    reversed
+      ? `"col2 col1"`
+      : `"col1 col2"`}; /* ajust grid-template-areas on prop */
 
   @media screen and (max-width: 768px) {
     grid-gap: 20px;
-    grid-template-areas: "col1" "col2"; /* Always stack columns on mobile */
+    grid-template-areas: "col1" "col2"; /*  stack columns on mobile */
     align-content: center;
   }
 `;
 
 export const Column1 = styled.div`
-  align-items: center;
   grid-area: col1;
 `;
 
@@ -57,7 +51,6 @@ export const TextWrapper = styled.div`
   aspect-ratio: 1/1;
   border-radius: 20px;
   padding: 20px;
-  transition: 0.3s ease-in-out;
   align-content: center;
 `;
 
@@ -71,7 +64,6 @@ export const Heading = styled.h1`
 `;
 
 export const Content = styled.p`
-  max-width: 440px;
   font-size: 1rem;
   text-align: justify;
   line-height: 26px;
@@ -82,7 +74,6 @@ export const Content = styled.p`
 `;
 
 export const Column2 = styled.div`
-  align-items: center;
   grid-area: col2;
 `;
 

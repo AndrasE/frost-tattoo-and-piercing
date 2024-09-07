@@ -112,7 +112,6 @@ export const NextBtnWrapper = styled.div`
   top: 50%;
   right: -5px;
   transform: translateY(-50%);
-  z-index: 10;
 `;
 
 export const NextBtn = styled(GrFormNext)`
@@ -134,7 +133,6 @@ export const PrevBtnWrapper = styled.div`
   top: 50%;
   left: -5px;
   transform: translateY(-50%);
-  z-index: 10;
 `;
 
 export const PrevBtn = styled(GrFormPrevious)`
