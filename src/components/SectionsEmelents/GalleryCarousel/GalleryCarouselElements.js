@@ -6,7 +6,7 @@ export const CarouselContainer = styled.div`
   margin: auto;
   overflow: hidden;
   min-height: min-content;
-  max-height: 500px
+  max-height: 500px;
   max-width: 500px;
   aspect-ratio: 1/1;
   border-radius: 15px;

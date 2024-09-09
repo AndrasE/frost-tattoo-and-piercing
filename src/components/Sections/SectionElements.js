@@ -18,7 +18,7 @@ export const Container = styled.div`
   padding: 0 70px;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     margin-bottom: 50px;
     padding: 10px;
   }
@@ -44,6 +44,10 @@ export const Row = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    max-width: 500px;
+  }
 `;
 
 export const TextWrapper = styled.div`
