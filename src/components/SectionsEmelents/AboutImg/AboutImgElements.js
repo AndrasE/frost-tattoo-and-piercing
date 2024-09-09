@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ImgWrapper = styled.div`
-  max-width: 400px;
+  max-width: 500px;
 `;
 
 export const Img = styled.img`

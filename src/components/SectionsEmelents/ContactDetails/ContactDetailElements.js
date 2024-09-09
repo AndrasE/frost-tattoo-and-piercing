@@ -5,7 +5,7 @@ import { FiPhone } from "react-icons/fi";
 
 export const ContentContainer = styled.div`
   margin: auto;
-  max-width: 400px;
+  max-width: 500px;
   aspect-ratio: 1/1;
   box-shadow: 0 5px 15px ${({ theme }) => theme.dropShadow};
   border-radius: 20px;

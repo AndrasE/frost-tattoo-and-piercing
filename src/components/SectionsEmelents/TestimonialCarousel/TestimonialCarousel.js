@@ -6,8 +6,8 @@ export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 500px;
+  max-width: 500px;
   aspect-ratio: 1/1;
   border-radius: 15px;
   box-shadow: 0 5px 15px ${({ theme }) => theme.dropShadow};
@@ -27,6 +27,8 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   aspect-ratio: 1/1;
+  width: 100%;
+
   padding: 0 24px;
   align-items: center;
   justify-content: center;

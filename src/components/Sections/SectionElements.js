@@ -10,9 +10,9 @@ export const SectionWrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  display: grid;
+  display: flex;
   min-height: calc(100vh - 80px);
-  width: 100%;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 70px;
@@ -26,16 +26,17 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-gap: 50px;
   align-items: center;
-  grid-auto-columns: minmax(auto, 1fr);
+  grid-auto-columns: minmax(auto, 1.3fr);
+  grid-template-columns: ${({ reversed }) =>
+    reversed ? `1fr 1.5fr` : `1.5fr 1fr`};
   grid-template-areas: ${({ reversed }) =>
     reversed
       ? `"col2 col1"`
       : `"col1 col2"`}; /* ajust grid-template-areas on prop */
-
+  grid-gap: 20px;
   @media screen and (max-width: 768px) {
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
     grid-template-areas: "col1" "col2"; /*  stack columns on mobile */
     align-content: center;
   }
@@ -47,8 +48,6 @@ export const Column1 = styled.div`
 
 export const TextWrapper = styled.div`
   margin: auto;
-  max-width: 400px;
-  aspect-ratio: 1/1;
   border-radius: 20px;
   padding: 20px;
   align-content: center;
@@ -77,6 +76,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
+//button styles on if exist on prop
 export const BtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
