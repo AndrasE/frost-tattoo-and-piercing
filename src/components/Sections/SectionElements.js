@@ -34,8 +34,9 @@ export const Row = styled.div`
     reversed
       ? `"col2 col1"`
       : `"col1 col2"`}; /* ajust grid-template-areas on prop */
-  grid-gap: 20px;
+  grid-gap: 50px;
   @media screen and (max-width: 768px) {
+    grid-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-areas: "col1" "col2"; /*  stack columns on mobile */
     align-content: center;
@@ -53,8 +54,6 @@ export const Column1 = styled.div`
 export const TextWrapper = styled.div`
   margin: auto;
   border-radius: 20px;
-  padding: 20px;
-  align-content: center;
 `;
 
 export const Heading = styled.h1`
