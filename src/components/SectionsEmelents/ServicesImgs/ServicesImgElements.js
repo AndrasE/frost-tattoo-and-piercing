@@ -4,7 +4,7 @@ export const ImgWrapper = styled.div`
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 500px;
+  max-width: 450px;
   border-radius: 20px;
 `;
 

@@ -20,6 +20,9 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     margin-bottom: 50px;
+    padding: 30px;
+  }
+  @media screen and (max-width: 768px) {
     padding: 10px;
   }
 `;
@@ -35,7 +38,7 @@ export const Row = styled.div`
       : `"col1 col2"`}; /* ajust grid-template-areas on prop */
   grid-gap: 50px;
   @media screen and (max-width: 1000px) {
-    grid-gap: 30px;
+    grid-gap: 40px;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -48,7 +51,7 @@ export const Column1 = styled.div`
   grid-area: col1;
 
   @media screen and (max-width: 768px) {
-    max-width: 500px;
+    max-width: 450px;
   }
 `;
 
