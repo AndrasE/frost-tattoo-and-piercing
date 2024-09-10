@@ -6,13 +6,12 @@ import { motion } from "framer-motion";
 export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.backgroundColor};
   height: 80px;
-
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
   z-index: 10;
