@@ -80,6 +80,10 @@ export const Img = styled.img`
 export const HeaderText = styled.h2`
   font-size: 1.5rem;
   margin-left: 8px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export const Hr = styled.hr`
@@ -104,6 +108,9 @@ export const CardContent = styled.p`
 
 export const CardRating = styled.p`
   font-size: 1rem;
+  @media screen and (max-width: 1000px) {
+    font-size: 0.9rem;
+  }
 `;
 
 // Custom buttons and pagination for react-splide due the a clash for framer-motion
