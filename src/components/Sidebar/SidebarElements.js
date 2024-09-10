@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
-import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -8,39 +7,19 @@ export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
-  background-color: #16191d;
+  background-color: ${({ theme }) => theme.backgroundColor};
   display: grid;
   align-items: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ $isOpen }) => ($isOpen ? "100%" : "0%")};
-  top: ${({ $isOpen }) => ($isOpen ? "0" : "-100%")};
-`;
-
-export const CloseIcon = styled(FaTimes)`
-  color: #fff;
-  opacity: 90%;
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    opacity: 100%;
-    transition: 0.2s ease-in-out;
-  }
-`;
-
-export const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  background: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
+  opacity: ${({ $sidebarOpen }) => ($sidebarOpen ? "100%" : "0%")};
+  top: ${({ $sidebarOpen }) => ($sidebarOpen ? "0" : "-100%")};
+  z-index: 2;
 `;
 
 export const SidebarWrapper = styled.div`
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor};
 `;
 
 export const SidebarMenu = styled.div`
@@ -63,7 +42,7 @@ export const SidebarLink = styled(LinkScroll)`
   transition: 0.2s ease-in-out;
   opacity: 90%;
   text-decoration: none;
-  color: #fff;
+  color: ${({ theme }) => theme.fontColor};
   cursor: pointer;
 
   &:hover {

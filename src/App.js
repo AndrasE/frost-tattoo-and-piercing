@@ -1,14 +1,30 @@
-import "./App.css";
-import Home from "./pages/home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import GalleryPage from "./pages/GalleryPage";
+import Home from "./pages/HomePage";
 import { useEffect, useState } from "react";
-import SplashScreen from "./components/SplashScreen";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SplashScreen from "./pages/SplashPage";
+import GalleryPage from "./pages/GalleryPage";
+import useLocalStorage from "use-local-storage";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./themes/GlobalStyles";
+import { lightTheme, darkTheme } from "./themes/themes";
 
 function App() {
+  // simulate loading time to assets to load while splashscreen showing
   const [loading, setLoading] = useState(true);
   const [ready, setReady] = useState(false);
   const [startTime] = useState(Date.now());
+
+  // localstorage states, matching system theme settings and/or creating new settings saved in cache
+  const defaultTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+  const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
+
+  const toggleTheme = (newTheme) => {
+    if (newTheme !== theme) {
+      setTheme(newTheme);
+    }
+  };
 
   useEffect(() => {
     const minimumLoadingTime = setTimeout(() => {
@@ -36,18 +52,24 @@ function App() {
   }, [ready, loading, startTime]);
 
   return (
-    <div className="App">
-      {loading ? (
-        <SplashScreen />
-      ) : (
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-          </Routes>
-        </Router>
-      )}
-    </div>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <div className="App">
+        {loading ? (
+          <SplashScreen />
+        ) : (
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Home theme={theme} toggleTheme={toggleTheme} />}
+              />
+              <Route path="/gallery" element={<GalleryPage />} />
+            </Routes>
+          </Router>
+        )}
+      </div>
+    </ThemeProvider>
   );
 }
 

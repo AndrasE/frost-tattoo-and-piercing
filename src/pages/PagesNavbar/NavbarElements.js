@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
-import { motion } from "framer-motion";
+import { MdKeyboardArrowLeft, MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 export const Nav = styled.nav`
-  background-color: ${({ theme }) => theme.backgroundColor};
+  background: ${({ theme }) => theme.backgroundColor};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -15,7 +14,6 @@ export const Nav = styled.nav`
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
   z-index: 10;
-  transition: 0.3s ease-in-out;
 `;
 
 export const NavbarContainer = styled.div`
@@ -37,6 +35,10 @@ export const NavLogoWrapper = styled(LinkRoute)`
   align-items: center;
   margin: 24px;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavLogo = styled.img`
@@ -49,42 +51,39 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
+  cursor: pointer;
 `;
 
-export const NavLinks = styled(LinkScroll)`
-  display: flex;
+export const NavName = styled.div`
   color: ${({ theme }) => theme.fontColor};
+  display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  cursor: pointer;
+`;
 
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.accentColor};
-    padding-top: 2px;
-  }
+export const NavBtnWrapper = styled.div`
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const NavBtn = styled.nav`
   margin: 18px;
-  display: flex;
-  align-items: center;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  align-items: center;
+  justify-content: center;
 `;
-export const NavBtnLink = styled(LinkScroll)`
+
+export const NavBtnLink = styled(LinkRoute)`
+  position: relative;
+  padding-left: 55px;
   background-image: linear-gradient(
     to right,
     #1ebbd7 0%,
@@ -93,8 +92,9 @@ export const NavBtnLink = styled(LinkScroll)`
   );
   background-size: 200% auto;
   border-radius: 50px;
+  background-color: #1ebbd7;
   white-space: nowrap;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 38px;
   color: #000;
   font-size: 1rem;
   outline: none;
@@ -109,29 +109,25 @@ export const NavBtnLink = styled(LinkScroll)`
   }
 `;
 
-export const ToggleBtn = styled.button`
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background: transparent;
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-self: flex-end;
-    align-self: center;
-    cursor: pointer;
-    margin: 20px;
+export const ArrowLeft = styled(MdKeyboardArrowLeft)`
+  position: absolute;
+  left: 1px;
+  padding-bottom: 3px;
+  margin-left: 8px;
+  font-size: 24px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
 `;
 
-export const Svg = styled.svg`
-  margin-top: 6px;
-  width: 32px;
-  height: 32px;
-`;
+export const ArrowLeftDouble = styled(MdKeyboardDoubleArrowLeft)`
+  position: absolute;
+  left: 0px;
+  padding-bottom: 3px;
+  margin-left: 8px;
+  font-size: 24px;
 
-export const MotionPath = styled(motion.path)`
-  stroke-width: 1.7;
-  stroke: ${({ theme }) => theme.fontColor};
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;

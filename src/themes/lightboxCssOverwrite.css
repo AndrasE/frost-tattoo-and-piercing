@@ -1,0 +1,39 @@
+.yarl__carousel_with_slides,
+.yarl__thumbnails_container,
+.yarl__thumbnails_thumbnail {
+  background-color: var(--background-color);
+}
+.yarl__button {
+  color: var(--svg-primary-color);
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+.yarl__button:focus-visible:hover,
+.yarl__button:focus:hover,
+.yarl__button:focus:not(:focus-visible),
+.yarl__button:hover,
+.yarl__button:active {
+  color: var(--svg-secondary-color);
+}
+
+.react-photo-album {
+  padding-top: 55px;
+}
+
+.yarl__thumbnails_vignette {
+  display: none;
+}
+
+.react-photo-album--column img {
+  box-shadow: 0 5px 5px var(--drop-shadow);
+  opacity: 97%;
+
+  &:hover {
+    transition: all 0.12s ease-in-out;
+    opacity: 100%;
+    scale: 1.007;
+  }
+}
+
+.yarl__thumbnails_thumbnail {
+  border-color: var(--svg-secondary-color);
+}

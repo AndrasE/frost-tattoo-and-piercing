@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -25,12 +26,12 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #16191d;
 `;
 
-export const VideoBg = styled.video`
+export const MotionVideo = styled(motion.video)`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  -o-object-fit: cover;
 `;
 
 export const HeroContent = styled.div`
