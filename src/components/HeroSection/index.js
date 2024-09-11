@@ -13,12 +13,19 @@ import {
   LottieAnimation,
   MotionVideo,
 } from "./HeroElements";
+import { useSwipeable } from "react-swipeable";
 
-const HeroVideo = memo(() => {
+const HeroVideo = memo(({ toggleSettings }) => {
   // eslint-disable-next-line
   const [videoEnded, setVideoEnded] = useState(false);
   // eslint-disable-next-line
   const [scroll, setScroll] = useState(false);
+
+  const handlers = useSwipeable({
+    onSwipedRight: () => {
+      toggleSettings();
+    },
+  });
 
   const changeScroll = () => {
     if (window.scrollY >= 80) {
@@ -34,10 +41,10 @@ const HeroVideo = memo(() => {
   }, []);
 
   return (
-    <HeroContainer>
+    <HeroContainer {...handlers}>
       <HeroBg>
         <MotionVideo
-          initial={{ opacity: 0 }} // Start with 0 opacity
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }} // Animate to full opacity
           transition={{ duration: 1 }} // 1 second fade-in
           autoPlay
@@ -48,7 +55,6 @@ const HeroVideo = memo(() => {
           <track kind="captions" src={Captions} srcLang="en" label="English" />
         </MotionVideo>
       </HeroBg>
-
       <HeroContent>
         <HeroH1>Frost</HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
