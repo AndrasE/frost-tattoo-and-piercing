@@ -26,7 +26,7 @@ const Home = ({ toggleTheme, theme }) => {
     setSettingsOpen(!$settingsOpen);
   };
 
-  // Disable scrolling when the settings modal is open
+  // disable scrolling when the settings modal is open
   useEffect(() => {
     if ($settingsOpen || $sidebarOpen) {
       document.body.style.overflow = "hidden";
