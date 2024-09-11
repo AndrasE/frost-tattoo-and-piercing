@@ -17,7 +17,6 @@ export const ModalContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 120px;
 `;
 
 export const SettingsContainer = styled.div`
@@ -51,6 +50,7 @@ export const SettingWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   padding: 5px;
+  margin: 0 2px;
   border-radius: 15px;
   background-size: 200% auto;
   background-image: ${({ $isSelected }) =>
@@ -97,6 +97,7 @@ export const LabelWrapper = styled.div`
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   padding: 3px 0;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     transition: all 0.3s ease-in-out;
@@ -106,7 +107,7 @@ export const LabelWrapper = styled.div`
 export const ModalLabel = styled.p`
   position: relative;
   bottom: 2.5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: -2px;
   writing-mode: vertical-rl;
   text-orientation: upright;

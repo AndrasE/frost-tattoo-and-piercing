@@ -45,11 +45,11 @@ const SettingsModal = ({
       $settingsOpen={$settingsOpen}
       onClick={toggleSettings}
       style={{
-        left: $settingsOpen ? "0" : "-186px", // Control left position based on $settingsOpen
+        left: $settingsOpen ? "0" : "-194px", // Control left position based on $settingsOpen
         x: smoothXPosition, // Animate x position to slide out
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-186px", // Set animate left position
+        left: $settingsOpen ? "0" : "-194px", // Set animate left position
       }}
       transition={{ duration: 0.3 }} // Add a smooth 0.3s transition
     >
