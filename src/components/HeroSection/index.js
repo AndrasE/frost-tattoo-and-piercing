@@ -21,6 +21,7 @@ const HeroVideo = memo(({ toggleSettings }) => {
   // eslint-disable-next-line
   const [scroll, setScroll] = useState(false);
 
+  //useSwipe to trigger modal open in parent
   const handlers = useSwipeable({
     onSwipedRight: () => {
       toggleSettings();
