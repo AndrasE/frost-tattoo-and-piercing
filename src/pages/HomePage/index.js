@@ -14,8 +14,11 @@ import ProgressBar from "../../components/ProgressBar";
 import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Home = ({ toggleTheme, theme }) => {
+  const { t } = useTranslation();
+
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
 
@@ -62,6 +65,16 @@ const Home = ({ toggleTheme, theme }) => {
         toggleSidebar={toggleSidebar}
         $settingsOpen={$settingsOpen}
       />
+      {/* <div
+        style={{
+          position: "relative",
+          top: "100px",
+          height: "100px",
+          backgroundColor: "black",
+          zIndex: 1000,
+        }}>
+        <h1 style={{ color: "white" }}> {t("about")}</h1>
+      </div> */}
       <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -73,16 +86,28 @@ const Home = ({ toggleTheme, theme }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      <Section id="about" col2={<AboutImg />} />
-      <Section id="services" col2={<ServicesImgs />} reversed />
+
+      <Section id="about" col1={t("about18")} col2={<AboutImg />} />
+      <Section
+        id="services"
+        col1="services18"
+        col2={<ServicesImgs />}
+        reversed
+      />
       <Section
         id="gallery"
+        col1="gallery18"
         col2={<GalleryCarousel />}
         btnLabel="Gallery"
         btnTo="gallery"
       />
-      <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
-      <Section id="contact" col2={<ContactDetails />} />
+      <Section
+        id="testimonials"
+        col1="testimonials18"
+        col2={<TestimonialCarousel />}
+        reversed
+      />
+      <Section id="contact" col1="contact18" col2={<ContactDetails />} />
       <Footer />
       <ProgressBar />
     </>

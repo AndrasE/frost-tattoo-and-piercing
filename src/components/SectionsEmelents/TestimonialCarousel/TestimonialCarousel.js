@@ -23,12 +23,10 @@ export const Card = styled.div`
 
 export const ContentWrapper = styled.div`
   padding: 25px;
-  position: absolute;
   display: flex;
   flex-direction: column;
   aspect-ratio: 1/1;
   width: 100%;
-
   padding: 0 24px;
   align-items: center;
   justify-content: center;
@@ -41,6 +39,10 @@ export const QuoteTop = styled(RiDoubleQuotesL)`
   color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
+  }
 `;
 
 export const QuoteButtom = styled(RiDoubleQuotesL)`
@@ -51,6 +53,10 @@ export const QuoteButtom = styled(RiDoubleQuotesL)`
   color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
+  }
 `;
 
 export const ReviewLink = styled.a`
