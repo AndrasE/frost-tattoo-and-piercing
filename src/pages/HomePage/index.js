@@ -11,7 +11,8 @@ import ContactDetails from "../../components/SectionsEmelents/ContactDetails";
 import TestimonialCarousel from "../../components/SectionsEmelents/TestimonialCarousel";
 import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
-import { BlurAnimation } from "./HomePageElements";
+import SwipeSceen from "../../components/SwipeScreen";
+import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 
 const Home = ({ toggleTheme, theme }) => {
@@ -42,39 +43,40 @@ const Home = ({ toggleTheme, theme }) => {
 
   return (
     <>
+      <BlurSceen $settingsOpen={$settingsOpen} />
+      <SwipeSceen toggleSettings={toggleSettings} />
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
         theme={theme}
         toggleTheme={toggleTheme}
       />
-      {/* Blur effect applied when settings modal is open + diable scrolling*/}
-      <BlurAnimation $settingsOpen={$settingsOpen}>
-        <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
-        <Navbar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.3,
-            delay: 0.1,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}>
-          <HeroVideo toggleSettings={toggleSettings} />
-        </motion.div>
-        <Section id="about" col2={<AboutImg />} />
-        <Section id="services" col2={<ServicesImgs />} reversed />
-        <Section
-          id="gallery"
-          col2={<GalleryCarousel />}
-          btnLabel="Gallery"
-          btnTo="gallery"
-        />
-        <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
-        <Section id="contact" col2={<ContactDetails />} />
-        <Footer />
-        <ProgressBar />
-      </BlurAnimation>
+
+      <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
+      <Navbar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+          delay: 0.1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}>
+        <HeroVideo />
+      </motion.div>
+      <Section id="about" col2={<AboutImg />} />
+      <Section id="services" col2={<ServicesImgs />} reversed />
+      <Section
+        id="gallery"
+        col2={<GalleryCarousel />}
+        btnLabel="Gallery"
+        btnTo="gallery"
+      />
+      <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
+      <Section id="contact" col2={<ContactDetails />} />
+      <Footer />
+      <ProgressBar />
     </>
   );
 };

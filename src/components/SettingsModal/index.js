@@ -43,7 +43,6 @@ const SettingsModal = ({
   return (
     <MotionModal
       $settingsOpen={$settingsOpen}
-      onClick={toggleSettings}
       style={{
         left: $settingsOpen ? "0" : "-194px", // Control left position based on $settingsOpen
         x: smoothXPosition, // Animate x position to slide out
@@ -53,7 +52,7 @@ const SettingsModal = ({
       }}
       transition={{ duration: 0.3 }} // Add a smooth 0.3s transition
     >
-      <ModalContainer>
+      <ModalContainer onClick={toggleSettings}>
         <SettingsContainer $settingsOpen={$settingsOpen}>
           <SettingsLabel>Theme</SettingsLabel>
           <SettingsWrapper>

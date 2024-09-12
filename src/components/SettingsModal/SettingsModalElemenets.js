@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const MotionModal = styled(motion.div)`
   position: absolute;
   height: 100vh;
-  z-index: 2;
+  z-index: 12;
   display: flex;
   margin-top: 60px;
   flex-direction: row;

@@ -13,20 +13,12 @@ import {
   LottieAnimation,
   MotionVideo,
 } from "./HeroElements";
-import { useSwipeable } from "react-swipeable";
 
-const HeroVideo = memo(({ toggleSettings }) => {
+const HeroVideo = memo(() => {
   // eslint-disable-next-line
   const [videoEnded, setVideoEnded] = useState(false);
   // eslint-disable-next-line
   const [scroll, setScroll] = useState(false);
-
-  //useSwipe to trigger modal open in parent
-  const handlers = useSwipeable({
-    onSwipedRight: () => {
-      toggleSettings();
-    },
-  });
 
   const changeScroll = () => {
     if (window.scrollY >= 80) {
@@ -42,7 +34,7 @@ const HeroVideo = memo(({ toggleSettings }) => {
   }, []);
 
   return (
-    <HeroContainer {...handlers}>
+    <HeroContainer>
       <HeroBg>
         <MotionVideo
           initial={{ opacity: 0 }}

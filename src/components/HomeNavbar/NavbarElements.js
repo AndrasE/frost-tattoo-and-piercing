@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   position: fixed;
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
-  z-index: 10;
+  z-index: 9;
   transition: 0.3s ease-in-out;
 `;
 
