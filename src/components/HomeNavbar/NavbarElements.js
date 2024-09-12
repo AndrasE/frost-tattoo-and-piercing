@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   position: fixed;
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
-  z-index: 9;
+  z-index: 1;
   transition: 0.3s ease-in-out;
 `;
 
@@ -22,7 +22,6 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;

@@ -17,7 +17,7 @@ const SwipeSceen = ({ toggleSettings }) => {
     },
   });
 
-  return <SwipeSceenContainer {...handlers}>SwipeSceen</SwipeSceenContainer>;
+  return <SwipeSceenContainer {...handlers}></SwipeSceenContainer>;
 };
 
 export default SwipeSceen;

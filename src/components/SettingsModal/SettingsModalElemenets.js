@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 
 export const MotionModal = styled(motion.div)`
   position: absolute;
-  height: 100vh;
-  z-index: 12;
+  max-height: 100vh;
+
   display: flex;
-  margin-top: 60px;
+  top: 50vh;
   flex-direction: row;
   align-items: center;
   left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
+  z-index: ${({ $settingsOpen }) => ($settingsOpen ? 4 : 2)};
 `;
 
 export const ModalContainer = styled.div`
@@ -80,7 +81,7 @@ export const FlagIcon = styled.img`
 `;
 
 export const LabelContainer = styled.div`
-  //empty div for transparent bg
+  //empty div for transparent
 `;
 
 export const LabelWrapper = styled.div`

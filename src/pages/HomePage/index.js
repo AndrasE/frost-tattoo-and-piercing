@@ -43,7 +43,10 @@ const Home = ({ toggleTheme, theme }) => {
 
   return (
     <>
-      <BlurSceen $settingsOpen={$settingsOpen} />
+      <BlurSceen
+        toggleSettings={toggleSettings}
+        $settingsOpen={$settingsOpen}
+      />
       <SwipeSceen toggleSettings={toggleSettings} />
       <SettingsModal
         $settingsOpen={$settingsOpen}

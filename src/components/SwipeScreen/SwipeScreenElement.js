@@ -7,5 +7,5 @@ export const SwipeSceenContainer = styled.div`
   height: 100vh;
   color: transparent;
   background-color: transparent;
-  z-index: 3;
+  z-index: 2;
 `;
