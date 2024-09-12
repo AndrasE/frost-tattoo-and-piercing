@@ -17,7 +17,7 @@ import {
 import { navLinks } from "./navlinksData";
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
+const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen }) => {
   /* eslint-disable no-unused-vars */
   const [scrollNav, setScrollNav] = useState(false);
   /* eslint-enable no-unused-vars */
@@ -43,7 +43,7 @@ const Navbar = ({ toggleSidebar, $sidebarOpen }) => {
 
   return (
     <>
-      <Nav>
+      <Nav $settingsOpen={$settingsOpen}>
         <NavbarContainer>
           <NavLogoWrapper to="/" onClick={toggleHome}>
             <NavLogo src={Logo} alt="logo-image"></NavLogo>

@@ -7,5 +7,6 @@ export const SwipeSceenContainer = styled.div`
   height: 100vh;
   color: transparent;
   background-color: transparent;
-  z-index: 2;
+
+  z-index: ${({ $settingsOpen }) => ($settingsOpen ? 4 : 1)};
 `;

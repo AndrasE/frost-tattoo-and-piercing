@@ -47,17 +47,22 @@ const Home = ({ toggleTheme, theme }) => {
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
       />
-      <SwipeSceen toggleSettings={toggleSettings} />
+      <SwipeSceen
+        toggleSettings={toggleSettings}
+        $settingsOpen={$settingsOpen}
+      />
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
         theme={theme}
         toggleTheme={toggleTheme}
       />
-
+      <Navbar
+        $sidebarOpen={$sidebarOpen}
+        toggleSidebar={toggleSidebar}
+        $settingsOpen={$settingsOpen}
+      />
       <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
-      <Navbar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
-
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

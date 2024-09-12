@@ -100,6 +100,6 @@ export const ScrollLink = styled(LinkScroll)`
   bottom: 28px;
   width: 50px;
   height: 50px;
-  z-index: 10;
+  z-index: 2;
   cursor: pointer;
 `;

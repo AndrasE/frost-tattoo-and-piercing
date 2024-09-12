@@ -11,7 +11,7 @@ export const MotionModal = styled(motion.div)`
   flex-direction: row;
   align-items: center;
   left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
-  z-index: ${({ $settingsOpen }) => ($settingsOpen ? 4 : 2)};
+  z-index: ${({ $settingsOpen }) => ($settingsOpen ? 6 : 1)};
 `;
 
 export const ModalContainer = styled.div`

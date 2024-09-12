@@ -3,7 +3,7 @@ import { SwipeSceenContainer } from "./SwipeScreenElement";
 import { useSwipeable } from "react-swipeable";
 import { useScroll } from "framer-motion";
 
-const SwipeSceen = ({ toggleSettings }) => {
+const SwipeSceen = ({ toggleSettings, $settingsOpen }) => {
   // Track the scroll position of the window
   const { scrollY } = useScroll();
 
@@ -17,7 +17,11 @@ const SwipeSceen = ({ toggleSettings }) => {
     },
   });
 
-  return <SwipeSceenContainer {...handlers}></SwipeSceenContainer>;
+  return (
+    <SwipeSceenContainer
+      {...handlers}
+      $settingsOpen={$settingsOpen}></SwipeSceenContainer>
+  );
 };
 
 export default SwipeSceen;
