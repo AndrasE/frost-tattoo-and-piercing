@@ -12,24 +12,72 @@ i18next
       en: {
         translation: {
           about18: {
-            heading: "About",
-            content: "About eng language",
+            heading: "AboutENG",
+            content: "About ENG language",
           },
           services18: {
-            heading: "Services",
-            content: "Services eng language",
+            heading: "ServicesENG",
+            content: "Services ENG language",
           },
           gallery18: {
-            heading: "Gallery",
-            content: "Gallery eng language",
+            heading: "GalleryENG",
+            content: "Gallery ENG language",
           },
           testimonials18: {
-            heading: "Testimonials",
-            content: "Testimonials eng language",
+            heading: "TestimonialsENG",
+            content: "Testimonials ENG language",
           },
           contact18: {
-            heading: "Contact",
-            content: "Contact eng language",
+            heading: "ContactENG",
+            content: "Contact ENG language",
+          },
+        },
+        hu: {
+          translation: {
+            about18: {
+              heading: "AboutHUN",
+              content: "About HUN language",
+            },
+            services18: {
+              heading: "ServicesHUN",
+              content: "Services HUN language",
+            },
+            gallery18: {
+              heading: "GalleryHUN",
+              content: "Gallery HUN language",
+            },
+            testimonials18: {
+              heading: "TestimonialsHUN",
+              content: "Testimonials HUN language",
+            },
+            contact18: {
+              heading: "ContactHUN",
+              content: "Contact HUN language",
+            },
+          },
+        },
+        de: {
+          translation: {
+            about18: {
+              heading: "AboutDE",
+              content: "About DE language",
+            },
+            services18: {
+              heading: "ServicesDE",
+              content: "Services DE language",
+            },
+            gallery18: {
+              heading: "GalleryDE",
+              content: "Gallery DE language",
+            },
+            testimonials18: {
+              heading: "TestimonialsDE",
+              content: "Testimonials DE language",
+            },
+            contact18: {
+              heading: "ContactDE",
+              content: "Contact DE language",
+            },
           },
         },
       },
