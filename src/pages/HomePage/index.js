@@ -46,6 +46,8 @@ const Home = ({ toggleTheme, theme }) => {
 
   return (
     <>
+      {/* blur and swipe area for settings modal, listens to scrollY when modal btn animated out, swipe will be disabled;
+      z-indexes changes according to modal position. order is: closed: blur, hero, swipe, modal, nav || open: hero, swipe, nav, blur, modal*/}
       <BlurSceen
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
@@ -65,16 +67,7 @@ const Home = ({ toggleTheme, theme }) => {
         toggleSidebar={toggleSidebar}
         $settingsOpen={$settingsOpen}
       />
-      {/* <div
-        style={{
-          position: "relative",
-          top: "100px",
-          height: "100px",
-          backgroundColor: "black",
-          zIndex: 1000,
-        }}>
-        <h1 style={{ color: "white" }}> {t("about")}</h1>
-      </div> */}
+
       <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -87,27 +80,30 @@ const Home = ({ toggleTheme, theme }) => {
         <HeroVideo />
       </motion.div>
 
+      {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section
         id="services"
-        col1="services18"
+        col1={t("services18")}
         col2={<ServicesImgs />}
         reversed
       />
       <Section
         id="gallery"
-        col1="gallery18"
+        col1={t("gallery18")}
         col2={<GalleryCarousel />}
         btnLabel="Gallery"
         btnTo="gallery"
       />
       <Section
         id="testimonials"
-        col1="testimonials18"
+        col1={t("testimonials18")}
         col2={<TestimonialCarousel />}
         reversed
       />
-      <Section id="contact" col1="contact18" col2={<ContactDetails />} />
+      <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
+      {/* sections end */}
+
       <Footer />
       <ProgressBar />
     </>

@@ -14,11 +14,8 @@ import {
   Column2,
 } from "./SectionElements";
 import { motion, useScroll } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
-  const { t } = useTranslation();
-
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -30,6 +27,8 @@ const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
     target: ref,
     offset: ["0 1.2", "0.65 1"],
   });
+
+  console.log(col1);
 
   return (
     <SectionWrapper id={id}>
@@ -44,7 +43,7 @@ const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
             <Column1>
               <TextWrapper>
                 <Heading>{col1.heading}</Heading>
-                <Content>{t(`${col1}.content`)}</Content>
+                <Content>{col1.content}</Content>
                 {btnLabel && (
                   <BtnWrapper>
                     <BtnLink
