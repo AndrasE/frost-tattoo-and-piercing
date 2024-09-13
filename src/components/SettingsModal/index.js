@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MotionModal,
   ModalContainer,
@@ -28,6 +28,11 @@ const SettingsModal = ({
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
+  const [selectedLang, setSelectedLang] = useState(i18n.language); // Store current language
+
+  useEffect(() => {
+    setSelectedLang(i18n.language); // Update when the language changes
+  }, [i18n.language]);
 
   // Function to handle theme selection
   function handleThemeSelect(selected) {
@@ -35,8 +40,10 @@ const SettingsModal = ({
     toggleTheme(selected);
   }
 
+  // Function to change language and set the selected language
   function changeLng(lng) {
     i18n.changeLanguage(lng);
+    setSelectedLang(lng); // Update selected language
   }
 
   // Track the scroll position of the window
@@ -74,18 +81,23 @@ const SettingsModal = ({
               <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
-
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
-            <SettingWrapper onClick={() => changeLng("hu")}>
+            <SettingWrapper
+              onClick={() => changeLng("hu")}
+              $isSelected={selectedLang === "hu"}>
               <FlagIcon src={Hun} alt="Hungary_flag" />
-              <SettingLabel>Hun</SettingLabel>{" "}
+              <SettingLabel>Hun</SettingLabel>
             </SettingWrapper>
-            <SettingWrapper onClick={() => changeLng("en")}>
+            <SettingWrapper
+              onClick={() => changeLng("en")}
+              $isSelected={selectedLang === "en"}>
               <FlagIcon src={Eng} alt="United_Kingdom_flag" />
               <SettingLabel>Eng</SettingLabel>
             </SettingWrapper>
-            <SettingWrapper onClick={() => changeLng("de")}>
+            <SettingWrapper
+              onClick={() => changeLng("de")}
+              $isSelected={selectedLang === "de"}>
               <FlagIcon src={Ger} alt="Germany_flag" />
               <SettingLabel>Ger</SettingLabel>
             </SettingWrapper>

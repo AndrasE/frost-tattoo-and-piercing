@@ -28,8 +28,6 @@ const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
     offset: ["0 1.2", "0.65 1"],
   });
 
-  console.log(col1);
-
   return (
     <SectionWrapper id={id}>
       <motion.div
