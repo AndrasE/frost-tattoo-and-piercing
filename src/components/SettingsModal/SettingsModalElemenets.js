@@ -5,12 +5,10 @@ import { motion } from "framer-motion";
 export const MotionModal = styled(motion.div)`
   position: absolute;
   max-height: 100vh;
-
   display: flex;
   top: 50vh;
   flex-direction: row;
   align-items: center;
-  left: ${({ $settingsOpen }) => ($settingsOpen ? "0" : "-186px")};
   z-index: ${({ $settingsOpen }) => ($settingsOpen ? 6 : 1)};
 `;
 
@@ -25,7 +23,7 @@ export const SettingsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: ${({ theme }) => theme.backgroundColor};
-  padding: 20px;
+  padding: 10px 5px 30px 0;
   border-top: 2px solid #1ebbd7;
   border-right: 2px solid #1ebbd7;
   border-bottom: 2px solid #1ebbd7;
@@ -35,7 +33,7 @@ export const SettingsContainer = styled.div`
 
 export const SettingsLabel = styled.p`
   font-size: 1rem;
-  margin: 15px 0 10px 0;
+  margin: 20px 0 2px 0;
   border-bottom: 2px solid #1ebbd7;
 `;
 

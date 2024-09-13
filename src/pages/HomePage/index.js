@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Home = ({ toggleTheme, theme }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
@@ -28,12 +28,6 @@ const Home = ({ toggleTheme, theme }) => {
 
   const toggleSettings = () => {
     setSettingsOpen(!$settingsOpen);
-  };
-
-  const lngs = {
-    en: { nativeName: "engish" },
-    hu: { nativeName: "hungarian" },
-    de: { nativeName: "german" },
   };
 
   // disable scrolling when the settings modal is open
@@ -85,16 +79,6 @@ const Home = ({ toggleTheme, theme }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      {Object.keys(lngs).map((lng) => (
-        <button
-          style={{ width: "100px", height: "50px", color: "red" }}
-          type="submit"
-          key={lng}
-          onClick={() => i18n.changeLanguage(lng)}
-          disabled={i18n.resolvedLanguage === lng}>
-          {lngs[lng].nativeName}
-        </button>
-      ))}
 
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
