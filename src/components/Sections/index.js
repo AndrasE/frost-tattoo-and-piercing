@@ -40,7 +40,7 @@ const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
           <Row reversed={reversed}>
             <Column1>
               <TextWrapper>
-                <Heading>{col1.heading}</Heading>
+                <Heading reversed={reversed}>{col1.heading}</Heading>
                 <Content>{col1.content}</Content>
                 {btnLabel && (
                   <BtnWrapper>

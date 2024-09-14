@@ -63,11 +63,11 @@ export const Column1 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  margin: auto;
   border-radius: 20px;
 `;
 
 export const Heading = styled.h1`
+  text-align: ${({ reversed }) => (reversed ? "start" : "end")};
   font-size: 2.5rem;
   margin-bottom: 25px;
 
