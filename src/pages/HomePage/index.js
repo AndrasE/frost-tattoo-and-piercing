@@ -14,8 +14,11 @@ import ProgressBar from "../../components/ProgressBar";
 import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Home = ({ toggleTheme, theme }) => {
+  const { t } = useTranslation();
+
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
 
@@ -43,6 +46,8 @@ const Home = ({ toggleTheme, theme }) => {
 
   return (
     <>
+      {/* blur and swipe area for settings modal, listens to scrollY when modal btn animated out, swipe will be disabled;
+      z-indexes changes according to modal position. order is: closed: blur, hero, swipe, modal, nav || open: hero, swipe, nav, blur, modal*/}
       <BlurSceen
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
@@ -62,6 +67,7 @@ const Home = ({ toggleTheme, theme }) => {
         toggleSidebar={toggleSidebar}
         $settingsOpen={$settingsOpen}
       />
+
       <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -73,16 +79,31 @@ const Home = ({ toggleTheme, theme }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      <Section id="about" col2={<AboutImg />} />
-      <Section id="services" col2={<ServicesImgs />} reversed />
+
+      {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
+      <Section id="about" col1={t("about18")} col2={<AboutImg />} />
+      <Section
+        id="services"
+        col1={t("services18")}
+        col2={<ServicesImgs />}
+        reversed
+      />
       <Section
         id="gallery"
+        col1={t("gallery18")}
         col2={<GalleryCarousel />}
         btnLabel="Gallery"
         btnTo="gallery"
       />
-      <Section id="testimonials" col2={<TestimonialCarousel />} reversed />
-      <Section id="contact" col2={<ContactDetails />} />
+      <Section
+        id="testimonials"
+        col1={t("testimonials18")}
+        col2={<TestimonialCarousel />}
+        reversed
+      />
+      <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
+      {/* sections end */}
+
       <Footer />
       <ProgressBar />
     </>

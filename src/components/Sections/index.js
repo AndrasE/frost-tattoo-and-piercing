@@ -15,7 +15,7 @@ import {
 } from "./SectionElements";
 import { motion, useScroll } from "framer-motion";
 
-const Section = ({ id, col2, reversed, btnTo, btnLabel }) => {
+const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -40,12 +40,8 @@ const Section = ({ id, col2, reversed, btnTo, btnLabel }) => {
           <Row reversed={reversed}>
             <Column1>
               <TextWrapper>
-                <Heading>About</Heading>
-                <Content>
-                  Our store has opened 8 years ago, myself have 12 years of
-                  years ago, myself hdasdas adasdasdave 12 re has opened 8 years
-                  ago, myself.
-                </Content>
+                <Heading reversed={reversed}>{col1.heading}</Heading>
+                <Content>{col1.content}</Content>
                 {btnLabel && (
                   <BtnWrapper>
                     <BtnLink

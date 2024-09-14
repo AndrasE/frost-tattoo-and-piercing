@@ -6,7 +6,6 @@ export const CarouselContainer = styled.div`
   position: relative;
   margin: auto;
   overflow: hidden;
-  max-height: 450px;
   max-width: 450px;
   aspect-ratio: 1/1;
   border-radius: 15px;
@@ -14,25 +13,17 @@ export const CarouselContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  aspect-ratio: 1/1;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const ContentWrapper = styled.div`
   padding: 25px;
-  position: absolute;
   display: flex;
   flex-direction: column;
   aspect-ratio: 1/1;
-  width: 100%;
 
   padding: 0 24px;
   align-items: center;
   justify-content: center;
 `;
+
+export const ContentWrapper = styled.div``;
 
 export const QuoteTop = styled(RiDoubleQuotesL)`
   position: absolute;
@@ -41,6 +32,10 @@ export const QuoteTop = styled(RiDoubleQuotesL)`
   color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
+  }
 `;
 
 export const QuoteButtom = styled(RiDoubleQuotesL)`
@@ -51,6 +46,10 @@ export const QuoteButtom = styled(RiDoubleQuotesL)`
   color: ${({ theme }) => theme.accentColor};
   font-size: 5rem;
   opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
+  }
 `;
 
 export const ReviewLink = styled.a`

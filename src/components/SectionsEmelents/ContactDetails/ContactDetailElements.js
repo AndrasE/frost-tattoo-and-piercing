@@ -30,7 +30,7 @@ export const Link = styled.a`
 
   &::after {
     content: "";
-    position: absolute;
+    /* position: absolute; */
     width: 218px;
     height: 2px;
     border-radius: 4px;

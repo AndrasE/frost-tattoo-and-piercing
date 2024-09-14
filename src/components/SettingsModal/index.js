@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MotionModal,
   ModalContainer,
@@ -14,10 +14,11 @@ import {
   Moon,
   FlagIcon,
 } from "./SettingsModalElemenets";
+import { useScroll, useSpring, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Hun from "../../images/flagIcons/hu.svg";
 import Eng from "../../images/flagIcons/gb.svg";
 import Ger from "../../images/flagIcons/de.svg";
-import { useScroll, useSpring, useTransform } from "framer-motion";
 
 const SettingsModal = ({
   $settingsOpen,
@@ -26,11 +27,23 @@ const SettingsModal = ({
   toggleTheme,
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
+  const { i18n } = useTranslation();
+  const [selectedLang, setSelectedLang] = useState(i18n.language); // Store current language
+
+  useEffect(() => {
+    setSelectedLang(i18n.language); // Update when the language changes
+  }, [i18n.language]);
 
   // Function to handle theme selection
   function handleThemeSelect(selected) {
     $setThemeSelected(selected);
     toggleTheme(selected);
+  }
+
+  // Function to change language and set the selected language
+  function changeLng(lng) {
+    i18n.changeLanguage(lng);
+    setSelectedLang(lng); // Update selected language
   }
 
   // Track the scroll position of the window
@@ -48,10 +61,9 @@ const SettingsModal = ({
         x: smoothXPosition, // Animate x position to slide out
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-194px", // Set animate left position
+        left: $settingsOpen ? "0" : "-214px",
       }}
-      transition={{ duration: 0.3 }} // Add a smooth 0.3s transition
-    >
+      transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>
         <SettingsContainer $settingsOpen={$settingsOpen}>
           <SettingsLabel>Theme</SettingsLabel>
@@ -69,15 +81,28 @@ const SettingsModal = ({
               <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
-
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
-            <FlagIcon src={Hun} alt="Hungary_flag" />
-            <FlagIcon src={Eng} alt="United_Kingdom_flag" />
-            <FlagIcon src={Ger} alt="Germany_flat" />
+            <SettingWrapper
+              onClick={() => changeLng("hu")}
+              $isSelected={selectedLang === "hu"}>
+              <FlagIcon src={Hun} alt="Hungary_flag" />
+              <SettingLabel>Hun</SettingLabel>
+            </SettingWrapper>
+            <SettingWrapper
+              onClick={() => changeLng("en")}
+              $isSelected={selectedLang === "en"}>
+              <FlagIcon src={Eng} alt="United_Kingdom_flag" />
+              <SettingLabel>Eng</SettingLabel>
+            </SettingWrapper>
+            <SettingWrapper
+              onClick={() => changeLng("de")}
+              $isSelected={selectedLang === "de"}>
+              <FlagIcon src={Ger} alt="Germany_flag" />
+              <SettingLabel>Ger</SettingLabel>
+            </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>
-
         <LabelContainer>
           <LabelWrapper>
             <ModalLabel>settings</ModalLabel>

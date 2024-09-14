@@ -12,7 +12,6 @@ import {
   HeaderText,
   CardContent,
   CardRating,
-  ContentWrapper,
   IndicatorBtnsWrapper,
   IndicatorBtns,
   NextBtnWrapper,
@@ -72,20 +71,18 @@ const TestimonialCarousel = () => {
           <SplideSlide key={index}>
             <Card>
               <QuoteTop />
-              <ContentWrapper>
-                <ReviewLink href={item.link} target="_blank">
-                  <CardHeader>
-                    <ImgWrapper>
-                      <Img src={item.src} alt={item.alt} />
-                    </ImgWrapper>
-                    <HeaderText>{item.name}</HeaderText>
-                  </CardHeader>
-                </ReviewLink>
-                <Hr />
-                <CardContent>{item.review}</CardContent>
-                <Hr />
-                <CardRating>{item.rating}</CardRating>
-              </ContentWrapper>
+              <ReviewLink href={item.link} target="_blank">
+                <CardHeader>
+                  <ImgWrapper>
+                    <Img src={item.src} alt={item.alt} />
+                  </ImgWrapper>
+                  <HeaderText>{item.name}</HeaderText>
+                </CardHeader>
+              </ReviewLink>
+              <Hr />
+              <CardContent>{item.review}</CardContent>
+              <Hr />
+              <CardRating>{item.rating}</CardRating>
               <QuoteButtom />
             </Card>
           </SplideSlide>
