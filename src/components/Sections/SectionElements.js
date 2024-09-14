@@ -31,17 +31,24 @@ export const Row = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: ${({ reversed }) =>
-    reversed ? `1fr 1.4fr` : `1.4fr 1fr`};
+    reversed
+      ? "minmax(0, 1fr) minmax(0, 1.4fr)"
+      : "minmax(0, 1.4fr) minmax(0, 1fr)"};
+
   grid-template-areas: ${({ reversed }) =>
     reversed
       ? `"col2 col1"`
       : `"col1 col2"`}; /* ajust grid-template-areas on prop */
   grid-gap: 50px;
   @media screen and (max-width: 1000px) {
+    grid-template-columns: ${({ reversed }) =>
+      reversed
+        ? "minmax(0, 1fr) minmax(0, 1.3fr)"
+        : "minmax(0, 1.3fr) minmax(0, 1fr)"};
     grid-gap: 40px;
   }
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "col1" "col2"; /*  stack columns on mobile */
     align-content: center;
   }
