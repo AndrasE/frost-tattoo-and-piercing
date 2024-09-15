@@ -23,8 +23,8 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0;
+  max-width: 1300px;
 `;
 
 export const NavLogoWrapper = styled(LinkRoute)`
