@@ -15,7 +15,7 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ $sidebarOpen }) => ($sidebarOpen ? "100%" : "0%")};
   top: ${({ $sidebarOpen }) => ($sidebarOpen ? "0" : "-100%")};
-  z-index: 2;
+  z-index: 3;
 `;
 
 export const SidebarWrapper = styled.div`

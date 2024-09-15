@@ -93,6 +93,7 @@ export const LottieAnimation = styled(Lottie)`
   position: absolute;
   bottom: 0;
   width: 90px;
+  z-index: 1;
 `;
 
 export const ScrollLink = styled(LinkScroll)`

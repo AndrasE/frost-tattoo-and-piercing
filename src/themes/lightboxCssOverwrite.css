@@ -22,7 +22,12 @@
 .yarl__thumbnails_vignette {
   display: none;
 }
-
+.react-photo-album--columns {
+  @media screen and (max-width: 768px) {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+}
 .react-photo-album--column img {
   box-shadow: 0 5px 5px var(--drop-shadow);
   opacity: 97%;
