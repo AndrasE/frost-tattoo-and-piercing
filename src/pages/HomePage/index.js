@@ -16,6 +16,7 @@ import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import PWAPrompt from "react-ios-pwa-prompt";
+import logo from "../../images/logoImgs/logo.png";
 
 const Home = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
@@ -114,7 +115,11 @@ const Home = ({ toggleTheme, theme }) => {
       />
       <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
       {/* sections end */}
-      <PWAPrompt isShown={shouldShowPWAPrompt} />
+      <PWAPrompt
+        isShown={shouldShowPWAPrompt}
+        appIconPath={logo}
+        copyDescription="This website has app functionality. Add it to your home screen to use it in fullscreen."
+      />
       <Footer />
       <ProgressBar />
     </>
