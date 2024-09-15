@@ -7,6 +7,7 @@ export const FooterWrapper = styled.div`
   height: 30px;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 `;
 
 export const LinkWrapper = styled.div`
