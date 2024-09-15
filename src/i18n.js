@@ -16,6 +16,7 @@ i18next
             services: "Services",
             gallery: "Gallery",
             testimonials: "Testimonials",
+            booking: "Booking",
             contact: "Contact",
           },
           about18: {
@@ -52,6 +53,7 @@ i18next
             services: "Szolgáltatások",
             gallery: "Galéria",
             testimonials: "Beszámolók",
+            booking: "Foglalás",
             contact: "Kapcsolat",
           },
           about18: {
@@ -89,6 +91,7 @@ i18next
             services: "de",
             gallery: "de",
             testimonials: "de",
+            booking: "de",
             contact: "de",
           },
           about18: {

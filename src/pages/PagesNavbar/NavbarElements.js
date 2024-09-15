@@ -35,7 +35,7 @@ export const NavLogoWrapper = styled(LinkRoute)`
   margin: 24px;
   text-decoration: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 550px) {
     display: none;
   }
 `;

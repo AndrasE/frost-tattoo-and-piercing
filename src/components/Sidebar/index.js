@@ -15,6 +15,7 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
     { to: "services", label: menu.services },
     { to: "gallery", label: menu.gallery },
     { to: "testimonials", label: menu.testimonials },
+    { to: "booking", label: menu.booking },
   ];
 
   return (

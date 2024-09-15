@@ -50,7 +50,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 870px) {
     display: none;
   }
 `;
@@ -79,7 +79,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 870px) {
     display: none;
   }
 `;
@@ -115,7 +115,7 @@ export const ToggleBtn = styled.button`
   background: transparent;
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 870px) {
     display: flex;
     justify-self: flex-end;
     align-self: center;
