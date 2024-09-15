@@ -19,7 +19,7 @@ export const Container = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 1000px) {
-    margin-bottom: 50px;
+    margin-top: 50px;
     padding: 30px;
   }
   @media screen and (max-width: 768px) {
