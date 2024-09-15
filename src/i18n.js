@@ -11,6 +11,13 @@ i18next
     resources: {
       en: {
         translation: {
+          nav18: {
+            about: "About",
+            services: "Services",
+            gallery: "Gallery",
+            testimonials: "Testimonials",
+            contact: "Contact",
+          },
           about18: {
             heading: "AboussstENG",
             content:
@@ -40,6 +47,13 @@ i18next
       },
       hu: {
         translation: {
+          nav18: {
+            about: "Rólunk",
+            services: "Szolgáltatások",
+            gallery: "Galéria",
+            testimonials: "Beszámolók",
+            contact: "Kapcsolat",
+          },
           about18: {
             heading: "AboutHUN",
             content:
@@ -70,6 +84,13 @@ i18next
 
       de: {
         translation: {
+          nav18: {
+            about: "de",
+            services: "de",
+            gallery: "de",
+            testimonials: "de",
+            contact: "de",
+          },
           about18: {
             heading: "AboutDE",
             content:

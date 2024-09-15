@@ -66,9 +66,14 @@ const Home = ({ toggleTheme, theme }) => {
         $sidebarOpen={$sidebarOpen}
         toggleSidebar={toggleSidebar}
         $settingsOpen={$settingsOpen}
+        menu={t("nav18")}
       />
 
-      <Sidebar $sidebarOpen={$sidebarOpen} toggleSidebar={toggleSidebar} />
+      <Sidebar
+        $sidebarOpen={$sidebarOpen}
+        toggleSidebar={toggleSidebar}
+        menu={t("nav18")}
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

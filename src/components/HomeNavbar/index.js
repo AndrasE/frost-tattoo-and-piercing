@@ -14,10 +14,9 @@ import {
   Svg,
   MotionPath,
 } from "./NavbarElements";
-import { navLinks } from "./navlinksData";
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen }) => {
+const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen, menu }) => {
   /* eslint-disable no-unused-vars */
   const [scrollNav, setScrollNav] = useState(false);
   /* eslint-enable no-unused-vars */
@@ -41,6 +40,14 @@ const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen }) => {
     }
   };
 
+  // Create navLinks using the translated labels from `menu`
+  const navLinks = [
+    { to: "about", label: menu.about },
+    { to: "services", label: menu.services },
+    { to: "gallery", label: menu.gallery },
+    { to: "testimonials", label: menu.testimonials },
+  ];
+
   return (
     <>
       <Nav $settingsOpen={$settingsOpen}>
@@ -53,8 +60,8 @@ const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen }) => {
             {navLinks.map(({ to, label }, index) => (
               <NavItem key={index}>
                 <NavLinks
-                  href={to} // only need for SEO
-                  aria-label="Scroll to testimonials section" // only need for SEO
+                  href={to} // only needed for SEO
+                  aria-label={`Scroll to ${label} section`} // for SEO
                   to={to}
                   smooth={true}
                   duration={500}
@@ -74,7 +81,7 @@ const Navbar = ({ toggleSidebar, $sidebarOpen, $settingsOpen }) => {
               duration={500}
               spy={true}
               offset={-80}>
-              Contact
+              {menu.contact}
             </NavBtnLink>
           </NavBtn>{" "}
           {/* toggle button w animation */}
