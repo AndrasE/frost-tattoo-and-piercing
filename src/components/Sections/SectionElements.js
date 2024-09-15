@@ -67,9 +67,12 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  text-align: ${({ reversed }) => (reversed ? "start" : "end")};
   font-size: 2.5rem;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 769px) {
+    text-align: ${({ reversed }) => (reversed ? "start" : "end")};
+  }
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
