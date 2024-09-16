@@ -45,9 +45,7 @@ const PWABtn = () => {
 
   return (
     <div>
-      {isPromptVisible && (
-        <button onClick={handleInstallClick}>Install PWA</button>
-      )}
+      <button onClick={handleInstallClick}>Install PWA</button>
     </div>
   );
 };
