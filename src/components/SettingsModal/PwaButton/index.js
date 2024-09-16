@@ -3,54 +3,64 @@ import React, { useState, useEffect } from "react";
 const PWABtn = () => {
   const [isPromptVisible, setIsPromptVisible] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isChromium, setIsChromium] = useState(false);
+  const [isNonChromium, setIsNonChromium] = useState(false);
+
+  // Function to detect if the browser is Chromium-based
+  const detectBrowser = () => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (
+      userAgent.includes("chrome") &&
+      !userAgent.includes("edg") &&
+      !userAgent.includes("opr")
+    ) {
+      setIsChromium(true); // If it's a Chromium-based browser
+    } else if (userAgent.includes("firefox") || userAgent.includes("safari")) {
+      setIsNonChromium(true); // For Safari or Firefox
+    }
+  };
 
   useEffect(() => {
-    const handleBeforeInstallPrompt = (event) => {
+    detectBrowser();
+
+    // Handle the 'beforeinstallprompt' event for Chromium browsers
+    window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
-      // Save the event so it can be triggered later
-      setDeferredPrompt(event);
-      // Show the install button
-      setIsPromptVisible(true);
-    };
+      setDeferredPrompt(event); // Save the event for later
+      setIsPromptVisible(true); // Show the install button
+    });
 
-    // Listen for the 'beforeinstallprompt' event
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-
-    // Clean up event listener on component unmount
     return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
+      window.removeEventListener("beforeinstallprompt", () => {});
     };
   }, []);
 
   const handleInstallClick = () => {
     if (!deferredPrompt) return;
 
-    // Show the install prompt
-    deferredPrompt.prompt();
-
-    // Wait for the user to respond to the prompt
+    deferredPrompt.prompt(); // Show the install prompt
     deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === "accepted") {
-        console.log("User accepted the A2HS prompt");
+        console.log("User accepted the install prompt");
       } else {
-        console.log("User dismissed the A2HS prompt");
+        console.log("User dismissed the install prompt");
       }
-      // Reset the deferred prompt variable
-      setDeferredPrompt(null);
-      // Hide the install button
-      setIsPromptVisible(false);
+      setDeferredPrompt(null); // Clear the deferredPrompt
+      setIsPromptVisible(false); // Hide the install button
     });
   };
 
   return (
     <div>
-      {isPromptVisible && (
-        <button style={{ color: "red" }} onClick={handleInstallClick}>
-          Install PWA
-        </button>
+      {isChromium && isPromptVisible && (
+        <button onClick={handleInstallClick}>Install PWA</button>
+      )}
+      {isNonChromium && (
+        <div>
+          {/* Custom instructions for Firefox or Safari */}
+          <button>How to install on Firefox/Safari</button>
+          {/* You can trigger a modal or custom pop-up with instructions here */}
+        </div>
       )}
     </div>
   );
