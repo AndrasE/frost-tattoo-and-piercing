@@ -1,47 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+
+let deferredPrompt;
 
 function PWABtn() {
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [manifestLoaded, setManifestLoaded] = useState(false);
+  const [installable, setInstallable] = useState(false);
 
   useEffect(() => {
-    // Check if PWA manifest is loaded
-    fetch("manifest.json")
-      .then((response) => {
-        if (response.ok) {
-          setManifestLoaded(true);
-        } else {
-          console.error("Error loading PWA manifest");
-        }
-      })
-      .catch((error) => {
-        console.error("Error loading PWA manifest:", error);
-      });
-    window.addEventListener("beforeinstallprompt", (event) => {
-      event.preventDefault();
-      setDeferredPrompt(event);
+    window.addEventListener("beforeinstallprompt", (e) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI notify the user they can install the PWA
+      setInstallable(true);
+    });
+
+    window.addEventListener("appinstalled", () => {
+      // Log install to analytics
+      console.log("INSTALL: Success");
     });
   }, []);
 
-  const handleInstall = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the A2HS prompt");
-        } else {
-          console.log("User dismissed the A2HS prompt");
-        }
-        setDeferredPrompt(null);
-      });
-    }
+  const handleInstallClick = (e) => {
+    // Hide the app provided install promotion
+    setInstallable(false);
+    // Show the install prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === "accepted") {
+        console.log("User accepted the install prompt");
+      } else {
+        console.log("User dismissed the install prompt");
+      }
+    });
   };
+
   return (
-    <div>
-      {manifestLoaded && deferredPrompt && (
-        <button onClick={handleInstall}>Install</button>
-      )}
+    <div className="App">
+      <header className="App-header">
+        <h2>Install Demo</h2>
+        {installable && (
+          <button className="install-button" onClick={handleInstallClick}>
+            INSTALL ME
+          </button>
+        )}
+      </header>
     </div>
   );
 }
+
 export default PWABtn;

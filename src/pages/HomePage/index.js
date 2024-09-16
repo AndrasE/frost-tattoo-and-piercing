@@ -15,7 +15,7 @@ import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-// import PWABtn from "../../components/PwaButton";
+import PWABtn from "../../components/PwaButton";
 
 const Home = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
@@ -87,6 +87,7 @@ const Home = ({ toggleTheme, theme }) => {
         <HeroVideo />
       </motion.div>
 
+      <PWABtn />
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section
