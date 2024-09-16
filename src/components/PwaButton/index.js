@@ -1,10 +1,10 @@
-import { usePwaInstall } from "@khmyznikov/pwa-install";
+import "@khmyznikov/pwa-install";
 
 const PWABtn = () => {
-  const { prompt, supported } = usePwaInstall();
-
   return (
-    <div>{supported && <button onClick={prompt}>Install PWA</button>}</div>
+    <div>
+      <pwa-install></pwa-install>
+    </div>
   );
 };
 
