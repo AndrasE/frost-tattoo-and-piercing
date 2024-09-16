@@ -9,8 +9,6 @@ Installation probably don't work on stackblitz, it's ok.
 */
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const appName = "My PWA";
 
   const [promptEvent, setPromptEvent] = useState(null);
