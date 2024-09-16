@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const PWABtn = () => {
-  const [isPromptVisible, setIsPromptVisible] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isChromium, setIsChromium] = useState(false);
   const [isNonChromium, setIsNonChromium] = useState(false);
