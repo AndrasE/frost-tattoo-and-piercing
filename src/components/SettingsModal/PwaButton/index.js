@@ -52,9 +52,8 @@ const PWABtn = () => {
 
   return (
     <div>
-      {isChromium && isPromptVisible && (
-        <button onClick={handleInstallClick}>Install PWA</button>
-      )}
+      isChromium
+      <button onClick={handleInstallClick}>Install PWA</button>
       {isNonChromium && (
         <div>
           {/* Custom instructions for Firefox or Safari */}
