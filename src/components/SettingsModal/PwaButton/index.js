@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const PWABtn = () => {
-  const [isPromptVisible, setIsPromptVisible] = useState(false); // Show/hide install button
   const [deferredPrompt, setDeferredPrompt] = useState(null); // Store the prompt event
 
   useEffect(() => {
@@ -9,7 +8,6 @@ const PWABtn = () => {
     const handleBeforeInstallPrompt = (event) => {
       event.preventDefault();
       setDeferredPrompt(event); // Store the event to trigger it later
-      setIsPromptVisible(true); // Show the install button
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
@@ -40,7 +38,6 @@ const PWABtn = () => {
 
     // Reset the deferredPrompt so it can't be reused
     setDeferredPrompt(null);
-    setIsPromptVisible(false); // Hide the button after interaction
   };
 
   return (
