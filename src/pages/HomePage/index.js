@@ -16,8 +16,6 @@ import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 // import PWABtn from "../../components/PwaButton";
-// import PWAPrompt from "react-ios-pwa-prompt";
-// import logo from "../../images/logoImgs/logo.png";
 
 const Home = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
@@ -46,42 +44,6 @@ const Home = ({ toggleTheme, theme }) => {
       document.body.style.overflow = "auto";
     };
   }, [$settingsOpen, $sidebarOpen]);
-
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [manifestLoaded, setManifestLoaded] = useState(false);
-
-  useEffect(() => {
-    // Check if PWA manifest is loaded
-    fetch("manifest.json")
-      .then((response) => {
-        if (response.ok) {
-          setManifestLoaded(true);
-        } else {
-          console.error("Error loading PWA manifest");
-        }
-      })
-      .catch((error) => {
-        console.error("Error loading PWA manifest:", error);
-      });
-    window.addEventListener("beforeinstallprompt", (event) => {
-      event.preventDefault();
-      setDeferredPrompt(event);
-    });
-  }, []);
-
-  const handleInstall = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the A2HS prompt");
-        } else {
-          console.log("User dismissed the A2HS prompt");
-        }
-        setDeferredPrompt(null);
-      });
-    }
-  };
 
   return (
     <>
@@ -124,9 +86,7 @@ const Home = ({ toggleTheme, theme }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      {manifestLoaded && deferredPrompt && (
-        <button onClick={handleInstall}>Install</button>
-      )}
+
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section
