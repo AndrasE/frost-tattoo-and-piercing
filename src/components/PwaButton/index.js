@@ -2,8 +2,21 @@ import React, { useState, useEffect } from "react";
 
 function PWABtn() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [manifestLoaded, setManifestLoaded] = useState(false);
 
   useEffect(() => {
+    // Check if PWA manifest is loaded
+    fetch("manifest.json")
+      .then((response) => {
+        if (response.ok) {
+          setManifestLoaded(true);
+        } else {
+          console.error("Error loading PWA manifest");
+        }
+      })
+      .catch((error) => {
+        console.error("Error loading PWA manifest:", error);
+      });
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
       setDeferredPrompt(event);
@@ -23,12 +36,12 @@ function PWABtn() {
       });
     }
   };
-
   return (
     <div>
-      {deferredPrompt && <button onClick={handleInstall}>Install</button>}
+      {manifestLoaded && deferredPrompt && (
+        <button onClick={handleInstall}>Install</button>
+      )}
     </div>
   );
 }
-
 export default PWABtn;
