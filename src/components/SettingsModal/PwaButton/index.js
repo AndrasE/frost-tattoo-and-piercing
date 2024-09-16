@@ -9,11 +9,7 @@ const PWABtn = () => {
   // Function to detect if the browser is Chromium-based
   const detectBrowser = () => {
     const userAgent = navigator.userAgent.toLowerCase();
-    if (
-      userAgent.includes("chrome") &&
-      !userAgent.includes("edg") &&
-      !userAgent.includes("opr")
-    ) {
+    if (userAgent.includes("chrome") && !userAgent.includes("edg")) {
       setIsChromium(true); // If it's a Chromium-based browser
     } else if (userAgent.includes("firefox") || userAgent.includes("safari")) {
       setIsNonChromium(true); // For Safari or Firefox
@@ -52,8 +48,9 @@ const PWABtn = () => {
 
   return (
     <div>
-      isChromium
-      <button onClick={handleInstallClick}>Install PWA</button>
+      {isChromium && isPromptVisible && (
+        <button onClick={handleInstallClick}>Install PWA</button>
+      )}
       {isNonChromium && (
         <div>
           {/* Custom instructions for Firefox or Safari */}
