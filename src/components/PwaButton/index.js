@@ -9,6 +9,7 @@ const PWABtn = () => {
       event.preventDefault();
       setDeferredPrompt(event); // Store the event to trigger it later
       setIsPromptSupported(true); // Show button when PWA install is supported
+      console.log(event);
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);

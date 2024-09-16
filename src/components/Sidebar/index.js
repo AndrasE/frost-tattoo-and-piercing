@@ -24,6 +24,7 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
         <SidebarMenu>
           {navLinks.map(({ to, label }, index) => (
             <SidebarLink
+              key={index}
               href={to} // only needed for SEO
               aria-label={`Scroll to ${label} section`} // for SEO
               to={to}

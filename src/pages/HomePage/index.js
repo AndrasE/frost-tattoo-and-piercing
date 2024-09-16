@@ -15,6 +15,7 @@ import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import PWABtn from "../../components/PwaButton";
 // import PWAPrompt from "react-ios-pwa-prompt";
 // import logo from "../../images/logoImgs/logo.png";
 
@@ -23,12 +24,6 @@ const Home = ({ toggleTheme, theme }) => {
 
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
-  // const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
-
-  // useEffect(() => {
-  //   // 20% chance of popping up
-  //   setShouldShowPWAPrompt(Math.random() < 0.9);
-  // }, []);
 
   const toggleSidebar = () => {
     setSidebarOpen(!$sidebarOpen);
@@ -56,6 +51,7 @@ const Home = ({ toggleTheme, theme }) => {
     <>
       {/* blur and swipe area for settings modal, listens to scrollY when modal btn animated out, swipe will be disabled;
       z-indexes changes according to modal position. order is: closed: blur, hero, swipe, modal, nav || open: hero, swipe, nav, blur, modal*/}
+
       <BlurSceen
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
@@ -92,7 +88,7 @@ const Home = ({ toggleTheme, theme }) => {
         }}>
         <HeroVideo />
       </motion.div>
-
+      <PWABtn />
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section
@@ -115,12 +111,7 @@ const Home = ({ toggleTheme, theme }) => {
         reversed
       />
       <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
-      {/* sections end */}
-      {/* <PWAPrompt
-        isShown={shouldShowPWAPrompt}
-        appIconPath={logo}
-        copyDescription="This website has app functionality. Add it to your home screen to use it in fullscreen."
-      /> */}
+
       <Footer />
       <ProgressBar />
     </>
