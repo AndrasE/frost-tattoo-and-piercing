@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 import Hun from "../../images/flagIcons/hu.svg";
 import Eng from "../../images/flagIcons/gb.svg";
 import Ger from "../../images/flagIcons/de.svg";
+import PWABtn from "./PwaButton";
 
 const SettingsModal = ({
   $settingsOpen,
@@ -100,6 +101,12 @@ const SettingsModal = ({
               $isSelected={selectedLang === "de"}>
               <FlagIcon src={Ger} alt="Germany_flag" />
               <SettingLabel>Ger</SettingLabel>
+            </SettingWrapper>
+          </SettingsWrapper>
+          <SettingsWrapper>
+            <SettingWrapper>
+              <SettingLabel>App</SettingLabel>
+              <PWABtn />
             </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>
