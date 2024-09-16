@@ -22,7 +22,6 @@ const PWABtn = () => {
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
       setDeferredPrompt(event); // Save the event for later
-      setIsPromptVisible(true); // Show the install button
     });
 
     return () => {
@@ -41,7 +40,6 @@ const PWABtn = () => {
         console.log("User dismissed the install prompt");
       }
       setDeferredPrompt(null); // Clear the deferredPrompt
-      setIsPromptVisible(false); // Hide the install button
     });
   };
 
