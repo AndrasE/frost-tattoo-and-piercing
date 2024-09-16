@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const PWABtn = () => {
-  const [supportsPWA, setSupportsPWA] = useState(false);
   const [promptInstall, setPromptInstall] = useState(null);
 
   useEffect(() => {
