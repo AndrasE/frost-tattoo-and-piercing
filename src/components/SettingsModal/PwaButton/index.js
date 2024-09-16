@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 
 const PWABtn = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null); // Store the prompt event
+  const [isPromptSupported, setIsPromptSupported] = useState(false); // Controls button visibility
 
   useEffect(() => {
-    // Listen for the beforeinstallprompt event
     const handleBeforeInstallPrompt = (event) => {
       event.preventDefault();
       setDeferredPrompt(event); // Store the event to trigger it later
+      setIsPromptSupported(true); // Show button when PWA install is supported
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
     return () => {
-      // Clean up event listener on component unmount
       window.removeEventListener(
         "beforeinstallprompt",
         handleBeforeInstallPrompt
@@ -22,12 +22,9 @@ const PWABtn = () => {
   }, []);
 
   const handleInstallClick = async () => {
-    if (!deferredPrompt) return; // Ensure deferredPrompt is available
+    if (!deferredPrompt) return;
 
-    // Show the prompt to the user
     deferredPrompt.prompt();
-
-    // Wait for the user's choice
     const { outcome } = await deferredPrompt.userChoice;
 
     if (outcome === "accepted") {
@@ -36,13 +33,14 @@ const PWABtn = () => {
       console.log("User dismissed the PWA installation");
     }
 
-    // Reset the deferredPrompt so it can't be reused
     setDeferredPrompt(null);
   };
 
   return (
     <div>
-      <button onClick={handleInstallClick}>Install PWA</button>
+      {isPromptSupported && ( // Conditionally render the button based on PWA support
+        <button onClick={handleInstallClick}>Install PWA</button>
+      )}
     </div>
   );
 };
