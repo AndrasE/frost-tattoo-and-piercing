@@ -7,10 +7,14 @@ const PWABtn = () => {
   useEffect(() => {
     const handleBeforeInstallPrompt = (event) => {
       event.preventDefault();
-      setDeferredPrompt(event); // Store the event to trigger it later
-      setIsPromptSupported(true); // Show button when PWA install is supported
-      console.log(event);
+      setDeferredPrompt(event);
+      setIsPromptSupported(true);
+      console.log("Simulated beforeinstallprompt event");
     };
+
+    setTimeout(() => {
+      window.dispatchEvent(new Event("beforeinstallprompt")); // Simulate event
+    }, 3000); // Simulate after 3 seconds
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
