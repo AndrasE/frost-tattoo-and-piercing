@@ -15,20 +15,21 @@ import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import PWAPrompt from "react-ios-pwa-prompt";
-import logo from "../../images/logoImgs/logo.png";
+// import PWAPrompt from "react-ios-pwa-prompt";
+// import logo from "../../images/logoImgs/logo.png";
 
 const Home = ({ toggleTheme, theme }) => {
   const { t } = useTranslation();
 
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
-  const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
+  // const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
 
-  useEffect(() => {
-    // 20% chance of popping up
-    setShouldShowPWAPrompt(Math.random() < 0.9);
-  }, []);
+  // useEffect(() => {
+  //   // 20% chance of popping up
+  //   setShouldShowPWAPrompt(Math.random() < 0.9);
+  // }, []);
+
   const toggleSidebar = () => {
     setSidebarOpen(!$sidebarOpen);
   };
@@ -115,11 +116,11 @@ const Home = ({ toggleTheme, theme }) => {
       />
       <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
       {/* sections end */}
-      <PWAPrompt
+      {/* <PWAPrompt
         isShown={shouldShowPWAPrompt}
         appIconPath={logo}
         copyDescription="This website has app functionality. Add it to your home screen to use it in fullscreen."
-      />
+      /> */}
       <Footer />
       <ProgressBar />
     </>
