@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 
 let deferredPrompt;
 
-function PWABtn() {
+function PWABtn2() {
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
-      console.log(e);
       // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
       // Stash the event so it can be triggered later.
