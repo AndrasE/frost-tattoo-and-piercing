@@ -3,16 +3,14 @@ import React, { useEffect } from "react";
 let deferredPrompt;
 
 function PWABtn() {
-  // const [installable, setInstallable] = useState(false);
-
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
+      console.log("here:", e);
       // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
       // Stash the event so it can be triggered later.
       deferredPrompt = e;
       // Update UI notify the user they can install the PWA
-      // setInstallable(true);
     });
 
     window.addEventListener("appinstalled", () => {
@@ -23,8 +21,8 @@ function PWABtn() {
 
   const handleInstallClick = (e) => {
     // Hide the app provided install promotion
-    // setInstallable(false);
     // Show the install prompt
+    console.log("clicked", deferredPrompt);
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
