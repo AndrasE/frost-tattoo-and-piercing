@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 let deferredPrompt;
 
 function PWABtn() {
+  const [installable, setInstallable] = useState(false);
+
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
       // Prevent the mini-infobar from appearing on mobile
@@ -10,6 +12,7 @@ function PWABtn() {
       // Stash the event so it can be triggered later.
       deferredPrompt = e;
       // Update UI notify the user they can install the PWA
+      setInstallable(true);
     });
 
     window.addEventListener("appinstalled", () => {
@@ -20,6 +23,7 @@ function PWABtn() {
 
   const handleInstallClick = (e) => {
     // Hide the app provided install promotion
+    setInstallable(false);
     // Show the install prompt
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
@@ -36,10 +40,11 @@ function PWABtn() {
     <div className="App">
       <header className="App-header">
         <h2>Install Demo</h2>
-
-        <button className="install-button" onClick={handleInstallClick}>
-          INSTALL ME
-        </button>
+        {installable && (
+          <button className="install-button" onClick={handleInstallClick}>
+            INSTALL ME
+          </button>
+        )}
       </header>
     </div>
   );
