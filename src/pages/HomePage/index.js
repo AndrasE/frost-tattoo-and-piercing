@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import PWABtn from "../../components/PwaButton";
 
-const Home = ({ toggleTheme, theme }) => {
+const Home = ({ toggleTheme, theme, browser }) => {
   const { t } = useTranslation();
 
   const [$sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,6 +29,7 @@ const Home = ({ toggleTheme, theme }) => {
 
   const toggleSettings = () => {
     setSettingsOpen(!$settingsOpen);
+    console.log(browser);
   };
 
   // disable scrolling when the settings modal is open
