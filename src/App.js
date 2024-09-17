@@ -24,7 +24,7 @@ function App() {
       name: browser.parsedResult.browser.name,
       os: browser.parsedResult.os.name,
     });
-  }, []);
+  }, [browser.parsedResult.browser.name, browser.parsedResult.os.name]);
   // simulate loading time to assets to load while splashscreen showing
   const [loading, setLoading] = useState(true);
   const [ready, setReady] = useState(false);
