@@ -1,7 +1,7 @@
 import Home from "./pages/HomePage";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SplashScreen from "./pages/SplashPage";
+// import SplashScreen from "./pages/SplashPage";
 import GalleryPage from "./pages/GalleryPage";
 import useLocalStorage from "use-local-storage";
 import { ThemeProvider } from "styled-components";
@@ -10,9 +10,9 @@ import { lightTheme, darkTheme } from "./themes/themes";
 
 function App() {
   // simulate loading time to assets to load while splashscreen showing
-  const [loading, setLoading] = useState(true);
-  const [ready, setReady] = useState(false);
-  const [startTime] = useState(Date.now());
+  // const [loading, setLoading] = useState(true);
+  // const [ready, setReady] = useState(false);
+  // const [startTime] = useState(Date.now());
 
   // localstorage states, matching system theme settings and/or creating new settings saved in cache
   const defaultTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -26,48 +26,48 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    const minimumLoadingTime = setTimeout(() => {
-      setReady(true);
-    }, 1500); // Minimum 1.5 seconds
+  // useEffect(() => {
+  //   const minimumLoadingTime = setTimeout(() => {
+  //     setReady(true);
+  //   }, 1500); // Minimum 1.5 seconds
 
-    // Simulate loading of assets/data
-    const simulateLoading = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Simulate 2 seconds loading time for assets/data
+  //   // Simulate loading of assets/data
+  //   const simulateLoading = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000); // Simulate 2 seconds loading time for assets/data
 
-    return () => {
-      clearTimeout(minimumLoadingTime);
-      clearTimeout(simulateLoading);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(minimumLoadingTime);
+  //     clearTimeout(simulateLoading);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    if (ready && !loading) {
-      const endTime = Date.now();
-      const loadTime = endTime - startTime;
-      console.log(`All assets are ready. Page load time: ${loadTime} ms`);
-      setLoading(false);
-    }
-  }, [ready, loading, startTime]);
+  // useEffect(() => {
+  //   if (ready && !loading) {
+  //     const endTime = Date.now();
+  //     const loadTime = endTime - startTime;
+  //     console.log(`All assets are ready. Page load time: ${loadTime} ms`);
+  //     setLoading(false);
+  //   }
+  // }, [ready, loading, startTime]);
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <div className="App">
-        {loading ? (
+        {/* {loading ? (
           <SplashScreen />
-        ) : (
-          <Router>
-            <Routes>
-              <Route
-                path="/"
-                element={<Home theme={theme} toggleTheme={toggleTheme} />}
-              />
-              <Route path="/gallery" element={<GalleryPage />} />
-            </Routes>
-          </Router>
-        )}
+        ) : ( */}
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={<Home theme={theme} toggleTheme={toggleTheme} />}
+            />
+            <Route path="/gallery" element={<GalleryPage />} />
+          </Routes>
+        </Router>
+        {/* )} */}
       </div>
     </ThemeProvider>
   );
