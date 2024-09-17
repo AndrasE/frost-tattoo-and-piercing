@@ -10,6 +10,7 @@ import { lightTheme, darkTheme } from "./themes/themes";
 import Bowser from "bowser";
 
 function App() {
+  // eslint-disable-next-line
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [browserSettings, setBrowiserSettings] = useState({});
   const browser = Bowser.getParser(window.navigator.userAgent);
