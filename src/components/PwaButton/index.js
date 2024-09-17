@@ -5,7 +5,6 @@ let deferredPrompt;
 function PWABtn() {
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
-      console.log(e);
       // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
       // Stash the event so it can be triggered later.
@@ -22,7 +21,6 @@ function PWABtn() {
   const handleInstallClick = (e) => {
     // Hide the app provided install promotion
     // Show the install prompt
-    console.log("clicked");
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
