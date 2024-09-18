@@ -26,7 +26,6 @@ const SettingsModal = ({
   theme,
   toggleTheme,
   browserSettings,
-  deferredPrompt,
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
