@@ -106,7 +106,11 @@ const SettingsModal = ({
           <SettingsWrapper>
             <SettingWrapper>
               <SettingLabel>App</SettingLabel>
-              <h2>{browserSettings.os}</h2>
+              <h2>
+                {browserSettings.name}
+                <br />
+                {browserSettings.os}{" "}
+              </h2>
             </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>

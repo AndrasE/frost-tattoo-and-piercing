@@ -1,48 +1,60 @@
-import React, { useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
+import logo from "../../images/logoImgs/logo.png";
 
-let deferredPrompt;
+import PWAInstall from "@khmyznikov/pwa-install/react-legacy";
+
+/*
+Sample proj how to import pwa-install component in react <= 18
+Installation probably don't work on stackblitz, it's ok.
+*/
 
 function PWABtn() {
-  useEffect(() => {
-    window.addEventListener("beforeinstallprompt", (e) => {
-      console.log("here:", e);
-      // Prevent the mini-infobar from appearing on mobile
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-      // Update UI notify the user they can install the PWA
-    });
+  const appName = "My PWA";
 
-    window.addEventListener("appinstalled", () => {
-      // Log install to analytics
-      console.log("INSTALL: Success");
-    });
+  const [promptEvent, setPromptEvent] = useState(null);
+  const pwaInstallRef = useRef(null);
+
+  // externalPromptEvent is only if your app is big and slow to start
+  // check index.html for additional code.
+  // https://github.com/khmyznikov/pwa-install?tab=readme-ov-file#async-mode
+  useEffect(() => {
+    let lastPromptEvent = window.promptEvent;
+
+    const intervalId = setInterval(() => {
+      if (window.promptEvent !== lastPromptEvent) {
+        lastPromptEvent = window.promptEvent;
+        setPromptEvent(window.promptEvent);
+      }
+    }, 100);
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
-  const handleInstallClick = (e) => {
-    // Hide the app provided install promotion
-    // Show the install prompt
-    console.log("clicked", deferredPrompt);
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === "accepted") {
-        console.log("User accepted the install prompt");
-      } else {
-        console.log("User dismissed the install prompt");
-      }
-    });
-  };
-
+  /* buttons was used here just for sample, not a direct guide
+  name and icon props was used just for test, prefer manifest in your app.
+  */
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Install Demo</h2>
-
-        <button className="install-button" onClick={handleInstallClick}>
-          INSTALL ME
-        </button>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello React + pwa-install</p>
+        <p>
+          <button onClick={() => pwaInstallRef.current?.showDialog(true)}>
+            Show
+          </button>
+          <button onClick={() => pwaInstallRef.current?.hideDialog()}>
+            Hide
+          </button>
+        </p>
       </header>
+
+      <PWAInstall
+        ref={pwaInstallRef}
+        name={appName}
+        icon={logo}
+        externalPromptEvent={promptEvent}
+        onPwaInstallAvailableEvent={(event) => console.log(event)}></PWAInstall>
     </div>
   );
 }
