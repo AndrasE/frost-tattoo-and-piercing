@@ -33,6 +33,13 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
 
   const handleClick = () => {
     deferredPrompt.prompt();
+    if (navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({
+        action: "openApp",
+      });
+    } else {
+      console.log("PWA is not currently active.");
+    }
   };
 
   // disable scrolling when the settings modal is open
@@ -67,6 +74,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         toggleSettings={toggleSettings}
         theme={theme}
         toggleTheme={toggleTheme}
+        browserSettings={browserSettings}
+        deferredPrompt={deferredPrompt}
       />
       <Navbar
         $sidebarOpen={$sidebarOpen}

@@ -25,6 +25,8 @@ const SettingsModal = ({
   toggleSettings,
   theme,
   toggleTheme,
+  browserSettings,
+  deferredPrompt,
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
@@ -102,11 +104,12 @@ const SettingsModal = ({
               <SettingLabel>Ger</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
-          {/* <SettingsWrapper>
+          <SettingsWrapper>
             <SettingWrapper>
               <SettingLabel>App</SettingLabel>
+              <h2>{browserSettings.os}</h2>
             </SettingWrapper>
-          </SettingsWrapper> */}
+          </SettingsWrapper>
         </SettingsContainer>
         <LabelContainer>
           <LabelWrapper>
