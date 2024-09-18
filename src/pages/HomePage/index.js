@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import PWABtn from "../../components/PwaButton";
 
-const Home = ({ toggleTheme, theme, browser }) => {
+const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
   const { t } = useTranslation();
 
   const [$sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,6 +29,10 @@ const Home = ({ toggleTheme, theme, browser }) => {
 
   const toggleSettings = () => {
     setSettingsOpen(!$settingsOpen);
+  };
+
+  const handleClick = () => {
+    deferredPrompt.prompt();
   };
 
   // disable scrolling when the settings modal is open
@@ -86,8 +90,9 @@ const Home = ({ toggleTheme, theme, browser }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      <h1>{browser.name}</h1>
-      <h1>{browser.os}</h1>
+      <h1>{browserSettings.name}</h1>
+      <h1>{browserSettings.os}</h1>
+      <button onClick={handleClick}>deffered</button>
 
       <PWABtn />
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}

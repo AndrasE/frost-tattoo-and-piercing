@@ -82,7 +82,8 @@ function App() {
                   <Home
                     theme={theme}
                     toggleTheme={toggleTheme}
-                    browser={browserSettings}
+                    browserSettings={browserSettings}
+                    deferredPrompt={deferredPrompt}
                   />
                 }
               />
