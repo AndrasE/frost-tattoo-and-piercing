@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
+import { motion } from "framer-motion";
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled(motion.div)`
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -12,9 +13,7 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
-  opacity: ${({ $sidebarOpen }) => ($sidebarOpen ? "100%" : "0%")};
-  top: ${({ $sidebarOpen }) => ($sidebarOpen ? "0" : "-100%")};
+
   z-index: 3;
 `;
 

@@ -58,11 +58,13 @@ const SettingsModal = ({
     <MotionModal
       $settingsOpen={$settingsOpen}
       style={{
-        left: $settingsOpen ? "0" : "-194px", // Control left position based on $settingsOpen
-        x: smoothXPosition, // Animate x position to slide out
+        x: smoothXPosition, // Animate x position to slide out settings button
+      }}
+      initial={{
+        left: "-214px", // Set initial left position
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-214px",
+        left: $settingsOpen ? "0" : "-214px", // Control left position based on $settingsOpen
       }}
       transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>
@@ -106,11 +108,7 @@ const SettingsModal = ({
           <SettingsWrapper>
             <SettingWrapper>
               <SettingLabel>App</SettingLabel>
-              <h2>
-                {browserSettings.name}
-                <br />
-                {browserSettings.os}{" "}
-              </h2>
+              <h2>{browserSettings.os}</h2>
             </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>

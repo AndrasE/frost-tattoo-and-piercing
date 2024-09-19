@@ -19,7 +19,14 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
   ];
 
   return (
-    <SidebarContainer $sidebarOpen={$sidebarOpen} onClick={toggleSidebar}>
+    <SidebarContainer
+      $sidebarOpen={$sidebarOpen}
+      onClick={toggleSidebar}
+      animate={{
+        top: $sidebarOpen ? "0" : "-100%",
+        opacity: $sidebarOpen ? 1 : 0, // Using numbers for opacity instead of percentages
+      }}
+      transition={{ duration: 0.3 }}>
       <SidebarWrapper>
         <SidebarMenu>
           {navLinks.map(({ to, label }, index) => (
