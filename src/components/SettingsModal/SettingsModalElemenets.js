@@ -24,9 +24,9 @@ export const SettingsContainer = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.backgroundColor};
   padding: 10px 5px 30px 0;
-  border-top: 2px solid #1ebbd7;
-  border-right: 2px solid #1ebbd7;
-  border-bottom: 2px solid #1ebbd7;
+  border-top: 2px solid ${({ theme }) => theme.accentColor};
+  border-right: 2px solid ${({ theme }) => theme.accentColor};
+  border-bottom: 2px solid ${({ theme }) => theme.accentColor};
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 `;
@@ -34,7 +34,7 @@ export const SettingsContainer = styled.div`
 export const SettingsLabel = styled.p`
   font-size: 1rem;
   margin: 20px 0 2px 0;
-  border-bottom: 2px solid #1ebbd7;
+  border-bottom: 2px solid ${({ theme }) => theme.accentColor};
 `;
 
 export const SettingsWrapper = styled.div`

@@ -22,9 +22,12 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
     <SidebarContainer
       $sidebarOpen={$sidebarOpen}
       onClick={toggleSidebar}
+      initial={{
+        top: "-100%", // Set initial top position
+      }}
       animate={{
         top: $sidebarOpen ? "0" : "-100%",
-        opacity: $sidebarOpen ? 1 : 0, // Using numbers for opacity instead of percentages
+        opacity: $sidebarOpen ? 1 : 0.3, // Using numbers for opacity instead of percentages
       }}
       transition={{ duration: 0.3 }}>
       <SidebarWrapper>

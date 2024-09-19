@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../components/HomeNavbar";
 import Sidebar from "../../components/Sidebar";
 import SettingsModal from "../../components/SettingsModal";
+import PwaModal from "../../components/PwaModal";
 import HeroVideo from "../../components/HeroSection";
 import Section from "../../components/Sections";
 import AboutImg from "../../components/SectionsEmelents/AboutImg";
@@ -15,14 +16,11 @@ import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import PWAPrompt from "react-ios-pwa-prompt";
 
 const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
   const { t } = useTranslation();
-
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
-  const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!$sidebarOpen);
@@ -30,17 +28,6 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
 
   const toggleSettings = () => {
     setSettingsOpen(!$settingsOpen);
-  };
-
-  const handleClick = () => {
-    deferredPrompt.prompt();
-    if (navigator.serviceWorker.controller) {
-      navigator.serviceWorker.controller.postMessage({
-        action: "openApp",
-      });
-    } else {
-      console.log("PWA is not currently active.");
-    }
   };
 
   // disable scrolling when the settings modal is open
@@ -70,6 +57,17 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
       />
+      <Navbar
+        $sidebarOpen={$sidebarOpen}
+        toggleSidebar={toggleSidebar}
+        $settingsOpen={$settingsOpen}
+        menu={t("nav18")}
+      />
+      <Sidebar
+        $sidebarOpen={$sidebarOpen}
+        toggleSidebar={toggleSidebar}
+        menu={t("nav18")}
+      />
       <SettingsModal
         $settingsOpen={$settingsOpen}
         toggleSettings={toggleSettings}
@@ -78,18 +76,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         browserSettings={browserSettings}
         deferredPrompt={deferredPrompt}
       />
-      <Navbar
-        $sidebarOpen={$sidebarOpen}
-        toggleSidebar={toggleSidebar}
-        $settingsOpen={$settingsOpen}
-        menu={t("nav18")}
-      />
-
-      <Sidebar
-        $sidebarOpen={$sidebarOpen}
-        toggleSidebar={toggleSidebar}
-        menu={t("nav18")}
-      />
+      <PwaModal />
+      {/* animation onload on herosection */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -100,18 +88,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         }}>
         <HeroVideo />
       </motion.div>
-      <h1>{browserSettings.name}</h1>
-      <h1>{browserSettings.os}</h1>
-      <button onClick={handleClick}>deffered</button>
-      <button onClick={() => setShouldShowPWAPrompt((prevShow) => !prevShow)}>
-        click
-      </button>
-      <div style={{ maxWidthidth: "200px", position: "relative" }}>
-        <PWAPrompt
-          style={{ width: "200px !important", position: "relative" }}
-          isShown={shouldShowPWAPrompt}
-        />
-      </div>
+
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section

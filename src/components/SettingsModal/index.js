@@ -69,6 +69,7 @@ const SettingsModal = ({
       transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>
         <SettingsContainer $settingsOpen={$settingsOpen}>
+          {/* Themes */}
           <SettingsLabel>Theme</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
@@ -84,6 +85,7 @@ const SettingsModal = ({
               <SettingLabel>dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
+          {/* Languages */}
           <SettingsLabel>Language</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
@@ -105,10 +107,12 @@ const SettingsModal = ({
               <SettingLabel>Ger</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
+          {/* PWA  */}
+          <SettingsLabel>App</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper>
-              <SettingLabel>App</SettingLabel>
-              <h2>{browserSettings.os}</h2>
+              <SettingLabel>{browserSettings.name}</SettingLabel>
+              <SettingLabel>{browserSettings.os}</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>
