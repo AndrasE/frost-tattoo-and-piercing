@@ -22,13 +22,16 @@ export const SettingsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${({ theme }) => theme.backgroundColor};
   padding: 10px 5px 30px 0;
+  background-color: ${({ theme }) => theme.backgroundColor};
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top: 1px solid ${({ theme }) => theme.accentColor};
   border-right: 1px solid ${({ theme }) => theme.accentColor};
   border-bottom: 1px solid ${({ theme }) => theme.accentColor};
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  box-shadow: ${({ $settingsOpen, theme }) =>
+    $settingsOpen ? `5px 5px 25px ${theme.dropShadow}` : "none"};
+  transition: box-shadow 0.3s ease-in-out;
 `;
 
 export const SettingsLabel = styled.p`

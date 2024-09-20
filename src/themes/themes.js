@@ -4,7 +4,7 @@ export const lightTheme = {
   fontColor: "#111",
   accentColor: "#1ebbd7",
   navDropShadow: "rgba(0, 0, 0, 0.2)",
-  dropShadow: "rgba(0, 0, 0, 0.2)",
+  dropShadow: "rgba(0, 0, 0, 0.3)",
   //gallerypage svgs
   svgPrimaryColor: "#575a5b",
   svgSecondaryColor: "#111",
