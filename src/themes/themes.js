@@ -12,7 +12,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   //main themes
-  backgroundColor: "#16191d",
+  backgroundColor: "#222",
   fontColor: "#f2f2f2",
   accentColor: "#1ebbd7",
   navDropShadow: "rgba(0, 0, 0, 0.4)",
