@@ -13,11 +13,11 @@ import {
   Path,
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
-import SafariDesktop from "./SafariDesktop";
-import SafariMobile from "./SafariMobile";
-import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
-import ChromiumsInstalledAlready from "./ChromiumsInstalledAlready";
-import FirefoxOperaMobile from "./FirefoxOperaMobile";
+// import SafariDesktop from "./SafariDesktop";
+// import SafariMobile from "./SafariMobile";
+// import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
+// import ChromiumsInstalledAlready from "./ChromiumsInstalledAlready";
+// import FirefoxOperaMobile from "./FirefoxOperaMobile";
 import FirefoxDesktop from "./FirefoxDesktop";
 
 const PwaModal = ({
