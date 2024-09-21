@@ -33,9 +33,9 @@ const PwaModal = ({
     const { name, os } = browserSettings;
 
     // Logic for Edge and Chrome
-    if ((name === "Chrome" || name === "Edge") && deferredPrompt) {
+    if ((name === "Chrome" || name === "Microsoft Edge") && deferredPrompt) {
       return <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />;
-    } else if (name === "Chrome" || name === "Edge") {
+    } else if (name === "Chrome" || name === "Microsoft Edge") {
       if (os === "Android") {
         return <ChromiumsInstalledAlreadyMobile />;
       } else if (os === "Windows") {
