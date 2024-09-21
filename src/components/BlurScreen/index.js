@@ -29,11 +29,21 @@ const BlurSceen = ({
     },
   });
 
+  const handleClick = () => {
+    if ($settingsOpen) {
+      toggleSettings();
+    }
+    if ($pwaModalOpen && !$settingsOpen) {
+      togglePwaModal();
+    }
+  };
+
   return (
     <BlurAnimation
       {...handlers}
       $settingsOpen={$settingsOpen}
-      $pwaModalOpen={$pwaModalOpen}></BlurAnimation>
+      $pwaModalOpen={$pwaModalOpen}
+      onClick={handleClick}></BlurAnimation>
   );
 };
 

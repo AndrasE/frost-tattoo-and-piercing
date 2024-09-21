@@ -16,8 +16,9 @@ import {
   InstallStepsWrapper,
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
-// import SafariMobile from "./SafariMobile";
-import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
+// // import SafariMobile from "./SafariMobile";
+// import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
+import ChromiumsInstalledAlready from "./ChromiumsInstalledAlready";
 
 const PwaModal = ({
   $pwaModalOpen,
@@ -61,7 +62,8 @@ const PwaModal = ({
         <Divider />
         <InstallStepsWrapper>
           {/* <SafariMobile /> */}
-          <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />
+          {/* <ChromiumsInstallAvail deferredPrompt={deferredPrompt} /> */}
+          <ChromiumsInstalledAlready />
         </InstallStepsWrapper>
       </ModalContainer>
     </MotionModal>
