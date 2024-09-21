@@ -31,23 +31,23 @@ const PwaModal = ({
     const { name, os } = browserSettings;
 
     // Logic for Edge and Chrome
-    if ((name === "chrome" || name === "edge") && deferredPrompt) {
+    if ((name === "Chrome" || name === "Edge") && deferredPrompt) {
       return <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />;
-    } else if (name === "chrome" || name === "edge") {
+    } else if (name === "Chrome" || name === "Edge") {
       return <ChromiumsInstalledAlready />;
     }
 
     // Logic for Safari
-    if (name === "safari" && os === "macOS") {
+    if (name === "Safari" && os === "macOS") {
       return <SafariDesktop />;
-    } else if (name === "safari" && os === "iOS") {
+    } else if (name === "Safari" && os === "iOS") {
       return <SafariMobile />;
     }
 
     // Logic for Firefox
-    if (name === "firefox" && os === "windows") {
+    if (name === "Firefox" && os === "Windows") {
       return <FirefoxDesktop />;
-    } else if ((name === "firefox" || name === "opera") && os === "android") {
+    } else if ((name === "Firefox" || name === "Opera") && os === "Android") {
       return <FirefoxOperaMobile />;
     }
 
@@ -83,7 +83,9 @@ const PwaModal = ({
             </Svg>
           </HeaderBtn>
         </HeaderContainer>
+        <h2>{browserSettings.name}</h2>
 
+        <h2>{browserSettings.os}</h2>
         {/* Conditionally render the appropriate content */}
         {renderPwaModal()}
       </ModalContainer>
