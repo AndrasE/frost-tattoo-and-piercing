@@ -23,7 +23,7 @@ export const SettingsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: ${({ isStandalone }) =>
-    isStandalone ? "10px 5px 20px 0" : "20px 5px 30px 0"};
+    isStandalone ? "10px 5px 20px 0" : "20px 2px 35px 0"};
   background-color: ${({ theme }) => theme.backgroundColor};
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
