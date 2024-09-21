@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { IoShareOutline } from "react-icons/io5";
-import { MdOutlineAddBox } from "react-icons/md";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
+import { TbSearch } from "react-icons/tb";
+import { GoDesktopDownload } from "react-icons/go";
 
 export const Divider = styled.hr`
   height: 1px;
@@ -37,13 +38,19 @@ export const InstallStep = styled.li`
   color: ${({ theme }) => theme.fontColor};
 `;
 
-export const ShareIcon = styled(IoShareOutline)`
+export const ExtensionIcon = styled(IoExtensionPuzzleOutline)`
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
-export const AddIcon = styled(MdOutlineAddBox)`
+export const SearchIcon = styled(TbSearch)`
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+`;
+
+export const InstallIcon = styled(GoDesktopDownload)`
   width: 25px;
   height: 25px;
   margin-right: 25px;

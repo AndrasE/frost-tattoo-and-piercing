@@ -1,13 +1,27 @@
 import React from "react";
-import { InstallStep, OpenIcon } from "./ChromiumsInstalledAlreadyElements";
+import {
+  Divider,
+  Description,
+  InstallStepsWrapper,
+  InstallStep,
+  OpenIcon,
+} from "./ChromiumsInstalledAlreadyElements";
 
 const ChromiumsInstalledAlready = () => {
   return (
-    <InstallStep>
-      <OpenIcon />
-      This app has been installed already. Please click the icon in the
-      addressbar to open.
-    </InstallStep>
+    <>
+      <Divider />
+      <Description>
+        This PWA (Progressive Web Application) has already been installed.
+      </Description>
+      <Divider />
+      <InstallStepsWrapper>
+        <InstallStep>
+          <OpenIcon />
+          Please click the icon in the addressbar to open.
+        </InstallStep>
+      </InstallStepsWrapper>
+    </>
   );
 };
 

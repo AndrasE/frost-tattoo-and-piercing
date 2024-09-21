@@ -4,11 +4,11 @@ import {
   Description,
   InstallStepsWrapper,
   InstallStep,
-  ShareIcon,
+  SettingsIcon,
   AddIcon,
-} from "./SafariMobileElements";
+} from "./FirefoxOperaMobileElements";
 
-const SafariMobile = () => {
+const FirefoxOperaMobile = () => {
   return (
     <>
       <Divider />
@@ -19,8 +19,8 @@ const SafariMobile = () => {
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
-          <ShareIcon />
-          Press the 'Share' button on the menu bar below.
+          <SettingsIcon />
+          Press the 'Setting' button on the top bar above.
         </InstallStep>
         <InstallStep>
           <AddIcon />
@@ -31,4 +31,4 @@ const SafariMobile = () => {
   );
 };
 
-export default SafariMobile;
+export default FirefoxOperaMobile;

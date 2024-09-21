@@ -4,11 +4,12 @@ import {
   Description,
   InstallStepsWrapper,
   InstallStep,
-  ShareIcon,
-  AddIcon,
-} from "./SafariMobileElements";
+  ExtensionIcon,
+  SearchIcon,
+  InstallIcon,
+} from "./FirefoxDesktopElements";
 
-const SafariMobile = () => {
+const FirefoxDesktop = () => {
   return (
     <>
       <Divider />
@@ -19,16 +20,20 @@ const SafariMobile = () => {
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
-          <ShareIcon />
-          Press the 'Share' button on the menu bar below.
+          <ExtensionIcon />
+          Press the 'Extension' icon on the menu bar above.
         </InstallStep>
         <InstallStep>
-          <AddIcon />
-          Press 'Add to Home Screen'.
+          <SearchIcon />
+          Search and install Progressive Web Apps for Firefox extension.
+        </InstallStep>
+        <InstallStep>
+          <InstallIcon />
+          Press the 'Intall' icon in the address bar.
         </InstallStep>
       </InstallStepsWrapper>
     </>
   );
 };
 
-export default SafariMobile;
+export default FirefoxDesktop;

@@ -11,14 +11,14 @@ import {
   HeaderBtn,
   Svg,
   Path,
-  Divider,
-  Description,
-  InstallStepsWrapper,
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
-// // import SafariMobile from "./SafariMobile";
-// import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
+import SafariDesktop from "./SafariDesktop";
+import SafariMobile from "./SafariMobile";
+import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
 import ChromiumsInstalledAlready from "./ChromiumsInstalledAlready";
+import FirefoxOperaMobile from "./FirefoxOperaMobile";
+import FirefoxDesktop from "./FirefoxDesktop";
 
 const PwaModal = ({
   $pwaModalOpen,
@@ -54,17 +54,13 @@ const PwaModal = ({
             </Svg>
           </HeaderBtn>
         </HeaderContainer>
-        <Divider />
-        <Description>
-          This site has app functionality. Install it on your device for
-          extensive experience and easy access.
-        </Description>
-        <Divider />
-        <InstallStepsWrapper>
-          {/* <SafariMobile /> */}
-          {/* <ChromiumsInstallAvail deferredPrompt={deferredPrompt} /> */}
-          <ChromiumsInstalledAlready />
-        </InstallStepsWrapper>
+
+        {/* <SafariMobile /> */}
+        {/* <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />
+        <ChromiumsInstalledAlready /> */}
+        {/* <SafariDesktop /> */}
+        {/* <FirefoxOperaMobile /> */}
+        <FirefoxDesktop />
       </ModalContainer>
     </MotionModal>
   );

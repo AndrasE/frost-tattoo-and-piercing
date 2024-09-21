@@ -1,6 +1,29 @@
 import styled from "styled-components";
 import { IoMdOpen } from "react-icons/io";
 
+export const Divider = styled.hr`
+  height: 1px;
+  opacity: 10%;
+  margin: 0 5px 0 5px;
+  border: none;
+  background-color: ${({ theme }) => theme.fontColor};
+`;
+
+export const Description = styled.p`
+  margin: 0;
+  padding: 20px 30px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: justify;
+  color: ${({ theme }) => theme.fontColor};
+`;
+
+export const InstallStepsWrapper = styled.ol`
+  margin: 0;
+  padding: 10px 30px;
+`;
+
 export const InstallStep = styled.li`
   align-items: center;
   display: flex;
