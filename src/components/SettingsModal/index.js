@@ -124,7 +124,7 @@ const SettingsModal = ({
           {/* Conditionally render PWA install button if not in standalone mode */}
           {!isStandalone && (
             <>
-              <SettingsLabel>App</SettingsLabel>
+              <SettingsLabel isStandalone={isStandalone}>App</SettingsLabel>
               <SettingsWrapper>
                 <SettingWrapper>
                   <InstallPwaBtn
