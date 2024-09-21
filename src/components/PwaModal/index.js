@@ -18,9 +18,19 @@ import {
 import logo from "../../images/logoImgs/logo.png";
 import SafariMobile from "./SafariMobile";
 
-const PwaModal = () => {
+const PwaModal = ({ $pwaModalOpen, togglePwaModal }) => {
   return (
-    <MotionModal>
+    <MotionModal
+      $sidebarOpen={$pwaModalOpen}
+      onClick={togglePwaModal}
+      initial={{
+        bottom: "-100%", // Set initial top position
+      }}
+      animate={{
+        bottom: $pwaModalOpen ? "0" : "-100%",
+        opacity: $pwaModalOpen ? 1 : 0.3,
+      }}
+      transition={{ duration: 0.3 }}>
       <ModalContainer>
         <HeaderContainer>
           <HeaderTitleRow>

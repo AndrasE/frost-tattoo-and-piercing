@@ -22,6 +22,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
   const { t } = useTranslation();
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
+  const [$pwaModalOpen, setPwaModalOpen] = useState(false);
   const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
 
   useEffect(() => {
@@ -35,6 +36,10 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
 
   const toggleSettings = () => {
     setSettingsOpen(!$settingsOpen);
+  };
+
+  const togglePwaModal = () => {
+    setPwaModalOpen(!$pwaModalOpen);
   };
 
   // disable scrolling when the settings modal is open
@@ -80,10 +85,9 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         toggleSettings={toggleSettings}
         theme={theme}
         toggleTheme={toggleTheme}
-        browserSettings={browserSettings}
-        deferredPrompt={deferredPrompt}
+        togglePwaModal={togglePwaModal}
       />
-      <PwaModal />
+      <PwaModal $pwaModalOpen={$pwaModalOpen} togglePwaModal={togglePwaModal} />
       {/* animation onload on herosection */}
       <PWAPrompt isShown={shouldShowPWAPrompt} />
 

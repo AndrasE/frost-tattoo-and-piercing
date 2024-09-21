@@ -27,7 +27,7 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
       }}
       animate={{
         top: $sidebarOpen ? "0" : "-100%",
-        opacity: $sidebarOpen ? 1 : 0.3, // Using numbers for opacity instead of percentages
+        opacity: $sidebarOpen ? 1 : 0.3,
       }}
       transition={{ duration: 0.3 }}>
       <SidebarWrapper>

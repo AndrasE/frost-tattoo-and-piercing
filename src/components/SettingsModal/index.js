@@ -13,6 +13,7 @@ import {
   Sun,
   Moon,
   FlagIcon,
+  InstallPwaBtn,
 } from "./SettingsModalElemenets";
 import { useScroll, useSpring, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -25,7 +26,7 @@ const SettingsModal = ({
   toggleSettings,
   theme,
   toggleTheme,
-  browserSettings,
+  togglePwaModal,
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
@@ -110,7 +111,11 @@ const SettingsModal = ({
           {/* PWA  */}
           <SettingsLabel>App</SettingsLabel>
           <SettingsWrapper>
-            <SettingWrapper></SettingWrapper>
+            <SettingWrapper>
+              <InstallPwaBtn alt="inslall-pwa-button" onClick={togglePwaModal}>
+                Install
+              </InstallPwaBtn>
+            </SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>
         <LabelContainer>
