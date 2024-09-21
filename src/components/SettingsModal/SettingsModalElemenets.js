@@ -6,7 +6,7 @@ export const MotionModal = styled(motion.div)`
   position: absolute;
   max-height: 100vh;
   display: flex;
-  top: 50vh;
+  top: 40vh;
   flex-direction: row;
   align-items: center;
   z-index: ${({ $settingsOpen }) => ($settingsOpen ? 6 : 1)};

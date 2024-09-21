@@ -42,9 +42,9 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
     setPwaModalOpen(!$pwaModalOpen);
   };
 
-  // disable scrolling when the settings modal is open
+  // disable scrolling when the settings modals or sidebar are open
   useEffect(() => {
-    if ($settingsOpen || $sidebarOpen) {
+    if ($settingsOpen || $sidebarOpen || $pwaModalOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -54,7 +54,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [$settingsOpen, $sidebarOpen]);
+  }, [$settingsOpen, $sidebarOpen, $pwaModalOpen]);
 
   return (
     <>
