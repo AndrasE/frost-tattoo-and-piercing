@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { IoShareOutline } from "react-icons/io5";
-import { BsPlusSquare } from "react-icons/bs";
 import { MdOutlineAddBox } from "react-icons/md";
 
 export const InstallStep = styled.li`
