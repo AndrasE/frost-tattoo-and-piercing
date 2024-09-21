@@ -11,6 +11,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  font-weight: 400;
   position: fixed;
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
@@ -32,6 +33,7 @@ export const NavLogoWrapper = styled(LinkRoute)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
+  font-weight: 400;
   display: flex;
   align-items: center;
   margin: 24px;
@@ -96,6 +98,7 @@ export const NavBtnLink = styled(LinkScroll)`
   padding: 10px 20px;
   color: #000;
   font-size: 1rem;
+  font-weight: 400;
   outline: none;
   border: none;
   cursor: pointer;

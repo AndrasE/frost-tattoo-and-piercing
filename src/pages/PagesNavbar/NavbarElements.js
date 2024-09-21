@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  font-weight: 400;
   position: sticky;
   box-shadow: 0 5px 15px ${({ theme }) => theme.navDropShadow};
   top: 0;
@@ -30,6 +31,7 @@ export const NavLogoWrapper = styled(LinkRoute)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
+  font-weight: 400;
   display: flex;
   align-items: center;
   margin: 24px;
@@ -63,6 +65,7 @@ export const NavName = styled.div`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
+  font-weight: 400;
   height: 100%;
 `;
 
@@ -75,7 +78,6 @@ export const NavBtnWrapper = styled.div`
 
 export const NavBtn = styled.nav`
   margin: 18px;
-
   align-items: center;
   justify-content: center;
 `;
@@ -96,6 +98,7 @@ export const NavBtnLink = styled(LinkRoute)`
   padding: 10px 20px 10px 38px;
   color: #000;
   font-size: 1rem;
+  font-weight: 400;
   outline: none;
   border: none;
   cursor: pointer;

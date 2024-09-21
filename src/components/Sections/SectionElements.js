@@ -68,6 +68,7 @@ export const TextWrapper = styled.div`
 
 export const Heading = styled.h1`
   font-size: 2.5rem;
+  font-weight: 400;
   margin-bottom: 25px;
 
   @media screen and (min-width: 769px) {
@@ -83,6 +84,7 @@ export const Content = styled.p`
   font-size: 1rem;
   text-align: justify;
   line-height: 26px;
+  font-weight: 300;
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;

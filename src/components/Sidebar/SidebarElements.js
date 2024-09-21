@@ -13,7 +13,6 @@ export const SidebarContainer = styled(motion.div)`
   align-items: center;
   top: 0;
   left: 0;
-
   z-index: 3;
 `;
 
@@ -36,6 +35,7 @@ export const SidebarLink = styled(LinkScroll)`
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
+  font-weight: 400;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
@@ -71,6 +71,7 @@ export const SidebarBtnLink = styled(LinkScroll)`
   padding: 10px 20px;
   color: #000;
   font-size: 1.25rem;
+  font-weight: 400;
   outline: none;
   border: none;
   cursor: pointer;

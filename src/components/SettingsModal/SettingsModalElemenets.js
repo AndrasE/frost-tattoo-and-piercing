@@ -24,20 +24,18 @@ export const SettingsContainer = styled.div`
   align-items: center;
   padding: 10px 5px 30px 0;
   background-color: ${({ theme }) => theme.backgroundColor};
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top: 1px solid ${({ theme }) => theme.accentColor};
-  border-right: 1px solid ${({ theme }) => theme.accentColor};
-  border-bottom: 1px solid ${({ theme }) => theme.accentColor};
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
   box-shadow: ${({ $settingsOpen, theme }) =>
     $settingsOpen ? `5px 5px 25px ${theme.dropShadow}` : "none"};
-  transition: box-shadow 0.3s ease-in-out;
 `;
 
 export const SettingsLabel = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
   margin: 20px 0 2px 0;
-  border-bottom: 2px solid ${({ theme }) => theme.accentColor};
+  border-bottom: 1px solid ${({ theme }) => theme.accentColor};
 `;
 
 export const SettingsWrapper = styled.div`
@@ -66,7 +64,9 @@ export const SettingWrapper = styled.div`
       : "none"};
 `;
 export const SettingLabel = styled.span`
+  font-size: 0.9rem;
   padding-left: 3px;
+  font-weight: 300;
 `;
 
 export const Sun = styled(FiSun)`
@@ -110,6 +110,7 @@ export const ModalLabel = styled.p`
   position: relative;
   bottom: 2.5px;
   font-size: 1.1rem;
+  font-weight: 400;
   letter-spacing: -2px;
   writing-mode: vertical-rl;
   text-orientation: upright;

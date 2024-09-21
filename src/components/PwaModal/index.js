@@ -11,8 +11,12 @@ import {
   HeaderBtn,
   Svg,
   Path,
+  Divider,
+  Description,
+  InstallStepsWrapper,
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
+import SafariMobile from "./SafariMobile";
 
 const PwaModal = () => {
   return (
@@ -33,6 +37,15 @@ const PwaModal = () => {
             </Svg>
           </HeaderBtn>
         </HeaderContainer>
+        <Divider />
+        <Description>
+          This site has app functionality. Install it on your device for
+          extensive experience and easy access.
+        </Description>
+        <Divider />
+        <InstallStepsWrapper>
+          <SafariMobile />
+        </InstallStepsWrapper>
       </ModalContainer>
     </MotionModal>
   );

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const MotionModal = styled(motion.div)`
   position: fixed;
@@ -9,8 +9,6 @@ export const MotionModal = styled(motion.div)`
   align-items: center;
   z-index: 7;
   width: 100%;
-  height: 120px;
-  display: none;
 `;
 
 export const ModalContainer = styled.div`
@@ -18,10 +16,11 @@ export const ModalContainer = styled.div`
   width: 100%;
   max-width: 600px;
   background-color: ${({ theme }) => theme.backgroundColor};
-  border-top: 1px solid ${({ theme }) => theme.accentColor};
+  /* border-top: 1px solid ${({ theme }) => theme.accentColor};
   border-right: 1px solid ${({ theme }) => theme.accentColor};
-  border-left: 1px solid ${({ theme }) => theme.accentColor};
+  border-left: 1px solid ${({ theme }) => theme.accentColor}; */
   border-radius: 15px 15px 0 0;
+  box-shadow: 0 0 15px ${({ theme }) => theme.boxShadow};
 `;
 
 export const HeaderContainer = styled.div`
@@ -54,14 +53,14 @@ export const HeaderTitleWrapper = styled.div`
 
 export const HeaderTitle = styled.h1`
   color: ${(theme) => theme.fontColor};
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 20px;
 `;
 
 export const HeaderAddress = styled.h2`
   color: ${(theme) => theme.fontColor};
-  font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 300;
   line-height: 20px;
 `;
@@ -83,6 +82,12 @@ export const HeaderBtn = styled.button`
   border-radius: 50px;
   position: relative;
   overflow: hidden;
+  opacity: 60%;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 90%;
+  }
 `;
 
 export const Svg = styled.svg`
@@ -93,4 +98,27 @@ export const Svg = styled.svg`
 export const Path = styled.path`
   stroke-width: 1.7;
   stroke: ${({ theme }) => theme.fontColor};
+`;
+
+export const Divider = styled.hr`
+  height: 1px;
+  opacity: 10%;
+  margin: 0 5px 0 5px;
+  border: none;
+  background-color: ${({ theme }) => theme.fontColor};
+`;
+
+export const Description = styled.p`
+  margin: 0;
+  padding: 20px 30px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: justify;
+  color: ${({ theme }) => theme.fontColor};
+`;
+
+export const InstallStepsWrapper = styled.ol`
+  margin: 0;
+  padding: 10px 30px;
 `;

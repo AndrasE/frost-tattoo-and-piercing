@@ -61,10 +61,10 @@ const SettingsModal = ({
         x: smoothXPosition, // Animate x position to slide out settings button
       }}
       initial={{
-        left: "-214px", // Set initial left position
+        left: "-200px", // Set initial left position
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-214px", // Control left position based on $settingsOpen
+        left: $settingsOpen ? "0" : "-200px", // Control left position based on $settingsOpen
       }}
       transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>
@@ -76,13 +76,13 @@ const SettingsModal = ({
               onClick={() => handleThemeSelect("light")}
               $isSelected={$themeSelected === "light"}>
               <Sun />
-              <SettingLabel>light</SettingLabel>
+              <SettingLabel>Light</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
               onClick={() => handleThemeSelect("dark")}
               $isSelected={$themeSelected === "dark"}>
               <Moon />
-              <SettingLabel>dark</SettingLabel>
+              <SettingLabel>Dark</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
           {/* Languages */}
@@ -110,10 +110,7 @@ const SettingsModal = ({
           {/* PWA  */}
           <SettingsLabel>App</SettingsLabel>
           <SettingsWrapper>
-            <SettingWrapper>
-              <SettingLabel>{browserSettings.name}</SettingLabel>
-              <SettingLabel>{browserSettings.os}</SettingLabel>
-            </SettingWrapper>
+            <SettingWrapper></SettingWrapper>
           </SettingsWrapper>
         </SettingsContainer>
         <LabelContainer>

@@ -78,6 +78,7 @@ export const Img = styled.img`
 
 export const HeaderText = styled.h2`
   font-size: 1.5rem;
+  font-weight: 400;
   margin-left: 8px;
 
   @media screen and (max-width: 480px) {
@@ -98,6 +99,7 @@ export const Hr = styled.hr`
 export const CardContent = styled.p`
   text-align: center;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 26px;
 
   @media screen and (max-width: 480px) {
