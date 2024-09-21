@@ -31,10 +31,22 @@ const SettingsModal = ({
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
   const [selectedLang, setSelectedLang] = useState(i18n.language); // Store current language
+  const [isStandalone, setIsStandalone] = useState(false); // Track standalone mode
 
   useEffect(() => {
     setSelectedLang(i18n.language); // Update when the language changes
   }, [i18n.language]);
+
+  useEffect(() => {
+    // Detect if the app is running in standalone mode
+    const checkStandaloneMode = () => {
+      const standalone =
+        window.matchMedia("(display-mode: standalone)").matches ||
+        window.navigator.standalone;
+      setIsStandalone(standalone);
+    };
+    checkStandaloneMode();
+  }, []);
 
   // Function to handle theme selection
   function handleThemeSelect(selected) {
@@ -108,15 +120,22 @@ const SettingsModal = ({
               <SettingLabel>Ger</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
-          {/* PWA  */}
-          <SettingsLabel>App</SettingsLabel>
-          <SettingsWrapper>
-            <SettingWrapper>
-              <InstallPwaBtn alt="inslall-pwa-button" onClick={togglePwaModal}>
-                Install
-              </InstallPwaBtn>
-            </SettingWrapper>
-          </SettingsWrapper>
+
+          {/* Conditionally render PWA install button if not in standalone mode */}
+          {!isStandalone && (
+            <>
+              <SettingsLabel>App</SettingsLabel>
+              <SettingsWrapper>
+                <SettingWrapper>
+                  <InstallPwaBtn
+                    alt="inslall-pwa-button"
+                    onClick={togglePwaModal}>
+                    Install
+                  </InstallPwaBtn>
+                </SettingWrapper>
+              </SettingsWrapper>
+            </>
+          )}
         </SettingsContainer>
         <LabelContainer>
           <LabelWrapper>
@@ -127,4 +146,5 @@ const SettingsModal = ({
     </MotionModal>
   );
 };
+
 export default SettingsModal;

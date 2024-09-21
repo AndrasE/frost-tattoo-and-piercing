@@ -29,7 +29,7 @@ const FirefoxDesktop = () => {
         </InstallStep>
         <InstallStep>
           <InstallIcon />
-          Press the 'Intall' icon in the address bar.
+          Press the 'Install' icon in the address bar.
         </InstallStep>
       </InstallStepsWrapper>
     </>
