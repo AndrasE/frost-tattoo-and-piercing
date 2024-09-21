@@ -16,9 +16,15 @@ import {
   InstallStepsWrapper,
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
-import SafariMobile from "./SafariMobile";
+// import SafariMobile from "./SafariMobile";
+import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
 
-const PwaModal = ({ $pwaModalOpen, togglePwaModal }) => {
+const PwaModal = ({
+  $pwaModalOpen,
+  togglePwaModal,
+  // browserSettings,
+  deferredPrompt,
+}) => {
   return (
     <MotionModal
       $sidebarOpen={$pwaModalOpen}
@@ -54,7 +60,8 @@ const PwaModal = ({ $pwaModalOpen, togglePwaModal }) => {
         </Description>
         <Divider />
         <InstallStepsWrapper>
-          <SafariMobile />
+          {/* <SafariMobile /> */}
+          <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />
         </InstallStepsWrapper>
       </ModalContainer>
     </MotionModal>

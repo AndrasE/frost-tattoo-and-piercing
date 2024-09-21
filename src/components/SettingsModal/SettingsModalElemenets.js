@@ -22,7 +22,7 @@ export const SettingsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 5px 30px 0;
+  padding: 10px 5px 20px 0;
   background-color: ${({ theme }) => theme.backgroundColor};
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;

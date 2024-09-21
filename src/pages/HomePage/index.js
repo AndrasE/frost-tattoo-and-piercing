@@ -16,19 +16,12 @@ import SwipeSceen from "../../components/SwipeScreen";
 import BlurSceen from "../../components/BlurScreen";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import PWAPrompt from "react-ios-pwa-prompt";
 
 const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
   const { t } = useTranslation();
   const [$sidebarOpen, setSidebarOpen] = useState(false);
   const [$settingsOpen, setSettingsOpen] = useState(false);
   const [$pwaModalOpen, setPwaModalOpen] = useState(false);
-  const [shouldShowPWAPrompt, setShouldShowPWAPrompt] = useState(false);
-
-  useEffect(() => {
-    // 20% chance of popping up
-    setShouldShowPWAPrompt(Math.random() < 0.5);
-  }, []);
 
   const toggleSidebar = () => {
     setSidebarOpen(!$sidebarOpen);
@@ -89,10 +82,14 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         toggleTheme={toggleTheme}
         togglePwaModal={togglePwaModal}
       />
-      <PwaModal $pwaModalOpen={$pwaModalOpen} togglePwaModal={togglePwaModal} />
-      {/* animation onload on herosection */}
-      <PWAPrompt isShown={shouldShowPWAPrompt} />
+      <PwaModal
+        $pwaModalOpen={$pwaModalOpen}
+        togglePwaModal={togglePwaModal}
+        browserSettings={browserSettings}
+        deferredPrompt={deferredPrompt}
+      />
 
+      {/* animation onload on herosection */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
