@@ -64,6 +64,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
       <BlurSceen
         toggleSettings={toggleSettings}
         $settingsOpen={$settingsOpen}
+        $pwaModalOpen={$pwaModalOpen}
+        togglePwaModal={togglePwaModal}
       />
       <SwipeSceen
         toggleSettings={toggleSettings}
