@@ -4,10 +4,10 @@ import {
   Description,
   InstallStepsWrapper,
   InstallStep,
-  OpenIcon,
-} from "./ChromiumsInstalledAlreadyElements";
+  SearchAppIcon,
+} from "./ChromiumsInstalledAlreadyMobileElements";
 
-const ChromiumsInstalledAlready = () => {
+const ChromiumsInstalledAlreadyMobile = () => {
   return (
     <>
       <Divider />
@@ -17,12 +17,12 @@ const ChromiumsInstalledAlready = () => {
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
-          <OpenIcon />
-          Please click the icon in the addressbar to open.
+          <SearchAppIcon />
+          Please search for it in your apllication drawer.
         </InstallStep>
       </InstallStepsWrapper>
     </>
   );
 };
 
-export default ChromiumsInstalledAlready;
+export default ChromiumsInstalledAlreadyMobile;

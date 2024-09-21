@@ -14,11 +14,13 @@ import {
 } from "./PwaModalElements";
 import logo from "../../images/logoImgs/logo.png";
 import ChromiumsInstallAvail from "./ChromiumsInstallAvail";
-import ChromiumsInstalledAlready from "./ChromiumsInstalledAlready";
+import ChromiumsInstalledAlreadyMobile from "./ChromiumsInstalledAlreadyMobile";
+import ChromiumsInstalledAlreadyDesktop from "./ChromiumsInstalledAlreadyDesktop";
 import SafariMobile from "./SafariMobile";
 import SafariDesktop from "./SafariDesktop";
 import FirefoxOperaMobile from "./FirefoxOperaMobile";
 import FirefoxDesktop from "./FirefoxDesktop";
+import NotSupported from "./NotSupported";
 
 const PwaModal = ({
   $pwaModalOpen,
@@ -26,7 +28,7 @@ const PwaModal = ({
   browserSettings,
   deferredPrompt,
 }) => {
-  // Conditional rendering according to browiser and OS
+  // Conditional rendering according to browser and OS
   const renderPwaModal = () => {
     const { name, os } = browserSettings;
 
@@ -34,7 +36,11 @@ const PwaModal = ({
     if ((name === "Chrome" || name === "Edge") && deferredPrompt) {
       return <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />;
     } else if (name === "Chrome" || name === "Edge") {
-      return <ChromiumsInstalledAlready />;
+      if (os === "Android") {
+        return <ChromiumsInstalledAlreadyMobile />;
+      } else if (os === "Windows") {
+        return <ChromiumsInstalledAlreadyDesktop />;
+      }
     }
 
     // Logic for Safari
@@ -52,7 +58,7 @@ const PwaModal = ({
     }
 
     // Fallback for unsupported browsers/OS
-    return <h1>Browser or OS not supported</h1>;
+    return <NotSupported />;
   };
 
   return (
@@ -72,7 +78,11 @@ const PwaModal = ({
           <HeaderTitleRow>
             <HeaderIcon src={logo} alt="logo-icon"></HeaderIcon>
             <HeaderTitleWrapper>
-              <HeaderTitle>Add to Home Screen</HeaderTitle>
+              <HeaderTitle>
+                Add to Home Screen
+                <p>{browserSettings.name}</p>
+                <p>{browserSettings.os}</p>
+              </HeaderTitle>
               <HeaderAddress>{window.location.href}</HeaderAddress>
             </HeaderTitleWrapper>
           </HeaderTitleRow>
@@ -83,9 +93,7 @@ const PwaModal = ({
             </Svg>
           </HeaderBtn>
         </HeaderContainer>
-        <h2>{browserSettings.name}</h2>
 
-        <h2>{browserSettings.os}</h2>
         {/* Conditionally render the appropriate content */}
         {renderPwaModal()}
       </ModalContainer>
