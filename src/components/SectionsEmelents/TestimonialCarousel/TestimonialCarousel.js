@@ -67,8 +67,8 @@ export const CardHeader = styled.div`
 
 export const ImgWrapper = styled.div`
   border-radius: 100px;
-  border-color: ${({ theme }) => theme.iconBorder};
-  border: 2px solid;
+
+  border: 1px solid ${({ theme }) => theme.iconBorder};
 `;
 
 export const Img = styled.img`
