@@ -112,7 +112,7 @@ i18next
                 "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
               extension: "Press the 'Extension' icon on the menu bar above",
               search:
-                "Search and install Progressive Web Apps for Firefox extension.",
+                "Search and install 'Progressive Web Apps for Firefox' extension.",
               install: "Press the 'Install' icon in the address bar.",
             },
             safaridesktop18: {
@@ -221,6 +221,57 @@ i18next
             light: "Világos",
             lngs: "Nyelv",
             install: "Telepít",
+          },
+          pwa18: {
+            header: "Hozzáadás a kezdőképernyőhöz",
+            chromiumsinstallvail18: {
+              description:
+                "Ez a weblap app-funkciókkal rendelkezik. Telepítse PWA-ként (Progresszív Webalkalmazás).",
+              install: "Telepít",
+            },
+            chromiumsinstalledalreadymobile18: {
+              description:
+                "Ez a PWA (Progresszív Webalkalmazás) már telepítve van.",
+              search: "Kérjük, keresse meg az alkalmazási között.",
+            },
+            chromiumsinstalledalreadydesktop18: {
+              description:
+                "Ez a PWA (Progresszív Webalkalmazás) már telepítve van.",
+              open: "A megnyitáshoz kattintson a 'Megnyitás' ikonra a címsorban.",
+            },
+
+            safaridesktop18: {
+              description:
+                "Ez a webhely app funkciókkal rendelkezik. Adja hozzá a dokkhoz a teljes körű élmény és az egyszerű hozzáférés érdekében.",
+              share: "Kattintson a 'Megosztás' ikonra a címsorban.",
+              add: "A legördülő menüben válassza a 'Hozzáadás a dokkhoz' lehetőséget.",
+            },
+            safarimobile18: {
+              description:
+                "Ez a webhely app funkciókkal rendelkezik. Adja hozzá a kezdőképernyőhöz a teljes körű élmény és az egyszerű hozzáférés érdekében.",
+              share: "Kattintson a 'Megosztás' ikonra az alábbi menüsorban.",
+              add: "Válassza ki a 'Hozzáadás a kezdőképernyőhöz' lehetőséget.",
+            },
+            firefoxdesktop18: {
+              description:
+                "Ez a webhely app funkciókkal rendelkezik. Adja hozzá a kezdőképernyőhöz a teljes körű élmény és az egyszerű hozzáférés érdekében.",
+              extension:
+                "Kattintson a 'Bővítmények' ikonra a fenti menüsorban.",
+              search:
+                "Keresse meg és telepítse a 'Progressive Web Apps for Firefox' bővítményt.",
+              install: "Kattintson a 'Telepítés' ikonra a címsorban.",
+            },
+            firefoxoperamobile18: {
+              description:
+                "Ez a webhely app-funkciókkal rendelkezik. Adja hozzá a kezdőképernyőhöz a teljes körű élmény és az egyszerű hozzáférés érdekében.",
+              settings: "Kattintson a 'Beállítások' ikonra a címsorban.",
+              add: "Válassza ki a 'Hozzáadás a kezdőképernyőhöz' lehetőséget.",
+            },
+            notsupported18: {
+              description:
+                "A böngészője jelenleg támogatja a PWA-k (Progresszív Webalkalmazások) telepítését.",
+              try: "Kérjük, próbálja meg megnyitni az alkalmazást egy Chromium-alapú böngészőben, például Chrome-on vagy Edge-en keresztül.",
+            },
           },
         },
       },

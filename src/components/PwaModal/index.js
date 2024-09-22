@@ -108,22 +108,22 @@ const PwaModal = ({
           </HeaderBtn>
         </HeaderContainer>
         {/* Conditionally render the appropriate content */}
-        {/* {renderPwaModal()} */}
+        {renderPwaModal()}
         {/* <ChromiumsInstallAvail
           deferredPrompt={deferredPrompt}
           i18n={pwa.chromiumsinstallvail18}
         />
         <ChromiumsInstalledAlreadyMobile
           i18n={pwa.chromiumsinstalledalreadymobile18}
-        />{" "}
+        />
         <ChromiumsInstalledAlreadyDesktop
           i18n={pwa.chromiumsinstalledalreadydesktop18}
         />
+        <SafariDesktop i18n={pwa.safaridesktop18} />
+        <SafariMobile i18n={pwa.safarimobile18} />
         <FirefoxDesktop i18n={pwa.firefoxdesktop18} />
-        <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} /> */}
-        {/* <SafariDesktop i18n={pwa.safaridesktop18} /> */}
-        {/* <SafariMobile i18n={pwa.safarimobile18} /> */}
-        {/* <NotSupported i18n={pwa.notsupported18} />; */}
+        <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} />
+        <NotSupported i18n={pwa.notsupported18} />; */}
       </ModalContainer>
     </MotionModal>
   );
