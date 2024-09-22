@@ -88,6 +88,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         togglePwaModal={togglePwaModal}
         browserSettings={browserSettings}
         deferredPrompt={deferredPrompt}
+        pwa={t("pwa18")}
       />
 
       {/* animation onload on herosection */}

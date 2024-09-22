@@ -7,18 +7,16 @@ import {
   SearchAppIcon,
 } from "./ChromiumsInstalledAlreadyMobileElements";
 
-const ChromiumsInstalledAlreadyMobile = () => {
+const ChromiumsInstalledAlreadyMobile = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This PWA (Progressive Web Application) has already been installed.
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <SearchAppIcon />
-          Please search for it in your apllication drawer.
+          {i18n.search}
         </InstallStep>
       </InstallStepsWrapper>
     </>

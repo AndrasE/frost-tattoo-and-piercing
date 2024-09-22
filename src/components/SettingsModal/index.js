@@ -32,7 +32,7 @@ const SettingsModal = ({
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
   const [selectedLang, setSelectedLang] = useState(i18n.language); // Store current language
-  const [isStandalone, setIsStandalone] = useState(false); // Track standalone mode
+  const [$isStandalone, $setIsStandalone] = useState(false); // Track standalone mode
 
   useEffect(() => {
     setSelectedLang(i18n.language); // Update when the language changes
@@ -44,7 +44,7 @@ const SettingsModal = ({
       const standalone =
         window.matchMedia("(display-mode: standalone)").matches ||
         window.navigator.standalone;
-      setIsStandalone(standalone);
+      $setIsStandalone(standalone);
     };
     checkStandaloneMode();
   }, []);
@@ -123,9 +123,9 @@ const SettingsModal = ({
           </SettingsWrapper>
 
           {/* Conditionally render PWA install button if not in standalone mode */}
-          {!isStandalone && (
+          {!$isStandalone && (
             <>
-              <SettingsLabel isStandalone={isStandalone}>App</SettingsLabel>
+              <SettingsLabel $isStandalone={$isStandalone}>App</SettingsLabel>
               <SettingsWrapper>
                 <SettingWrapper>
                   <InstallPwaBtn

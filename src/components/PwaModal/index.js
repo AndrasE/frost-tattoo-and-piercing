@@ -27,6 +27,7 @@ const PwaModal = ({
   togglePwaModal,
   browserSettings,
   deferredPrompt,
+  pwa,
 }) => {
   // Conditional rendering according to browser and OS
   const renderPwaModal = () => {
@@ -34,12 +35,25 @@ const PwaModal = ({
 
     // Logic for Edge and Chrome
     if ((name === "Chrome" || name === "Microsoft Edge") && deferredPrompt) {
-      return <ChromiumsInstallAvail deferredPrompt={deferredPrompt} />;
+      return (
+        <ChromiumsInstallAvail
+          deferredPrompt={deferredPrompt}
+          i18n={pwa.chromiumsinstallvail18}
+        />
+      );
     } else if (name === "Chrome" || name === "Microsoft Edge") {
       if (os === "Android") {
-        return <ChromiumsInstalledAlreadyMobile />;
+        return (
+          <ChromiumsInstalledAlreadyMobile
+            i18n={pwa.chromiumsinstalledalreadymobile18}
+          />
+        );
       } else if (os === "Windows") {
-        return <ChromiumsInstalledAlreadyDesktop />;
+        return (
+          <ChromiumsInstalledAlreadyDesktop
+            i18n={pwa.chromiumsinstalledalreadydesktop18}
+          />
+        );
       }
     }
 
@@ -52,7 +66,7 @@ const PwaModal = ({
 
     // Logic for Firefox
     if (name === "Firefox" && os === "Windows") {
-      return <FirefoxDesktop />;
+      return <FirefoxDesktop i18n={pwa.firefoxdesktop18} />;
     } else if ((name === "Firefox" || name === "Opera") && os === "Android") {
       return <FirefoxOperaMobile />;
     }
@@ -79,7 +93,7 @@ const PwaModal = ({
             <HeaderIcon src={logo} alt="logo-icon"></HeaderIcon>
             <HeaderTitleWrapper>
               <HeaderTitle>
-                Add to Home Screen
+                {pwa.header}
                 <p>{browserSettings.name}</p>
                 <p>{browserSettings.os}</p>
               </HeaderTitle>
@@ -93,9 +107,15 @@ const PwaModal = ({
             </Svg>
           </HeaderBtn>
         </HeaderContainer>
-
         {/* Conditionally render the appropriate content */}
-        {renderPwaModal()}
+        {/* {renderPwaModal()} */}
+        <ChromiumsInstalledAlreadyMobile
+          i18n={pwa.chromiumsinstalledalreadymobile18}
+        />{" "}
+        <ChromiumsInstalledAlreadyDesktop
+          i18n={pwa.chromiumsinstalledalreadydesktop18}
+        />
+        <FirefoxDesktop i18n={pwa.firefoxdesktop18} />
       </ModalContainer>
     </MotionModal>
   );

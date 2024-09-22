@@ -72,7 +72,7 @@ const TestimonialCarousel = () => {
           <SplideSlide key={index}>
             <Card>
               <QuoteTop />
-              <ReviewLink href={item.link} target="_blank">
+              <ReviewLink href={String(item.link)} target="_blank">
                 <CardHeader>
                   <ImgWrapper>
                     <Img src={item.src} alt="testimonial-image" />

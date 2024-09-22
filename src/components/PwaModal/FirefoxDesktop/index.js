@@ -9,27 +9,24 @@ import {
   InstallIcon,
 } from "./FirefoxDesktopElements";
 
-const FirefoxDesktop = () => {
+const FirefoxDesktop = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This site has app functionality. Add it to your Home Screen for
-        extensive experience and easy access.
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <ExtensionIcon />
-          Press the 'Extension' icon on the menu bar above.
+          {i18n.extension}
         </InstallStep>
         <InstallStep>
           <SearchIcon />
-          Search and install Progressive Web Apps for Firefox extension.
+          {i18n.search}
         </InstallStep>
         <InstallStep>
           <InstallIcon />
-          Press the 'Install' icon in the address bar.
+          {i18n.install}
         </InstallStep>
       </InstallStepsWrapper>
     </>

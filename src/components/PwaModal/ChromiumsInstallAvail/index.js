@@ -7,7 +7,7 @@ import {
   InstallPwaBtn,
 } from "./ChromiumsInstallAvailElements";
 
-const ChromiumsInstallAvail = ({ deferredPrompt }) => {
+const ChromiumsInstallAvail = ({ deferredPrompt, i18n }) => {
   const handleClick = () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
@@ -17,14 +17,11 @@ const ChromiumsInstallAvail = ({ deferredPrompt }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This site has app functionality. Install it as PWA (Progressive Web
-        Application).
-      </Description>
+      <Description>"{i18n.description}"</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallPwaBtnWrapper>
-          <InstallPwaBtn onClick={handleClick}>Install</InstallPwaBtn>
+          <InstallPwaBtn onClick={handleClick}>{i18n.install}</InstallPwaBtn>
         </InstallPwaBtnWrapper>
       </InstallStepsWrapper>
     </>

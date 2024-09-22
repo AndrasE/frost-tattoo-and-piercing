@@ -90,6 +90,32 @@ i18next
             lngs: "Languages",
             install: "Install",
           },
+          pwa18: {
+            header: "Add to Home screen",
+            chromiumsinstallvail18: {
+              description:
+                "This site has app functionality. Install it as PWA (Progressive Web Application).",
+              install: "Install",
+            },
+            chromiumsinstalledalreadymobile18: {
+              description:
+                "This PWA (Progressive Web Application) has already been installed.",
+              search: "Please search for it in your apllication drawer.",
+            },
+            chromiumsinstalledalreadydesktop18: {
+              description:
+                "This PWA (Progressive Web Application) has already been installed.",
+              open: "Please click the icon in the address bar to open.",
+            },
+            firefoxdesktop18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              extension: "Press the 'Extension' icon on the menu bar above",
+              search:
+                "Search and install Progressive Web Apps for Firefox extension.",
+              install: "Press the 'Install' icon in the address bar.",
+            },
+          },
         },
       },
       hu: {
@@ -231,7 +257,7 @@ i18next
               {
                 name: "Edina",
                 src: require("./images/testimonialsImgs//edina.png"),
-                link: require("https://maps.app.goo.gl/MMRfjxfNWfrooxvv5"),
+                link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review: "de",
                 rating: "⭐⭐⭐⭐⭐",
               },

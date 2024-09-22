@@ -7,18 +7,16 @@ import {
   OpenIcon,
 } from "./ChromiumsInstalledAlreadyDesktopElements";
 
-const ChromiumsInstalledAlreadyDesktop = () => {
+const ChromiumsInstalledAlreadyDesktop = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This PWA (Progressive Web Application) has already been installed.
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <OpenIcon />
-          Please click the icon in the addressbar to open.
+          {i18n.open}
         </InstallStep>
       </InstallStepsWrapper>
     </>

@@ -67,7 +67,6 @@ export const CardHeader = styled.div`
 
 export const ImgWrapper = styled.div`
   border-radius: 100px;
-
   border: 1px solid ${({ theme }) => theme.iconBorder};
 `;
 
