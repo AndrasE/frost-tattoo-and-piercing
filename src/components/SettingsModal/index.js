@@ -140,7 +140,7 @@ const SettingsModal = ({
         </SettingsContainer>
         <LabelContainer>
           <LabelWrapper>
-            <ModalLabel>settings</ModalLabel>
+            <ModalLabel>{settings.settings}</ModalLabel>
           </LabelWrapper>
         </LabelContainer>
       </ModalContainer>
