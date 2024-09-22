@@ -19,7 +19,6 @@ import {
   PrevBtnWrapper,
   PrevBtn,
 } from "./TestimonialCarousel";
-import { testimonialsData } from "./carouselData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import { useTranslation } from "react-i18next";
@@ -103,7 +102,7 @@ const TestimonialCarousel = () => {
 
       {/* Custom Indicators */}
       <IndicatorBtnsWrapper>
-        {testimonialsData.map((_, index) => (
+        {t("testimonial18.slides").map((_, index) => (
           <IndicatorBtns key={index} aria-label={currentSlide === index} />
         ))}
       </IndicatorBtnsWrapper>

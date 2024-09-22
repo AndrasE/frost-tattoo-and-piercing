@@ -117,9 +117,6 @@ export const ArrowLeft = styled(MdKeyboardArrowLeft)`
   padding-bottom: 3px;
   margin-left: 8px;
   font-size: 24px;
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
 `;
 
 export const ArrowLeftDouble = styled(MdKeyboardDoubleArrowLeft)`
@@ -128,8 +125,4 @@ export const ArrowLeftDouble = styled(MdKeyboardDoubleArrowLeft)`
   padding-bottom: 3px;
   margin-left: 8px;
   font-size: 24px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
 `;
