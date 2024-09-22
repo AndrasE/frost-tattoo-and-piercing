@@ -27,6 +27,7 @@ const SettingsModal = ({
   theme,
   toggleTheme,
   togglePwaModal,
+  settings,
 }) => {
   const [$themeSelected, $setThemeSelected] = useState(theme);
   const { i18n } = useTranslation();
@@ -74,32 +75,32 @@ const SettingsModal = ({
         x: smoothXPosition, // Animate x position to slide out settings button
       }}
       initial={{
-        left: "-195px", // Set initial left position
+        left: "-197px", // Set initial left position
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-195px", // Control left position based on $settingsOpen
+        left: $settingsOpen ? "0" : "-197px", // Control left position based on $settingsOpen
       }}
       transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>
         <SettingsContainer $settingsOpen={$settingsOpen}>
           {/* Themes */}
-          <SettingsLabel>Theme</SettingsLabel>
+          <SettingsLabel>{settings.theme}</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
               onClick={() => handleThemeSelect("light")}
               $isSelected={$themeSelected === "light"}>
               <Sun />
-              <SettingLabel>Light</SettingLabel>
+              <SettingLabel>{settings.light}</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
               onClick={() => handleThemeSelect("dark")}
               $isSelected={$themeSelected === "dark"}>
               <Moon />
-              <SettingLabel>Dark</SettingLabel>
+              <SettingLabel>{settings.dark}</SettingLabel>
             </SettingWrapper>
           </SettingsWrapper>
           {/* Languages */}
-          <SettingsLabel>Language</SettingsLabel>
+          <SettingsLabel>{settings.lngs}</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
               onClick={() => changeLng("hu")}
@@ -130,7 +131,7 @@ const SettingsModal = ({
                   <InstallPwaBtn
                     alt="inslall-pwa-button"
                     onClick={togglePwaModal}>
-                    Install
+                    {settings.install}
                   </InstallPwaBtn>
                 </SettingWrapper>
               </SettingsWrapper>

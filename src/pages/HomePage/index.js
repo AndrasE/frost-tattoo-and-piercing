@@ -81,6 +81,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         theme={theme}
         toggleTheme={toggleTheme}
         togglePwaModal={togglePwaModal}
+        settings={t("settings18")}
       />
       <PwaModal
         $pwaModalOpen={$pwaModalOpen}
