@@ -108,7 +108,7 @@ const PwaModal = ({
           </HeaderBtn>
         </HeaderContainer>
         {/* Conditionally render the appropriate content */}
-        {/* {renderPwaModal()} */}
+        {renderPwaModal()}
         <ChromiumsInstalledAlreadyMobile
           i18n={pwa.chromiumsinstalledalreadymobile18}
         />{" "}
