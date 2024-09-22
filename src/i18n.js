@@ -11,6 +11,9 @@ i18next
     resources: {
       en: {
         translation: {
+          hero18: {
+            welcome: "Welcome to our offfical website!",
+          },
           nav18: {
             about: "About",
             services: "Services",
@@ -83,6 +86,9 @@ i18next
       },
       hu: {
         translation: {
+          hero18: {
+            welcome: "Üdvözöljük hivatalos weboldalunkon!",
+          },
           nav18: {
             about: "Rólunk",
             services: "Szolgáltatások",

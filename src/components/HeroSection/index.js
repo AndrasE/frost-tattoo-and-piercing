@@ -8,13 +8,12 @@ import {
   HeroContent,
   HeroH1,
   HeroH2,
-  HeroP,
   ScrollLink,
   LottieAnimation,
   MotionVideo,
 } from "./HeroElements";
 
-const HeroVideo = memo(() => {
+const HeroVideo = memo(({ welcome }) => {
   // eslint-disable-next-line
   const [videoEnded, setVideoEnded] = useState(false);
   // eslint-disable-next-line
@@ -51,7 +50,7 @@ const HeroVideo = memo(() => {
       <HeroContent>
         <HeroH1>Frost</HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
-        <HeroP>Welcome to our official website!</HeroP>
+        <HeroH2>{welcome.welcome}</HeroH2>
       </HeroContent>
       <ScrollLink
         href="about"

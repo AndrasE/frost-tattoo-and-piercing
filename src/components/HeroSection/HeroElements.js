@@ -44,48 +44,32 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 600;
   text-align: center;
 
   @media screen and (max-width: 768) {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 2.3rem;
   }
 `;
 
 export const HeroH2 = styled.h2`
   color: #fff;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 768) {
-    font-size: 20px;
+    font-size: 1.6rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
-  }
-`;
-
-export const HeroP = styled.p`
-  margin-top: 20px;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 400;
-  text-align: center;
-  max-width: 600px;
-
-  @media screen and (max-width: 768) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 1.4rem;
   }
 `;
 
