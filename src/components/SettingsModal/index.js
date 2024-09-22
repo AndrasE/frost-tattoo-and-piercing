@@ -74,10 +74,10 @@ const SettingsModal = ({
         x: smoothXPosition, // Animate x position to slide out settings button
       }}
       initial={{
-        left: "-200px", // Set initial left position
+        left: "-195px", // Set initial left position
       }}
       animate={{
-        left: $settingsOpen ? "0" : "-200px", // Control left position based on $settingsOpen
+        left: $settingsOpen ? "0" : "-195px", // Control left position based on $settingsOpen
       }}
       transition={{ duration: 0.3 }}>
       <ModalContainer onClick={toggleSettings}>

@@ -22,10 +22,12 @@ import {
 import { testimonialsData } from "./carouselData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
+import { useTranslation } from "react-i18next";
 
 const TestimonialCarousel = () => {
   const testimonialRef = useRef(null); // Use a unique ref
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const splide = testimonialRef.current?.splide;
@@ -67,14 +69,14 @@ const TestimonialCarousel = () => {
           pagination: false,
         }}
         aria-label="Testimonial slider">
-        {testimonialsData.map((item, index) => (
+        {t("testimonial18.slides").map((item, index) => (
           <SplideSlide key={index}>
             <Card>
               <QuoteTop />
               <ReviewLink href={item.link} target="_blank">
                 <CardHeader>
                   <ImgWrapper>
-                    <Img src={item.src} alt={item.alt} />
+                    <Img src={item.src} alt="testimonial-image" />
                   </ImgWrapper>
                   <HeaderText>{item.name}</HeaderText>
                 </CardHeader>

@@ -39,6 +39,41 @@ i18next
             content:
               "Testimonials ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
+          testimonial18: {
+            slides: [
+              {
+                name: "Dia",
+                src: require("./images/testimonialsImgs/dia.png"),
+                link: "https://g.co/kgs/pVxRGH8",
+                review:
+                  "Very nice and precise work, friendly environment, with excellent professionals... Do you need more??? 😀",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("./images/testimonialsImgs//helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review:
+                  "Thank you very much, professionalism, patience and kindness. I will definitely come back again.",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Zoltán",
+                src: require("./images/testimonialsImgs//zoltan.png"),
+                link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
+                review: "He works very well. I can only recommend!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Edina",
+                src: require("./images/testimonialsImgs//edina.png"),
+                link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
+                review:
+                  "Very nice place! Friendly environment. You are doing a precise job!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+            ],
+          },
           contact18: {
             heading: "ContactENG",
             content:
@@ -75,6 +110,41 @@ i18next
             heading: "TestimonialsHUN",
             content:
               "Testimonials HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
+          testimonial18: {
+            slides: [
+              {
+                name: "Dia",
+                src: require("./images/testimonialsImgs/dia.png"),
+                link: "https://g.co/kgs/pVxRGH8",
+                review:
+                  "Nagyon szép es precíz munka, barátságos környezet, kiváló szakemberrel... Kell ennél több??? 😀",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("./images/testimonialsImgs//helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review:
+                  "Hálásan köszönöm, profizmus, türelem és kedvesség. Biztosan visszatérek még.",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Zoltán",
+                src: require("./images/testimonialsImgs//zoltan.png"),
+                link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
+                review: "Nagyon szépen dolgozik. Csak ajánlani tudom!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Edina",
+                src: require("./images/testimonialsImgs//edina.png"),
+                link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
+                review:
+                  "Nagyon jó kis hely! Barátságos környezet. Szép munkát végez!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+            ],
           },
           contact18: {
             heading: "ContactHUN",
@@ -113,6 +183,38 @@ i18next
             heading: "TestimonialsDE",
             content:
               "Testimonials DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
+          testimonial18: {
+            slides: [
+              {
+                name: "Dia",
+                src: require("./images/testimonialsImgs/dia.png"),
+                link: "https://g.co/kgs/pVxRGH8",
+                review: "de",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("./images/testimonialsImgs//helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review: "de",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Zoltán",
+                src: require("./images/testimonialsImgs//zoltan.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review: "de",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Edina",
+                src: require("./images/testimonialsImgs//edina.png"),
+                link: require("https://maps.app.goo.gl/MMRfjxfNWfrooxvv5"),
+                review: "de",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+            ],
           },
           contact18: {
             heading: "ContactDE",
