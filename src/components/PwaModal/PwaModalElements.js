@@ -91,6 +91,7 @@ export const HeaderBtn = styled.button`
 `;
 
 export const Svg = styled.svg`
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
 `;

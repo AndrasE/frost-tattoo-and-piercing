@@ -37,6 +37,7 @@ export const InstallStep = styled.li`
 `;
 
 export const OpenIcon = styled(IoMdOpen)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;

@@ -8,23 +8,20 @@ import {
   AddIcon,
 } from "./FirefoxOperaMobileElements";
 
-const FirefoxOperaMobile = () => {
+const FirefoxOperaMobile = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This site has app functionality. Add it to your Home Screen for
-        extensive experience and easy access.
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <SettingsIcon />
-          Press the 'Setting' button on the top bar above.
+          {i18n.settings}
         </InstallStep>
         <InstallStep>
           <AddIcon />
-          Press 'Add to Home Screen'.
+          {i18n.add}
         </InstallStep>
       </InstallStepsWrapper>
     </>

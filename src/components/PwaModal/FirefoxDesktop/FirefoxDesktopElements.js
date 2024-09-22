@@ -39,18 +39,21 @@ export const InstallStep = styled.li`
 `;
 
 export const ExtensionIcon = styled(IoExtensionPuzzleOutline)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
 export const SearchIcon = styled(TbSearch)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
 export const InstallIcon = styled(GoDesktopDownload)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;

@@ -38,12 +38,14 @@ export const InstallStep = styled.li`
 `;
 
 export const SettingsIcon = styled(HiOutlineDotsVertical)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
 export const AddIcon = styled(TbDeviceMobileShare)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;

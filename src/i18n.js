@@ -115,6 +115,29 @@ i18next
                 "Search and install Progressive Web Apps for Firefox extension.",
               install: "Press the 'Install' icon in the address bar.",
             },
+            safaridesktop18: {
+              description:
+                "This site has app functionality. Add it to your Dock for extensive experience and easy access.",
+              share: "Press the 'Share' button on in the address bar.",
+              add: "In the dropdown menu, choose 'Add to Dock'.",
+            },
+            safarimobile18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              share: "Press the 'Share' button on the menu bar below.",
+              add: "Press 'Add to Home Screen'.",
+            },
+            firefoxoperamobile18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              settings: "Press the 'Setting' button on the top bar above.",
+              add: "Press 'Add to Home Screen'.",
+            },
+            notsupported18: {
+              description:
+                "Your browiser is currently supporting installation of PWAs (Progressive Web Applications).",
+              try: " Please try to open the App via a Chromium based browiser such as Chrome or Edge.",
+            },
           },
         },
       },

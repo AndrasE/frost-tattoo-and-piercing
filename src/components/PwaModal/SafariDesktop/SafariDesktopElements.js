@@ -37,12 +37,14 @@ export const InstallStep = styled.li`
 `;
 
 export const ShareIcon = styled(IoShareOutline)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
 export const AddDocSvg = styled.svg`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;

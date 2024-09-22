@@ -17,7 +17,7 @@ const ChromiumsInstallAvail = ({ deferredPrompt, i18n }) => {
   return (
     <>
       <Divider />
-      <Description>"{i18n.description}"</Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallPwaBtnWrapper>

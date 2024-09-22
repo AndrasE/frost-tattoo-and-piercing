@@ -8,23 +8,20 @@ import {
   AddIcon,
 } from "./SafariMobileElements";
 
-const SafariMobile = () => {
+const SafariMobile = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        This site has app functionality. Add it to your Home Screen for
-        extensive experience and easy access.
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <ShareIcon />
-          Press the 'Share' button on the menu bar below.
+          {i18n.share}
         </InstallStep>
         <InstallStep>
           <AddIcon />
-          Press 'Add to Home Screen'.
+          {i18n.add}
         </InstallStep>
       </InstallStepsWrapper>
     </>

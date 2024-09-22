@@ -59,20 +59,20 @@ const PwaModal = ({
 
     // Logic for Safari
     if (name === "Safari" && os === "macOS") {
-      return <SafariDesktop />;
+      return <SafariDesktop i18n={pwa.safaridesktop18} />;
     } else if (name === "Safari" && os === "iOS") {
-      return <SafariMobile />;
+      return <SafariMobile i18n={pwa.safarimobile18} />;
     }
 
     // Logic for Firefox
     if (name === "Firefox" && os === "Windows") {
       return <FirefoxDesktop i18n={pwa.firefoxdesktop18} />;
     } else if ((name === "Firefox" || name === "Opera") && os === "Android") {
-      return <FirefoxOperaMobile />;
+      return <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} />;
     }
 
     // Fallback for unsupported browsers/OS
-    return <NotSupported />;
+    return <NotSupported i18n={pwa.notsupported18} />;
   };
 
   return (
@@ -108,7 +108,11 @@ const PwaModal = ({
           </HeaderBtn>
         </HeaderContainer>
         {/* Conditionally render the appropriate content */}
-        {renderPwaModal()}
+        {/* {renderPwaModal()} */}
+        {/* <ChromiumsInstallAvail
+          deferredPrompt={deferredPrompt}
+          i18n={pwa.chromiumsinstallvail18}
+        />
         <ChromiumsInstalledAlreadyMobile
           i18n={pwa.chromiumsinstalledalreadymobile18}
         />{" "}
@@ -116,6 +120,10 @@ const PwaModal = ({
           i18n={pwa.chromiumsinstalledalreadydesktop18}
         />
         <FirefoxDesktop i18n={pwa.firefoxdesktop18} />
+        <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} /> */}
+        {/* <SafariDesktop i18n={pwa.safaridesktop18} /> */}
+        {/* <SafariMobile i18n={pwa.safarimobile18} /> */}
+        {/* <NotSupported i18n={pwa.notsupported18} />; */}
       </ModalContainer>
     </MotionModal>
   );

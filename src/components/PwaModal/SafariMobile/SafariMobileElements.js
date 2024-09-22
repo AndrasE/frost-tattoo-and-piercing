@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { IoShareOutline } from "react-icons/io5";
-import { MdOutlineAddBox } from "react-icons/md";
+import { MdOutlineAddBox, MdOutlineIosShare } from "react-icons/md";
 
 export const Divider = styled.hr`
   height: 1px;
@@ -37,13 +36,15 @@ export const InstallStep = styled.li`
   color: ${({ theme }) => theme.fontColor};
 `;
 
-export const ShareIcon = styled(IoShareOutline)`
+export const ShareIcon = styled(MdOutlineIosShare)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;
 `;
 
 export const AddIcon = styled(MdOutlineAddBox)`
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
   margin-right: 25px;

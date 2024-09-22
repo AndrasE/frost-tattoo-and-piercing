@@ -7,20 +7,16 @@ import {
   ChromeIcon,
 } from "./NotSupportedElements";
 
-const NotSupported = () => {
+const NotSupported = ({ i18n }) => {
   return (
     <>
       <Divider />
-      <Description>
-        It looks like the browiser you are using not currently supporting
-        installation of PWAs(Progressive Web Applications).
-      </Description>
+      <Description>{i18n.description}</Description>
       <Divider />
       <InstallStepsWrapper>
         <InstallStep>
           <ChromeIcon />
-          Please try to open the App via a Chromium based browiser such as
-          Chrome or Edge.
+          {i18n.try}
         </InstallStep>
       </InstallStepsWrapper>
     </>
