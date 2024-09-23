@@ -7,6 +7,7 @@ import {
   HeaderIcon,
   HeaderTitleWrapper,
   HeaderTitle,
+  BrowserDetails,
   HeaderAddress,
   HeaderBtn,
   Svg,
@@ -92,12 +93,11 @@ const PwaModal = ({
           <HeaderTitleRow>
             <HeaderIcon src={logo} alt="logo-icon"></HeaderIcon>
             <HeaderTitleWrapper>
-              <HeaderTitle>
-                {pwa.header}
-                <p>{browserSettings.name}</p>
-                <p>{browserSettings.os}</p>
-              </HeaderTitle>
+              <HeaderTitle>{pwa.header}</HeaderTitle>
               <HeaderAddress>{window.location.href}</HeaderAddress>
+              <BrowserDetails>
+                {browserSettings.name} via {browserSettings.os}
+              </BrowserDetails>
             </HeaderTitleWrapper>
           </HeaderTitleRow>
           <HeaderBtn onClick={togglePwaModal}>
@@ -122,8 +122,8 @@ const PwaModal = ({
         <SafariDesktop i18n={pwa.safaridesktop18} />
         <SafariMobile i18n={pwa.safarimobile18} />
         <FirefoxDesktop i18n={pwa.firefoxdesktop18} />
-        <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} />
-        <NotSupported i18n={pwa.notsupported18} />; */}
+        <FirefoxOperaMobile i18n={pwa.firefoxoperamobile18} /> */}
+        {/* <NotSupported i18n={pwa.notsupported18} />; */}
       </ModalContainer>
     </MotionModal>
   );

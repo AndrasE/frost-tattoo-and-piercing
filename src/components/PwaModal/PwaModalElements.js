@@ -36,8 +36,8 @@ export const HeaderTitleRow = styled.div`
 
 export const HeaderIcon = styled.img`
   border-radius: 7.5px;
-  height: 50px;
-  width: 50px;
+  height: 64px;
+  width: 64px;
   overflow: hidden;
   flex-shrink: 0;
 `;
@@ -46,9 +46,9 @@ export const HeaderTitleWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   flex-flow: column nowrap;
-  gap: 4px;
+  gap: 2px;
   justify-content: flex-start;
-  padding: 4px 15px;
+  padding: 0 15px;
   text-align: left;
 `;
 
@@ -56,6 +56,13 @@ export const HeaderTitle = styled.h1`
   color: ${(theme) => theme.fontColor};
   font-size: 1rem;
   font-weight: 600;
+  line-height: 20px;
+`;
+
+export const BrowserDetails = styled.h2`
+  color: ${(theme) => theme.fontColor};
+  font-size: 0.85rem;
+  font-weight: 300;
   line-height: 20px;
 `;
 
