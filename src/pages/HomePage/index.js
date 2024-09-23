@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import SwipeSceen from "../../components/SwipeScreen";
+import BlurSceen from "../../components/BlurScreen";
 import Navbar from "../../components/HomeNavbar";
 import Sidebar from "../../components/Sidebar";
 import SettingsModal from "../../components/SettingsModal";
@@ -8,12 +10,12 @@ import Section from "../../components/Sections";
 import AboutImg from "../../components/SectionsEmelents/AboutImg";
 import ServicesImgs from "../../components/SectionsEmelents/ServicesImgs";
 import GalleryCarousel from "../../components/SectionsEmelents/GalleryCarousel";
-import ContactDetails from "../../components/SectionsEmelents/ContactDetails";
 import TestimonialCarousel from "../../components/SectionsEmelents/TestimonialCarousel";
+import ContactDetails from "../../components/SectionsEmelents/ContactDetails";
+import BookingImg from "../../components/SectionsEmelents/BookingImg";
 import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
-import SwipeSceen from "../../components/SwipeScreen";
-import BlurSceen from "../../components/BlurScreen";
+
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -106,12 +108,13 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}
       <Section id="about" col1={t("about18")} col2={<AboutImg />} />
       <Section
+        reversed
         id="services"
         col1={t("services18")}
         col2={<ServicesImgs />}
-        reversed
       />
       <Section
+        reversed
         id="gallery"
         col1={t("gallery18")}
         col2={<GalleryCarousel />}
@@ -122,10 +125,14 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         id="testimonials"
         col1={t("testimonials18")}
         col2={<TestimonialCarousel />}
-        reversed
       />
-      <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
-
+      <Section
+        reversed
+        id="contact"
+        col1={t("contact18")}
+        col2={<ContactDetails />}
+      />
+      <Section id="booking" col1={t("booking18")} col2={<BookingImg />} />
       <Footer />
       <ProgressBar />
     </>

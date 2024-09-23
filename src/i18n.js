@@ -82,6 +82,11 @@ i18next
             content:
               "Contact ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
+          booking18: {
+            heading: "BookingEng",
+            content:
+              "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
           settings18: {
             settings: "settings",
             theme: "Theme",
@@ -214,6 +219,11 @@ i18next
             content:
               "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
+          booking18: {
+            heading: "BookingHUN",
+            content:
+              "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
           settings18: {
             settings: "beállítás",
             theme: "Téma",
@@ -341,6 +351,68 @@ i18next
             heading: "ContactDE",
             content:
               "Contact DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
+          booking18: {
+            heading: "BookingDe",
+            content:
+              "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
+          settings18: {
+            settings: "settings",
+            theme: "Theme",
+            dark: "Dark",
+            light: "Light",
+            lngs: "Languages",
+            install: "Install",
+          },
+          pwa18: {
+            header: "Add to Home screen",
+            chromiumsinstallvail18: {
+              description:
+                "This site has app functionality. Install it as PWA (Progressive Web Application).",
+              install: "Install",
+            },
+            chromiumsinstalledalreadymobile18: {
+              description:
+                "This PWA (Progressive Web Application) has already been installed.",
+              search: "Please search for it in your apllication drawer.",
+            },
+            chromiumsinstalledalreadydesktop18: {
+              description:
+                "This PWA (Progressive Web Application) has already been installed.",
+              open: "Please click the icon in the address bar to open.",
+            },
+            firefoxdesktop18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              extension: "Press the 'Extension' icon on the menu bar above",
+              search:
+                "Search and install 'Progressive Web Apps for Firefox' extension.",
+              install: "Press the 'Install' icon in the address bar.",
+            },
+            safaridesktop18: {
+              description:
+                "This site has app functionality. Add it to your Dock for extensive experience and easy access.",
+              share: "Press the 'Share' button on in the address bar.",
+              add: "In the dropdown menu, choose 'Add to Dock'.",
+            },
+            safarimobile18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              share: "Press the 'Share' button on the menu bar below.",
+              add: "Press 'Add to Home Screen'.",
+            },
+            firefoxoperamobile18: {
+              description:
+                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
+              settings: "Press the 'Setting' button on the top bar above.",
+              add: "Press 'Add to Home Screen'.",
+            },
+            notsupported18: {
+              description:
+                "Your browiser is currently supporting installation of PWAs (Progressive Web Applications).",
+              try: " Please try to open the App via a Chromium based browiser such as Chrome or Edge.",
+            },
           },
         },
       },
