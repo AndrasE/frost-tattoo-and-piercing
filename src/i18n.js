@@ -19,8 +19,8 @@ i18next
             services: "Services",
             gallery: "Gallery",
             testimonials: "Testimonials",
-            booking: "Booking",
             contact: "Contact",
+            booking: "Booking",
           },
           about18: {
             heading: "AboussstENG",
@@ -151,8 +151,8 @@ i18next
             services: "Szolgáltatások",
             gallery: "Galéria",
             testimonials: "Beszámolók",
-            booking: "Foglalás",
             contact: "Kapcsolat",
+            booking: "Foglalás",
           },
           about18: {
             heading: "AboutHUN",
@@ -282,8 +282,8 @@ i18next
             services: "de",
             gallery: "de",
             testimonials: "de",
-            booking: "de",
             contact: "de",
+            booking: "de",
           },
           about18: {
             heading: "AboutDE",

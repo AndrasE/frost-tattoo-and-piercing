@@ -15,7 +15,7 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
     { to: "services", label: menu.services },
     { to: "gallery", label: menu.gallery },
     { to: "testimonials", label: menu.testimonials },
-    { to: "booking", label: menu.booking },
+    { to: "contact", label: menu.contact },
   ];
 
   return (
@@ -49,15 +49,15 @@ const Sidebar = ({ $sidebarOpen, toggleSidebar, menu }) => {
 
           <SideBtn>
             <SidebarBtnLink
-              href="contact" //only need for SEO
+              href="booking" //only need for SEO
               aria-label="Scroll to contact section" //only need for SEO
-              to="contact"
+              to="booking"
               smooth={true}
               duration={500}
               spy={true}
               offset={-80}
               onClick={toggleSidebar}>
-              {menu.contact}
+              {menu.booking}
             </SidebarBtnLink>
           </SideBtn>
         </SidebarMenu>
