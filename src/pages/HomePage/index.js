@@ -114,7 +114,6 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         col2={<ServicesImgs />}
       />
       <Section
-        reversed
         id="gallery"
         col1={t("gallery18")}
         col2={<GalleryCarousel />}
@@ -122,17 +121,18 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         btnTo="gallery"
       />
       <Section
+        reversed
         id="testimonials"
         col1={t("testimonials18")}
         col2={<TestimonialCarousel />}
       />
+      <Section id="contact" col1={t("contact18")} col2={<ContactDetails />} />
       <Section
         reversed
-        id="contact"
-        col1={t("contact18")}
-        col2={<ContactDetails />}
+        id="booking"
+        col1={t("booking18")}
+        col2={<BookingImg />}
       />
-      <Section id="booking" col1={t("booking18")} col2={<BookingImg />} />
       <Footer />
       <ProgressBar />
     </>
