@@ -26,13 +26,13 @@ export const ModalContainer = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 15px;
 `;
 
 export const HeaderTitleRow = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
 `;
 
 export const HeaderIcon = styled.img`
