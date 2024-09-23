@@ -37,8 +37,9 @@ export const HeaderTitleRow = styled.div`
 export const HeaderIcon = styled.img`
   border-radius: 7.5px;
   height: 50px;
-  overflow: hidden;
   width: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
 `;
 
 export const HeaderTitleWrapper = styled.div`

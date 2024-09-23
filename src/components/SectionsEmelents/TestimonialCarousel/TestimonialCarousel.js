@@ -126,7 +126,7 @@ export const NextBtnWrapper = styled.div`
 export const NextBtn = styled(GrFormNext)`
   font-size: 30px;
   color: ${({ theme }) => theme.fontColor};
-  opacity: 80%;
+  opacity: 70%;
 
   cursor: pointer;
   transition: transform 0.2s;
@@ -147,7 +147,7 @@ export const PrevBtnWrapper = styled.div`
 export const PrevBtn = styled(GrFormPrevious)`
   font-size: 30px;
   color: ${({ theme }) => theme.fontColor};
-  opacity: 80%;
+  opacity: 70%;
 
   cursor: pointer;
 
@@ -173,7 +173,7 @@ export const IndicatorBtns = styled.button`
   outline: none;
   margin: 0 3px;
   background-color: ${({ theme }) => theme.fontColor};
-  opacity: 60%;
+  opacity: 40%;
 
   &[aria-label="true"] {
     opacity: 100%;
