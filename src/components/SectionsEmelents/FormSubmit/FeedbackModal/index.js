@@ -6,14 +6,14 @@ import SentAnimation from "../../../../images/FormAnimations/email.json";
 import ErrorAnimation from "../../../../images/FormAnimations/error.json";
 import { motion, useAnimation } from "framer-motion";
 
-const FeedBackModal = ({ isSent, name }) => {
+const FeedBackModal = ({ isSent, name, error }) => {
   const controls = useAnimation();
 
   useEffect(() => {
     controls.start("animate");
     const timeoutId = setTimeout(() => {
       controls.start("reverse");
-    }, 3000);
+    }, 2500);
     return () => clearTimeout(timeoutId);
   }, [controls]);
 
@@ -31,7 +31,7 @@ const FeedBackModal = ({ isSent, name }) => {
         <SuccessModalText>
           {isSent === "success"
             ? `Thank you for your message ${name}, I will get back to you shortly!`
-            : "There was an error sending your message. Please try again."}
+            : `${error}`}
         </SuccessModalText>
 
         {/* Conditionally render Lottie animation using ternary operator due to a bug have to repeat it */}

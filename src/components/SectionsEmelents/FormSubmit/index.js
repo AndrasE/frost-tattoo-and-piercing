@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FormContainer,
   HeaderText,
@@ -17,11 +17,35 @@ const BookingImg = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
   const [isSent, setIsSent] = useState(null);
   const [hover, setHover] = useState(false);
-
   const onHover = () => {
     setHover(!hover);
+  };
+
+  const isValidForm = () => {
+    const nameRegex = /^[a-zA-Z ]{3,}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (name.length < 3 || !nameRegex.test(name)) {
+      setIsSent("error");
+      setError(
+        "Name must be at least 3 characters long and only contain letters and spaces."
+      );
+      return false;
+    }
+    if (!emailRegex.test(email)) {
+      setIsSent("error");
+      setError("Invalid email address. Please enter a valid email address.");
+      return false;
+    }
+    if (message.length < 3) {
+      setIsSent("error");
+      setError("Message must be at least 20 characters long.");
+      return false;
+    }
+    return true;
   };
 
   const handleSubmit = (e) => {
@@ -37,20 +61,37 @@ const BookingImg = () => {
       message: message,
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-        setName("");
-        setEmail("");
-        setMessage("");
-        setIsSent("success"); // Email was sent successfully
-      })
-      .catch((error) => {
-        setIsSent("error"); // Handle the error case
-        console.error("Error sending email:", error);
-      });
+    if (isValidForm()) {
+      emailjs
+        .send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log("Email sent successfully!", response);
+          setIsSent("success");
+          setTimeout(() => {
+            setName("");
+            setEmail("");
+            setMessage("");
+          }, 2700);
+        })
+        .catch((error) => {
+          setIsSent("error"); // Handle the error case
+          console.error("Error sending email:", error);
+          setTimeout(() => {
+            setError("");
+          }, 2700);
+        });
+    }
   };
+
+  useEffect(() => {
+    if (isSent !== null) {
+      const timeoutId = setTimeout(() => {
+        // Assuming you have a function to set isSent to null
+        setIsSent(null);
+      }, 3500);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isSent]);
 
   return (
     <FormContainer>
@@ -84,7 +125,7 @@ const BookingImg = () => {
         </BtnWrapper>
       </Form>
       {/* feedback modal overlay component on send */}
-      {isSent && <FeedBackModal isSent={isSent} name={name} />}
+      {isSent && <FeedBackModal isSent={isSent} name={name} error={error} />}
     </FormContainer>
   );
 };
