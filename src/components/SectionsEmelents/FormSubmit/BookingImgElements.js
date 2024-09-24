@@ -3,7 +3,6 @@ import {
   MdKeyboardArrowRight,
   MdKeyboardDoubleArrowRight,
 } from "react-icons/md";
-import Lottie from "lottie-react";
 
 const hexToRgba = (hex, opacity) => {
   let r = parseInt(hex.slice(1, 3), 16);
