@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import {
   FormContainer,
   HeaderText,
@@ -11,12 +11,13 @@ import {
   ArrowRightDouble,
 } from "./BookingImgElements";
 import emailjs from "@emailjs/browser";
+import FeedBackModal from "./FeedbackModal";
 
 const BookingImg = () => {
-  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSent, setIsSent] = useState(null);
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -26,19 +27,16 @@ const BookingImg = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Your EmailJS service ID, template ID, and Public Key
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_API_KEY;
 
-    // Create a new object that contains dynamic template params
     const templateParams = {
       from_name: name,
       from_email: email,
       message: message,
     };
 
-    // Send the email using EmailJS
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
@@ -46,8 +44,10 @@ const BookingImg = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setIsSent("success"); // Email was sent successfully
       })
       .catch((error) => {
+        setIsSent("error"); // Handle the error case
         console.error("Error sending email:", error);
       });
   };
@@ -55,7 +55,7 @@ const BookingImg = () => {
   return (
     <FormContainer>
       <HeaderText>Send us a quick message!</HeaderText>
-      <Form ref={form}>
+      <Form>
         <InputBox
           type="text"
           value={name}
@@ -72,7 +72,8 @@ const BookingImg = () => {
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="message"></TextArea>
+          placeholder="message"
+        />
         <BtnWrapper>
           <Btn
             onClick={(e) => handleSubmit(e)}
@@ -82,6 +83,8 @@ const BookingImg = () => {
           </Btn>
         </BtnWrapper>
       </Form>
+      {/* feedback modal overlay component on send */}
+      {isSent && <FeedBackModal isSent={isSent} name={name} />}
     </FormContainer>
   );
 };

@@ -3,6 +3,7 @@ import {
   MdKeyboardArrowRight,
   MdKeyboardDoubleArrowRight,
 } from "react-icons/md";
+import Lottie from "lottie-react";
 
 const hexToRgba = (hex, opacity) => {
   let r = parseInt(hex.slice(1, 3), 16);
@@ -19,8 +20,9 @@ export const FormContainer = styled.div`
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 5px 15px ${({ theme }) => theme.dropShadow};
-  padding: 10px;
+
   justify-content: space-evenly;
+  position: relative;
 `;
 
 export const HeaderText = styled.h2`
@@ -42,7 +44,7 @@ export const Form = styled.form`
 export const InputBox = styled.input`
   overflow: hidden;
   border: none;
-  margin: 10px 5px;
+  margin: 10px;
   padding: 5px 6px;
   border-radius: 10px;
   color: ${({ theme }) => theme.fontColor};
@@ -59,11 +61,10 @@ export const InputBox = styled.input`
 export const TextArea = styled.textarea`
   overflow: hidden;
   border: none;
-  margin: 10px 5px;
+  margin: 10px;
   padding: 5px 6px;
   border-radius: 10px;
   min-height: 80px;
-
   color: ${({ theme }) => theme.fontColor};
   background-color: ${({ theme }) => theme.backgroundColor};
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
