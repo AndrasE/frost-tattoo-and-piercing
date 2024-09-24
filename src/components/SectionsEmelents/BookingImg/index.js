@@ -26,18 +26,30 @@ const BookingImg = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Your EmailJS service ID, template ID, and Public Key
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_API_KEY;
+
+    // Create a new object that contains dynamic template params
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    // Send the email using EmailJS
     emailjs
-      .sendForm("", "", form.current, {
-        publicKey: "",
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
       })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
 
   return (
@@ -48,21 +60,18 @@ const BookingImg = () => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          name="name"
           placeholder="name"
         />
         <InputBox
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          name="email"
           placeholder="email"
         />
         <TextArea
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          name="email"
           placeholder="message"></TextArea>
         <BtnWrapper>
           <Btn
