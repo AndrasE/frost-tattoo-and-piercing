@@ -12,7 +12,7 @@ import ServicesImgs from "../../components/SectionsEmelents/ServicesImgs";
 import GalleryCarousel from "../../components/SectionsEmelents/GalleryCarousel";
 import TestimonialCarousel from "../../components/SectionsEmelents/TestimonialCarousel";
 import ContactDetails from "../../components/SectionsEmelents/ContactDetails";
-import BookingImg from "../../components/SectionsEmelents/BookingImg";
+import FormSubmit from "../../components/SectionsEmelents/FormSubmit";
 import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
 
@@ -131,7 +131,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         reversed
         id="booking"
         col1={t("booking18")}
-        col2={<BookingImg />}
+        col2={<FormSubmit />}
       />
       <Footer />
       <ProgressBar />

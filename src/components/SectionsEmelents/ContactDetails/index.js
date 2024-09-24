@@ -12,9 +12,9 @@ import {
   PhoneLink,
   IFrame,
   IframeWrapper,
-} from "./ContactDetailElements";
+} from "./FormSubmitElements";
 
-const ContactDetails = () => {
+const FormSubmit = () => {
   return (
     <ContentContainer>
       <LinksContainer>
@@ -52,4 +52,4 @@ const ContactDetails = () => {
   );
 };
 
-export default ContactDetails;
+export default FormSubmit;
