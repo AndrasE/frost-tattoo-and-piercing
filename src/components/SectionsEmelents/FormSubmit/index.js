@@ -71,7 +71,7 @@ const BookingImg = () => {
             setName("");
             setEmail("");
             setMessage("");
-          }, 2700);
+          }, 2600);
         })
         .catch((error) => {
           setIsSent("error"); // Handle the error case
