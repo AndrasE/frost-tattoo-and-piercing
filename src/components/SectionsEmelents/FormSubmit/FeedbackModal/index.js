@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SuccessModal } from "./FeedbackModalElement";
 import { SuccessModalText } from "./FeedbackModalElement";
 import { LottieAnimation } from "./FeedbackModalElement";
 import SentAnimation from "../../../../images/FormAnimations/email.json";
 import ErrorAnimation from "../../../../images/FormAnimations/error.json";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const FeedBackModal = ({ isSent, name }) => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start("animate");
+    const timeoutId = setTimeout(() => {
+      controls.start("reverse");
+    }, 3000);
+    return () => clearTimeout(timeoutId);
+  }, [controls]);
+
   return (
     <motion.div
       style={{ position: "absolute", width: "100%", height: "100%" }}
       initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      animate={controls}
+      variants={{
+        animate: { opacity: 1, scale: 1 },
+        reverse: { opacity: 0, scale: 0.5 },
+      }}
       transition={{ duration: 0.5, ease: [0, 0.71, 0.2, 1.01] }}>
       <SuccessModal>
         <SuccessModalText>
