@@ -13,7 +13,7 @@ const FeedBackModal = ({ isSent, name, error }) => {
     controls.start("animate");
     const timeoutId = setTimeout(() => {
       controls.start("reverse");
-    }, 2500);
+    }, 3000);
     return () => clearTimeout(timeoutId);
   }, [controls]);
 
