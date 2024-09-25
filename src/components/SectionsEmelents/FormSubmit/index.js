@@ -5,11 +5,13 @@ import {
   Form,
   InputBox,
   TextArea,
+  BtnContainer,
+  SendBtnImg,
+  SendBtnLabel,
   BtnWrapper,
-  Btn,
-  ArrowRight,
-  ArrowRightDouble,
-} from "./BookingImgElements";
+} from "./BookingElements";
+import BtnImg from "../../../images/bookingImgAnimation/sendImg.png";
+import BtnHoverImg from "../../../images/bookingImgAnimation/sendImgHover.png";
 import emailjs from "@emailjs/browser";
 import FeedBackModal from "./FeedbackModal";
 
@@ -128,14 +130,16 @@ const BookingImg = ({ i18n }) => {
           name="message"
           autoComplete="off"
         />
-        <BtnWrapper>
-          <Btn
-            onClick={(e) => handleSubmit(e)}
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}>
-            {i18n.sendbtn} {hover ? <ArrowRightDouble /> : <ArrowRight />}
-          </Btn>
-        </BtnWrapper>
+        <BtnContainer onMouseEnter={onHover} onMouseLeave={onHover}>
+          <BtnWrapper onMouseEnter={onHover} onMouseLeave={onHover}>
+            <SendBtnLabel>{i18n.sendbtn}</SendBtnLabel>
+            <SendBtnImg
+              onClick={(e) => handleSubmit(e)}
+              src={hover ? BtnHoverImg : BtnImg}
+              alt="send button"
+            />
+          </BtnWrapper>
+        </BtnContainer>
       </Form>
       {/* feedback modal overlay component will show only if isSent is not null; if not null it will be passed as prop and gets displayed in feedbackmodal component or error prop will be used as error message */}
       {isSent && <FeedBackModal isSent={isSent} name={name} error={error} />}

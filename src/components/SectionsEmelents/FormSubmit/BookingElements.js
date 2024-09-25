@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import {
-  MdKeyboardArrowRight,
-  MdKeyboardDoubleArrowRight,
-} from "react-icons/md";
 
 export const FormContainer = styled.div`
   display: flex;
@@ -53,7 +49,6 @@ export const TextArea = styled.textarea`
   overflow: hidden;
   border: none;
   resize: none;
-
   margin: 10px;
   padding: 5px 6px;
   border-radius: 10px;
@@ -69,64 +64,33 @@ export const TextArea = styled.textarea`
   }
 `;
 
-export const BtnWrapper = styled.div`
+export const BtnContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
   margin-top: 10px;
   padding-right: 10px;
-  justify-content: flex-end;
 `;
 
-export const Btn = styled.button`
-  display: flex;
-  justify-content: center;
+export const BtnWrapper = styled.div`
   align-items: center;
-  background-image: linear-gradient(
-    to right,
-    #1ebbd7 0%,
-    #189ad3 51%,
-    #1ebbd7 100%
-  );
-  background-size: 200% auto;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1rem;
-  white-space: nowrap;
-  padding: 10px 17px;
-  color: #000;
-  outline: none;
-  border: none;
+  display: flex;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+`;
 
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    background-position: right center;
-  }
+export const SendBtnLabel = styled.h2`
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 8px;
+  color: ${({ theme }) => theme.fontColor};
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
   }
 `;
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  position: relative;
-  left: 1px;
-  padding-top: 3px;
-  margin-left: 5px;
-  font-size: 24px;
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
-`;
-
-export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`
-  position: relative;
-  left: 3px;
-  padding-top: 2px;
-  margin-left: 5px;
-  font-size: 24px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
+export const SendBtnImg = styled.img`
+  width: 45px;
+  height: 40px;
+  margin-left: 6px;
 `;
