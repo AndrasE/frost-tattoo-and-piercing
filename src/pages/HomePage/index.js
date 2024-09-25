@@ -131,7 +131,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         reversed
         id="booking"
         col1={t("booking18")}
-        col2={<FormSubmit />}
+        col2={<FormSubmit i18n={t("formsubmit18")} />}
       />
       <Footer />
       <ProgressBar />

@@ -58,5 +58,4 @@ const FeedBackModal = ({ isSent, name, error }) => {
     </motion.div>
   );
 };
-
 export default FeedBackModal;

@@ -87,6 +87,13 @@ i18next
             content:
               "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
+          formsubmit18: {
+            formheader: "Send us a quick message!",
+            nameplaceholder: "name",
+            emailplaceholder: "email",
+            messageplaceholder: "message",
+            sendbtn: "Send",
+          },
           settings18: {
             settings: "settings",
             theme: "Theme",
@@ -223,6 +230,13 @@ i18next
             heading: "BookingHUN",
             content:
               "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          },
+          formsubmit18: {
+            formheader: "Küldj nekünk üzenetet!",
+            nameplaceholder: "név",
+            emailplaceholder: "email",
+            messageplaceholder: "üzenet",
+            sendbtn: "Küldés",
           },
           settings18: {
             settings: "beállítás",

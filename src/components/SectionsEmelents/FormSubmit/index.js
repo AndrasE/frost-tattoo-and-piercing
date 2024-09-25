@@ -13,7 +13,7 @@ import {
 import emailjs from "@emailjs/browser";
 import FeedBackModal from "./FeedbackModal";
 
-const BookingImg = () => {
+const BookingImg = ({ i18n }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -69,6 +69,7 @@ const BookingImg = () => {
       emailjs
         .send(serviceId, templateId, templateParams, publicKey)
         .then((response) => {
+          console.log(response);
           setIsSent("success");
           // reset states, so that the form can be used again
           setTimeout(() => {
@@ -78,6 +79,7 @@ const BookingImg = () => {
           }, 3200);
         })
         .catch((error) => {
+          console.log(error);
           setIsSent("error");
           // resets error state so it can be used again
           setTimeout(() => {
@@ -100,32 +102,32 @@ const BookingImg = () => {
 
   return (
     <FormContainer>
-      <HeaderText>Send us a quick message!</HeaderText>
+      <HeaderText>{i18n.formheader}</HeaderText>
       <Form>
         <InputBox
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="name"
+          placeholder={i18n.nameplaceholder}
         />
         <InputBox
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="email"
+          placeholder={i18n.emailplaceholder}
         />
         <TextArea
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="message"
+          placeholder={i18n.messageplaceholder}
         />
         <BtnWrapper>
           <Btn
             onClick={(e) => handleSubmit(e)}
             onMouseEnter={onHover}
             onMouseLeave={onHover}>
-            Send {hover ? <ArrowRightDouble /> : <ArrowRight />}
+            {i18n.sendbtn} {hover ? <ArrowRightDouble /> : <ArrowRight />}
           </Btn>
         </BtnWrapper>
       </Form>
