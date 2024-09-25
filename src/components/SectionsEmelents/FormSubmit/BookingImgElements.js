@@ -52,6 +52,8 @@ export const InputBox = styled.input`
 export const TextArea = styled.textarea`
   overflow: hidden;
   border: none;
+  resize: none;
+
   margin: 10px;
   padding: 5px 6px;
   border-radius: 10px;
@@ -60,14 +62,6 @@ export const TextArea = styled.textarea`
   background-color: ${({ theme }) => theme.backgroundColor};
   box-shadow: 0 1px 8px ${({ theme }) => theme.inputBoxShadow};
   transition: box-shadow 0.3s ease-in-out;
-
-  /* Disable resize */
-  resize: none;
-
-  /* Reset browser appearance */
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   &:focus {
     box-shadow: 0 0 1px 1px ${({ theme }) => theme.inputFocusColor};

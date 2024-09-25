@@ -103,24 +103,30 @@ const BookingImg = ({ i18n }) => {
   return (
     <FormContainer>
       <HeaderText>{i18n.formheader}</HeaderText>
-      <Form>
+      <Form name="contact">
         <InputBox
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder={i18n.nameplaceholder}
+          name="name"
+          autoComplete="name"
         />
         <InputBox
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={i18n.emailplaceholder}
+          name="email"
+          autoComplete="email"
         />
         <TextArea
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder={i18n.messageplaceholder}
+          name="message"
+          autoComplete="off"
         />
         <BtnWrapper>
           <Btn
