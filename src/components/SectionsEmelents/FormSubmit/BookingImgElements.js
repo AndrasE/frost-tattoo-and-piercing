@@ -4,13 +4,6 @@ import {
   MdKeyboardDoubleArrowRight,
 } from "react-icons/md";
 
-const hexToRgba = (hex, opacity) => {
-  let r = parseInt(hex.slice(1, 3), 16);
-  let g = parseInt(hex.slice(3, 5), 16);
-  let b = parseInt(hex.slice(5, 7), 16);
-  return `rgba(${r}, ${g}, ${b}, ${opacity})`;
-};
-
 export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,7 +12,6 @@ export const FormContainer = styled.div`
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 5px 15px ${({ theme }) => theme.dropShadow};
-
   justify-content: space-evenly;
   position: relative;
 `;
@@ -48,11 +40,11 @@ export const InputBox = styled.input`
   border-radius: 10px;
   color: ${({ theme }) => theme.fontColor};
   background-color: ${({ theme }) => theme.backgroundColor};
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px ${({ theme }) => theme.inputBoxShadow};
   transition: box-shadow 0.3s ease-in-out;
 
   &:focus {
-    box-shadow: 0 0 1px 1px ${({ theme }) => hexToRgba(theme.accentColor, 0.6)}; /* Red highlight on focus */
+    box-shadow: 0 0 1px 1px ${({ theme }) => theme.inputFocusColor};
     outline: none;
   }
 `;
@@ -66,7 +58,7 @@ export const TextArea = styled.textarea`
   min-height: 80px;
   color: ${({ theme }) => theme.fontColor};
   background-color: ${({ theme }) => theme.backgroundColor};
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px ${({ theme }) => theme.inputBoxShadow};
   transition: box-shadow 0.3s ease-in-out;
 
   /* Disable resize */
@@ -78,7 +70,7 @@ export const TextArea = styled.textarea`
   -moz-appearance: none;
 
   &:focus {
-    box-shadow: 0 0 1px 1px ${({ theme }) => hexToRgba(theme.accentColor, 0.6)};
+    box-shadow: 0 0 1px 1px ${({ theme }) => theme.inputFocusColor};
     outline: none;
   }
 `;
