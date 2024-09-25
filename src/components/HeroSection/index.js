@@ -1,7 +1,7 @@
 import React, { useEffect, useState, memo } from "react";
 import Video from "../../videos/video.mp4";
 import Captions from "../../videos/video_caption.vtt";
-import DoubleArrowDown from "../../images/heroBottomArrowAnimation/doubleArrowDown.json";
+import DoubleArrowDown from "../../images/heroArrowAnimation/doubleArrowDown.json";
 import {
   HeroContainer,
   HeroBg,

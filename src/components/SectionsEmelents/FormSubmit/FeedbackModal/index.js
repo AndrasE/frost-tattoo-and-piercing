@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { SuccessModal } from "./FeedbackModalElement";
 import { SuccessModalText } from "./FeedbackModalElement";
 import { LottieAnimation } from "./FeedbackModalElement";
-import SentAnimation from "../../../../images/FormAnimations/email.json";
-import ErrorAnimation from "../../../../images/FormAnimations/error.json";
+import SentAnimation from "../../../../images/bookingImgAnimation/email.json";
+import ErrorAnimation from "../../../../images/bookingImgAnimation/error.json";
 import { motion, useAnimation } from "framer-motion";
 
 const FeedBackModal = ({ isSent, name, error }) => {
