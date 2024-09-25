@@ -71,14 +71,14 @@ const BookingImg = () => {
             setName("");
             setEmail("");
             setMessage("");
-          }, 2600);
+          }, 3200);
         })
         .catch((error) => {
           setIsSent("error"); // Handle the error case
           console.error("Error sending email:", error);
           setTimeout(() => {
             setError("");
-          }, 2700);
+          }, 3200);
         });
     }
   };
