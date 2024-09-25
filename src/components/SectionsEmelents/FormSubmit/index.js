@@ -23,8 +23,11 @@ const BookingImg = ({ i18n }) => {
   const [isSent, setIsSent] = useState(null);
   const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+  const handleMouseLeave = () => {
+    setHover(false);
   };
 
   //checks if the form is valid. True if the form is valid, false otherwise. Settins the states / messages accordinly
@@ -130,9 +133,11 @@ const BookingImg = ({ i18n }) => {
           name="message"
           autoComplete="off"
         />
-        <BtnContainer onMouseEnter={onHover} onMouseLeave={onHover}>
-          <BtnWrapper onMouseEnter={onHover} onMouseLeave={onHover}>
-            <SendBtnLabel>{i18n.sendbtn}</SendBtnLabel>
+        <BtnContainer>
+          <BtnWrapper
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+            <SendBtnLabel hover={hover}>{i18n.sendbtn}</SendBtnLabel>
             <SendBtnImg
               onClick={(e) => handleSubmit(e)}
               src={hover ? BtnHoverImg : BtnImg}

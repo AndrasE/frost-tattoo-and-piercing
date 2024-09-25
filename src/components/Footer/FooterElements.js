@@ -23,7 +23,7 @@ export const Link = styled.a`
     content: "";
     position: absolute;
     right: 5px;
-    bottom: 3px;
+    bottom: 5px;
     width: 71px;
     height: 2px;
     border-radius: 4px;

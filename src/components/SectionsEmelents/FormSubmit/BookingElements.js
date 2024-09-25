@@ -83,6 +83,8 @@ export const SendBtnLabel = styled.h2`
   font-weight: 400;
   margin-left: 8px;
   color: ${({ theme }) => theme.fontColor};
+  text-decoration: ${({ hover, theme }) =>
+    hover ? `underline 2px ${theme.accentColor}` : "none"};
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;

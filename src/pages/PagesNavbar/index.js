@@ -18,8 +18,11 @@ import { animateScroll as scroll } from "react-scroll";
 const PagesNavbar = () => {
   const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+  const handleMouseLeave = () => {
+    setHover(false);
   };
 
   const toggleToTop = () => {
@@ -42,7 +45,10 @@ const PagesNavbar = () => {
             </NavItem>
           </NavMenu>
           <NavBtnWrapper>
-            <NavBtnLink to="/" onMouseEnter={onHover} onMouseLeave={onHover}>
+            <NavBtnLink
+              to="/"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}>
               {hover ? <ArrowLeftDouble /> : <ArrowLeft />} Home
             </NavBtnLink>
           </NavBtnWrapper>

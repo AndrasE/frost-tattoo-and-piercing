@@ -35,7 +35,7 @@ export const Link = styled.a`
     height: 2px;
     border-radius: 4px;
     background-color: ${({ theme }) => theme.accentColor};
-    bottom: 2px;
+    bottom: 5px;
     left: 35px;
     transform-origin: right;
     transform: scaleX(0);
