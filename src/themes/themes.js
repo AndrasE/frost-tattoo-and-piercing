@@ -8,6 +8,7 @@ export const lightTheme = {
   //gallerypage svgs
   svgPrimaryColor: "#575a5b",
   svgSecondaryColor: "#111",
+  //feedbackmodal colors
 };
 
 export const darkTheme = {
@@ -20,4 +21,5 @@ export const darkTheme = {
   //gallerypage svgs
   svgPrimaryColor: "#b2babb",
   svgSecondaryColor: "#f2f2f2",
+  //feedbackmodal colors
 };

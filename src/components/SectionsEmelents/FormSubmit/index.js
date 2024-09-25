@@ -20,13 +20,16 @@ const BookingImg = () => {
   const [error, setError] = useState("");
   const [isSent, setIsSent] = useState(null);
   const [hover, setHover] = useState(false);
+
   const onHover = () => {
     setHover(!hover);
   };
 
+  //checks if the form is valid. True if the form is valid, false otherwise. Settins the states / messages accordinly
   const isValidForm = () => {
-    const nameRegex = /^[a-zA-Z ]{3,}$/;
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const nameRegex = /^[a-zA-ZáéíóöőúüűÁÉÍÓÖŐÚÜŰ\s]{3,}$/;
+    const emailRegex =
+      /^[a-zA-Z0-9._%+-áéíóöőúüűÁÉÍÓÖŐÚÜŰ]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (name.length < 3 || !nameRegex.test(name)) {
       setIsSent("error");
@@ -40,7 +43,7 @@ const BookingImg = () => {
       setError("Invalid email address. Please enter a valid email address.");
       return false;
     }
-    if (message.length < 3) {
+    if (message.length < 20) {
       setIsSent("error");
       setError("Message must be at least 20 characters long.");
       return false;
@@ -61,12 +64,13 @@ const BookingImg = () => {
       message: message,
     };
 
+    // calling check if the form is valid and setting states accordingly
     if (isValidForm()) {
       emailjs
         .send(serviceId, templateId, templateParams, publicKey)
         .then((response) => {
-          console.log("Email sent successfully!", response);
           setIsSent("success");
+          // reset states, so that the form can be used again
           setTimeout(() => {
             setName("");
             setEmail("");
@@ -74,8 +78,8 @@ const BookingImg = () => {
           }, 3200);
         })
         .catch((error) => {
-          setIsSent("error"); // Handle the error case
-          console.error("Error sending email:", error);
+          setIsSent("error");
+          // resets error state so it can be used again
           setTimeout(() => {
             setError("");
           }, 3200);
@@ -83,6 +87,7 @@ const BookingImg = () => {
     }
   };
 
+  // reseting isSent after 3 seconds to be able to show feedback modal again if needed, display of the modal depending on isSent state
   useEffect(() => {
     if (isSent !== null) {
       const timeoutId = setTimeout(() => {
@@ -124,7 +129,7 @@ const BookingImg = () => {
           </Btn>
         </BtnWrapper>
       </Form>
-      {/* feedback modal overlay component on send */}
+      {/* feedback modal overlay component will show only if isSent is not null; if not null it will be passed as prop and gets displayed in feedbackmodal component or error prop will be used as error message */}
       {isSent && <FeedBackModal isSent={isSent} name={name} error={error} />}
     </FormContainer>
   );
