@@ -325,30 +325,30 @@ i18next
       de: {
         translation: {
           nav18: {
-            about: "de",
-            services: "de",
-            gallery: "de",
-            testimonials: "de",
-            contact: "de",
-            booking: "de",
+            about: "Wir",
+            services: "Dienstleistungen",
+            gallery: "Galerie",
+            testimonials: "Erfahrungsberichte",
+            contact: "Kontakt",
+            booking: "Buchung",
           },
           about18: {
-            heading: "AboutDE",
+            heading: "Wir",
             content:
               "About DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
           services18: {
-            heading: "ServicesDE",
+            heading: "Dienstleistungen",
             content:
               "Services DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
           gallery18: {
-            heading: "GalleryDE",
+            heading: "Galerie",
             content:
               "Gallery DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
           testimonials18: {
-            heading: "TestimonialsDE",
+            heading: "Erfahrungsberichte",
             content:
               "Testimonials DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
@@ -385,22 +385,40 @@ i18next
             ],
           },
           contact18: {
-            heading: "ContactDE",
+            heading: "Kontakt",
             content:
               "Contact DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
           booking18: {
-            heading: "BookingDe",
+            heading: "Buchung",
             content:
               "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
+          formsubmit18: {
+            formheader: "Küldj nekünk üzenetet!",
+            nameplaceholder: "Name",
+            emailplaceholder: "E-Mail",
+            messageplaceholder: "Nachricht",
+            sendbtn: "Schicken",
+            nameerror:
+              "Name must be at least 3 characters long and only contain letters and spaces.",
+            emailerror:
+              "Invalid email address. Please enter a valid email address.",
+            messageerror: "Message must be at least 20 characters long.",
+            feedbackmodal18: {
+              successmsgpart1: "Thank you for your message ",
+              successmsgpart2: ", I will get back to you shortly!",
+              successent: "This has been successfully sent!",
+              errorsent: "Failed to send.",
+            },
+          },
           settings18: {
-            settings: "settings",
-            theme: "Theme",
-            dark: "Dark",
-            light: "Light",
-            lngs: "Languages",
-            install: "Install",
+            settings: "Einstellungen",
+            theme: "Thema",
+            dark: "Dunkel",
+            light: "Licht",
+            lngs: "Sprachen",
+            install: "Installieren",
           },
           pwa18: {
             header: "Add to Home screen",
