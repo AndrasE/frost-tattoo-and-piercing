@@ -133,14 +133,11 @@ const BookingImg = ({ i18n }) => {
         />
         <BtnContainer>
           <BtnWrapper
+            onClick={(e) => handleSubmit(e)}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <SendBtnLabel hover={hover}>{i18n.sendbtn}</SendBtnLabel>
-            <SendBtnImg
-              onClick={(e) => handleSubmit(e)}
-              src={hover ? BtnHoverImg : BtnImg}
-              alt="send button"
-            />
+            <SendBtnImg src={hover ? BtnHoverImg : BtnImg} alt="send button" />
           </BtnWrapper>
         </BtnContainer>
       </Form>

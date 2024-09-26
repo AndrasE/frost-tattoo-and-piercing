@@ -23,19 +23,19 @@ i18next
             booking: "Booking",
           },
           about18: {
-            heading: "AboussstENG",
+            heading: "About",
             content:
-              "About ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Our shop has been operating since 2017 in the town of Cegléd. Our current address is: Cegléd, Kossuth Ferenc Street 8. (Our shop is located in the Gyarmati courtyard!). Our guests are welcomed by a friendly, family-like atmosphere and spirit. Over the years, our customer base has steadily grown, and thanks to you, we have become a great team and family!",
           },
           services18: {
-            heading: "ServicesENG",
+            heading: "Services",
             content:
-              "Services ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "In our studio, we offer a variety of services for those interested in tattoo and body modification. Whether you`re looking for a custom tattoo design or ready to get tattooed, I`ll work with you personally to bring your vision to life. Alongside tattoos, I specialize in professional piercings and microdermal implants, ensuring every step is safe and precise. I provide a clean, welcoming environment where you can feel comfortable throughout the process.",
           },
           gallery18: {
-            heading: "GalleryENG",
+            heading: "Gallery",
             content:
-              "Gallery ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Over the years, I've completed many works, and you can find a variety of examples in the gallery section. Feel free to browse through some of the tattoos, piercings, and microdermals I've done. The gallery offers a sliding view so you can easily explore the pieces. I regularly update the photos, so make sure to check back for fresh content and recent projects.",
           },
           testimonials18: {
             heading: "TestimonialsENG",
@@ -178,17 +178,17 @@ i18next
             booking: "Foglalás",
           },
           about18: {
-            heading: "AboutHUN",
+            heading: "Rólunk",
             content:
-              "About HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Üzletünk 2017 óta üzemel Cegléd városában. Jelenlegi címünk: Cegléd, Kossuth Ferenc utca 8. (A Gyarmati udvarban található üzletünk!). Vendégeinket egy barátságos, családias hangulatú és szellemű üzlet fogadja. Vendégkörünk folyamatosan bővült az évek során, nektek köszönhetően ma már egy nagyszerű csapat és család vagyunk!",
           },
           services18: {
-            heading: "ServicesHUN",
+            heading: "Szolgáltatások",
             content:
-              "Services HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Az évek során számos munkát készítettem, melyek közül sok példát megtalálhatsz a galéria szekcióban. Böngéssz bátran a tetoválások, piercingek és microdermal munkáim között, amelyeket készítettem. A galériában lapozgathatsz az alkotások között, és időről időre frissítem a képeket, így érdemes visszalátogatni, hogy megnézd a legújabb projektjeimet.",
           },
           gallery18: {
-            heading: "GalleryHUN",
+            heading: "Galéria",
             content:
               "Gallery HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
@@ -324,6 +324,9 @@ i18next
       },
       de: {
         translation: {
+          hero18: {
+            welcome: "Willkommen auf unserer offiziellen Website!",
+          },
           nav18: {
             about: "Wir",
             services: "Dienstleistungen",
@@ -335,17 +338,17 @@ i18next
           about18: {
             heading: "Wir",
             content:
-              "About DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Unser Geschäft ist seit 2017 in der Stadt Cegléd tätig. Unsere aktuelle Adresse lautet: Cegléd, Kossuth Ferenc Straße 8. (Unser Geschäft befindet sich im Gyarmati-Hof!). Unsere Gäste werden von einer freundlichen, familiären Atmosphäre und Geist empfangen. Im Laufe der Jahre hat sich unser Kundenstamm kontinuierlich erweitert, und dank euch sind wir heute ein großartiges Team und eine Familie geworden!",
           },
           services18: {
             heading: "Dienstleistungen",
             content:
-              "Services DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Unser Studio bietet eine Vielzahl an Dienstleistungen für Tätowierungs- und Körpermodifikationsbegeisterte an. Egal, ob du ein individuelles Tattoo-Design möchtest oder bereit bist, dich tätowieren zu lassen – ich arbeite persönlich mit dir zusammen, um deine Vision zu verwirklichen. Neben Tattoos biete ich auch professionelle Piercings und Microdermal-Implantate an und achte darauf, dass jeder Schritt sicher und präzise ist. Ich sorge für eine saubere, einladende Umgebung, in der du dich während des gesamten Prozesses wohlfühlen kannst.",
           },
           gallery18: {
             heading: "Galerie",
             content:
-              "Gallery DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Im Laufe der Jahre habe ich viele Arbeiten abgeschlossen, und du findest eine Vielzahl von Beispielen im Galerie-Bereich. Schau dir gerne einige der Tattoos, Piercings und Microdermal-Arbeiten an, die ich gemacht habe. Die Galerie bietet eine durchblätterbare Ansicht, damit du die Werke leicht erkunden kannst. Ich aktualisiere die Bilder regelmäßig, also schau immer mal wieder vorbei, um neue Inhalte und aktuelle Projekte zu sehen.",
           },
           testimonials18: {
             heading: "Erfahrungsberichte",
@@ -358,28 +361,31 @@ i18next
                 name: "Dia",
                 src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
-                review: "de",
+                review:
+                  "Sehr schöne und präzise Arbeit, freundliches Umfeld, mit hervorragenden Fachleuten... Brauchen Sie mehr??? 😀",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Helga",
                 src: require("../images/testimonialsImgs//helga.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-                review: "de",
+                review:
+                  "Vielen Dank, Professionalität, Geduld und Freundlichkeit. Ich werde auf jeden Fall wiederkommen.",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs//zoltan.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-                review: "de",
+                review: "Er funktioniert sehr gut. Ich kann es nur empfehlen!",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Edina",
                 src: require("../images/testimonialsImgs//edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
-                review: "de",
+                review:
+                  "Sehr schöner Ort! Freundliche Umgebung. Du machst präzise Arbeit!",
                 rating: "⭐⭐⭐⭐⭐",
               },
             ],

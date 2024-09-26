@@ -117,7 +117,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         id="gallery"
         col1={t("gallery18")}
         col2={<GalleryCarousel />}
-        btnLabel="Gallery"
+        btnLabel={t("gallery18").heading}
         btnTo="gallery"
       />
       <Section
