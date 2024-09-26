@@ -413,7 +413,7 @@ i18next
             },
           },
           settings18: {
-            settings: "Einstellungen",
+            settings: "Haltung",
             theme: "Thema",
             dark: "Dunkel",
             light: "Licht",
