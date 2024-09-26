@@ -38,19 +38,17 @@ const BookingImg = ({ i18n }) => {
 
     if (name.length < 3 || !nameRegex.test(name)) {
       setIsSent("error");
-      setError(
-        "Name must be at least 3 characters long and only contain letters and spaces."
-      );
+      setError(`${i18n.nameerror}`);
       return false;
     }
     if (!emailRegex.test(email)) {
       setIsSent("error");
-      setError("Invalid email address. Please enter a valid email address.");
+      setError(`${i18n.emailerror}`);
       return false;
     }
     if (message.length < 20) {
       setIsSent("error");
-      setError("Message must be at least 20 characters long.");
+      setError(`${i18n.messageerror}`);
       return false;
     }
     return true;
@@ -81,7 +79,7 @@ const BookingImg = ({ i18n }) => {
             setName("");
             setEmail("");
             setMessage("");
-          }, 3200);
+          }, 3000);
         })
         .catch((error) => {
           console.log(error);
@@ -89,7 +87,7 @@ const BookingImg = ({ i18n }) => {
           // resets error state so it can be used again
           setTimeout(() => {
             setError("");
-          }, 3200);
+          }, 3000);
         });
     }
   };
@@ -147,7 +145,14 @@ const BookingImg = ({ i18n }) => {
         </BtnContainer>
       </Form>
       {/* feedback modal overlay component will show only if isSent is not null; if not null it will be passed as prop and gets displayed in feedbackmodal component or error prop will be used as error message */}
-      {isSent && <FeedBackModal isSent={isSent} name={name} error={error} />}
+      {isSent && (
+        <FeedBackModal
+          isSent={isSent}
+          name={name}
+          error={error}
+          i18n={i18n.feedbackmodal18}
+        />
+      )}
     </FormContainer>
   );
 };

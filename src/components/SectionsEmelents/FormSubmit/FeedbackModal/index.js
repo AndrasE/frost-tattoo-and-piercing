@@ -6,7 +6,7 @@ import SentAnimation from "../../../../images/bookingImgAnimation/email.json";
 import ErrorAnimation from "../../../../images/bookingImgAnimation/error.json";
 import { motion, useAnimation } from "framer-motion";
 
-const FeedBackModal = ({ isSent, name, error }) => {
+const FeedBackModal = ({ isSent, name, error, i18n }) => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const FeedBackModal = ({ isSent, name, error }) => {
       <SuccessModal>
         <SuccessModalText>
           {isSent === "success"
-            ? `Thank you for your message ${name}, I will get back to you shortly!`
+            ? `${i18n.successmsgpart1} ${name} ${i18n.successmsgpart2}`
             : `${error}`}
         </SuccessModalText>
 
@@ -50,9 +50,7 @@ const FeedBackModal = ({ isSent, name, error }) => {
         )}
 
         <SuccessModalText>
-          {isSent === "success"
-            ? "This has been successfully sent!"
-            : "Failed to send."}
+          {isSent === "success" ? `${i18n.successent}` : `${i18n.errorsent}`}
         </SuccessModalText>
       </SuccessModal>
     </motion.div>

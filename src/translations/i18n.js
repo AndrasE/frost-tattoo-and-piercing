@@ -46,7 +46,7 @@ i18next
             slides: [
               {
                 name: "Dia",
-                src: require("./images/testimonialsImgs/dia.png"),
+                src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
                 review:
                   "Very nice and precise work, friendly environment, with excellent professionals... Do you need more??? 😀",
@@ -54,7 +54,7 @@ i18next
               },
               {
                 name: "Helga",
-                src: require("./images/testimonialsImgs//helga.png"),
+                src: require("../images/testimonialsImgs//helga.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
                 review:
                   "Thank you very much, professionalism, patience and kindness. I will definitely come back again.",
@@ -62,14 +62,14 @@ i18next
               },
               {
                 name: "Zoltán",
-                src: require("./images/testimonialsImgs//zoltan.png"),
+                src: require("../images/testimonialsImgs//zoltan.png"),
                 link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
                 review: "He works very well. I can only recommend!",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Edina",
-                src: require("./images/testimonialsImgs//edina.png"),
+                src: require("../images/testimonialsImgs//edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review:
                   "Very nice place! Friendly environment. You are doing a precise job!",
@@ -93,6 +93,17 @@ i18next
             emailplaceholder: "email",
             messageplaceholder: "message",
             sendbtn: "Send",
+            nameerror:
+              "Name must be at least 3 characters long and only contain letters and spaces.",
+            emailerror:
+              "Invalid email address. Please enter a valid email address.",
+            messageerror: "Message must be at least 20 characters long.",
+            feedbackmodal18: {
+              successmsgpart1: "Thank you for your message ",
+              successmsgpart2: ", I will get back to you shortly!",
+              successent: "This has been successfully sent!",
+              errorsent: "Failed to send.",
+            },
           },
           settings18: {
             settings: "settings",
@@ -190,7 +201,7 @@ i18next
             slides: [
               {
                 name: "Dia",
-                src: require("./images/testimonialsImgs/dia.png"),
+                src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
                 review:
                   "Nagyon szép es precíz munka, barátságos környezet, kiváló szakemberrel... Kell ennél több??? 😀",
@@ -198,7 +209,7 @@ i18next
               },
               {
                 name: "Helga",
-                src: require("./images/testimonialsImgs//helga.png"),
+                src: require("../images/testimonialsImgs/helga.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
                 review:
                   "Hálásan köszönöm, profizmus, türelem és kedvesség. Biztosan visszatérek még.",
@@ -206,14 +217,14 @@ i18next
               },
               {
                 name: "Zoltán",
-                src: require("./images/testimonialsImgs//zoltan.png"),
+                src: require("../images/testimonialsImgs/zoltan.png"),
                 link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
                 review: "Nagyon szépen dolgozik. Csak ajánlani tudom!",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Edina",
-                src: require("./images/testimonialsImgs//edina.png"),
+                src: require("../images/testimonialsImgs/edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review:
                   "Nagyon jó kis hely! Barátságos környezet. Szép munkát végez!",
@@ -237,6 +248,18 @@ i18next
             emailplaceholder: "email",
             messageplaceholder: "üzenet",
             sendbtn: "Küldés",
+            nameerror:
+              "A névnek legalább 3 karakter hosszúnak kell lennie, és csak betűket és szóközöket tartalmazhat.",
+            emailerror:
+              "Érvénytelen e-mail. Kérjük, adjon meg egy érvényes e-mail címet.",
+            messageerror:
+              "Az üzenetnek legalább 20 karakter hosszúnak kell lennie.",
+            feedbackmodal18: {
+              successmsgpart1: "Köszönjük üzenetét ",
+              successmsgpart2: ", hamarosan jelentkezünk!",
+              successent: "Sikeresen elküldve.",
+              errorsent: "Failed to send.",
+            },
           },
           settings18: {
             settings: "beállítás",
@@ -333,28 +356,28 @@ i18next
             slides: [
               {
                 name: "Dia",
-                src: require("./images/testimonialsImgs/dia.png"),
+                src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
                 review: "de",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Helga",
-                src: require("./images/testimonialsImgs//helga.png"),
+                src: require("../images/testimonialsImgs//helga.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
                 review: "de",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Zoltán",
-                src: require("./images/testimonialsImgs//zoltan.png"),
+                src: require("../images/testimonialsImgs//zoltan.png"),
                 link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
                 review: "de",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
                 name: "Edina",
-                src: require("./images/testimonialsImgs//edina.png"),
+                src: require("../images/testimonialsImgs//edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review: "de",
                 rating: "⭐⭐⭐⭐⭐",
