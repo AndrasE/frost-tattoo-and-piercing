@@ -30,7 +30,7 @@ const FeedBackModal = ({ isSent, name, error, i18n }) => {
       <SuccessModal>
         <SuccessModalText>
           {isSent === "success"
-            ? `${i18n.successmsgpart1} ${name} ${i18n.successmsgpart2}`
+            ? `${i18n.successmsgpart1}${name}${i18n.successmsgpart2}`
             : `${error}`}
         </SuccessModalText>
 

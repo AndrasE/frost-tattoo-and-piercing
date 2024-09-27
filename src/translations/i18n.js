@@ -38,7 +38,7 @@ i18next
               "Over the years, I've completed many works, and you can find a variety of examples in the gallery section. Feel free to browse through some of the tattoos, piercings, and microdermals I've done. The gallery offers a sliding view so you can easily explore the pieces. I regularly update the photos, so make sure to check back for fresh content and recent projects.",
           },
           testimonials18: {
-            heading: "TestimonialsENG",
+            heading: "Testimonials",
             content:
               "Testimonials ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
@@ -78,12 +78,12 @@ i18next
             ],
           },
           contact18: {
-            heading: "ContactENG",
+            heading: "Contact",
             content:
-              "Contact ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "For inquiries or to book an appointment, feel free to reach out via email, give us a call, or contact us through Facebook. You can also visit us at our studio, where we're happy to answer any questions and discuss your ideas in person. We`re located at Gyarmati courtyard, and if you're driving, there`s free parking available just a short walk away on Páva Street. We look forward to hearing from you and helping you with your next tattoo or piercing!",
           },
           booking18: {
-            heading: "BookingEng",
+            heading: "Booking",
             content:
               "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
@@ -99,8 +99,8 @@ i18next
               "Invalid email address. Please enter a valid email address.",
             messageerror: "Message must be at least 20 characters long.",
             feedbackmodal18: {
-              successmsgpart1: "Thank you for your message ",
-              successmsgpart2: ", I will get back to you shortly!",
+              successmsgpart1: "Thank you for your message, ",
+              successmsgpart2: ". I will get back to you shortly!",
               successent: "This has been successfully sent!",
               errorsent: "Failed to send.",
             },
@@ -112,6 +112,9 @@ i18next
             light: "Light",
             lngs: "Languages",
             install: "Install",
+          },
+          pages: {
+            gallery: "Gallery",
           },
           pwa18: {
             header: "Add to Home screen",
@@ -185,15 +188,15 @@ i18next
           services18: {
             heading: "Szolgáltatások",
             content:
-              "Az évek során számos munkát készítettem, melyek közül sok példát megtalálhatsz a galéria szekcióban. Böngéssz bátran a tetoválások, piercingek és microdermal munkáim között, amelyeket készítettem. A galériában lapozgathatsz az alkotások között, és időről időre frissítem a képeket, így érdemes visszalátogatni, hogy megnézd a legújabb projektjeimet.",
+              "Stúdiónkban széleskörű szolgáltatásokat kínálunk a tetoválás és testmódosítás iránt érdeklődők számára. Legyen szó egyedi tetoválás tervezéséről vagy maga a tetoválás elkészítéséről, tapasztalt művészeink segítenek megvalósítani az elképzeléseidet. A tetoválások mellett profi piercing és microdermal beültetéseket is végzünk, biztosítva a biztonságos és precíz kivitelezést. Stúdiónk tiszta, barátságos környezetet biztosít, ahol kényelmesen érezheted magad a folyamat során. Az évek során hűséges vendégkört építettünk ki, és büszkék vagyunk arra, hogy megbízható részesei lehetünk testművészeti utazásuknak!",
           },
           gallery18: {
             heading: "Galéria",
             content:
-              "Gallery HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Az évek során számos munkát készítettem, melyek közül sok példát megtalálhatsz a galéria szekcióban. Böngéssz bátran a tetoválások, piercingek és microdermal munkáim között, amelyeket készítettem. A galériában lapozgathatsz az alkotások között, és időről időre frissítem a képeket, így érdemes visszalátogatni, hogy megnézd a legújabb projektjeimet.",
           },
           testimonials18: {
-            heading: "TestimonialsHUN",
+            heading: "Testimonials",
             content:
               "Testimonials HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
@@ -233,9 +236,9 @@ i18next
             ],
           },
           contact18: {
-            heading: "ContactHUN",
+            heading: "Contact",
             content:
-              "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Kérdések esetén vagy időpontfoglalásra keress minket bátran e-mailben, telefonon, vagy akár Facebookon is. Látogass el hozzánk a stúdióba is, ahol szívesen válaszolunk a kérdéseidre, és személyesen megbeszélhetjük az elképzeléseidet. Stúdiónk a Gyarmati udvarban található, és ha autóval érkezel, a Páva utcában ingyenes parkolási lehetőség van, mindössze egy rövid sétára. Várjuk megkeresésed, és örömmel segítünk a következő tetoválásod vagy piercinged megvalósításában!",
           },
           booking18: {
             heading: "BookingHUN",
@@ -255,8 +258,8 @@ i18next
             messageerror:
               "Az üzenetnek legalább 20 karakter hosszúnak kell lennie.",
             feedbackmodal18: {
-              successmsgpart1: "Köszönjük üzenetét ",
-              successmsgpart2: ", hamarosan jelentkezünk!",
+              successmsgpart1: "Köszönjük üzenetét, ",
+              successmsgpart2: ". Hamarosan jelentkezünk!",
               successent: "Sikeresen elküldve.",
               errorsent: "Failed to send.",
             },
@@ -268,6 +271,9 @@ i18next
             light: "Világos",
             lngs: "Nyelv",
             install: "Telepít",
+          },
+          pages: {
+            gallery: "Galéria",
           },
           pwa18: {
             header: "Hozzáadás a kezdőképernyőhöz",
@@ -393,7 +399,7 @@ i18next
           contact18: {
             heading: "Kontakt",
             content:
-              "Contact DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Für Anfragen oder Terminvereinbarungen kannst du uns gerne per E-Mail, telefonisch oder über Facebook kontaktieren. Du bist auch herzlich eingeladen, unser Studio zu besuchen, wo wir deine Fragen beantworten und deine Ideen persönlich besprechen können. Unser Studio befindet sich im Gyarmati-Hof, und wenn du mit dem Auto kommst, gibt es kostenlose Parkplätze in der nahegelegenen Páva-Straße, nur einen kurzen Fußweg entfernt. Wir freuen uns darauf, von dir zu hören und dir bei deinem nächsten Tattoo oder Piercing zu helfen!",
           },
           booking18: {
             heading: "Buchung",
@@ -401,21 +407,21 @@ i18next
               "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
           formsubmit18: {
-            formheader: "Küldj nekünk üzenetet!",
+            formheader: "Schicken Sie uns eine Nachricht!",
             nameplaceholder: "Name",
             emailplaceholder: "E-Mail",
             messageplaceholder: "Nachricht",
             sendbtn: "Schicken",
             nameerror:
-              "Name must be at least 3 characters long and only contain letters and spaces.",
+              "Der Name muss mindestens 3 Zeichen lang sein und darf nur Buchstaben und Leerzeichen enthalten.",
             emailerror:
-              "Invalid email address. Please enter a valid email address.",
-            messageerror: "Message must be at least 20 characters long.",
+              "Ungültige E-Mail. Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+            messageerror: "Die Nachricht muss mindestens 20 Zeichen lang sein.",
             feedbackmodal18: {
-              successmsgpart1: "Thank you for your message ",
-              successmsgpart2: ", I will get back to you shortly!",
-              successent: "This has been successfully sent!",
-              errorsent: "Failed to send.",
+              successmsgpart1: "Vielen Dank für Ihre Nachricht, ",
+              successmsgpart2: ". Ich werde mich in Kürze bei Ihnen melden!",
+              successent: "Dies wurde erfolgreich gesendet!",
+              errorsent: "Senden fehlgeschlagen.",
             },
           },
           settings18: {
@@ -426,6 +432,10 @@ i18next
             lngs: "Sprachen",
             install: "Installieren",
           },
+          pages: {
+            gallery: "Galerie",
+          },
+
           pwa18: {
             header: "Add to Home screen",
             chromiumsinstallvail18: {

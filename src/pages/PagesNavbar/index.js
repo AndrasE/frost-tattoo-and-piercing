@@ -14,8 +14,10 @@ import {
   ArrowLeft,
 } from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const PagesNavbar = () => {
+  const { t } = useTranslation();
   const [hover, setHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -40,7 +42,7 @@ const PagesNavbar = () => {
           <NavMenu>
             <NavItem>
               <NavName to="gallery" onClick={toggleToTop}>
-                Gallery
+                {t("pages.gallery")}
               </NavName>
             </NavItem>
           </NavMenu>

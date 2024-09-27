@@ -15,7 +15,6 @@ import ContactDetails from "../../components/SectionsEmelents/ContactDetails";
 import FormSubmit from "../../components/SectionsEmelents/FormSubmit";
 import Footer from "../../components/Footer";
 import ProgressBar from "../../components/ProgressBar";
-
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -132,6 +131,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         id="booking"
         col1={t("booking18")}
         col2={<FormSubmit i18n={t("formsubmit18")} />}
+        btnLabel={t("gallery18").heading}
+        btnTo="gallery"
       />
       <Footer />
       <ProgressBar />
