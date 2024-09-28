@@ -63,7 +63,7 @@ i18next
               {
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs//zoltan.png"),
-                link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
+                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
                 review: "He works very well. I can only recommend!",
                 rating: "⭐⭐⭐⭐⭐",
               },
@@ -221,7 +221,7 @@ i18next
               {
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs/zoltan.png"),
-                link: "https://maps.app.goo.gl/3LACABKHo24kEb6v5",
+                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
                 review: "Nagyon szépen dolgozik. Csak ajánlani tudom!",
                 rating: "⭐⭐⭐⭐⭐",
               },
@@ -382,7 +382,7 @@ i18next
               {
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs//zoltan.png"),
-                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
                 review: "Er funktioniert sehr gut. Ich kann es nur empfehlen!",
                 rating: "⭐⭐⭐⭐⭐",
               },

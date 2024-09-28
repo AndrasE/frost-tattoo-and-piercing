@@ -89,7 +89,7 @@ export const Hr = styled.hr`
   margin: 12px 0;
   color: ${({ theme }) => theme.accentColor};
   border-top: 2px solid;
-  border-radius: 25px;
+  border-radius: 4px;
   width: 50px;
   border-bottom: none;
   opacity: 80%;
