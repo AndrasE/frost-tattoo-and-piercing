@@ -16,7 +16,10 @@
 }
 
 .react-photo-album {
-  padding-top: 55px;
+  padding: 40px 0;
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+  }
 }
 
 .yarl__thumbnails_vignette {
