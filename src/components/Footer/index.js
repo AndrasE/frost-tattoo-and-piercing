@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import {
-  Andras,
-  ArrowRightDouble,
   FooterWrapper,
   Link,
-  LinkWrapper,
+  LinkText,
+  ArrowRightDouble,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -16,14 +15,15 @@ const Footer = () => {
 
   return (
     <FooterWrapper>
-      <LinkWrapper>
+      <LinkText>
+        Created & maintained by
         <Link
           href="https://andrasegyed.netlify.app/"
           target="_blank"
           onClick={onHover}
           onMouseEnter={onHover}
           onMouseLeave={onHover}>
-          <Andras>Created & maintained by Andras</Andras>
+          Andras
         </Link>
         {hover ? (
           <ArrowRightDouble
@@ -32,7 +32,7 @@ const Footer = () => {
         ) : (
           <ArrowRightDouble />
         )}
-      </LinkWrapper>
+      </LinkText>
     </FooterWrapper>
   );
 };

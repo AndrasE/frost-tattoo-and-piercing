@@ -23,43 +23,39 @@ export const LinkWrapper = styled.div`
   margin: 8px 0;
 `;
 
+export const LinkText = styled.div`
+  font-size: 1rem;
+  margin-left: 5px;
+  line-height: 26px;
+  position: relative; /* Ensure the ::after is positioned relative to the text */
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: ${({ theme }) => theme.accentColor};
+    bottom: 3px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0); /* Start invisible */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+`;
+
 export const Link = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 218px;
-    height: 2px;
-    border-radius: 4px;
-    background-color: ${({ theme }) => theme.accentColor};
-    bottom: 5px;
-    left: 35px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  &:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-
-  @media screen and (max-width: 480px) {
-    &::after {
-      width: 198px;
-    }
-  }
-`;
-
-export const LinkText = styled.div`
-  font-size: 1rem;
-  margin-left: 5px;
-  line-height: 26px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 0.9rem;
+  &:hover ${LinkText}::after {
+    transform-origin: left; /* Animate from left to right */
+    transform: scaleX(1); /* Show the underline */
   }
 `;
 
@@ -72,18 +68,6 @@ export const FacebookIcon = styled(SlSocialFacebook)`
   border: 1px solid;
 `;
 
-export const FacebookLink = styled(Link)`
-  &::after {
-    width: 217.7px;
-  }
-
-  @media screen and (max-width: 480px) {
-    &::after {
-      width: 195.9px;
-    }
-  }
-`;
-
 export const EmailIcon = styled(IoMailUnreadOutline)`
   height: 30px;
   width: 30px;
@@ -93,18 +77,6 @@ export const EmailIcon = styled(IoMailUnreadOutline)`
   border: 1px solid;
 `;
 
-export const EmailLink = styled(Link)`
-  &::after {
-    width: 191.9px;
-  }
-
-  @media screen and (max-width: 480px) {
-    &::after {
-      width: 172.7px;
-    }
-  }
-`;
-
 export const PhoneIcon = styled(FiPhone)`
   height: 30px;
   width: 30px;
@@ -112,18 +84,6 @@ export const PhoneIcon = styled(FiPhone)`
   padding: 5px;
   border-radius: 5px;
   border: 1px solid;
-`;
-
-export const PhoneLink = styled(Link)`
-  &::after {
-    width: 117.1px;
-  }
-
-  @media screen and (max-width: 480px) {
-    &::after {
-      width: 105.4px;
-    }
-  }
 `;
 
 export const IframeWrapper = styled.div`

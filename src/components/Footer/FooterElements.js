@@ -3,29 +3,28 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export const FooterWrapper = styled.div`
   display: flex;
-  position: relative;
   height: 30px;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 `;
 
-export const LinkWrapper = styled.div`
-  position: relative;
+export const LinkText = styled.p`
   display: flex;
 `;
 
 export const Link = styled.a`
+  margin-left: 3px;
   text-decoration: none;
   display: flex;
+  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    right: 5px;
-    bottom: 5px;
-    width: 71px;
     height: 2px;
+    bottom: 3px;
+    width: 100%;
     border-radius: 4px;
     background-color: #1ebbd7;
     transform-origin: right;
@@ -36,12 +35,6 @@ export const Link = styled.a`
     transform-origin: left;
     transform: scaleX(1);
   }
-`;
-
-export const Andras = styled.p`
-  font-size: 0.9rem;
-  text-align: justify;
-  line-height: 20px;
 `;
 
 export const ArrowRightDouble = styled(MdKeyboardDoubleArrowRight)`

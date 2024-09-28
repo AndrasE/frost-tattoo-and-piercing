@@ -3,13 +3,11 @@ import {
   ContentContainer,
   LinksContainer,
   LinkWrapper,
+  Link,
   LinkText,
   FacebookIcon,
-  FacebookLink,
-  EmailLink,
   EmailIcon,
   PhoneIcon,
-  PhoneLink,
   IFrame,
   IframeWrapper,
 } from "./ContactDetailsElements";
@@ -19,24 +17,22 @@ const ContactDetails = () => {
     <ContentContainer>
       <LinksContainer>
         <LinkWrapper>
-          <FacebookLink
-            href={process.env.REACT_APP_FACEBOOK_URL}
-            target="_blank">
+          <Link href={process.env.REACT_APP_FACEBOOK_URL} target="_blank">
             <FacebookIcon />
             <LinkText>facebook/frosttattoocegled</LinkText>
-          </FacebookLink>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-          <EmailLink href={process.env.REACT_APP_MAILTO_URL}>
+          <Link href={process.env.REACT_APP_MAILTO_URL}>
             <EmailIcon />
             <LinkText>{process.env.REACT_APP_EMAIL_URL}</LinkText>
-          </EmailLink>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-          <PhoneLink href={process.env.REACT_APP_TEL_URL} target="_blank">
+          <Link href={process.env.REACT_APP_TEL_URL} target="_blank">
             <PhoneIcon />
             <LinkText>{process.env.REACT_APP_TEL}</LinkText>
-          </PhoneLink>
+          </Link>
         </LinkWrapper>
       </LinksContainer>
       <IframeWrapper>
