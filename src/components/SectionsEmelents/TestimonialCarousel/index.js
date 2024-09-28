@@ -2,16 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   CarouselContainer,
   Card,
-  QuoteTop,
-  QuoteButtom,
-  ReviewLink,
-  CardHeader,
-  Hr,
+  CardHeaderLink,
   ImgWrapper,
   Img,
   HeaderText,
   CardContent,
   CardRating,
+  QuoteTop,
+  QuoteButtom,
+  Hr,
   IndicatorBtnsWrapper,
   IndicatorBtns,
   NextBtnWrapper,
@@ -60,7 +59,7 @@ const TestimonialCarousel = () => {
   return (
     <CarouselContainer>
       <Splide
-        ref={testimonialRef} // Use the specific ref here
+        ref={testimonialRef}
         options={{
           rewind: true,
           rewindByDrag: true,
@@ -72,14 +71,12 @@ const TestimonialCarousel = () => {
           <SplideSlide key={index}>
             <Card>
               <QuoteTop />
-              <ReviewLink href={String(item.link)} target="_blank">
-                <CardHeader>
-                  <ImgWrapper>
-                    <Img src={item.src} alt="testimonial-image" />
-                  </ImgWrapper>
-                  <HeaderText>{item.name}</HeaderText>
-                </CardHeader>
-              </ReviewLink>
+              <CardHeaderLink href={String(item.link)} target="_blank">
+                <ImgWrapper>
+                  <Img src={item.src} alt="testimonial-image" />
+                </ImgWrapper>
+                <HeaderText>{item.name}</HeaderText>
+              </CardHeaderLink>
               <Hr />
               <CardContent>{item.review}</CardContent>
               <Hr />
@@ -94,12 +91,10 @@ const TestimonialCarousel = () => {
       <NextBtnWrapper>
         <NextBtn onClick={goToNextSlide} />
       </NextBtnWrapper>
-
       {/* Previous Button */}
       <PrevBtnWrapper>
         <PrevBtn onClick={goToPrevSlide} />
       </PrevBtnWrapper>
-
       {/* Custom Indicators */}
       <IndicatorBtnsWrapper>
         {t("testimonial18.slides").map((_, index) => (

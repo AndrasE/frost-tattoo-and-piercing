@@ -17,48 +17,15 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   aspect-ratio: 1/1;
-
   padding: 0 24px;
   align-items: center;
   justify-content: center;
 `;
 
-export const ContentWrapper = styled.div``;
-
-export const QuoteTop = styled(RiDoubleQuotesL)`
-  position: absolute;
-  top: 0px;
-  left: 15px;
-  color: ${({ theme }) => theme.accentColor};
-  font-size: 5rem;
-  opacity: 60%;
-
-  @media screen and (max-width: 768px) {
-    font-size: 4.3rem;
-  }
-`;
-
-export const QuoteButtom = styled(RiDoubleQuotesL)`
-  position: absolute;
-  bottom: 0px;
-  right: 15px;
-  transform: rotate(180deg);
-  color: ${({ theme }) => theme.accentColor};
-  font-size: 5rem;
-  opacity: 60%;
-
-  @media screen and (max-width: 768px) {
-    font-size: 4.3rem;
-  }
-`;
-
-export const ReviewLink = styled.a`
-  text-decoration: none;
-`;
-
-export const CardHeader = styled.div`
-  cursor: pointer;
+export const CardHeaderLink = styled.a`
   display: flex;
+  text-decoration: none;
+  cursor: pointer;
   height: auto;
   align-items: center;
   flex-direction: row;
@@ -67,7 +34,7 @@ export const CardHeader = styled.div`
 
 export const ImgWrapper = styled.div`
   border-radius: 100px;
-  border: 1px solid ${({ theme }) => theme.iconBorder};
+  border: 2px solid ${({ theme }) => theme.iconBorder};
 `;
 
 export const Img = styled.img`
@@ -110,6 +77,33 @@ export const CardRating = styled.p`
   font-size: 1rem;
   @media screen and (max-width: 1000px) {
     font-size: 0.9rem;
+  }
+`;
+
+export const QuoteTop = styled(RiDoubleQuotesL)`
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  color: ${({ theme }) => theme.accentColor};
+  font-size: 5rem;
+  opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
+  }
+`;
+
+export const QuoteButtom = styled(RiDoubleQuotesL)`
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  transform: rotate(180deg);
+  color: ${({ theme }) => theme.accentColor};
+  font-size: 5rem;
+  opacity: 60%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4.3rem;
   }
 `;
 

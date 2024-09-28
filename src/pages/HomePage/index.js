@@ -131,8 +131,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         id="booking"
         col1={t("booking18")}
         col2={<FormSubmit i18n={t("formsubmit18")} />}
-        btnLabel={t("gallery18").heading}
-        btnTo="gallery"
+        btnLabel={t("booking18").heading}
+        btnTo="https://frost-tattoo-piercing.reservio.com/#services-section"
       />
       <Footer />
       <ProgressBar />

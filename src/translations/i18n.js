@@ -241,7 +241,7 @@ i18next
               "Kérdések esetén vagy időpontfoglalásra keress minket bátran e-mailben, telefonon, vagy akár Facebookon is. Látogass el hozzánk a stúdióba is, ahol szívesen válaszolunk a kérdéseidre, és személyesen megbeszélhetjük az elképzeléseidet. Stúdiónk a Gyarmati udvarban található, és ha autóval érkezel, a Páva utcában ingyenes parkolási lehetőség van, mindössze egy rövid sétára. Várjuk megkeresésed, és örömmel segítünk a következő tetoválásod vagy piercinged megvalósításában!",
           },
           booking18: {
-            heading: "BookingHUN",
+            heading: "Booking",
             content:
               "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           },
