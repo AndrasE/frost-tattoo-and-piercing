@@ -50,7 +50,7 @@ export const HeaderText = styled.h2`
 export const Img = styled.img`
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.iconBorder};
-  height: 53px;
+  height: 50px;
   transition: all 0.2s ease-in-out;
 `;
 
