@@ -3,7 +3,6 @@ import {
   CarouselContainer,
   Card,
   CardHeaderLink,
-  ImgWrapper,
   Img,
   HeaderText,
   CardContent,
@@ -72,9 +71,7 @@ const TestimonialCarousel = () => {
             <Card>
               <QuoteTop />
               <CardHeaderLink href={String(item.link)} target="_blank">
-                <ImgWrapper>
-                  <Img src={item.src} alt="testimonial-image" />
-                </ImgWrapper>
+                <Img src={item.src} alt="testimonial-image" />
                 <HeaderText>{item.name}</HeaderText>
               </CardHeaderLink>
               <Hr />

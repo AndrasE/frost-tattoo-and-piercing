@@ -71,23 +71,41 @@ export const BtnContainer = styled.div`
   padding-right: 10px;
 `;
 
-export const BtnWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-`;
-
 export const SendBtnLabel = styled.h2`
+  position: relative;
   align-self: center;
   font-size: 1rem;
   font-weight: 400;
   margin-left: 8px;
   color: ${({ theme }) => theme.fontColor};
-  text-decoration: ${({ hover, theme }) =>
-    hover ? `underline 2px ${theme.accentColor}` : "none"};
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: ${({ theme }) => theme.accentColor};
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0); /* Start invisible */
+    transition: transform 0.3s ease-in-out;
+  }
+`;
+
+export const BtnWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+
+  &:hover ${SendBtnLabel}::after {
+    transform-origin: left; /* Animate from left to right */
+    transform: scaleX(1); /* Show the underline */
   }
 `;
 

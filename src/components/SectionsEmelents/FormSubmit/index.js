@@ -136,7 +136,7 @@ const BookingImg = ({ i18n }) => {
             onClick={(e) => handleSubmit(e)}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <SendBtnLabel hover={hover}>{i18n.sendbtn}</SendBtnLabel>
+            <SendBtnLabel>{i18n.sendbtn}</SendBtnLabel>
             <SendBtnImg src={hover ? BtnHoverImg : BtnImg} alt="send button" />
           </BtnWrapper>
         </BtnContainer>

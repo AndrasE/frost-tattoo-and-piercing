@@ -22,33 +22,54 @@ export const Card = styled.div`
   justify-content: center;
 `;
 
+export const HeaderText = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 8px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: ${({ theme }) => theme.accentColor};
+    bottom: 1px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0); /* Start invisible */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+  }
+`;
+
+export const Img = styled.img`
+  border-radius: 50%;
+  border: 2px solid ${({ theme }) => theme.iconBorder};
+  height: 53px;
+  transition: all 0.2s ease-in-out;
+`;
+
 export const CardHeaderLink = styled.a`
   display: flex;
+  position: relative;
   text-decoration: none;
   cursor: pointer;
   height: auto;
   align-items: center;
   flex-direction: row;
-  padding: 5px;
-`;
+  padding: 5px 0;
 
-export const ImgWrapper = styled.div`
-  border-radius: 100px;
-  border: 2px solid ${({ theme }) => theme.iconBorder};
-`;
-
-export const Img = styled.img`
-  border-radius: 100px;
-  height: 45px;
-`;
-
-export const HeaderText = styled.h2`
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-left: 8px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.3rem;
+  &:hover ${HeaderText}::after {
+    transform-origin: left; /* Animate from left to right */
+    transform: scaleX(1); /* Show the underline */
+  }
+  &:hover ${Img} {
+    border-color: ${({ theme }) => theme.accentColor};
   }
 `;
 

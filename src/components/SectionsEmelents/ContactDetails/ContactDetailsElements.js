@@ -18,15 +18,10 @@ export const LinksContainer = styled.div`
   margin-bottom: 18px;
 `;
 
-export const LinkWrapper = styled.div`
-  position: relative;
-  margin: 8px 0;
-`;
-
 export const LinkText = styled.div`
   font-size: 1rem;
-  margin-left: 5px;
-  line-height: 26px;
+  margin: 8px;
+  line-height: 20px;
   position: relative; /* Ensure the ::after is positioned relative to the text */
 
   &::after {
@@ -36,7 +31,7 @@ export const LinkText = styled.div`
     height: 2px;
     border-radius: 4px;
     background-color: ${({ theme }) => theme.accentColor};
-    bottom: 3px;
+    bottom: 0;
     left: 0;
     transform-origin: right;
     transform: scaleX(0); /* Start invisible */
