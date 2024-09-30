@@ -38,7 +38,7 @@ i18next
               "Over the years, I've completed many works, and you can find a variety of examples in the gallery section. Feel free to browse through some of the tattoos, piercings, and microdermals I've done. The gallery offers a sliding view so you can easily explore the pieces. I regularly update the photos, so make sure to check back for fresh content and recent projects.",
           },
           testimonials18: {
-            heading: "Beszámolók",
+            heading: "Testimonials",
             content:
               "We are proud to share the positive experiences of our clients. Each testimonial highlights the care and craftsmanship we put into every tattoo and piercing. Slide through reviews from some of our satisfied customers on Facebook and Google, and see what they have to say about their time with us. Click the header to explore more detailed feedback and discover why so many choose us for their body art!",
           },
@@ -206,7 +206,7 @@ i18next
               "Az évek során számos munkát készítettem, melyek közül sok példát megtalálhatsz a galéria szekcióban. Böngéssz bátran a tetoválások, piercingek és microdermal munkáim között, amelyeket készítettem. A galériában lapozgathatsz az alkotások között, és időről időre frissítem a képeket, így érdemes visszalátogatni, hogy megnézd a legújabb projektjeimet.",
           },
           testimonials18: {
-            heading: "Testimonials",
+            heading: "Beszámolók",
             content:
               "Büszkék vagyunk arra, hogy megoszthatjuk ügyfeleink pozitív tapasztalatait. Minden egyes visszajelzés kiemeli azt a gondosságot és szakértelmet, amelyet minden tetoválásba és piercingbe fektetünk. Lapozz végig néhány elégedett ügyfelünk Facebookon és Google-ön található véleményei között, és tudd meg, mit mondanak rólunk. Kattints a fejlécen, hogy részletesebb visszajelzéseket olvashass, és megtudd, miért választanak minket olyan sokan testük díszítésére!",
           },
@@ -255,7 +255,7 @@ i18next
             ],
           },
           contact18: {
-            heading: "Kontakt",
+            heading: "Kapcsolat",
             content:
               "Kérdések esetén vagy időpontfoglalásra keress minket bátran e-mailben, telefonon, vagy akár Facebookon is. Látogass el hozzánk a stúdióba is, ahol szívesen válaszolunk a kérdéseidre, és személyesen megbeszélhetjük az elképzeléseidet. Stúdiónk a Gyarmati udvarban található, és ha autóval érkezel, a Páva utcában ingyenes parkolási lehetőség van, mindössze egy rövid sétára. Várjuk megkeresésed, és örömmel segítünk a következő tetoválásod vagy piercinged megvalósításában!",
           },
