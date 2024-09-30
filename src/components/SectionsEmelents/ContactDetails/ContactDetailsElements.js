@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SlSocialFacebook } from "react-icons/sl";
-import { IoMailUnreadOutline } from "react-icons/io5";
+import { IoMailOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
 
 export const ContentContainer = styled.div`
@@ -43,6 +43,34 @@ export const LinkText = styled.div`
   }
 `;
 
+export const FacebookIcon = styled(SlSocialFacebook)`
+  height: 30px;
+  width: 30px;
+  color: ${({ theme }) => theme.accentColor};
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid ${({ theme }) => theme.fontColor};
+`;
+
+export const EmailIcon = styled(IoMailOutline)`
+  height: 30px;
+  width: 30px;
+  color: ${({ theme }) => theme.accentColor};
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid ${({ theme }) => theme.fontColor};
+`;
+
+export const PhoneIcon = styled(FiPhone)`
+  height: 30px;
+  width: 30px;
+  border-color: red;
+  color: ${({ theme }) => theme.accentColor};
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid ${({ theme }) => theme.fontColor};
+`;
+
 export const Link = styled.a`
   display: flex;
   align-items: center;
@@ -52,33 +80,21 @@ export const Link = styled.a`
     transform-origin: left; /* Animate from left to right */
     transform: scaleX(1); /* Show the underline */
   }
-`;
 
-export const FacebookIcon = styled(SlSocialFacebook)`
-  height: 30px;
-  width: 30px;
-  color: ${({ theme }) => theme.accentColor};
-  padding: 0 4px 0 3px;
-  border-radius: 5px;
-  border: 1px solid;
-`;
+  &:hover ${FacebookIcon} {
+    border-color: ${({ theme }) => theme.accentColor};
+    transition: all 0.3s ease-in-out;
+  }
 
-export const EmailIcon = styled(IoMailUnreadOutline)`
-  height: 30px;
-  width: 30px;
-  color: ${({ theme }) => theme.accentColor};
-  padding: 4px;
-  border-radius: 5px;
-  border: 1px solid;
-`;
+  &:hover ${EmailIcon} {
+    border-color: ${({ theme }) => theme.accentColor};
+    transition: all 0.3s ease-in-out;
+  }
 
-export const PhoneIcon = styled(FiPhone)`
-  height: 30px;
-  width: 30px;
-  color: ${({ theme }) => theme.accentColor};
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid;
+  &:hover ${PhoneIcon} {
+    border-color: ${({ theme }) => theme.accentColor};
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 export const IframeWrapper = styled.div`

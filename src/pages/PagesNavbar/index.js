@@ -51,7 +51,8 @@ const PagesNavbar = () => {
               to="/"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}>
-              {hover ? <ArrowLeftDouble /> : <ArrowLeft />} Home
+              {hover ? <ArrowLeftDouble /> : <ArrowLeft />}{" "}
+              {t("pages.gallerybtn")}
             </NavBtnLink>
           </NavBtnWrapper>
         </NavbarContainer>

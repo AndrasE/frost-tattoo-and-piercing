@@ -124,6 +124,7 @@ i18next
           },
           pages: {
             gallery: "Gallery",
+            gallerybtn: "Back",
           },
           pwa18: {
             header: "Add to Home screen",
@@ -292,6 +293,7 @@ i18next
           },
           pages: {
             gallery: "Galéria",
+            gallerybtn: "Vissza",
           },
           pwa18: {
             header: "Hozzáadás a kezdőképernyőhöz",
@@ -461,6 +463,7 @@ i18next
           },
           pages: {
             gallery: "Galerie",
+            gallerybtn: "Zurück",
           },
 
           pwa18: {

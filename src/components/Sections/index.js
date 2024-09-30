@@ -15,7 +15,15 @@ import {
 } from "./SectionElements";
 import { motion, useScroll } from "framer-motion";
 
-const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
+const Section = ({
+  id,
+  col1,
+  col2,
+  reversed,
+  btnTo,
+  btnLabel,
+  openInNewTab,
+}) => {
   const [hover, setHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -50,6 +58,8 @@ const Section = ({ id, col1, col2, reversed, btnTo, btnLabel }) => {
                     <BtnLink
                       aria-label="some more descriptive text that explains the link"
                       to={btnTo}
+                      target={openInNewTab ? "_blank" : "_self"}
+                      rel={openInNewTab ? "noopener noreferrer" : ""}
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}>
                       {btnLabel} {hover ? <ArrowRightDouble /> : <ArrowRight />}

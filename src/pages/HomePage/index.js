@@ -132,7 +132,8 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         col1={t("booking18")}
         col2={<FormSubmit i18n={t("formsubmit18")} />}
         btnLabel={t("booking18").heading}
-        btnTo="https://frost-tattoo-piercing.reservio.com/#services-section"
+        openInNewTab
+        btnTo={process.env.REACT_APP_RESERVIO_URL}
       />
       <Footer />
       <ProgressBar />
