@@ -45,6 +45,22 @@ i18next
           testimonial18: {
             slides: [
               {
+                name: "Bettina",
+                src: require("../images/testimonialsImgs/bettina.png"),
+                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
+                review:
+                  "I can only recommend it. A good tattoo artist with skillful hands 🥰🥰😇 ",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+
+              {
+                name: "Zoltán",
+                src: require("../images/testimonialsImgs/zoltan.png"),
+                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
+                review: "He works very well. I can only recommend!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
                 name: "Dia",
                 src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
@@ -53,26 +69,19 @@ i18next
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
-                name: "Helga",
-                src: require("../images/testimonialsImgs//helga.png"),
-                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-                review:
-                  "Thank you very much, professionalism, patience and kindness. I will definitely come back again.",
-                rating: "⭐⭐⭐⭐⭐",
-              },
-              {
-                name: "Zoltán",
-                src: require("../images/testimonialsImgs//zoltan.png"),
-                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
-                review: "He works very well. I can only recommend!",
-                rating: "⭐⭐⭐⭐⭐",
-              },
-              {
                 name: "Edina",
-                src: require("../images/testimonialsImgs//edina.png"),
+                src: require("../images/testimonialsImgs/edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review:
                   "Very nice place! Friendly environment. You are doing a precise job!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("../images/testimonialsImgs/helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review:
+                  "Thank you very much, professionalism, patience and kindness. I will definitely come back again.",
                 rating: "⭐⭐⭐⭐⭐",
               },
             ],
@@ -203,21 +212,14 @@ i18next
           testimonial18: {
             slides: [
               {
-                name: "Dia",
-                src: require("../images/testimonialsImgs/dia.png"),
-                link: "https://g.co/kgs/pVxRGH8",
+                name: "Bettina",
+                src: require("../images/testimonialsImgs/bettina.png"),
+                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
                 review:
-                  "Nagyon szép es precíz munka, barátságos környezet, kiváló szakemberrel... Kell ennél több??? 😀",
+                  "Csak ajánlani tudom. Jófej tetováló ügyes kezekkel 🥰🥰😇",
                 rating: "⭐⭐⭐⭐⭐",
               },
-              {
-                name: "Helga",
-                src: require("../images/testimonialsImgs/helga.png"),
-                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-                review:
-                  "Hálásan köszönöm, profizmus, türelem és kedvesség. Biztosan visszatérek még.",
-                rating: "⭐⭐⭐⭐⭐",
-              },
+
               {
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs/zoltan.png"),
@@ -226,11 +228,27 @@ i18next
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
+                name: "Dia",
+                src: require("../images/testimonialsImgs/dia.png"),
+                link: "https://g.co/kgs/pVxRGH8",
+                review:
+                  "Nagyon szép es precíz munka, barátságos környezet, kiváló szakemberrel... Kell ennél több??? 😀",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
                 name: "Edina",
                 src: require("../images/testimonialsImgs/edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review:
                   "Nagyon jó kis hely! Barátságos környezet. Szép munkát végez!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("../images/testimonialsImgs/helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review:
+                  "Hálásan köszönöm, profizmus, türelem és kedvesség. Biztosan visszatérek még.",
                 rating: "⭐⭐⭐⭐⭐",
               },
             ],
@@ -349,7 +367,7 @@ i18next
           services18: {
             heading: "Dienstleistungen",
             content:
-              "Unser Studio bietet eine Vielzahl an Dienstleistungen für Tätowierungs- und Körpermodifikationsbegeisterte an. Egal, ob du ein individuelles Tattoo-Design möchtest oder bereit bist, dich tätowieren zu lassen – ich arbeite persönlich mit dir zusammen, um deine Vision zu verwirklichen. Neben Tattoos biete ich auch professionelle Piercings und Microdermal-Implantate an und achte darauf, dass jeder Schritt sicher und präzise ist. Ich sorge für eine saubere, einladende Umgebung, in der du dich während des gesamten Prozesses wohlfühlen kannst.",
+              "Unser Studio bietet eine Vielzahl an Dienstleistungen für Tätowierungs- und Körpermodifikationsbegeisterte an. Egal, ob du ein individuelles Tattoo-Design möchtest oder bereit bist, dich tätowieren zu lassen - ich arbeite persönlich mit dir zusammen, um deine Vision zu verwirklichen. Neben Tattoos biete ich auch professionelle Piercings und Microdermal-Implantate an und achte darauf, dass jeder Schritt sicher und präzise ist. Ich sorge für eine saubere, einladende Umgebung, in der du dich während des gesamten Prozesses wohlfühlen kannst.",
           },
           gallery18: {
             heading: "Galerie",
@@ -364,6 +382,21 @@ i18next
           testimonial18: {
             slides: [
               {
+                name: "Bettina",
+                src: require("../images/testimonialsImgs/bettina.png"),
+                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
+                review:
+                  "Ich kann es nur empfehlen. Ein guter Tätowierer mit geschickten Händen 🥰🥰😇 ",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Zoltán",
+                src: require("../images/testimonialsImgs/zoltan.png"),
+                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
+                review: "Er funktioniert sehr gut. Ich kann es nur empfehlen!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
                 name: "Dia",
                 src: require("../images/testimonialsImgs/dia.png"),
                 link: "https://g.co/kgs/pVxRGH8",
@@ -371,27 +404,21 @@ i18next
                   "Sehr schöne und präzise Arbeit, freundliches Umfeld, mit hervorragenden Fachleuten... Brauchen Sie mehr??? 😀",
                 rating: "⭐⭐⭐⭐⭐",
               },
-              {
-                name: "Helga",
-                src: require("../images/testimonialsImgs//helga.png"),
-                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
-                review:
-                  "Vielen Dank, Professionalität, Geduld und Freundlichkeit. Ich werde auf jeden Fall wiederkommen.",
-                rating: "⭐⭐⭐⭐⭐",
-              },
-              {
-                name: "Zoltán",
-                src: require("../images/testimonialsImgs//zoltan.png"),
-                link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
-                review: "Er funktioniert sehr gut. Ich kann es nur empfehlen!",
-                rating: "⭐⭐⭐⭐⭐",
-              },
+
               {
                 name: "Edina",
-                src: require("../images/testimonialsImgs//edina.png"),
+                src: require("../images/testimonialsImgs/edina.png"),
                 link: "https://maps.app.goo.gl/MMRfjxfNWfrooxvv5",
                 review:
                   "Sehr schöner Ort! Freundliche Umgebung. Du machst präzise Arbeit!",
+                rating: "⭐⭐⭐⭐⭐",
+              },
+              {
+                name: "Helga",
+                src: require("../images/testimonialsImgs/helga.png"),
+                link: "https://www.facebook.com/share/p/BEha5HXkhYsBEnch/",
+                review:
+                  "Vielen Dank, Professionalität, Geduld und Freundlichkeit. Ich werde auf jeden Fall wiederkommen.",
                 rating: "⭐⭐⭐⭐⭐",
               },
             ],
