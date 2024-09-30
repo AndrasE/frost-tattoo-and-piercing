@@ -40,7 +40,7 @@ i18next
           testimonials18: {
             heading: "Testimonials",
             content:
-              "Testimonials ENG language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "We are proud to share the positive experiences of our clients. Each testimonial highlights the care and craftsmanship we put into every tattoo and piercing. Slide through reviews from some of our satisfied customers on Facebook and Google, and see what they have to say about their time with us. Click the header to explore more detailed feedback and discover why so many choose us for their body art!",
           },
           testimonial18: {
             slides: [
@@ -208,7 +208,7 @@ i18next
           testimonials18: {
             heading: "Testimonials",
             content:
-              "Testimonials HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Büszkék vagyunk arra, hogy megoszthatjuk ügyfeleink pozitív tapasztalatait. Minden egyes visszajelzés kiemeli azt a gondosságot és szakértelmet, amelyet minden tetoválásba és piercingbe fektetünk. Lapozz végig néhány elégedett ügyfelünk Facebookon és Google-ön található véleményei között, és tudd meg, mit mondanak rólunk. Kattints a fejlécen, hogy részletesebb visszajelzéseket olvashass, és megtudd, miért választanak minket olyan sokan testük díszítésére!",
           },
           testimonial18: {
             slides: [
@@ -379,7 +379,7 @@ i18next
           testimonials18: {
             heading: "Erfahrungsberichte",
             content:
-              "Testimonials DE language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Wir sind stolz darauf, die positiven Erfahrungen unserer Kunden zu teilen. Jedes Feedback hebt die Sorgfalt und das handwerkliche Können hervor, das wir in jedes Tattoo und Piercing stecken. Blättern Sie durch Bewertungen einiger unserer zufriedenen Kunden auf Facebook und Google und erfahren Sie, was sie über ihre Zeit bei uns sagen. Klicken Sie auf die Überschrift, um ausführlichere Rückmeldungen zu lesen und zu entdecken, warum so viele uns für ihre Körperkunst wählen!",
           },
           testimonial18: {
             slides: [
