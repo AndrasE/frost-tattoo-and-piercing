@@ -30,17 +30,17 @@ i18next
           services18: {
             heading: "Services",
             content:
-              "In our studio, we offer a variety of services for those interested in tattoo and body modification. Whether you`re looking for a custom tattoo design or ready to get tattooed, I`ll work with you personally to bring your vision to life. Alongside tattoos, I specialize in professional piercings and microdermal implants, ensuring every step is safe and precise. I provide a clean, welcoming environment where you can feel comfortable throughout the process.",
+              "In our studio, we offer a variety of services for those interested in tattoo and body modification. Whether you`re looking for a custom tattoo design or ready to get tattooed, I`ll work with you personally to bring your vision to life. Alongside tattoos, I specialize in professional piercings and microdermal implants, ensuring every step is safe and precise. We provide a clean, welcoming environment where you can feel comfortable throughout the process.",
           },
           gallery18: {
             heading: "Gallery",
             content:
-              "Over the years, I've completed many works, and you can find a variety of examples in the gallery section. Feel free to browse through some of the tattoos, piercings, and microdermals I've done. The gallery offers a sliding view so you can easily explore the pieces. I regularly update the photos, so make sure to check back for fresh content and recent projects.",
+              "Through our work, I`ve completed a variety of projects, and you can find many examples in the gallery section. Feel free to browse through some of the tattoos, piercings, and microdermals I`ve done. The gallery offers a sliding view, making it easy to explore the pieces. I regularly update the photos, so be sure to check back for fresh content and recent projects.",
           },
           testimonials18: {
             heading: "Testimonials",
             content:
-              "We are proud to share the positive experiences of our clients. Each testimonial highlights the care and craftsmanship we put into every tattoo and piercing. Slide through reviews from some of our satisfied customers on Facebook and Google, and see what they have to say about their time with us. Click the header to explore more detailed feedback and discover why so many choose us for their body art!",
+              "We are happy to share the positive experiences of our customers. Every feedback highlights the care and expertise we put into every tattoo and piercing. Scroll through some of our satisfied customer reviews on Facebook and Google to see what they have to say about us. Click on the header to read more detailed reviews and find out why so many people choose us to decorate their bodies!",
           },
           testimonial18: {
             slides: [
@@ -198,17 +198,17 @@ i18next
           services18: {
             heading: "Szolgáltatások",
             content:
-              "Stúdiónkban széleskörű szolgáltatásokat kínálunk a tetoválás és testmódosítás iránt érdeklődők számára. Legyen szó egyedi tetoválás tervezéséről vagy maga a tetoválás elkészítéséről, tapasztalt művészeink segítenek megvalósítani az elképzeléseidet. A tetoválások mellett profi piercing és microdermal beültetéseket is végzünk, biztosítva a biztonságos és precíz kivitelezést. Stúdiónk tiszta, barátságos környezetet biztosít, ahol kényelmesen érezheted magad a folyamat során. Az évek során hűséges vendégkört építettünk ki, és büszkék vagyunk arra, hogy megbízható részesei lehetünk testművészeti utazásuknak!",
+              "Stúdiónkban széleskörű szolgáltatásokat kínálunk a tetoválás és testmódosítás iránt érdeklődők számára. Legyen szó egyedi tetoválás tervezéséről vagy maga a tetoválás elkészítéséről, mi segítünk megvalósítani az elképzeléseidet. A tetoválások mellett profi piercing és microdermal beültetéseket is végzünk, biztosítva a biztonságos és precíz kivitelezést. Stúdiónk tiszta, barátságos környezetet biztosít, ahol kényelmesen érezheted magad a folyamat során.",
           },
           gallery18: {
             heading: "Galéria",
             content:
-              "Az évek során számos munkát készítettem, melyek közül sok példát megtalálhatsz a galéria szekcióban. Böngéssz bátran a tetoválások, piercingek és microdermal munkáim között, amelyeket készítettem. A galériában lapozgathatsz az alkotások között, és időről időre frissítem a képeket, így érdemes visszalátogatni, hogy megnézd a legújabb projektjeimet.",
+              "A munkánk során számos projektet készítettem, és rengeteg példát találhatsz a galéria szekcióban. Nyugodtan böngéssz a tetoválások, piercingek és microdermal munkáim között. A galéria csúsztatható nézetet kínál, így könnyedén felfedezheted az alkotásokat. Rendszeresen frissítem a fotókat, ezért érdemes visszanézni az új tartalmakért és legújabb projektjeimért.",
           },
           testimonials18: {
             heading: "Beszámolók",
             content:
-              "Büszkék vagyunk arra, hogy megoszthatjuk ügyfeleink pozitív tapasztalatait. Minden egyes visszajelzés kiemeli azt a gondosságot és szakértelmet, amelyet minden tetoválásba és piercingbe fektetünk. Lapozz végig néhány elégedett ügyfelünk Facebookon és Google-ön található véleményei között, és tudd meg, mit mondanak rólunk. Kattints a fejlécen, hogy részletesebb visszajelzéseket olvashass, és megtudd, miért választanak minket olyan sokan testük díszítésére!",
+              "Örömmel osztjuk meg ügyfeleink pozitív tapasztalatait. Minden visszajelzés kiemeli azt a gondosságot és szakértelmet, amelyet minden tetoválásba és piercingbe fektetünk. Lapozz végig néhány elégedett ügyfelünk Facebookon és Google-ön található véleményei között, és tudd meg, mit mondanak rólunk. Kattints a fejlécre, hogy részletesebb visszajelzéseket olvashass, és megtudd, miért választanak minket olyan sokan testük díszítésére!",
           },
           testimonial18: {
             slides: [
@@ -369,17 +369,17 @@ i18next
           services18: {
             heading: "Dienstleistungen",
             content:
-              "Unser Studio bietet eine Vielzahl an Dienstleistungen für Tätowierungs- und Körpermodifikationsbegeisterte an. Egal, ob du ein individuelles Tattoo-Design möchtest oder bereit bist, dich tätowieren zu lassen - ich arbeite persönlich mit dir zusammen, um deine Vision zu verwirklichen. Neben Tattoos biete ich auch professionelle Piercings und Microdermal-Implantate an und achte darauf, dass jeder Schritt sicher und präzise ist. Ich sorge für eine saubere, einladende Umgebung, in der du dich während des gesamten Prozesses wohlfühlen kannst.",
+              "In unserem Studio bieten wir ein breites Spektrum an Dienstleistungen für alle an, die sich für Tätowierungen und Körpermodifikationen interessieren. Ob es darum geht, ein einzigartiges Tattoo zu entwerfen oder das Tattoo selbst zu erstellen, wir helfen Ihnen, Ihre Ideen zu verwirklichen. Neben Tätowierungen führen wir auch professionelle Piercings und Mikrodermalimplantate durch und sorgen so für eine sichere und präzise Ausführung. Unser Studio bietet eine saubere, freundliche Umgebung, in der Sie sich während des Prozesses wohl fühlen können.",
           },
           gallery18: {
             heading: "Galerie",
             content:
-              "Im Laufe der Jahre habe ich viele Arbeiten abgeschlossen, und du findest eine Vielzahl von Beispielen im Galerie-Bereich. Schau dir gerne einige der Tattoos, Piercings und Microdermal-Arbeiten an, die ich gemacht habe. Die Galerie bietet eine durchblätterbare Ansicht, damit du die Werke leicht erkunden kannst. Ich aktualisiere die Bilder regelmäßig, also schau immer mal wieder vorbei, um neue Inhalte und aktuelle Projekte zu sehen.",
+              "Durch unsere Arbeit habe ich eine Vielzahl von Projekten abgeschlossen, und du findest viele Beispiele im Galeriebereich. Stöbere gerne durch einige der Tattoos, Piercings und Microdermals, die ich gemacht habe. Die Galerie bietet eine Slide-Ansicht, sodass du die Werke ganz einfach erkunden kannst. Ich aktualisiere die Fotos regelmäßig, also schau unbedingt für frische Inhalte und aktuelle Projekte vorbei.",
           },
           testimonials18: {
             heading: "Erfahrungsberichte",
             content:
-              "Wir sind stolz darauf, die positiven Erfahrungen unserer Kunden zu teilen. Jedes Feedback hebt die Sorgfalt und das handwerkliche Können hervor, das wir in jedes Tattoo und Piercing stecken. Blättern Sie durch Bewertungen einiger unserer zufriedenen Kunden auf Facebook und Google und erfahren Sie, was sie über ihre Zeit bei uns sagen. Klicken Sie auf die Überschrift, um ausführlichere Rückmeldungen zu lesen und zu entdecken, warum so viele uns für ihre Körperkunst wählen!",
+              "Wir freuen uns, die positiven Erfahrungen unserer Kunden zu teilen. Jedes Feedback unterstreicht die Sorgfalt und Kompetenz, die wir in jedes Tattoo und Piercing stecken. Blättern Sie durch einige unserer zufriedenen Kundenrezensionen auf Facebook und Google, um zu sehen, was sie über uns zu sagen haben. Klicken Sie auf die Überschrift, um detailliertere Bewertungen zu lesen und herauszufinden, warum so viele Menschen uns wählen, um ihren Körper zu verschönern!",
           },
           testimonial18: {
             slides: [
