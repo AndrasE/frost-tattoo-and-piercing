@@ -110,7 +110,7 @@ export const BtnWrapper = styled.div`
 `;
 
 export const SendBtnImg = styled.img`
-  width: 45px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
   margin-left: 6px;
 `;

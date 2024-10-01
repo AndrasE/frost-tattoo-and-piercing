@@ -467,52 +467,57 @@ i18next
           },
 
           pwa18: {
-            header: "Add to Home screen",
+            header: "Zum Startbildschirm hinzufügen",
             chromiumsinstallvail18: {
               description:
-                "This site has app functionality. Install it as PWA (Progressive Web Application).",
-              install: "Install",
+                "Diese Website verfügt über App-Funktionalität. Installieren Sie sie als PWA (Progressive Web Application).",
+              install: "Installieren",
             },
             chromiumsinstalledalreadymobile18: {
               description:
-                "This PWA (Progressive Web Application) has already been installed.",
-              search: "Please search for it in your apllication drawer.",
+                "Diese PWA (Progressive Web Application) wurde bereits installiert.",
+              search: "Bitte suchen Sie in Ihrer Bewerbungsliste danach.",
             },
             chromiumsinstalledalreadydesktop18: {
               description:
-                "This PWA (Progressive Web Application) has already been installed.",
-              open: "Please click the icon in the address bar to open.",
+                "Diese PWA (Progressive Web Application) wurde bereits installiert.",
+              open: "Zum Öffnen klicken Sie bitte auf das Symbol in der Adressleiste.",
             },
             firefoxdesktop18: {
               description:
-                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
-              extension: "Press the 'Extension' icon on the menu bar above",
+                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+              extension:
+                "Klicken Sie oben in der Menüleiste auf das Symbol „Erweiterung“.",
               search:
-                "Search and install 'Progressive Web Apps for Firefox' extension.",
-              install: "Press the 'Install' icon in the address bar.",
+                "Suchen und installieren Sie die Erweiterung „Progressive Web Apps für Firefox“.",
+              install:
+                "Klicken Sie in der Adressleiste auf das Symbol „Installieren“.",
             },
             safaridesktop18: {
               description:
-                "This site has app functionality. Add it to your Dock for extensive experience and easy access.",
-              share: "Press the 'Share' button on in the address bar.",
-              add: "In the dropdown menu, choose 'Add to Dock'.",
+                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es zu Ihrem Dock hinzu, um umfassende Erfahrung und einfachen Zugriff zu erhalten.",
+              share:
+                "Klicken Sie in der Adressleiste auf die Schaltfläche „Teilen“.",
+              add: "Wählen Sie im Dropdown-Menü „Zum Dock hinzufügen“.",
             },
             safarimobile18: {
               description:
-                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
-              share: "Press the 'Share' button on the menu bar below.",
-              add: "Press 'Add to Home Screen'.",
+                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+              share:
+                "Klicken Sie in der Menüleiste unten auf die Schaltfläche „Teilen“.",
+              add: "Klicken Sie auf „Zum Startbildschirm hinzufügen“.",
             },
             firefoxoperamobile18: {
               description:
-                "This site has app functionality. Add it to your Home Screen for extensive experience and easy access.",
-              settings: "Press the 'Setting' button on the top bar above.",
-              add: "Press 'Add to Home Screen'.",
+                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+              settings:
+                "Klicken Sie oben in der oberen Leiste auf die Schaltfläche „Einstellungen“.",
+              add: "Klicken Sie auf „Zum Startbildschirm hinzufügen“.",
             },
             notsupported18: {
               description:
-                "Your browiser is currently supporting installation of PWAs (Progressive Web Applications).",
-              try: " Please try to open the App via a Chromium based browiser such as Chrome or Edge.",
+                "Ihr Browser unterstützt derzeit die Installation von PWAs (Progressive Web Applications).",
+              try: "Bitte versuchen Sie, die App über einen Chromium-basierten Browser wie Chrome oder Edge zu öffnen.",
             },
           },
         },
