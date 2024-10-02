@@ -12,10 +12,16 @@ export const ContentContainer = styled.div`
   padding: 20px;
   transition: 0.3s ease-in-out;
   align-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
 export const LinksContainer = styled.div`
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
 `;
 
 export const LinkText = styled.div`
@@ -100,6 +106,7 @@ export const Link = styled.a`
 export const IframeWrapper = styled.div`
   position: relative;
   aspect-ratio: 16/9;
+  margin-top: auto;
   overflow: hidden;
   border-radius: 9px;
 
