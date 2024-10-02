@@ -94,7 +94,7 @@ i18next
           booking18: {
             heading: "Booking",
             content:
-              "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Ready to book your piercing or a free tattoo consultation? Just click the button below to secure your appointment on our Reservio page. You'll find time slots for both piercings and tattoo consultations. For tattoos, we offer free consultations to discuss ideas, review designs, and plan everything ahead. Piercing appointments can be booked directly through Reservio for personalized care. Have questions? Use the form to send us a quick message, and we’ll respond soon!",
           },
           formsubmit18: {
             formheader: "Send us a quick message!",
@@ -262,7 +262,7 @@ i18next
           booking18: {
             heading: "Foglalás",
             content:
-              "Contact HUN language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Készen állsz piercinged vagy ingyenes tetoválás konzultációd lefoglalására? Kattints az alábbi gombra, és biztosítsd az időpontodat a Reservio oldalunkon. Találsz időpontokat mind piercingekre, mind tetoválás konzultációkra. Tetoválások esetén ingyenes konzultációt kínálunk, hogy átbeszéljük az ötleteidet, megvizsgáljuk a terveket, és mindent előre megtervezzünk. Piercing időpontokat közvetlenül a Reservión keresztül foglalhatsz személyre szabott ellátásért. Kérdésed van? Használd az űrlapot, hogy gyors üzenetet küldj nekünk, és hamarosan válaszolunk!",
           },
           formsubmit18: {
             formheader: "Küldj nekünk üzenetet!",
@@ -433,7 +433,7 @@ i18next
           booking18: {
             heading: "Buchung",
             content:
-              "Contact Eng language Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "Bereit, deinen Piercing oder eine kostenlose Tätowierungsberatung zu buchen? Klicke einfach auf den Button unten, um deinen Termin auf unserer Reservio-Seite zu sichern. Du findest Zeitfenster für Piercings und Tätowierungsberatungen. Für Tätowierungen bieten wir kostenlose Beratungsgespräche an, um deine Ideen zu besprechen, Designs zu überprüfen und alles im Voraus zu planen. Piercing-Termine können direkt über Reservio für eine persönliche Betreuung gebucht werden. Hast du Fragen? Nutze das Formular, um uns eine kurze Nachricht zu senden, und wir melden uns bald bei dir!",
           },
           formsubmit18: {
             formheader: "Schicken Sie uns eine Nachricht!",
