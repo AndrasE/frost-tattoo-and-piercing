@@ -50,7 +50,7 @@ const HeroVideo = memo(({ welcome }) => {
       <HeroContent>
         <HeroH1>Frost</HeroH1>
         <HeroH2>tattoo and piercing</HeroH2>
-        <HeroH2>{welcome.welcome}</HeroH2>
+        {/* <HeroH2>{welcome.welcome}</HeroH2> */}
       </HeroContent>
       <ScrollLink
         href="about"
