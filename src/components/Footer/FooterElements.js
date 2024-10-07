@@ -5,12 +5,19 @@ export const FooterWrapper = styled.div`
   display: flex;
   height: 30px;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  align-items: flex-end;
+  height: 50px;
+  margin-bottom: 2px;
 `;
 
 export const LinkText = styled.p`
   display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Link = styled.a`
