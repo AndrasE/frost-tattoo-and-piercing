@@ -280,7 +280,7 @@ i18next
               successmsgpart1: "Köszönjük üzenetét, ",
               successmsgpart2: ". Hamarosan jelentkezünk!",
               successent: "Sikeresen elküldve.",
-              errorsent: "Failed to send.",
+              errorsent: "Küldés sikertelen.",
             },
           },
           settings18: {
