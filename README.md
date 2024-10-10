@@ -13,7 +13,7 @@ React PWA
 
 ## Hello there 👋
 
-The app is styled with styled-components, animated using React-Scroll, Framer-Motion, React-Swipable and React-Lottie, and automatically detects the user's browser language and preferred theme, loading with those settings by default. Users can adjust these preferences, which are saved for future visits. <br />It's a PWA-ready (<a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" target="_blank">Progressive Web App</a>), installable on both mobile and desktop for Chromium-based browsers. I also developed a custom PWA installation flow that adapts to the user's browser and operating system, providing installation instructions even if the browser doesn`t natively support this feature, such as adding the app to the home screen or dock.<br />The project features a splash screen, hero video, testimonial slider, gallery slider, and a gallery album. Users can easily send emails to the studio via a form with guided prompts. The site is fully responsive and has received high scores on Lighthouse for accessibility, best practices, and SEO.
+The app is styled with styled-components, animated using React-Scroll, Framer-Motion, React-Swipable and Lottie-React, and automatically detects the user's browser language and preferred theme, loading with those settings by default. Users can adjust these preferences, which are saved for future visits. <br />It's a PWA-ready (<a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" target="_blank">Progressive Web App</a>), installable on both mobile and desktop for Chromium-based browsers. I also developed a custom PWA installation flow that adapts to the user's browser and operating system, providing installation instructions even if the browser doesn`t natively support this feature, such as adding the app to the home screen or dock.<br />The project features a splash screen, hero video, testimonial slider, gallery slider, and a gallery album. Users can easily send emails to the studio via a form with guided prompts. The site is fully responsive and has received high scores on Lighthouse for accessibility, best practices, and SEO.
 
 Packadges used:
 
@@ -45,7 +45,7 @@ rel="noopener noreferrer"
  href="https://www.npmjs.com/package/lottie-react"
 target="_blank"
 rel="noopener noreferrer"
->lottie</a> asd 
+>lottie-react</a> asd 
 </li>
 <li><a
  href="https://splidejs.com/integration/react-splide/"
@@ -60,13 +60,13 @@ rel="noopener noreferrer"
 >react-photo-album</a> asd 
 </li>
 <li><a
- href="https://react-photo-album.com/"
+ href="https://yet-another-react-lightbox.com/"
 target="_blank"
 rel="noopener noreferrer"
 >yet-another-react-lightbox</a> asd 
 </li>
 <li><a
- href="https://yet-another-react-lightbox.com/"
+ href="https://www.i18next.com/"
 target="_blank"
 rel="noopener noreferrer"
 >i18next, i18next-browser-languagedetector, react-i18next</a> asd 
