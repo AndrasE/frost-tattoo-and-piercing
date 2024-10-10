@@ -21,72 +21,72 @@ Packadges used:
  href="https://styled-components.com/"
 target="_blank"
 rel="noopener noreferrer"
->styled-components</a> asd
+>styled-components</a> CSS-in-JS library for styling React components with scoped styles.
 </li>
 <li><a
  href="https://www.npmjs.com/package/framer-motion"
 target="_blank"
 rel="noopener noreferrer"
->framer-motion</a> asd
+>framer-motion</a> Animation library for React, providing simple declarative animations.
 </li>
 <li><a
  href="https://www.npmjs.com/package/react-scroll"
 target="_blank"
 rel="noopener noreferrer"
->react-scroll</a> asd
+>react-scroll</a> Smooth scrolling behavior for React, allowing navigation within the page.
 </li>
 <li><a
  href="react-swipeable"
 target="_blank"
 rel="noopener noreferrer"
->react-swipeable</a> asd 
+>react-swipeable</a> Enables swipe gestures on touch devices in React components.
 </li>
 <li><a
  href="https://www.npmjs.com/package/lottie-react"
 target="_blank"
 rel="noopener noreferrer"
->lottie-react</a> asd 
+>lottie-react</a> Library to render and control Lottie animations in React.
 </li>
 <li><a
  href="https://splidejs.com/integration/react-splide/"
 target="_blank"
 rel="noopener noreferrer"
->react-splide</a> asd 
+>react-splide</a> Lightweight, customizable slider/carousel for React.
 </li>
 <li><a
  href="https://react-photo-album.com/"
 target="_blank"
 rel="noopener noreferrer"
->react-photo-album</a> asd 
+>react-photo-album</a> Component for building responsive photo galleries in React. 
 </li>
 <li><a
  href="https://yet-another-react-lightbox.com/"
 target="_blank"
 rel="noopener noreferrer"
->yet-another-react-lightbox</a> asd 
+>yet-another-react-lightbox</a> Lightbox component for displaying images in full-screen mode in React.
 </li>
 <li><a
  href="https://www.i18next.com/"
 target="_blank"
 rel="noopener noreferrer"
->i18next, i18next-browser-languagedetector, react-i18next</a> asd 
+>i18next, i18next-browser-languagedetector, react-i18next</a> Internationalization (i18n) framework, with the browser language detector and React bindings for translating apps. 
 </li>
 <li><a
  href="https://www.npmjs.com/package/bowser"
 target="_blank"
 rel="noopener noreferrer"
->bowser</a> asd 
+>bowser</a> A library to detect browser and device information in JavaScript. 
 </li>
 <li><a
  href="https://www.npmjs.com/package/use-local-storage"
 target="_blank"
 rel="noopener noreferrer"
->use-local-storage</a> asd 
+>use-local-storage</a> Managing and persisting state in localStorage.
 </li>
 <li><a
  href="https://www.npmjs.com/package/react-dotenv"
 target="_blank"
 rel="noopener noreferrer"
 >react-dotenv
-</a> asd 
+</a> Allows the use of .env variables in a React app and keep sensitive information safe.
 </li>
