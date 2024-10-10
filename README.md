@@ -48,7 +48,25 @@ rel="noopener noreferrer"
 >lottie</a> asd 
 </li>
 <li><a
- href="https://www.i18next.com/"
+ href="https://splidejs.com/integration/react-splide/"
+target="_blank"
+rel="noopener noreferrer"
+>react-splide</a> asd 
+</li>
+<li><a
+ href="https://react-photo-album.com/"
+target="_blank"
+rel="noopener noreferrer"
+>react-photo-album</a> asd 
+</li>
+<li><a
+ href="https://react-photo-album.com/"
+target="_blank"
+rel="noopener noreferrer"
+>yet-another-react-lightbox</a> asd 
+</li>
+<li><a
+ href="https://yet-another-react-lightbox.com/"
 target="_blank"
 rel="noopener noreferrer"
 >i18next, i18next-browser-languagedetector, react-i18next</a> asd 
@@ -60,9 +78,15 @@ rel="noopener noreferrer"
 >bowser</a> asd 
 </li>
 <li><a
- href="https://react-icons.github.io/react-icons/"
+ href="https://www.npmjs.com/package/use-local-storage"
 target="_blank"
 rel="noopener noreferrer"
->react icons
+>use-local-storage</a> asd 
+</li>
+<li><a
+ href="https://www.npmjs.com/package/react-dotenv"
+target="_blank"
+rel="noopener noreferrer"
+>react-dotenv
 </a> asd 
 </li>
