@@ -22,49 +22,49 @@ Packadges used:
  href="https://styled-components.com/"
 target="_blank"
 rel="noopener noreferrer"
->styled-components</a> CSS-in-JS library for styling React components with scoped styles.
+>styled-components</a> - CSS-in-JS library for styling React components with scoped styles.
 </li>
 <li><a
  href="https://www.npmjs.com/package/framer-motion"
 target="_blank"
 rel="noopener noreferrer"
->framer-motion</a> Animation library for React, providing simple declarative animations.
+>framer-motion</a> - Animation library for React, providing simple declarative animations.
 </li>
 <li><a
  href="https://www.npmjs.com/package/react-scroll"
 target="_blank"
 rel="noopener noreferrer"
->react-scroll</a> Smooth scrolling behavior for React, allowing navigation within the page.
+>react-scroll</a> - Smooth scrolling behavior for React, allowing navigation within the page.
 </li>
 <li><a
  href="react-swipeable"
 target="_blank"
 rel="noopener noreferrer"
->react-swipeable</a> Enables swipe gestures on touch devices in React components.
+>react-swipeable</a> - Enables swipe gestures on touch devices in React components.
 </li>
 <li><a
  href="https://www.npmjs.com/package/lottie-react"
 target="_blank"
 rel="noopener noreferrer"
->lottie-react</a> Library to render and control Lottie animations in React.
+>lottie-react</a> - Library to render and control Lottie animations in React.
 </li>
 <li><a
  href="https://splidejs.com/integration/react-splide/"
 target="_blank"
 rel="noopener noreferrer"
->react-splide</a> Lightweight, customizable slider/carousel for React.
+>react-splide</a> - Lightweight, customizable slider/carousel for React.
 </li>
 <li><a
  href="https://react-photo-album.com/"
 target="_blank"
 rel="noopener noreferrer"
->react-photo-album</a> Component for building responsive photo galleries in React. 
+>react-photo-album</a> - Component for building responsive photo galleries in React. 
 </li>
 <li><a
  href="https://yet-another-react-lightbox.com/"
 target="_blank"
 rel="noopener noreferrer"
->yet-another-react-lightbox</a> Lightbox component for displaying images in full-screen mode in React.
+>yet-another-react-lightbox</a> - Lightbox component for displaying images in full-screen mode in React.
 </li>
 <li><a
  href="https://www.i18next.com/"
@@ -76,20 +76,19 @@ rel="noopener noreferrer"
  href="https://www.npmjs.com/package/bowser"
 target="_blank"
 rel="noopener noreferrer"
->bowser</a> A library to detect browser and device information in JavaScript. 
+>bowser</a> - A library to detect browser and device information in JavaScript. 
 </li>
 <li><a
  href="https://www.npmjs.com/package/use-local-storage"
 target="_blank"
 rel="noopener noreferrer"
->use-local-storage</a> Managing and persisting state in localStorage.
+>use-local-storage</a> - Managing and persisting state in localStorage.
 </li>
 <li><a
  href="https://www.npmjs.com/package/react-dotenv"
 target="_blank"
 rel="noopener noreferrer"
->react-dotenv
-</a> Allows the use of .env variables in a React app and keep sensitive information safe.
+>react-dotenv</a> - Allows the use of .env variables in a React app and keep sensitive information safe.
 </li>
 
 ## Run 🚀
