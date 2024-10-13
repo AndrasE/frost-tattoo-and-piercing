@@ -6,7 +6,7 @@
 </p>
 
 <h3 align="center">
-React PWA
+React - PWA
 </h3>
 
 ## Hello there 👋
