@@ -6,7 +6,7 @@
 </p>
 
 <h3 align="center">
-PWA - React App
+PWA-ready React App
 </h3>
 
 ## Hello there 👋
