@@ -14,10 +14,25 @@ PWA-ready React App
 <p>
 The app is styled with styled-components, animated using React-Scroll, Framer-Motion, React-Swipable and Lottie-React, and automatically detects the user's browser language and preferred theme, loading with those settings by default. Users can adjust these preferences, which are saved for future visits. </p>
 <p>It's a PWA-ready (<a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" target="_blank">Progressive Web App</a>), installable on both mobile and desktop for Chromium-based browsers. I also developed a custom PWA installation flow that adapts to the user's browser and operating system, providing installation instructions even if the browser doesn`t natively support this feature, such as adding the app to the home screen or dock.</p>
-<p>The project features a splash screen, hero video, testimonial slider, gallery slider, and a gallery album. Users can easily send emails to the studio via a form with guided prompts. The site is fully responsive and has received high scores on Lighthouse for accessibility, best practices, and SEO.</p>
 
+<br/>
+
+<p>
+Key Features:
+<li>Rich Animations - Uses smooth, declarative animations and swipe gestures for interactive browsing.</li>
+<li>Internationalization - Supports multiple languages with automatic browser language detection.</li>
+<li>Responsive Design - Fully responsive and optimized for different screen sizes.</li>
+<li>PWA-Ready & Custom PWA Installation Flow - Installable on both mobile and desktop for Chromium-based browsers. Adapts to the user's browser and OS, providing alternative installation instructions for unsupported browsers.</li>
+<li>Dynamic Sliders - Includes testimonial and gallery sliders for a seamless user experience.</li>
+<li>Interactive Gallery Album - Displays images in a lightbox for a full-screen view.</li>
+<li>Splash Screen & Hero Video - Engages users with a polished entry experience.</li>
+<li>High Lighthouse Scores - Excellent ratings for accessibility, best practices, and SEO.</li>
+</p>
+
+<br/>
+
+<p>
 Packadges used:
-
 <li><a
  href="https://styled-components.com/"
 target="_blank"
@@ -90,6 +105,7 @@ target="_blank"
 rel="noopener noreferrer"
 >react-dotenv</a> - Allows the use of .env variables in a React app and keep sensitive information safe.
 </li>
+</p>
 
 ## Run 🚀
 
