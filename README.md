@@ -22,7 +22,7 @@ Key Features:
 <li>Rich Animations - Uses smooth, declarative animations and swipe gestures for interactive browsing.</li>
 <li>Internationalization - Supports multiple languages with automatic browser language detection.</li>
 <li>Responsive Design - Fully responsive and optimized for different screen sizes.</li>
-<li>PWA-Ready & Custom PWA Installation Flow - Installable on both mobile and desktop for Chromium-based browsers. Adapts to the user's browser and OS, providing alternative installation instructions for unsupported browsers.</li>
+<li>PWA-Ready & Custom PWA Installation Flow - Installable on both mobile and desktop for Chromium-based browsers. Adapts to the user's browser and OS, providing alternative installation instructions for not natively supported browsers.</li>
 <li>Dynamic Sliders - Includes testimonial and gallery sliders for a seamless user experience.</li>
 <li>Interactive Gallery Album - Displays images in a lightbox for a full-screen view.</li>
 <li>Splash Screen & Hero Video - Engages users with a polished entry experience.</li>
