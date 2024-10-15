@@ -2,6 +2,7 @@
   <a href="https://frost-tattoo.netlify.app/" target="_blank" rel="noopener noreferrer">
   <img src="https://github.com/AndrasE/raw-readme/blob/main/frost-readme.png?raw=true" width="120px">
   </a>
+  <br/>
 PWA-ready React App
 </h3>
 
