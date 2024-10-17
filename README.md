@@ -11,6 +11,8 @@ PWA-ready React App
 The app is styled with styled-components, animated using React-Scroll, Framer-Motion, React-Swipable and Lottie-React, and automatically detects the user's browser language and preferred theme, loading with those settings by default. Users can adjust these preferences, which are saved for future visits.
 It's a PWA-ready (**[Progressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)**), installable on both mobile and desktop for Chromium-based browsers. I also developed a custom PWA installation flow that adapts to the user's browser and operating system, providing installation instructions even if the browser doesn`t natively support this feature, such as adding the app to the home screen or dock.
 
+The project features a splash screen, hero video, testimonial slider, gallery slider, and a gallery album. Users can easily send emails to the studio via a form with guided prompts. The site is fully responsive and has received high scores on Lighthouse for accessibility, best practices, and SEO.
+
 ### Key Features
 
 - **Rich Animations** - Uses smooth, declarative animations and swipe gestures for interactive browsing.
