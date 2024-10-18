@@ -3,9 +3,7 @@
   <img src="https://github.com/AndrasE/raw-readme/blob/main/frost-readme.png?raw=true" width="120px">
   </a>
   <br/>
-PWA-ready React App with animations
-  <br/> 
- and custom PWA-installation flow
+PWA-ready React App with animations and custom PWA-installation flow
 </h3>
 
 ## Hello there 👋
