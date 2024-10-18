@@ -14,7 +14,7 @@ It's a PWA-ready (**[Progressive Web App](https://developer.mozilla.org/en-US/do
 The project features a splash screen, hero video, testimonial slider, gallery slider, and a gallery album. Users can easily send emails to the studio via a form with guided prompts. The site is fully responsive and has received high scores on Lighthouse for accessibility, best practices, and SEO.
 
 <div align="center">
-<img src="https://github.com/AndrasE/raw-readme/blob/f6bf4a96ee46927ededa98bdf70aa7607e76adda/frost.webp" width="480">
+<img src="https://github.com/AndrasE/raw-readme/blob/f6bf4a96ee46927ededa98bdf70aa7607e76adda/frost.webp" width="420">
 </div>
 
 ### Key Features
