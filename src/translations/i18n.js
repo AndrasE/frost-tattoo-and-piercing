@@ -12,6 +12,7 @@ i18next
       en: {
         translation: {
           hero18: {
+            tattooandpiercing: "Tattoo and Piercing",
             welcome: "Welcome to our offfical website!",
           },
           nav18: {
@@ -180,6 +181,7 @@ i18next
       hu: {
         translation: {
           hero18: {
+            tattooandpiercing: "Tetoválás és Piercing",
             welcome: "Üdvözöljük hivatalos weboldalunkon!",
           },
           nav18: {
@@ -351,35 +353,36 @@ i18next
       de: {
         translation: {
           hero18: {
+            tattooandpiercing: "Tattoo und Piercing",
             welcome: "Willkommen auf unserer offiziellen Website!",
           },
           nav18: {
-            about: "Wir",
+            about: "Studio",
             services: "Dienstleistungen",
             gallery: "Galerie",
-            testimonials: "Erfahrungsberichte",
+            testimonials: "Bewertung",
             contact: "Kontakt",
             booking: "Buchung",
           },
           about18: {
             heading: "Wir",
             content:
-              "Unser Geschäft ist seit 2017 in der Stadt Cegléd tätig. Unsere aktuelle Adresse lautet: Cegléd, Kossuth Ferenc Straße 8. (Unser Geschäft befindet sich im Gyarmati-Hof!). Unsere Gäste werden von einer freundlichen, familiären Atmosphäre und Geist empfangen. Im Laufe der Jahre hat sich unser Kundenstamm kontinuierlich erweitert, und dank euch sind wir heute ein großartiges Team und eine Familie geworden!",
+              "Unser Studio hat 2017 in Cegléd geoeffnet, und seit letztem Jahr sind wir in unserer neuen Adresse taetig: Cegléd, Kossuth Ferenc Straße 8 (im Gyarmati-Hof!). Unsere Gäste werden von einer freundlichen, familiären Atmosphäre und Stimmung empfangen. Im Laufe der Jahre hat sich unser Kundenstamm kontinuierlich erweitert, und dank euch sind wir heute ein großartiges Team und eine Familie geworden!",
           },
           services18: {
             heading: "Dienstleistungen",
             content:
-              "In unserem Studio bieten wir ein breites Spektrum an Dienstleistungen für alle an, die sich für Tätowierungen und Körpermodifikationen interessieren. Ob es darum geht, ein einzigartiges Tattoo zu entwerfen oder das Tattoo selbst zu erstellen, wir helfen Ihnen, Ihre Ideen zu verwirklichen. Neben Tätowierungen führen wir auch professionelle Piercings und Mikrodermalimplantate durch und sorgen so für eine sichere und präzise Ausführung. Unser Studio bietet eine saubere, freundliche Umgebung, in der Sie sich während des Prozesses wohl fühlen können.",
+              "In unserem Studio bieten wir ein breites Spektrum an Dienstleistungen für alle an, die sich für Tätowierungen und Körpermodifikationen interessieren. Ob Ready-to-Go Tattoo oder ein einzigartiges, selbst entworfenes Design: Wir helfen euch eure Ideen zu verwirklichen. Neben Tätowierungen führen wir auch professionelle Piercings und Mikrodermalimplantate durch und sorgen für eine sichere und präzise Ausführung. Unser Studio bietet eine saubere, freundliche Umgebung, in der ihr euch während des Prozesses wohl fühlen können.",
           },
           gallery18: {
             heading: "Galerie",
             content:
-              "Durch unsere Arbeit habe ich eine Vielzahl von Projekten abgeschlossen, und du findest viele Beispiele im Galeriebereich. Stöbere gerne durch einige der Tattoos, Piercings und Microdermals, die ich gemacht habe. Die Galerie bietet eine Slide-Ansicht, sodass du die Werke ganz einfach erkunden kannst. Ich aktualisiere die Fotos regelmäßig, also schau unbedingt für frische Inhalte und aktuelle Projekte vorbei.",
+              "Seit Beginn meiner Taetigkeit habe ich eine Vielzahl von unterschiedlichen Projekten abgeschlossen, und du findest viele Beispiele im Galeriebereich. Stöbere gerne durch einige der Tattoos, Piercings und Microdermals, die ich gemacht habe. Die Galerie bietet eine Slide-Ansicht, sodass du ganz einfach durch die Werke navigieren kannst. Ich aktualisiere die Fotos regelmäßig, also schaue unbedingt regelmaessig für frische Inhalte und aktuelle Projekte hier rein.",
           },
           testimonials18: {
             heading: "Erfahrungsberichte",
             content:
-              "Wir freuen uns, die positiven Erfahrungen unserer Kunden zu teilen. Jedes Feedback unterstreicht die Sorgfalt und Kompetenz, die wir in jedes Tattoo und Piercing stecken. Blättern Sie durch einige unserer zufriedenen Kundenrezensionen auf Facebook und Google, um zu sehen, was sie über uns zu sagen haben. Klicken Sie auf die Überschrift, um detailliertere Bewertungen zu lesen und herauszufinden, warum so viele Menschen uns wählen, um ihren Körper zu verschönern!",
+              "Wir freuen uns, so viele positive Erfahrungen unserer Kunden zu teilen. Jedes Feedback zeigt die Sorgfalt und Kompetenz, die wir in jedes Tattoo und Piercing stecken. Lies gerne durch einige unserer zufriedenen Kundenrezensionen auf Facebook und Google, um zu sehen, was sie über uns zu sagen haben. Klicke auf die Überschrift, um detailliertere Bewertungen zu lesen und herauszufinden, warum so viele Menschen uns wählen, um ihren Körper zu verschönern!",
           },
           testimonial18: {
             slides: [
@@ -395,7 +398,8 @@ i18next
                 name: "Zoltán",
                 src: require("../images/testimonialsImgs/zoltan.png"),
                 link: "https://maps.app.goo.gl/gNw5BxF8Pz6LiSXT9",
-                review: "Er funktioniert sehr gut. Ich kann es nur empfehlen!",
+                review:
+                  "Er arbeitet sehr praezise. Ich kann ihn nur empfehlen!",
                 rating: "⭐⭐⭐⭐⭐",
               },
               {
@@ -428,7 +432,7 @@ i18next
           contact18: {
             heading: "Kontakt",
             content:
-              "Für Anfragen oder Terminvereinbarungen kannst du uns gerne per E-Mail, telefonisch oder über Facebook kontaktieren. Du bist auch herzlich eingeladen, unser Studio zu besuchen, wo wir deine Fragen beantworten und deine Ideen persönlich besprechen können. Unser Studio befindet sich im Gyarmati-Hof, und wenn du mit dem Auto kommst, gibt es kostenlose Parkplätze in der nahegelegenen Páva-Straße, nur einen kurzen Fußweg entfernt. Wir freuen uns darauf, von dir zu hören und dir bei deinem nächsten Tattoo oder Piercing zu helfen!",
+              "Für Anfragen oder Terminvereinbarungen kannst du uns gerne per E-Mail, telefonisch oder über Facebook kontaktieren. Du bist auch herzlich eingeladen, unser Studio zu besuchen, wo wir deine Fragen beantworten und deine Ideen persönlich besprechen können. Unser Studio befindet sich im Gyarmati-Hof. Wenn du mit dem Auto kommst, gibt es kostenlose Parkplätze in der nahegelegenen Páva-Straße, nur einen kurzen Fußweg entfernt. Wir freuen uns darauf, von dir zu hören und dir bei deinem nächsten Tattoo oder Piercing zu helfen!",
           },
           booking18: {
             heading: "Buchung",
@@ -436,28 +440,28 @@ i18next
               "Bereit, deinen Piercing oder eine kostenlose Tätowierungsberatung zu buchen? Klicke einfach auf den Button unten, um deinen Termin auf unserer Reservio-Seite zu sichern. Du findest Zeitfenster für Piercings und Tätowierungsberatungen. Für Tätowierungen bieten wir kostenlose Beratungsgespräche an, um deine Ideen zu besprechen, Designs zu überprüfen und alles im Voraus zu planen. Piercing-Termine können direkt über Reservio für eine persönliche Betreuung gebucht werden. Hast du Fragen? Nutze das Formular, um uns eine kurze Nachricht zu senden, und wir melden uns bald bei dir!",
           },
           formsubmit18: {
-            formheader: "Schicken Sie uns eine Nachricht!",
+            formheader: "Schick uns eine Nachricht!",
             nameplaceholder: "Name",
             emailplaceholder: "E-Mail",
             messageplaceholder: "Nachricht",
-            sendbtn: "Schicken",
+            sendbtn: "Senden",
             nameerror:
               "Der Name muss mindestens 3 Zeichen lang sein und darf nur Buchstaben und Leerzeichen enthalten.",
             emailerror:
-              "Ungültige E-Mail. Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+              "Ungültige E-Mail. Bitte gib eine gültige E-Mail-Adresse an.",
             messageerror: "Die Nachricht muss mindestens 20 Zeichen lang sein.",
             feedbackmodal18: {
-              successmsgpart1: "Vielen Dank für Ihre Nachricht, ",
-              successmsgpart2: ". Ich werde mich in Kürze bei Ihnen melden!",
+              successmsgpart1: "Vielen Dank für Deine Nachricht, ",
+              successmsgpart2: ". Ich werde mich in Kürze bei Dir melden!",
               successent: "Dies wurde erfolgreich gesendet!",
               errorsent: "Senden fehlgeschlagen.",
             },
           },
           settings18: {
-            settings: "Haltung",
+            settings: "settings",
             theme: "Thema",
             dark: "Dunkel",
-            light: "Licht",
+            light: "Hell",
             lngs: "Sprachen",
             install: "Installieren",
           },
@@ -470,54 +474,53 @@ i18next
             header: "Zum Startbildschirm hinzufügen",
             chromiumsinstallvail18: {
               description:
-                "Diese Website verfügt über App-Funktionalität. Installieren Sie sie als PWA (Progressive Web Application).",
+                "Diese Website verfügt über App-Funktionalität. Installiere die Seite als PWA (Progressive Web Application).",
               install: "Installieren",
             },
             chromiumsinstalledalreadymobile18: {
               description:
                 "Diese PWA (Progressive Web Application) wurde bereits installiert.",
-              search: "Bitte suchen Sie in Ihrer Bewerbungsliste danach.",
+              search: "Bitte schau in deiner Bewerbungsliste nach.",
             },
             chromiumsinstalledalreadydesktop18: {
               description:
                 "Diese PWA (Progressive Web Application) wurde bereits installiert.",
-              open: "Zum Öffnen klicken Sie bitte auf das Symbol in der Adressleiste.",
+              open: "Zum Öffnen klick bitte auf das Symbol in der Adressleiste.",
             },
             firefoxdesktop18: {
               description:
-                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+                "Diese Seite verfügt über App-Funktionalität. Füge diese in deinem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
               extension:
-                "Klicken Sie oben in der Menüleiste auf das Symbol „Erweiterung“.",
+                "Klick oben in der Menüleiste auf das Symbol „Erweiterung“.",
               search:
-                "Suchen und installieren Sie die Erweiterung „Progressive Web Apps für Firefox“.",
+                "Suche und installiere die Erweiterung „Progressive Web Apps für Firefox“.",
               install:
-                "Klicken Sie in der Adressleiste auf das Symbol „Installieren“.",
+                "Klick in der Adressleiste auf das Symbol „Installieren“.",
             },
             safaridesktop18: {
               description:
-                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es zu Ihrem Dock hinzu, um umfassende Erfahrung und einfachen Zugriff zu erhalten.",
-              share:
-                "Klicken Sie in der Adressleiste auf die Schaltfläche „Teilen“.",
-              add: "Wählen Sie im Dropdown-Menü „Zum Dock hinzufügen“.",
+                "Diese Seite verfügt über App-Funktionalität. Füge diese zu deinem Dock hinzu, um umfassende Erfahrung und einfachen Zugriff zu erhalten.",
+              share: "Klick in der Adressleiste auf die Schaltfläche „Teilen“.",
+              add: "Wähle im Dropdown-Menü „Zum Dock hinzufügen“.",
             },
             safarimobile18: {
               description:
-                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+                "Diese Seite verfügt über App-Funktionalität. Füge diese zu deinem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
               share:
-                "Klicken Sie in der Menüleiste unten auf die Schaltfläche „Teilen“.",
-              add: "Klicken Sie auf „Zum Startbildschirm hinzufügen“.",
+                "Klick in der Menüleiste unten auf die Schaltfläche „Teilen“.",
+              add: "Klick auf „Zum Startbildschirm hinzufügen“.",
             },
             firefoxoperamobile18: {
               description:
-                "Diese Seite verfügt über App-Funktionalität. Fügen Sie es Ihrem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
+                "Diese Seite verfügt über App-Funktionalität. Füge diese zu deinem Startbildschirm hinzu, um ein umfassendes Erlebnis und einen einfachen Zugriff zu erhalten.",
               settings:
-                "Klicken Sie oben in der oberen Leiste auf die Schaltfläche „Einstellungen“.",
-              add: "Klicken Sie auf „Zum Startbildschirm hinzufügen“.",
+                "Klick oben in der oberen Leiste auf die Schaltfläche „Einstellungen“.",
+              add: "Klick auf „Zum Startbildschirm hinzufügen“.",
             },
             notsupported18: {
               description:
-                "Ihr Browser unterstützt derzeit die Installation von PWAs (Progressive Web Applications).",
-              try: "Bitte versuchen Sie, die App über einen Chromium-basierten Browser wie Chrome oder Edge zu öffnen.",
+                "Dein Browser unterstützt derzeit die Installation von PWAs (Progressive Web Applications).",
+              try: "Bitte versuche die App über einen Chromium-basierten Browser wie Chrome oder Edge zu öffnen.",
             },
           },
         },

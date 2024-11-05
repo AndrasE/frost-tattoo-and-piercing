@@ -101,7 +101,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
           delay: 0.1,
           ease: [0, 0.71, 0.2, 1.01],
         }}>
-        <HeroVideo welcome={t("hero18")} />
+        <HeroVideo hero18={t("hero18")} />
       </motion.div>
 
       {/* sections start, reusable component passed col1 and col2 as prop for content as well some other props*/}

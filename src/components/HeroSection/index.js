@@ -13,7 +13,7 @@ import {
   MotionVideo,
 } from "./HeroElements";
 
-const HeroVideo = memo(({ welcome }) => {
+const HeroVideo = memo(({ hero18 }) => {
   // eslint-disable-next-line
   const [videoEnded, setVideoEnded] = useState(false);
   // eslint-disable-next-line
@@ -49,8 +49,8 @@ const HeroVideo = memo(({ welcome }) => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Frost</HeroH1>
-        <HeroH2>tattoo and piercing</HeroH2>
-        <HeroH2>{welcome.welcome}</HeroH2>
+        <HeroH2>{hero18.tattooandpiercing}</HeroH2>
+        <HeroH2>{hero18.welcome}</HeroH2>
       </HeroContent>
       <ScrollLink
         href="about"
