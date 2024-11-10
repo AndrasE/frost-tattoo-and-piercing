@@ -365,7 +365,7 @@ i18next
             booking: "Buchung",
           },
           about18: {
-            heading: "Wir",
+            heading: "Studio",
             content:
               "Unser Studio hat 2017 in Cegléd geoeffnet, und seit letztem Jahr sind wir in unserer neuen Adresse taetig: Cegléd, Kossuth Ferenc Straße 8 (im Gyarmati-Hof!). Unsere Gäste werden von einer freundlichen, familiären Atmosphäre und Stimmung empfangen. Im Laufe der Jahre hat sich unser Kundenstamm kontinuierlich erweitert, und dank euch sind wir heute ein großartiges Team und eine Familie geworden!",
           },
