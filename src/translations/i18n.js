@@ -95,7 +95,7 @@ i18next
           booking18: {
             heading: "Booking",
             content:
-              "Ready to book your piercing or a free tattoo consultation? Just click the button below to secure your appointment on our Reservio page. You'll find time slots for both piercings and tattoo consultations. For tattoos, we offer free consultations to discuss ideas, review designs, and plan everything ahead. Piercing appointments can be booked directly through Reservio for personalized care. Have questions? Use the form to send us a quick message, and we’ll respond soon!",
+              "Ready to book your piercing or a free tattoo consultation? Just click the button below to secure your appointment on our Salonic page. You'll find time slots for both piercings and tattoo consultations. For tattoos, we offer free consultations to discuss ideas, review designs, and plan everything ahead. Piercing appointments can be booked directly through Salonic for personalized care. Have questions? Use the form to send us a quick message, and we’ll respond soon!",
           },
           formsubmit18: {
             formheader: "Send us a quick message!",
@@ -264,7 +264,7 @@ i18next
           booking18: {
             heading: "Foglalás",
             content:
-              "Készen állsz piercinged vagy ingyenes tetoválás konzultációd lefoglalására? Kattints az alábbi gombra, és biztosítsd az időpontodat a Reservio oldalunkon. Találsz időpontokat mind piercingekre, mind tetoválás konzultációkra. Tetoválások esetén ingyenes konzultációt kínálunk, hogy átbeszéljük az ötleteidet, megvizsgáljuk a terveket, és mindent előre megtervezzünk. Piercing időpontokat közvetlenül a Reservión keresztül foglalhatsz személyre szabott ellátásért. Kérdésed van? Használd az űrlapot, hogy gyors üzenetet küldj nekünk, és hamarosan válaszolunk!",
+              "Készen állsz piercinged vagy ingyenes tetoválás konzultációd lefoglalására? Kattints az alábbi gombra, és biztosítsd az időpontodat a Salonic oldalunkon. Találsz időpontokat mind piercingekre, mind tetoválás konzultációkra. Tetoválások esetén ingyenes konzultációt kínálunk, hogy átbeszéljük az ötleteidet, megvizsgáljuk a terveket, és mindent előre megtervezzünk. Piercing időpontokat közvetlenül a Reservión keresztül foglalhatsz személyre szabott ellátásért. Kérdésed van? Használd az űrlapot, hogy gyors üzenetet küldj nekünk, és hamarosan válaszolunk!",
           },
           formsubmit18: {
             formheader: "Küldj nekünk üzenetet!",
@@ -437,7 +437,7 @@ i18next
           booking18: {
             heading: "Buchung",
             content:
-              "Bereit, deinen Piercing oder eine kostenlose Tätowierungsberatung zu buchen? Klicke einfach auf den Button unten, um deinen Termin auf unserer Reservio-Seite zu sichern. Du findest Zeitfenster für Piercings und Tätowierungsberatungen. Für Tätowierungen bieten wir kostenlose Beratungsgespräche an, um deine Ideen zu besprechen, Designs zu überprüfen und alles im Voraus zu planen. Piercing-Termine können direkt über Reservio für eine persönliche Betreuung gebucht werden. Hast du Fragen? Nutze das Formular, um uns eine kurze Nachricht zu senden, und wir melden uns bald bei dir!",
+              "Bereit, deinen Piercing oder eine kostenlose Tätowierungsberatung zu buchen? Klicke einfach auf den Button unten, um deinen Termin auf unserer Salonic-Seite zu sichern. Du findest Zeitfenster für Piercings und Tätowierungsberatungen. Für Tätowierungen bieten wir kostenlose Beratungsgespräche an, um deine Ideen zu besprechen, Designs zu überprüfen und alles im Voraus zu planen. Piercing-Termine können direkt über Salonic für eine persönliche Betreuung gebucht werden. Hast du Fragen? Nutze das Formular, um uns eine kurze Nachricht zu senden, und wir melden uns bald bei dir!",
           },
           formsubmit18: {
             formheader: "Schick uns eine Nachricht!",

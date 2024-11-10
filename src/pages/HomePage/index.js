@@ -133,7 +133,7 @@ const Home = ({ toggleTheme, theme, browserSettings, deferredPrompt }) => {
         col2={<FormSubmit i18n={t("formsubmit18")} />}
         btnLabel={t("booking18").heading}
         openInNewTab
-        btnTo={process.env.REACT_APP_RESERVIO_URL}
+        btnTo={process.env.REACT_APP_SALONIC_URL}
       />
       <Footer />
       <ProgressBar />

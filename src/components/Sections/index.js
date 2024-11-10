@@ -56,7 +56,7 @@ const Section = ({
                 {btnLabel && (
                   <BtnWrapper>
                     <BtnLink
-                      aria-label="some more descriptive text that explains the link"
+                      aria-label={`link to ${btnLabel}`}
                       to={btnTo}
                       target={openInNewTab ? "_blank" : "_self"}
                       rel={openInNewTab ? "noopener noreferrer" : ""}
