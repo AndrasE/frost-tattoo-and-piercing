@@ -1,5 +1,5 @@
 <h3 align="center">
-  <a href="https://frost-tattoo.netlify.app/" target="_blank" rel="noopener noreferrer">
+  <a href="https://frost-tattoo.hu" target="_blank" rel="noopener noreferrer">
   <img src="https://github.com/AndrasE/raw-readme/blob/519799a8692f17a271240c74a8d8681ae577b82a/logo/frost-readme.png" width="120px">
   </a>
   <br/>
