@@ -14,7 +14,7 @@ import {
   Moon,
   FlagIcon,
   InstallPwaBtn,
-} from "./SettingsModalElemenets";
+} from "./SettingsModalElements";
 import { useScroll, useSpring, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Hun from "../../images/flagIcons/hu.svg";
@@ -103,20 +103,20 @@ const SettingsModal = ({
           <SettingsLabel>{settings.lngs}</SettingsLabel>
           <SettingsWrapper>
             <SettingWrapper
-              onClick={() => changeLng("hu")}
-              $isSelected={selectedLang === "hu"}>
+              onClick={() => changeLng("hu-HU")}
+              $isSelected={selectedLang === "hu-HU"}>
               <FlagIcon src={Hun} alt="Hungary_flag" />
               <SettingLabel>Hun</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
-              onClick={() => changeLng("en")}
-              $isSelected={selectedLang === "en"}>
+              onClick={() => changeLng("en-GB")}
+              $isSelected={selectedLang === "en-GB"}>
               <FlagIcon src={Eng} alt="United_Kingdom_flag" />
               <SettingLabel>Eng</SettingLabel>
             </SettingWrapper>
             <SettingWrapper
-              onClick={() => changeLng("de")}
-              $isSelected={selectedLang === "de"}>
+              onClick={() => changeLng("de-DE")}
+              $isSelected={selectedLang === "de-DE"}>
               <FlagIcon src={Ger} alt="Germany_flag" />
               <SettingLabel>Ger</SettingLabel>
             </SettingWrapper>
