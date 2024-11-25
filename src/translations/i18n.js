@@ -48,7 +48,7 @@ i18next
               {
                 name: "Bettina",
                 src: require("../images/testimonialsImgs/bettina.png"),
-                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
+                link: "https://www.facebook.com/share/p/15bENQjYdv/",
                 review:
                   "I can only recommend it. A good tattoo artist with skillful hands 🥰🥰😇 ",
                 rating: "⭐⭐⭐⭐⭐",
@@ -217,7 +217,7 @@ i18next
               {
                 name: "Bettina",
                 src: require("../images/testimonialsImgs/bettina.png"),
-                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
+                link: "https://www.facebook.com/share/p/15bENQjYdv/",
                 review:
                   "Csak ajánlani tudom. Jófej tetováló ügyes kezekkel 🥰🥰😇",
                 rating: "⭐⭐⭐⭐⭐",
@@ -389,7 +389,7 @@ i18next
               {
                 name: "Bettina",
                 src: require("../images/testimonialsImgs/bettina.png"),
-                link: "https://www.facebook.com/share/p/wH2hRXLErfQVHnnE/",
+                link: "https://www.facebook.com/share/p/15bENQjYdv/",
                 review:
                   "Ich kann es nur empfehlen. Ein guter Tätowierer mit geschickten Händen 🥰🥰😇 ",
                 rating: "⭐⭐⭐⭐⭐",
