@@ -13,7 +13,7 @@ i18next
         translation: {
           hero18: {
             tattooandpiercing: "Tattoo and Piercing",
-            welcome: "Welcome to our offfical website!",
+            welcome: "Welcome to our offical website!",
           },
           nav18: {
             about: "About",
