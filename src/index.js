@@ -9,3 +9,15 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// ✅ Register Service Worker (in both dev & prod)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    const swUrl = new URL("./service-worker.js", import.meta.url);
+
+    navigator.serviceWorker
+      .register(swUrl)
+      .then((reg) => console.log("✅ Service Worker registered:", reg.scope))
+      .catch((err) => console.error("❌ SW registration failed:", err));
+  });
+}
