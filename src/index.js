@@ -13,11 +13,26 @@ root.render(
 // ✅ Register Service Worker (in both dev & prod)
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    const swUrl = new URL("./service-worker.js", import.meta.url);
-
     navigator.serviceWorker
-      .register(swUrl)
-      .then((reg) => console.log("✅ Service Worker registered:", reg.scope))
-      .catch((err) => console.error("❌ SW registration failed:", err));
+      .register("/service-worker.js")
+      .then((registration) => {
+        console.log("✅ Service Worker registered:", registration.scope);
+
+        // Optional: auto-update when new SW is found
+        registration.onupdatefound = () => {
+          const newWorker = registration.installing;
+          newWorker.onstatechange = () => {
+            if (
+              newWorker.state === "installed" &&
+              navigator.serviceWorker.controller
+            ) {
+              console.log("⚡ New content available; please refresh.");
+            }
+          };
+        };
+      })
+      .catch((error) => {
+        console.error("❌ Service Worker registration failed:", error);
+      });
   });
 }
