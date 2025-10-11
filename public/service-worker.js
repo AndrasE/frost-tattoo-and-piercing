@@ -1,59 +1,54 @@
 /* eslint-disable no-restricted-globals */
 const CACHE_NAME = "frost-cache-v1";
 
+// Assets to cache (paths are relative to public/)
 const ASSETS_TO_CACHE = [
-  "/", // root
-  "/index.html",
-  "/manifest.json",
-
-  // 🖋️ Font
-  "https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;600;700&display=swap",
-  "https://fonts.gstatic.com/s/encodesansexpanded/v9/XYZ123.woff2", // optional: will be dynamically cached if you omit it
-
-  // 🎥 Video & captions
-  "/video.mp4",
-  "/video_caption.vtt",
-
-  // 🖼️ Images
-  "/aboutImg.jpg",
-  "/sendImg.png",
-  "/sendImgHover.png",
-  "/de.svg",
-  "/gb.svg",
-  "/hu.svg",
-  "/10.jpg",
-  "/12.jpg",
-  "/13.jpg",
-  "/15.jpg",
-  "/22.jpg",
-  "/logo.png",
-  "/design.jpg",
-  "/microdermal.jpg",
-  "/piercing.jpg",
-  "/tattoo.jpg",
-  "/dia.png",
-  "/bettina.png",
-  "/edina.png",
-  "/helga.png",
-  "/zoltan.png",
-
-  // 🌀 Lottie animations / JSON data
-  "/doubleArrowDown.json",
-  "/loading.json",
-  "/email.json",
-  "/error.json",
+  "/images/aboutImg/aboutImg.jpg",
+  "/images/bookingImgAnimation/email.json",
+  "/images/bookingImgAnimation/error.json",
+  "/images/bookingImgAnimation/sendImg.png",
+  "/images/bookingImgAnimation/sendImgHover.png",
+  "/images/flagIcons/de.svg",
+  "/images/flagIcons/gb.svg",
+  "/images/flagIcons/hu.svg",
+  "/images/galleryCarouselImgs/10.jpg",
+  "/images/galleryCarouselImgs/12.jpg",
+  "/images/galleryCarouselImgs/13.jpg",
+  "/images/galleryCarouselImgs/15.jpg",
+  "/images/galleryCarouselImgs/22.jpg",
+  "/images/heroArrowAnimation/doubleArrowDown.json",
+  "/images/logoImgs/logo.png",
+  "/images/servicesImgs/design.jpg",
+  "/images/servicesImgs/microdermal.jpg",
+  "/images/servicesImgs/piercing.jpg",
+  "/images/servicesImgs/tattoo.jpg",
+  "/images/splashAnimation/loading.json",
+  "/images/splashAnimation/logo.png",
+  "/images/testimonialsImgs/bettina.png",
+  "/images/testimonialsImgs/dia.png",
+  "/images/testimonialsImgs/edina.png",
+  "/images/testimonialsImgs/helga.png",
+  "/images/testimonialsImgs/zoltan.png",
+  "/videos/video_caption.vtt",
+  "/videos/video.mp4",
+  "/fonts/EncodeSansExpanded-Regular.woff2", // add font file(s) to public/fonts/
 ];
 
-// 🧠 Install event: pre-cache important assets
+// Install event: cache files
 self.addEventListener("install", (event) => {
+  console.log("[SW] Installing service worker...");
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("[SW] Caching assets...");
+      return cache.addAll(ASSETS_TO_CACHE);
+    })
   );
   self.skipWaiting();
 });
 
-// ⚙️ Activate event: clean up old caches
+// Activate event: clean old caches
 self.addEventListener("activate", (event) => {
+  console.log("[SW] Activating service worker...");
   event.waitUntil(
     caches
       .keys()
@@ -64,33 +59,36 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// 🚀 Fetch event: cache-first for static assets
+// Fetch event: serve from cache first, fallback to network
 self.addEventListener("fetch", (event) => {
-  // Don’t cache API or external requests
-  if (event.request.url.startsWith("http") === false) return;
+  if (event.request.method !== "GET") return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
+    caches.match(event.request).then((cachedResponse) => {
+      if (cachedResponse) {
+        console.log("[SW] Serving from cache:", event.request.url);
+        return cachedResponse;
+      }
       return fetch(event.request)
         .then((response) => {
-          // Clone so we can cache it
-          const responseClone = response.clone();
-
-          // Only cache static assets (images, videos, fonts, JSON)
-          if (
-            /\.(png|jpg|jpeg|svg|webp|mp4|json|vtt|woff2?)$/i.test(
-              event.request.url
-            )
-          ) {
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseClone);
-            });
+          // Only cache GET requests for listed asset types
+          const url = event.request.url;
+          if (/\.(png|jpg|jpeg|svg|webp|mp4|json|vtt|woff2?)$/i.test(url)) {
+            const responseClone = response.clone();
+            caches
+              .open(CACHE_NAME)
+              .then((cache) => cache.put(url, responseClone));
+            console.log("[SW] Cached new asset:", url);
           }
-
           return response;
         })
-        .catch(() => caches.match("/offline.html")); // optional fallback
+        .catch(() => {
+          console.warn(
+            "[SW] Fetch failed, returning fallback:",
+            event.request.url
+          );
+          return caches.match("/images/splashAnimation/logo.png"); // fallback image
+        });
     })
   );
 });
